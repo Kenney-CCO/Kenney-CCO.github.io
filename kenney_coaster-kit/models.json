@@ -1,0 +1,1283 @@
+[
+    {
+        "name": "bench",
+        "glb": "models\\bench.glb",
+        "preview": "Previews\\bench.png",
+        "size_kb": 16,
+        "vertices": 192
+    },
+    {
+        "name": "coaster-flume-cap-back",
+        "glb": "models\\coaster-flume-cap-back.glb",
+        "preview": "Previews\\coaster-flume-cap-back.png",
+        "size_kb": 10,
+        "vertices": 12
+    },
+    {
+        "name": "coaster-flume-cap-front",
+        "glb": "models\\coaster-flume-cap-front.glb",
+        "preview": "Previews\\coaster-flume-cap-front.png",
+        "size_kb": 10,
+        "vertices": 12
+    },
+    {
+        "name": "coaster-flume-corner-large-ramp",
+        "glb": "models\\coaster-flume-corner-large-ramp.glb",
+        "preview": "Previews\\coaster-flume-corner-large-ramp.png",
+        "size_kb": 35,
+        "vertices": 736
+    },
+    {
+        "name": "coaster-flume-corner-large",
+        "glb": "models\\coaster-flume-corner-large.glb",
+        "preview": "Previews\\coaster-flume-corner-large.png",
+        "size_kb": 36,
+        "vertices": 763
+    },
+    {
+        "name": "coaster-flume-corner-small-ramp",
+        "glb": "models\\coaster-flume-corner-small-ramp.glb",
+        "preview": "Previews\\coaster-flume-corner-small-ramp.png",
+        "size_kb": 24,
+        "vertices": 416
+    },
+    {
+        "name": "coaster-flume-corner-small",
+        "glb": "models\\coaster-flume-corner-small.glb",
+        "preview": "Previews\\coaster-flume-corner-small.png",
+        "size_kb": 24,
+        "vertices": 416
+    },
+    {
+        "name": "coaster-flume-curve",
+        "glb": "models\\coaster-flume-curve.glb",
+        "preview": "Previews\\coaster-flume-curve.png",
+        "size_kb": 28,
+        "vertices": 540
+    },
+    {
+        "name": "coaster-flume-looping",
+        "glb": "models\\coaster-flume-looping.glb",
+        "preview": "Previews\\coaster-flume-looping.png",
+        "size_kb": 64,
+        "vertices": 1571
+    },
+    {
+        "name": "coaster-flume-segment",
+        "glb": "models\\coaster-flume-segment.glb",
+        "preview": "Previews\\coaster-flume-segment.png",
+        "size_kb": 11,
+        "vertices": 52
+    },
+    {
+        "name": "coaster-flume-straight-bend-large",
+        "glb": "models\\coaster-flume-straight-bend-large.glb",
+        "preview": "Previews\\coaster-flume-straight-bend-large.png",
+        "size_kb": 36,
+        "vertices": 768
+    },
+    {
+        "name": "coaster-flume-straight-bend",
+        "glb": "models\\coaster-flume-straight-bend.glb",
+        "preview": "Previews\\coaster-flume-straight-bend.png",
+        "size_kb": 24,
+        "vertices": 416
+    },
+    {
+        "name": "coaster-flume-straight-bump-down",
+        "glb": "models\\coaster-flume-straight-bump-down.glb",
+        "preview": "Previews\\coaster-flume-straight-bump-down.png",
+        "size_kb": 27,
+        "vertices": 498
+    },
+    {
+        "name": "coaster-flume-straight-bump-up",
+        "glb": "models\\coaster-flume-straight-bump-up.glb",
+        "preview": "Previews\\coaster-flume-straight-bump-up.png",
+        "size_kb": 27,
+        "vertices": 496
+    },
+    {
+        "name": "coaster-flume-straight-hill-beginning",
+        "glb": "models\\coaster-flume-straight-hill-beginning.glb",
+        "preview": "Previews\\coaster-flume-straight-hill-beginning.png",
+        "size_kb": 27,
+        "vertices": 488
+    },
+    {
+        "name": "coaster-flume-straight-hill-complete-half",
+        "glb": "models\\coaster-flume-straight-hill-complete-half.glb",
+        "preview": "Previews\\coaster-flume-straight-hill-complete-half.png",
+        "size_kb": 27,
+        "vertices": 491
+    },
+    {
+        "name": "coaster-flume-straight-hill-complete",
+        "glb": "models\\coaster-flume-straight-hill-complete.glb",
+        "preview": "Previews\\coaster-flume-straight-hill-complete.png",
+        "size_kb": 27,
+        "vertices": 494
+    },
+    {
+        "name": "coaster-flume-straight-hill-end",
+        "glb": "models\\coaster-flume-straight-hill-end.glb",
+        "preview": "Previews\\coaster-flume-straight-hill-end.png",
+        "size_kb": 27,
+        "vertices": 494
+    },
+    {
+        "name": "coaster-flume-straight-skew-left-side",
+        "glb": "models\\coaster-flume-straight-skew-left-side.glb",
+        "preview": "Previews\\coaster-flume-straight-skew-left-side.png",
+        "size_kb": 24,
+        "vertices": 416
+    },
+    {
+        "name": "coaster-flume-straight-skew-left",
+        "glb": "models\\coaster-flume-straight-skew-left.glb",
+        "preview": "Previews\\coaster-flume-straight-skew-left.png",
+        "size_kb": 24,
+        "vertices": 419
+    },
+    {
+        "name": "coaster-flume-straight-skew-right-side",
+        "glb": "models\\coaster-flume-straight-skew-right-side.glb",
+        "preview": "Previews\\coaster-flume-straight-skew-right-side.png",
+        "size_kb": 24,
+        "vertices": 419
+    },
+    {
+        "name": "coaster-flume-straight-skew-right",
+        "glb": "models\\coaster-flume-straight-skew-right.glb",
+        "preview": "Previews\\coaster-flume-straight-skew-right.png",
+        "size_kb": 24,
+        "vertices": 419
+    },
+    {
+        "name": "coaster-flume-straight",
+        "glb": "models\\coaster-flume-straight.glb",
+        "preview": "Previews\\coaster-flume-straight.png",
+        "size_kb": 24,
+        "vertices": 419
+    },
+    {
+        "name": "coaster-flume-track",
+        "glb": "models\\coaster-flume-track.glb",
+        "preview": "Previews\\coaster-flume-track.png",
+        "size_kb": 12,
+        "vertices": 72
+    },
+    {
+        "name": "coaster-hanging-cap-back",
+        "glb": "models\\coaster-hanging-cap-back.glb",
+        "preview": "Previews\\coaster-hanging-cap-back.png",
+        "size_kb": 10,
+        "vertices": 20
+    },
+    {
+        "name": "coaster-hanging-cap-front",
+        "glb": "models\\coaster-hanging-cap-front.glb",
+        "preview": "Previews\\coaster-hanging-cap-front.png",
+        "size_kb": 10,
+        "vertices": 20
+    },
+    {
+        "name": "coaster-hanging-corner-large-ramp",
+        "glb": "models\\coaster-hanging-corner-large-ramp.glb",
+        "preview": "Previews\\coaster-hanging-corner-large-ramp.png",
+        "size_kb": 47,
+        "vertices": 1074
+    },
+    {
+        "name": "coaster-hanging-corner-large",
+        "glb": "models\\coaster-hanging-corner-large.glb",
+        "preview": "Previews\\coaster-hanging-corner-large.png",
+        "size_kb": 47,
+        "vertices": 1086
+    },
+    {
+        "name": "coaster-hanging-corner-small-ramp",
+        "glb": "models\\coaster-hanging-corner-small-ramp.glb",
+        "preview": "Previews\\coaster-hanging-corner-small-ramp.png",
+        "size_kb": 31,
+        "vertices": 616
+    },
+    {
+        "name": "coaster-hanging-corner-small",
+        "glb": "models\\coaster-hanging-corner-small.glb",
+        "preview": "Previews\\coaster-hanging-corner-small.png",
+        "size_kb": 31,
+        "vertices": 616
+    },
+    {
+        "name": "coaster-hanging-curve",
+        "glb": "models\\coaster-hanging-curve.glb",
+        "preview": "Previews\\coaster-hanging-curve.png",
+        "size_kb": 37,
+        "vertices": 784
+    },
+    {
+        "name": "coaster-hanging-looping",
+        "glb": "models\\coaster-hanging-looping.glb",
+        "preview": "Previews\\coaster-hanging-looping.png",
+        "size_kb": 85,
+        "vertices": 2154
+    },
+    {
+        "name": "coaster-hanging-segment",
+        "glb": "models\\coaster-hanging-segment.glb",
+        "preview": "Previews\\coaster-hanging-segment.png",
+        "size_kb": 11,
+        "vertices": 48
+    },
+    {
+        "name": "coaster-hanging-straight-bend-large",
+        "glb": "models\\coaster-hanging-straight-bend-large.glb",
+        "preview": "Previews\\coaster-hanging-straight-bend-large.png",
+        "size_kb": 48,
+        "vertices": 1104
+    },
+    {
+        "name": "coaster-hanging-straight-bend",
+        "glb": "models\\coaster-hanging-straight-bend.glb",
+        "preview": "Previews\\coaster-hanging-straight-bend.png",
+        "size_kb": 32,
+        "vertices": 639
+    },
+    {
+        "name": "coaster-hanging-straight-bump-down",
+        "glb": "models\\coaster-hanging-straight-bump-down.glb",
+        "preview": "Previews\\coaster-hanging-straight-bump-down.png",
+        "size_kb": 35,
+        "vertices": 740
+    },
+    {
+        "name": "coaster-hanging-straight-bump-up",
+        "glb": "models\\coaster-hanging-straight-bump-up.glb",
+        "preview": "Previews\\coaster-hanging-straight-bump-up.png",
+        "size_kb": 35,
+        "vertices": 740
+    },
+    {
+        "name": "coaster-hanging-straight-hill-beginning",
+        "glb": "models\\coaster-hanging-straight-hill-beginning.glb",
+        "preview": "Previews\\coaster-hanging-straight-hill-beginning.png",
+        "size_kb": 36,
+        "vertices": 750
+    },
+    {
+        "name": "coaster-hanging-straight-hill-complete-half",
+        "glb": "models\\coaster-hanging-straight-hill-complete-half.glb",
+        "preview": "Previews\\coaster-hanging-straight-hill-complete-half.png",
+        "size_kb": 35,
+        "vertices": 742
+    },
+    {
+        "name": "coaster-hanging-straight-hill-complete",
+        "glb": "models\\coaster-hanging-straight-hill-complete.glb",
+        "preview": "Previews\\coaster-hanging-straight-hill-complete.png",
+        "size_kb": 35,
+        "vertices": 740
+    },
+    {
+        "name": "coaster-hanging-straight-hill-end",
+        "glb": "models\\coaster-hanging-straight-hill-end.glb",
+        "preview": "Previews\\coaster-hanging-straight-hill-end.png",
+        "size_kb": 35,
+        "vertices": 740
+    },
+    {
+        "name": "coaster-hanging-straight-skew-left-side",
+        "glb": "models\\coaster-hanging-straight-skew-left-side.glb",
+        "preview": "Previews\\coaster-hanging-straight-skew-left-side.png",
+        "size_kb": 31,
+        "vertices": 616
+    },
+    {
+        "name": "coaster-hanging-straight-skew-left",
+        "glb": "models\\coaster-hanging-straight-skew-left.glb",
+        "preview": "Previews\\coaster-hanging-straight-skew-left.png",
+        "size_kb": 31,
+        "vertices": 616
+    },
+    {
+        "name": "coaster-hanging-straight-skew-right-side",
+        "glb": "models\\coaster-hanging-straight-skew-right-side.glb",
+        "preview": "Previews\\coaster-hanging-straight-skew-right-side.png",
+        "size_kb": 31,
+        "vertices": 616
+    },
+    {
+        "name": "coaster-hanging-straight-skew-right",
+        "glb": "models\\coaster-hanging-straight-skew-right.glb",
+        "preview": "Previews\\coaster-hanging-straight-skew-right.png",
+        "size_kb": 31,
+        "vertices": 616
+    },
+    {
+        "name": "coaster-hanging-straight",
+        "glb": "models\\coaster-hanging-straight.glb",
+        "preview": "Previews\\coaster-hanging-straight.png",
+        "size_kb": 31,
+        "vertices": 616
+    },
+    {
+        "name": "coaster-hanging-track",
+        "glb": "models\\coaster-hanging-track.glb",
+        "preview": "Previews\\coaster-hanging-track.png",
+        "size_kb": 14,
+        "vertices": 120
+    },
+    {
+        "name": "coaster-monorail-cap-back",
+        "glb": "models\\coaster-monorail-cap-back.glb",
+        "preview": "Previews\\coaster-monorail-cap-back.png",
+        "size_kb": 10,
+        "vertices": 12
+    },
+    {
+        "name": "coaster-monorail-cap-front",
+        "glb": "models\\coaster-monorail-cap-front.glb",
+        "preview": "Previews\\coaster-monorail-cap-front.png",
+        "size_kb": 10,
+        "vertices": 12
+    },
+    {
+        "name": "coaster-monorail-corner-large-ramp",
+        "glb": "models\\coaster-monorail-corner-large-ramp.glb",
+        "preview": "Previews\\coaster-monorail-corner-large-ramp.png",
+        "size_kb": 35,
+        "vertices": 720
+    },
+    {
+        "name": "coaster-monorail-corner-large",
+        "glb": "models\\coaster-monorail-corner-large.glb",
+        "preview": "Previews\\coaster-monorail-corner-large.png",
+        "size_kb": 35,
+        "vertices": 741
+    },
+    {
+        "name": "coaster-monorail-corner-small-ramp",
+        "glb": "models\\coaster-monorail-corner-small-ramp.glb",
+        "preview": "Previews\\coaster-monorail-corner-small-ramp.png",
+        "size_kb": 24,
+        "vertices": 409
+    },
+    {
+        "name": "coaster-monorail-corner-small",
+        "glb": "models\\coaster-monorail-corner-small.glb",
+        "preview": "Previews\\coaster-monorail-corner-small.png",
+        "size_kb": 24,
+        "vertices": 410
+    },
+    {
+        "name": "coaster-monorail-curve",
+        "glb": "models\\coaster-monorail-curve.glb",
+        "preview": "Previews\\coaster-monorail-curve.png",
+        "size_kb": 28,
+        "vertices": 528
+    },
+    {
+        "name": "coaster-monorail-looping",
+        "glb": "models\\coaster-monorail-looping.glb",
+        "preview": "Previews\\coaster-monorail-looping.png",
+        "size_kb": 62,
+        "vertices": 1511
+    },
+    {
+        "name": "coaster-monorail-segment",
+        "glb": "models\\coaster-monorail-segment.glb",
+        "preview": "Previews\\coaster-monorail-segment.png",
+        "size_kb": 11,
+        "vertices": 48
+    },
+    {
+        "name": "coaster-monorail-straight-bend-large",
+        "glb": "models\\coaster-monorail-straight-bend-large.glb",
+        "preview": "Previews\\coaster-monorail-straight-bend-large.png",
+        "size_kb": 37,
+        "vertices": 784
+    },
+    {
+        "name": "coaster-monorail-straight-bend",
+        "glb": "models\\coaster-monorail-straight-bend.glb",
+        "preview": "Previews\\coaster-monorail-straight-bend.png",
+        "size_kb": 25,
+        "vertices": 447
+    },
+    {
+        "name": "coaster-monorail-straight-bump-down",
+        "glb": "models\\coaster-monorail-straight-bump-down.glb",
+        "preview": "Previews\\coaster-monorail-straight-bump-down.png",
+        "size_kb": 27,
+        "vertices": 491
+    },
+    {
+        "name": "coaster-monorail-straight-bump-up",
+        "glb": "models\\coaster-monorail-straight-bump-up.glb",
+        "preview": "Previews\\coaster-monorail-straight-bump-up.png",
+        "size_kb": 27,
+        "vertices": 491
+    },
+    {
+        "name": "coaster-monorail-straight-hill-beginning",
+        "glb": "models\\coaster-monorail-straight-hill-beginning.glb",
+        "preview": "Previews\\coaster-monorail-straight-hill-beginning.png",
+        "size_kb": 28,
+        "vertices": 521
+    },
+    {
+        "name": "coaster-monorail-straight-hill-complete-half",
+        "glb": "models\\coaster-monorail-straight-hill-complete-half.glb",
+        "preview": "Previews\\coaster-monorail-straight-hill-complete-half.png",
+        "size_kb": 27,
+        "vertices": 498
+    },
+    {
+        "name": "coaster-monorail-straight-hill-complete",
+        "glb": "models\\coaster-monorail-straight-hill-complete.glb",
+        "preview": "Previews\\coaster-monorail-straight-hill-complete.png",
+        "size_kb": 27,
+        "vertices": 491
+    },
+    {
+        "name": "coaster-monorail-straight-hill-end",
+        "glb": "models\\coaster-monorail-straight-hill-end.glb",
+        "preview": "Previews\\coaster-monorail-straight-hill-end.png",
+        "size_kb": 27,
+        "vertices": 496
+    },
+    {
+        "name": "coaster-monorail-straight-skew-left-side",
+        "glb": "models\\coaster-monorail-straight-skew-left-side.glb",
+        "preview": "Previews\\coaster-monorail-straight-skew-left-side.png",
+        "size_kb": 24,
+        "vertices": 408
+    },
+    {
+        "name": "coaster-monorail-straight-skew-left",
+        "glb": "models\\coaster-monorail-straight-skew-left.glb",
+        "preview": "Previews\\coaster-monorail-straight-skew-left.png",
+        "size_kb": 24,
+        "vertices": 410
+    },
+    {
+        "name": "coaster-monorail-straight-skew-right-side",
+        "glb": "models\\coaster-monorail-straight-skew-right-side.glb",
+        "preview": "Previews\\coaster-monorail-straight-skew-right-side.png",
+        "size_kb": 24,
+        "vertices": 409
+    },
+    {
+        "name": "coaster-monorail-straight-skew-right",
+        "glb": "models\\coaster-monorail-straight-skew-right.glb",
+        "preview": "Previews\\coaster-monorail-straight-skew-right.png",
+        "size_kb": 24,
+        "vertices": 410
+    },
+    {
+        "name": "coaster-monorail-straight",
+        "glb": "models\\coaster-monorail-straight.glb",
+        "preview": "Previews\\coaster-monorail-straight.png",
+        "size_kb": 24,
+        "vertices": 411
+    },
+    {
+        "name": "coaster-monorail-track",
+        "glb": "models\\coaster-monorail-track.glb",
+        "preview": "Previews\\coaster-monorail-track.png",
+        "size_kb": 12,
+        "vertices": 72
+    },
+    {
+        "name": "coaster-mouse-cap-back",
+        "glb": "models\\coaster-mouse-cap-back.glb",
+        "preview": "Previews\\coaster-mouse-cap-back.png",
+        "size_kb": 10,
+        "vertices": 16
+    },
+    {
+        "name": "coaster-mouse-cap-front",
+        "glb": "models\\coaster-mouse-cap-front.glb",
+        "preview": "Previews\\coaster-mouse-cap-front.png",
+        "size_kb": 10,
+        "vertices": 16
+    },
+    {
+        "name": "coaster-mouse-corner-large-ramp",
+        "glb": "models\\coaster-mouse-corner-large-ramp.glb",
+        "preview": "Previews\\coaster-mouse-corner-large-ramp.png",
+        "size_kb": 39,
+        "vertices": 832
+    },
+    {
+        "name": "coaster-mouse-corner-large",
+        "glb": "models\\coaster-mouse-corner-large.glb",
+        "preview": "Previews\\coaster-mouse-corner-large.png",
+        "size_kb": 38,
+        "vertices": 832
+    },
+    {
+        "name": "coaster-mouse-corner-small-ramp",
+        "glb": "models\\coaster-mouse-corner-small-ramp.glb",
+        "preview": "Previews\\coaster-mouse-corner-small-ramp.png",
+        "size_kb": 27,
+        "vertices": 512
+    },
+    {
+        "name": "coaster-mouse-corner-small",
+        "glb": "models\\coaster-mouse-corner-small.glb",
+        "preview": "Previews\\coaster-mouse-corner-small.png",
+        "size_kb": 27,
+        "vertices": 512
+    },
+    {
+        "name": "coaster-mouse-curve",
+        "glb": "models\\coaster-mouse-curve.glb",
+        "preview": "Previews\\coaster-mouse-curve.png",
+        "size_kb": 31,
+        "vertices": 624
+    },
+    {
+        "name": "coaster-mouse-looping",
+        "glb": "models\\coaster-mouse-looping.glb",
+        "preview": "Previews\\coaster-mouse-looping.png",
+        "size_kb": 63,
+        "vertices": 1520
+    },
+    {
+        "name": "coaster-mouse-segment",
+        "glb": "models\\coaster-mouse-segment.glb",
+        "preview": "Previews\\coaster-mouse-segment.png",
+        "size_kb": 10,
+        "vertices": 16
+    },
+    {
+        "name": "coaster-mouse-straight-bend-large",
+        "glb": "models\\coaster-mouse-straight-bend-large.glb",
+        "preview": "Previews\\coaster-mouse-straight-bend-large.png",
+        "size_kb": 39,
+        "vertices": 832
+    },
+    {
+        "name": "coaster-mouse-straight-bend",
+        "glb": "models\\coaster-mouse-straight-bend.glb",
+        "preview": "Previews\\coaster-mouse-straight-bend.png",
+        "size_kb": 27,
+        "vertices": 512
+    },
+    {
+        "name": "coaster-mouse-straight-bump-down",
+        "glb": "models\\coaster-mouse-straight-bump-down.glb",
+        "preview": "Previews\\coaster-mouse-straight-bump-down.png",
+        "size_kb": 31,
+        "vertices": 608
+    },
+    {
+        "name": "coaster-mouse-straight-bump-up",
+        "glb": "models\\coaster-mouse-straight-bump-up.glb",
+        "preview": "Previews\\coaster-mouse-straight-bump-up.png",
+        "size_kb": 31,
+        "vertices": 608
+    },
+    {
+        "name": "coaster-mouse-straight-hill-beginning",
+        "glb": "models\\coaster-mouse-straight-hill-beginning.glb",
+        "preview": "Previews\\coaster-mouse-straight-hill-beginning.png",
+        "size_kb": 31,
+        "vertices": 608
+    },
+    {
+        "name": "coaster-mouse-straight-hill-complete-half",
+        "glb": "models\\coaster-mouse-straight-hill-complete-half.glb",
+        "preview": "Previews\\coaster-mouse-straight-hill-complete-half.png",
+        "size_kb": 31,
+        "vertices": 608
+    },
+    {
+        "name": "coaster-mouse-straight-hill-complete",
+        "glb": "models\\coaster-mouse-straight-hill-complete.glb",
+        "preview": "Previews\\coaster-mouse-straight-hill-complete.png",
+        "size_kb": 31,
+        "vertices": 608
+    },
+    {
+        "name": "coaster-mouse-straight-hill-end",
+        "glb": "models\\coaster-mouse-straight-hill-end.glb",
+        "preview": "Previews\\coaster-mouse-straight-hill-end.png",
+        "size_kb": 31,
+        "vertices": 608
+    },
+    {
+        "name": "coaster-mouse-straight-skew-left-side",
+        "glb": "models\\coaster-mouse-straight-skew-left-side.glb",
+        "preview": "Previews\\coaster-mouse-straight-skew-left-side.png",
+        "size_kb": 27,
+        "vertices": 512
+    },
+    {
+        "name": "coaster-mouse-straight-skew-left",
+        "glb": "models\\coaster-mouse-straight-skew-left.glb",
+        "preview": "Previews\\coaster-mouse-straight-skew-left.png",
+        "size_kb": 27,
+        "vertices": 512
+    },
+    {
+        "name": "coaster-mouse-straight-skew-right-side",
+        "glb": "models\\coaster-mouse-straight-skew-right-side.glb",
+        "preview": "Previews\\coaster-mouse-straight-skew-right-side.png",
+        "size_kb": 27,
+        "vertices": 512
+    },
+    {
+        "name": "coaster-mouse-straight-skew-right",
+        "glb": "models\\coaster-mouse-straight-skew-right.glb",
+        "preview": "Previews\\coaster-mouse-straight-skew-right.png",
+        "size_kb": 27,
+        "vertices": 512
+    },
+    {
+        "name": "coaster-mouse-straight",
+        "glb": "models\\coaster-mouse-straight.glb",
+        "preview": "Previews\\coaster-mouse-straight.png",
+        "size_kb": 27,
+        "vertices": 512
+    },
+    {
+        "name": "coaster-mouse-track",
+        "glb": "models\\coaster-mouse-track.glb",
+        "preview": "Previews\\coaster-mouse-track.png",
+        "size_kb": 13,
+        "vertices": 96
+    },
+    {
+        "name": "coaster-steel-cap-back",
+        "glb": "models\\coaster-steel-cap-back.glb",
+        "preview": "Previews\\coaster-steel-cap-back.png",
+        "size_kb": 10,
+        "vertices": 24
+    },
+    {
+        "name": "coaster-steel-cap-front",
+        "glb": "models\\coaster-steel-cap-front.glb",
+        "preview": "Previews\\coaster-steel-cap-front.png",
+        "size_kb": 10,
+        "vertices": 24
+    },
+    {
+        "name": "coaster-steel-corner-large-ramp",
+        "glb": "models\\coaster-steel-corner-large-ramp.glb",
+        "preview": "Previews\\coaster-steel-corner-large-ramp.png",
+        "size_kb": 59,
+        "vertices": 1430
+    },
+    {
+        "name": "coaster-steel-corner-large",
+        "glb": "models\\coaster-steel-corner-large.glb",
+        "preview": "Previews\\coaster-steel-corner-large.png",
+        "size_kb": 59,
+        "vertices": 1424
+    },
+    {
+        "name": "coaster-steel-corner-small-ramp",
+        "glb": "models\\coaster-steel-corner-small-ramp.glb",
+        "preview": "Previews\\coaster-steel-corner-small-ramp.png",
+        "size_kb": 41,
+        "vertices": 902
+    },
+    {
+        "name": "coaster-steel-corner-small",
+        "glb": "models\\coaster-steel-corner-small.glb",
+        "preview": "Previews\\coaster-steel-corner-small.png",
+        "size_kb": 41,
+        "vertices": 900
+    },
+    {
+        "name": "coaster-steel-curve",
+        "glb": "models\\coaster-steel-curve.glb",
+        "preview": "Previews\\coaster-steel-curve.png",
+        "size_kb": 47,
+        "vertices": 1090
+    },
+    {
+        "name": "coaster-steel-looping",
+        "glb": "models\\coaster-steel-looping.glb",
+        "preview": "Previews\\coaster-steel-looping.png",
+        "size_kb": 101,
+        "vertices": 2620
+    },
+    {
+        "name": "coaster-steel-segment",
+        "glb": "models\\coaster-steel-segment.glb",
+        "preview": "Previews\\coaster-steel-segment.png",
+        "size_kb": 11,
+        "vertices": 46
+    },
+    {
+        "name": "coaster-steel-straight-bend-large",
+        "glb": "models\\coaster-steel-straight-bend-large.glb",
+        "preview": "Previews\\coaster-steel-straight-bend-large.png",
+        "size_kb": 59,
+        "vertices": 1428
+    },
+    {
+        "name": "coaster-steel-straight-bend",
+        "glb": "models\\coaster-steel-straight-bend.glb",
+        "preview": "Previews\\coaster-steel-straight-bend.png",
+        "size_kb": 41,
+        "vertices": 900
+    },
+    {
+        "name": "coaster-steel-straight-bump-down",
+        "glb": "models\\coaster-steel-straight-bump-down.glb",
+        "preview": "Previews\\coaster-steel-straight-bump-down.png",
+        "size_kb": 46,
+        "vertices": 1044
+    },
+    {
+        "name": "coaster-steel-straight-bump-up",
+        "glb": "models\\coaster-steel-straight-bump-up.glb",
+        "preview": "Previews\\coaster-steel-straight-bump-up.png",
+        "size_kb": 46,
+        "vertices": 1044
+    },
+    {
+        "name": "coaster-steel-straight-hill-beginning",
+        "glb": "models\\coaster-steel-straight-hill-beginning.glb",
+        "preview": "Previews\\coaster-steel-straight-hill-beginning.png",
+        "size_kb": 46,
+        "vertices": 1048
+    },
+    {
+        "name": "coaster-steel-straight-hill-complete-half",
+        "glb": "models\\coaster-steel-straight-hill-complete-half.glb",
+        "preview": "Previews\\coaster-steel-straight-hill-complete-half.png",
+        "size_kb": 46,
+        "vertices": 1044
+    },
+    {
+        "name": "coaster-steel-straight-hill-complete",
+        "glb": "models\\coaster-steel-straight-hill-complete.glb",
+        "preview": "Previews\\coaster-steel-straight-hill-complete.png",
+        "size_kb": 46,
+        "vertices": 1051
+    },
+    {
+        "name": "coaster-steel-straight-hill-end",
+        "glb": "models\\coaster-steel-straight-hill-end.glb",
+        "preview": "Previews\\coaster-steel-straight-hill-end.png",
+        "size_kb": 46,
+        "vertices": 1044
+    },
+    {
+        "name": "coaster-steel-straight-skew-left-side",
+        "glb": "models\\coaster-steel-straight-skew-left-side.glb",
+        "preview": "Previews\\coaster-steel-straight-skew-left-side.png",
+        "size_kb": 41,
+        "vertices": 904
+    },
+    {
+        "name": "coaster-steel-straight-skew-left",
+        "glb": "models\\coaster-steel-straight-skew-left.glb",
+        "preview": "Previews\\coaster-steel-straight-skew-left.png",
+        "size_kb": 41,
+        "vertices": 900
+    },
+    {
+        "name": "coaster-steel-straight-skew-right-side",
+        "glb": "models\\coaster-steel-straight-skew-right-side.glb",
+        "preview": "Previews\\coaster-steel-straight-skew-right-side.png",
+        "size_kb": 41,
+        "vertices": 904
+    },
+    {
+        "name": "coaster-steel-straight-skew-right",
+        "glb": "models\\coaster-steel-straight-skew-right.glb",
+        "preview": "Previews\\coaster-steel-straight-skew-right.png",
+        "size_kb": 41,
+        "vertices": 900
+    },
+    {
+        "name": "coaster-steel-straight",
+        "glb": "models\\coaster-steel-straight.glb",
+        "preview": "Previews\\coaster-steel-straight.png",
+        "size_kb": 41,
+        "vertices": 900
+    },
+    {
+        "name": "coaster-steel-track",
+        "glb": "models\\coaster-steel-track.glb",
+        "preview": "Previews\\coaster-steel-track.png",
+        "size_kb": 14,
+        "vertices": 144
+    },
+    {
+        "name": "coaster-train-front",
+        "glb": "models\\coaster-train-front.glb",
+        "preview": "Previews\\coaster-train-front.png",
+        "size_kb": 50,
+        "vertices": 1158
+    },
+    {
+        "name": "coaster-train-hanging",
+        "glb": "models\\coaster-train-hanging.glb",
+        "preview": "Previews\\coaster-train-hanging.png",
+        "size_kb": 49,
+        "vertices": 1124
+    },
+    {
+        "name": "coaster-train-safety",
+        "glb": "models\\coaster-train-safety.glb",
+        "preview": "Previews\\coaster-train-safety.png",
+        "size_kb": 62,
+        "vertices": 1512
+    },
+    {
+        "name": "coaster-train-wooden",
+        "glb": "models\\coaster-train-wooden.glb",
+        "preview": "Previews\\coaster-train-wooden.png",
+        "size_kb": 55,
+        "vertices": 1314
+    },
+    {
+        "name": "coaster-train",
+        "glb": "models\\coaster-train.glb",
+        "preview": "Previews\\coaster-train.png",
+        "size_kb": 49,
+        "vertices": 1138
+    },
+    {
+        "name": "coaster-wood-corner-large-ramp",
+        "glb": "models\\coaster-wood-corner-large-ramp.glb",
+        "preview": "Previews\\coaster-wood-corner-large-ramp.png",
+        "size_kb": 81,
+        "vertices": 2065
+    },
+    {
+        "name": "coaster-wood-corner-large",
+        "glb": "models\\coaster-wood-corner-large.glb",
+        "preview": "Previews\\coaster-wood-corner-large.png",
+        "size_kb": 80,
+        "vertices": 2036
+    },
+    {
+        "name": "coaster-wood-corner-small-ramp",
+        "glb": "models\\coaster-wood-corner-small-ramp.glb",
+        "preview": "Previews\\coaster-wood-corner-small-ramp.png",
+        "size_kb": 55,
+        "vertices": 1321
+    },
+    {
+        "name": "coaster-wood-corner-small",
+        "glb": "models\\coaster-wood-corner-small.glb",
+        "preview": "Previews\\coaster-wood-corner-small.png",
+        "size_kb": 55,
+        "vertices": 1296
+    },
+    {
+        "name": "coaster-wood-curve",
+        "glb": "models\\coaster-wood-curve.glb",
+        "preview": "Previews\\coaster-wood-curve.png",
+        "size_kb": 64,
+        "vertices": 1559
+    },
+    {
+        "name": "coaster-wood-looping",
+        "glb": "models\\coaster-wood-looping.glb",
+        "preview": "Previews\\coaster-wood-looping.png",
+        "size_kb": 138,
+        "vertices": 3688
+    },
+    {
+        "name": "coaster-wood-segment",
+        "glb": "models\\coaster-wood-segment.glb",
+        "preview": "Previews\\coaster-wood-segment.png",
+        "size_kb": 12,
+        "vertices": 64
+    },
+    {
+        "name": "coaster-wood-straight-bend-large",
+        "glb": "models\\coaster-wood-straight-bend-large.glb",
+        "preview": "Previews\\coaster-wood-straight-bend-large.png",
+        "size_kb": 82,
+        "vertices": 2090
+    },
+    {
+        "name": "coaster-wood-straight-bend",
+        "glb": "models\\coaster-wood-straight-bend.glb",
+        "preview": "Previews\\coaster-wood-straight-bend.png",
+        "size_kb": 56,
+        "vertices": 1337
+    },
+    {
+        "name": "coaster-wood-straight-bump-down",
+        "glb": "models\\coaster-wood-straight-bump-down.glb",
+        "preview": "Previews\\coaster-wood-straight-bump-down.png",
+        "size_kb": 62,
+        "vertices": 1511
+    },
+    {
+        "name": "coaster-wood-straight-bump-up",
+        "glb": "models\\coaster-wood-straight-bump-up.glb",
+        "preview": "Previews\\coaster-wood-straight-bump-up.png",
+        "size_kb": 62,
+        "vertices": 1508
+    },
+    {
+        "name": "coaster-wood-straight-hill-beginning",
+        "glb": "models\\coaster-wood-straight-hill-beginning.glb",
+        "preview": "Previews\\coaster-wood-straight-hill-beginning.png",
+        "size_kb": 63,
+        "vertices": 1551
+    },
+    {
+        "name": "coaster-wood-straight-hill-complete-half",
+        "glb": "models\\coaster-wood-straight-hill-complete-half.glb",
+        "preview": "Previews\\coaster-wood-straight-hill-complete-half.png",
+        "size_kb": 62,
+        "vertices": 1520
+    },
+    {
+        "name": "coaster-wood-straight-hill-complete",
+        "glb": "models\\coaster-wood-straight-hill-complete.glb",
+        "preview": "Previews\\coaster-wood-straight-hill-complete.png",
+        "size_kb": 62,
+        "vertices": 1496
+    },
+    {
+        "name": "coaster-wood-straight-hill-end",
+        "glb": "models\\coaster-wood-straight-hill-end.glb",
+        "preview": "Previews\\coaster-wood-straight-hill-end.png",
+        "size_kb": 63,
+        "vertices": 1528
+    },
+    {
+        "name": "coaster-wood-straight-skew-left-side",
+        "glb": "models\\coaster-wood-straight-skew-left-side.glb",
+        "preview": "Previews\\coaster-wood-straight-skew-left-side.png",
+        "size_kb": 54,
+        "vertices": 1284
+    },
+    {
+        "name": "coaster-wood-straight-skew-left",
+        "glb": "models\\coaster-wood-straight-skew-left.glb",
+        "preview": "Previews\\coaster-wood-straight-skew-left.png",
+        "size_kb": 54,
+        "vertices": 1290
+    },
+    {
+        "name": "coaster-wood-straight-skew-right-side",
+        "glb": "models\\coaster-wood-straight-skew-right-side.glb",
+        "preview": "Previews\\coaster-wood-straight-skew-right-side.png",
+        "size_kb": 54,
+        "vertices": 1281
+    },
+    {
+        "name": "coaster-wood-straight-skew-right",
+        "glb": "models\\coaster-wood-straight-skew-right.glb",
+        "preview": "Previews\\coaster-wood-straight-skew-right.png",
+        "size_kb": 54,
+        "vertices": 1292
+    },
+    {
+        "name": "coaster-wood-straight",
+        "glb": "models\\coaster-wood-straight.glb",
+        "preview": "Previews\\coaster-wood-straight.png",
+        "size_kb": 54,
+        "vertices": 1280
+    },
+    {
+        "name": "coaster-wood-track",
+        "glb": "models\\coaster-wood-track.glb",
+        "preview": "Previews\\coaster-wood-track.png",
+        "size_kb": 16,
+        "vertices": 192
+    },
+    {
+        "name": "flowers",
+        "glb": "models\\flowers.glb",
+        "preview": "Previews\\flowers.png",
+        "size_kb": 25,
+        "vertices": 468
+    },
+    {
+        "name": "grass",
+        "glb": "models\\grass.glb",
+        "preview": "Previews\\grass.png",
+        "size_kb": 14,
+        "vertices": 144
+    },
+    {
+        "name": "park-entrance",
+        "glb": "models\\park-entrance.glb",
+        "preview": "Previews\\park-entrance.png",
+        "size_kb": 66,
+        "vertices": 1638
+    },
+    {
+        "name": "path-corner",
+        "glb": "models\\path-corner.glb",
+        "preview": "Previews\\path-corner.png",
+        "size_kb": 16,
+        "vertices": 196
+    },
+    {
+        "name": "path-crossing",
+        "glb": "models\\path-crossing.glb",
+        "preview": "Previews\\path-crossing.png",
+        "size_kb": 21,
+        "vertices": 344
+    },
+    {
+        "name": "path-exit",
+        "glb": "models\\path-exit.glb",
+        "preview": "Previews\\path-exit.png",
+        "size_kb": 18,
+        "vertices": 240
+    },
+    {
+        "name": "path-split",
+        "glb": "models\\path-split.glb",
+        "preview": "Previews\\path-split.png",
+        "size_kb": 18,
+        "vertices": 240
+    },
+    {
+        "name": "path-steps",
+        "glb": "models\\path-steps.glb",
+        "preview": "Previews\\path-steps.png",
+        "size_kb": 17,
+        "vertices": 240
+    },
+    {
+        "name": "path-straight",
+        "glb": "models\\path-straight.glb",
+        "preview": "Previews\\path-straight.png",
+        "size_kb": 14,
+        "vertices": 136
+    },
+    {
+        "name": "queue-corner",
+        "glb": "models\\queue-corner.glb",
+        "preview": "Previews\\queue-corner.png",
+        "size_kb": 19,
+        "vertices": 272
+    },
+    {
+        "name": "queue-crossing",
+        "glb": "models\\queue-crossing.glb",
+        "preview": "Previews\\queue-crossing.png",
+        "size_kb": 25,
+        "vertices": 456
+    },
+    {
+        "name": "queue-entrance",
+        "glb": "models\\queue-entrance.glb",
+        "preview": "Previews\\queue-entrance.png",
+        "size_kb": 19,
+        "vertices": 280
+    },
+    {
+        "name": "queue-split",
+        "glb": "models\\queue-split.glb",
+        "preview": "Previews\\queue-split.png",
+        "size_kb": 20,
+        "vertices": 316
+    },
+    {
+        "name": "queue-steps",
+        "glb": "models\\queue-steps.glb",
+        "preview": "Previews\\queue-steps.png",
+        "size_kb": 24,
+        "vertices": 440
+    },
+    {
+        "name": "queue-straight",
+        "glb": "models\\queue-straight.glb",
+        "preview": "Previews\\queue-straight.png",
+        "size_kb": 15,
+        "vertices": 176
+    },
+    {
+        "name": "ride-entrance",
+        "glb": "models\\ride-entrance.glb",
+        "preview": "Previews\\ride-entrance.png",
+        "size_kb": 26,
+        "vertices": 460
+    },
+    {
+        "name": "ride-exit",
+        "glb": "models\\ride-exit.glb",
+        "preview": "Previews\\ride-exit.png",
+        "size_kb": 19,
+        "vertices": 268
+    },
+    {
+        "name": "stall-drinks",
+        "glb": "models\\stall-drinks.glb",
+        "preview": "Previews\\stall-drinks.png",
+        "size_kb": 26,
+        "vertices": 470
+    },
+    {
+        "name": "stall-food",
+        "glb": "models\\stall-food.glb",
+        "preview": "Previews\\stall-food.png",
+        "size_kb": 32,
+        "vertices": 670
+    },
+    {
+        "name": "stall-information",
+        "glb": "models\\stall-information.glb",
+        "preview": "Previews\\stall-information.png",
+        "size_kb": 22,
+        "vertices": 368
+    },
+    {
+        "name": "stall-toilets",
+        "glb": "models\\stall-toilets.glb",
+        "preview": "Previews\\stall-toilets.png",
+        "size_kb": 22,
+        "vertices": 357
+    },
+    {
+        "name": "station-fence",
+        "glb": "models\\station-fence.glb",
+        "preview": "Previews\\station-fence.png",
+        "size_kb": 23,
+        "vertices": 384
+    },
+    {
+        "name": "station-gate",
+        "glb": "models\\station-gate.glb",
+        "preview": "Previews\\station-gate.png",
+        "size_kb": 35,
+        "vertices": 584
+    },
+    {
+        "name": "station",
+        "glb": "models\\station.glb",
+        "preview": "Previews\\station.png",
+        "size_kb": 13,
+        "vertices": 120
+    },
+    {
+        "name": "support-large-bottom",
+        "glb": "models\\support-large-bottom.glb",
+        "preview": "Previews\\support-large-bottom.png",
+        "size_kb": 16,
+        "vertices": 208
+    },
+    {
+        "name": "support-large-horizontal-ring",
+        "glb": "models\\support-large-horizontal-ring.glb",
+        "preview": "Previews\\support-large-horizontal-ring.png",
+        "size_kb": 13,
+        "vertices": 96
+    },
+    {
+        "name": "support-large-horizontal",
+        "glb": "models\\support-large-horizontal.glb",
+        "preview": "Previews\\support-large-horizontal.png",
+        "size_kb": 11,
+        "vertices": 48
+    },
+    {
+        "name": "support-large-skew-bottom",
+        "glb": "models\\support-large-skew-bottom.glb",
+        "preview": "Previews\\support-large-skew-bottom.png",
+        "size_kb": 17,
+        "vertices": 208
+    },
+    {
+        "name": "support-large-skew",
+        "glb": "models\\support-large-skew.glb",
+        "preview": "Previews\\support-large-skew.png",
+        "size_kb": 12,
+        "vertices": 80
+    },
+    {
+        "name": "support-large",
+        "glb": "models\\support-large.glb",
+        "preview": "Previews\\support-large.png",
+        "size_kb": 12,
+        "vertices": 80
+    },
+    {
+        "name": "support-small-bottom",
+        "glb": "models\\support-small-bottom.glb",
+        "preview": "Previews\\support-small-bottom.png",
+        "size_kb": 17,
+        "vertices": 208
+    },
+    {
+        "name": "support-small-horizontal-ring",
+        "glb": "models\\support-small-horizontal-ring.glb",
+        "preview": "Previews\\support-small-horizontal-ring.png",
+        "size_kb": 13,
+        "vertices": 96
+    },
+    {
+        "name": "support-small-horizontal",
+        "glb": "models\\support-small-horizontal.glb",
+        "preview": "Previews\\support-small-horizontal.png",
+        "size_kb": 11,
+        "vertices": 48
+    },
+    {
+        "name": "support-small-skew-bottom",
+        "glb": "models\\support-small-skew-bottom.glb",
+        "preview": "Previews\\support-small-skew-bottom.png",
+        "size_kb": 17,
+        "vertices": 208
+    },
+    {
+        "name": "support-small-skew",
+        "glb": "models\\support-small-skew.glb",
+        "preview": "Previews\\support-small-skew.png",
+        "size_kb": 12,
+        "vertices": 80
+    },
+    {
+        "name": "support-small",
+        "glb": "models\\support-small.glb",
+        "preview": "Previews\\support-small.png",
+        "size_kb": 12,
+        "vertices": 80
+    },
+    {
+        "name": "train-log-flume",
+        "glb": "models\\train-log-flume.glb",
+        "preview": "Previews\\train-log-flume.png",
+        "size_kb": 21,
+        "vertices": 343
+    },
+    {
+        "name": "train-monorail",
+        "glb": "models\\train-monorail.glb",
+        "preview": "Previews\\train-monorail.png",
+        "size_kb": 29,
+        "vertices": 568
+    },
+    {
+        "name": "trash",
+        "glb": "models\\trash.glb",
+        "preview": "Previews\\trash.png",
+        "size_kb": 14,
+        "vertices": 128
+    },
+    {
+        "name": "tree-large",
+        "glb": "models\\tree-large.glb",
+        "preview": "Previews\\tree-large.png",
+        "size_kb": 27,
+        "vertices": 528
+    },
+    {
+        "name": "tree",
+        "glb": "models\\tree.glb",
+        "preview": "Previews\\tree.png",
+        "size_kb": 27,
+        "vertices": 528
+    }
+]

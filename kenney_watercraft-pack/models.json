@@ -1,0 +1,324 @@
+[
+    {
+        "name": "arrow-standing",
+        "glb": "models\\arrow-standing.glb",
+        "preview": "Previews\\arrow-standing.png",
+        "size_kb": 11,
+        "vertices": 58
+    },
+    {
+        "name": "arrow",
+        "glb": "models\\arrow.glb",
+        "preview": "Previews\\arrow.png",
+        "size_kb": 13,
+        "vertices": 102
+    },
+    {
+        "name": "boat-fan",
+        "glb": "models\\boat-fan.glb",
+        "preview": "Previews\\boat-fan.png",
+        "size_kb": 28,
+        "vertices": 522
+    },
+    {
+        "name": "boat-fishing-small",
+        "glb": "models\\boat-fishing-small.glb",
+        "preview": "Previews\\boat-fishing-small.png",
+        "size_kb": 24,
+        "vertices": 411
+    },
+    {
+        "name": "boat-house-a",
+        "glb": "models\\boat-house-a.glb",
+        "preview": "Previews\\boat-house-a.png",
+        "size_kb": 34,
+        "vertices": 710
+    },
+    {
+        "name": "boat-house-b",
+        "glb": "models\\boat-house-b.glb",
+        "preview": "Previews\\boat-house-b.png",
+        "size_kb": 33,
+        "vertices": 675
+    },
+    {
+        "name": "boat-house-c",
+        "glb": "models\\boat-house-c.glb",
+        "preview": "Previews\\boat-house-c.png",
+        "size_kb": 36,
+        "vertices": 757
+    },
+    {
+        "name": "boat-house-d",
+        "glb": "models\\boat-house-d.glb",
+        "preview": "Previews\\boat-house-d.png",
+        "size_kb": 41,
+        "vertices": 906
+    },
+    {
+        "name": "boat-row-large",
+        "glb": "models\\boat-row-large.glb",
+        "preview": "Previews\\boat-row-large.png",
+        "size_kb": 19,
+        "vertices": 258
+    },
+    {
+        "name": "boat-row-small",
+        "glb": "models\\boat-row-small.glb",
+        "preview": "Previews\\boat-row-small.png",
+        "size_kb": 20,
+        "vertices": 292
+    },
+    {
+        "name": "boat-sail-a",
+        "glb": "models\\boat-sail-a.glb",
+        "preview": "Previews\\boat-sail-a.png",
+        "size_kb": 32,
+        "vertices": 624
+    },
+    {
+        "name": "boat-sail-b",
+        "glb": "models\\boat-sail-b.glb",
+        "preview": "Previews\\boat-sail-b.png",
+        "size_kb": 34,
+        "vertices": 679
+    },
+    {
+        "name": "boat-speed-a",
+        "glb": "models\\boat-speed-a.glb",
+        "preview": "Previews\\boat-speed-a.png",
+        "size_kb": 19,
+        "vertices": 288
+    },
+    {
+        "name": "boat-speed-b",
+        "glb": "models\\boat-speed-b.glb",
+        "preview": "Previews\\boat-speed-b.png",
+        "size_kb": 19,
+        "vertices": 272
+    },
+    {
+        "name": "boat-speed-c",
+        "glb": "models\\boat-speed-c.glb",
+        "preview": "Previews\\boat-speed-c.png",
+        "size_kb": 19,
+        "vertices": 284
+    },
+    {
+        "name": "boat-speed-d",
+        "glb": "models\\boat-speed-d.glb",
+        "preview": "Previews\\boat-speed-d.png",
+        "size_kb": 24,
+        "vertices": 422
+    },
+    {
+        "name": "boat-speed-e",
+        "glb": "models\\boat-speed-e.glb",
+        "preview": "Previews\\boat-speed-e.png",
+        "size_kb": 25,
+        "vertices": 453
+    },
+    {
+        "name": "boat-speed-f",
+        "glb": "models\\boat-speed-f.glb",
+        "preview": "Previews\\boat-speed-f.png",
+        "size_kb": 23,
+        "vertices": 398
+    },
+    {
+        "name": "boat-speed-g",
+        "glb": "models\\boat-speed-g.glb",
+        "preview": "Previews\\boat-speed-g.png",
+        "size_kb": 18,
+        "vertices": 248
+    },
+    {
+        "name": "boat-speed-h",
+        "glb": "models\\boat-speed-h.glb",
+        "preview": "Previews\\boat-speed-h.png",
+        "size_kb": 20,
+        "vertices": 318
+    },
+    {
+        "name": "boat-speed-i",
+        "glb": "models\\boat-speed-i.glb",
+        "preview": "Previews\\boat-speed-i.png",
+        "size_kb": 18,
+        "vertices": 260
+    },
+    {
+        "name": "boat-speed-j",
+        "glb": "models\\boat-speed-j.glb",
+        "preview": "Previews\\boat-speed-j.png",
+        "size_kb": 20,
+        "vertices": 318
+    },
+    {
+        "name": "boat-tow-a",
+        "glb": "models\\boat-tow-a.glb",
+        "preview": "Previews\\boat-tow-a.png",
+        "size_kb": 43,
+        "vertices": 952
+    },
+    {
+        "name": "boat-tow-b",
+        "glb": "models\\boat-tow-b.glb",
+        "preview": "Previews\\boat-tow-b.png",
+        "size_kb": 43,
+        "vertices": 962
+    },
+    {
+        "name": "boat-tug-a",
+        "glb": "models\\boat-tug-a.glb",
+        "preview": "Previews\\boat-tug-a.png",
+        "size_kb": 36,
+        "vertices": 761
+    },
+    {
+        "name": "boat-tug-b",
+        "glb": "models\\boat-tug-b.glb",
+        "preview": "Previews\\boat-tug-b.png",
+        "size_kb": 31,
+        "vertices": 615
+    },
+    {
+        "name": "boat-tug-c",
+        "glb": "models\\boat-tug-c.glb",
+        "preview": "Previews\\boat-tug-c.png",
+        "size_kb": 21,
+        "vertices": 334
+    },
+    {
+        "name": "buoy-flag",
+        "glb": "models\\buoy-flag.glb",
+        "preview": "Previews\\buoy-flag.png",
+        "size_kb": 23,
+        "vertices": 388
+    },
+    {
+        "name": "buoy",
+        "glb": "models\\buoy.glb",
+        "preview": "Previews\\buoy.png",
+        "size_kb": 17,
+        "vertices": 208
+    },
+    {
+        "name": "cargo-container-a",
+        "glb": "models\\cargo-container-a.glb",
+        "preview": "Previews\\cargo-container-a.png",
+        "size_kb": 19,
+        "vertices": 288
+    },
+    {
+        "name": "cargo-container-b",
+        "glb": "models\\cargo-container-b.glb",
+        "preview": "Previews\\cargo-container-b.png",
+        "size_kb": 19,
+        "vertices": 288
+    },
+    {
+        "name": "cargo-container-c",
+        "glb": "models\\cargo-container-c.glb",
+        "preview": "Previews\\cargo-container-c.png",
+        "size_kb": 19,
+        "vertices": 288
+    },
+    {
+        "name": "cargo-pile-a",
+        "glb": "models\\cargo-pile-a.glb",
+        "preview": "Previews\\cargo-pile-a.png",
+        "size_kb": 20,
+        "vertices": 320
+    },
+    {
+        "name": "cargo-pile-b",
+        "glb": "models\\cargo-pile-b.glb",
+        "preview": "Previews\\cargo-pile-b.png",
+        "size_kb": 32,
+        "vertices": 640
+    },
+    {
+        "name": "gate-finish",
+        "glb": "models\\gate-finish.glb",
+        "preview": "Previews\\gate-finish.png",
+        "size_kb": 15,
+        "vertices": 146
+    },
+    {
+        "name": "gate",
+        "glb": "models\\gate.glb",
+        "preview": "Previews\\gate.png",
+        "size_kb": 15,
+        "vertices": 162
+    },
+    {
+        "name": "ramp-wide",
+        "glb": "models\\ramp-wide.glb",
+        "preview": "Previews\\ramp-wide.png",
+        "size_kb": 18,
+        "vertices": 256
+    },
+    {
+        "name": "ramp",
+        "glb": "models\\ramp.glb",
+        "preview": "Previews\\ramp.png",
+        "size_kb": 18,
+        "vertices": 256
+    },
+    {
+        "name": "ship-cargo-a",
+        "glb": "models\\ship-cargo-a.glb",
+        "preview": "Previews\\ship-cargo-a.png",
+        "size_kb": 72,
+        "vertices": 1796
+    },
+    {
+        "name": "ship-cargo-b",
+        "glb": "models\\ship-cargo-b.glb",
+        "preview": "Previews\\ship-cargo-b.png",
+        "size_kb": 61,
+        "vertices": 1464
+    },
+    {
+        "name": "ship-cargo-c",
+        "glb": "models\\ship-cargo-c.glb",
+        "preview": "Previews\\ship-cargo-c.png",
+        "size_kb": 30,
+        "vertices": 576
+    },
+    {
+        "name": "ship-large",
+        "glb": "models\\ship-large.glb",
+        "preview": "Previews\\ship-large.png",
+        "size_kb": 113,
+        "vertices": 2882
+    },
+    {
+        "name": "ship-ocean-liner-small",
+        "glb": "models\\ship-ocean-liner-small.glb",
+        "preview": "Previews\\ship-ocean-liner-small.png",
+        "size_kb": 108,
+        "vertices": 2830
+    },
+    {
+        "name": "ship-ocean-liner",
+        "glb": "models\\ship-ocean-liner.glb",
+        "preview": "Previews\\ship-ocean-liner.png",
+        "size_kb": 166,
+        "vertices": 4478
+    },
+    {
+        "name": "ship-small-ghost",
+        "glb": "models\\ship-small-ghost.glb",
+        "preview": "Previews\\ship-small-ghost.png",
+        "size_kb": 112,
+        "vertices": 2881
+    },
+    {
+        "name": "ship-small",
+        "glb": "models\\ship-small.glb",
+        "preview": "Previews\\ship-small.png",
+        "size_kb": 106,
+        "vertices": 2671
+    }
+]

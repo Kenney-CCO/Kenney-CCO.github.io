@@ -1,0 +1,562 @@
+[
+    {
+        "name": "barrel-open",
+        "glb": "models\\barrel-open.glb",
+        "preview": "Previews\\barrel-open.png",
+        "size_kb": 28,
+        "vertices": 576
+    },
+    {
+        "name": "barrel",
+        "glb": "models\\barrel.glb",
+        "preview": "Previews\\barrel.png",
+        "size_kb": 30,
+        "vertices": 627
+    },
+    {
+        "name": "bedroll-frame",
+        "glb": "models\\bedroll-frame.glb",
+        "preview": "Previews\\bedroll-frame.png",
+        "size_kb": 14,
+        "vertices": 168
+    },
+    {
+        "name": "bedroll-packed",
+        "glb": "models\\bedroll-packed.glb",
+        "preview": "Previews\\bedroll-packed.png",
+        "size_kb": 16,
+        "vertices": 240
+    },
+    {
+        "name": "bedroll",
+        "glb": "models\\bedroll.glb",
+        "preview": "Previews\\bedroll.png",
+        "size_kb": 17,
+        "vertices": 220
+    },
+    {
+        "name": "bottle-large",
+        "glb": "models\\bottle-large.glb",
+        "preview": "Previews\\bottle-large.png",
+        "size_kb": 14,
+        "vertices": 174
+    },
+    {
+        "name": "bottle",
+        "glb": "models\\bottle.glb",
+        "preview": "Previews\\bottle.png",
+        "size_kb": 14,
+        "vertices": 174
+    },
+    {
+        "name": "box-large-open",
+        "glb": "models\\box-large-open.glb",
+        "preview": "Previews\\box-large-open.png",
+        "size_kb": 18,
+        "vertices": 300
+    },
+    {
+        "name": "box-large",
+        "glb": "models\\box-large.glb",
+        "preview": "Previews\\box-large.png",
+        "size_kb": 16,
+        "vertices": 248
+    },
+    {
+        "name": "box-open",
+        "glb": "models\\box-open.glb",
+        "preview": "Previews\\box-open.png",
+        "size_kb": 18,
+        "vertices": 300
+    },
+    {
+        "name": "box",
+        "glb": "models\\box.glb",
+        "preview": "Previews\\box.png",
+        "size_kb": 16,
+        "vertices": 248
+    },
+    {
+        "name": "bucket",
+        "glb": "models\\bucket.glb",
+        "preview": "Previews\\bucket.png",
+        "size_kb": 12,
+        "vertices": 120
+    },
+    {
+        "name": "campfire-fishing-stand",
+        "glb": "models\\campfire-fishing-stand.glb",
+        "preview": "Previews\\campfire-fishing-stand.png",
+        "size_kb": 14,
+        "vertices": 168
+    },
+    {
+        "name": "campfire-pit",
+        "glb": "models\\campfire-pit.glb",
+        "preview": "Previews\\campfire-pit.png",
+        "size_kb": 25,
+        "vertices": 455
+    },
+    {
+        "name": "campfire-stand",
+        "glb": "models\\campfire-stand.glb",
+        "preview": "Previews\\campfire-stand.png",
+        "size_kb": 13,
+        "vertices": 132
+    },
+    {
+        "name": "chest",
+        "glb": "models\\chest.glb",
+        "preview": "Previews\\chest.png",
+        "size_kb": 31,
+        "vertices": 558
+    },
+    {
+        "name": "fence-doorway",
+        "glb": "models\\fence-doorway.glb",
+        "preview": "Previews\\fence-doorway.png",
+        "size_kb": 16,
+        "vertices": 216
+    },
+    {
+        "name": "fence-fortified",
+        "glb": "models\\fence-fortified.glb",
+        "preview": "Previews\\fence-fortified.png",
+        "size_kb": 16,
+        "vertices": 240
+    },
+    {
+        "name": "fence",
+        "glb": "models\\fence.glb",
+        "preview": "Previews\\fence.png",
+        "size_kb": 11,
+        "vertices": 96
+    },
+    {
+        "name": "fish-large",
+        "glb": "models\\fish-large.glb",
+        "preview": "Previews\\fish-large.png",
+        "size_kb": 28,
+        "vertices": 595
+    },
+    {
+        "name": "fish",
+        "glb": "models\\fish.glb",
+        "preview": "Previews\\fish.png",
+        "size_kb": 28,
+        "vertices": 595
+    },
+    {
+        "name": "floor-hole",
+        "glb": "models\\floor-hole.glb",
+        "preview": "Previews\\floor-hole.png",
+        "size_kb": 18,
+        "vertices": 288
+    },
+    {
+        "name": "floor-old",
+        "glb": "models\\floor-old.glb",
+        "preview": "Previews\\floor-old.png",
+        "size_kb": 14,
+        "vertices": 168
+    },
+    {
+        "name": "floor",
+        "glb": "models\\floor.glb",
+        "preview": "Previews\\floor.png",
+        "size_kb": 14,
+        "vertices": 168
+    },
+    {
+        "name": "grass-large",
+        "glb": "models\\grass-large.glb",
+        "preview": "Previews\\grass-large.png",
+        "size_kb": 19,
+        "vertices": 336
+    },
+    {
+        "name": "grass",
+        "glb": "models\\grass.glb",
+        "preview": "Previews\\grass.png",
+        "size_kb": 11,
+        "vertices": 84
+    },
+    {
+        "name": "metal-panel-narrow",
+        "glb": "models\\metal-panel-narrow.glb",
+        "preview": "Previews\\metal-panel-narrow.png",
+        "size_kb": 16,
+        "vertices": 240
+    },
+    {
+        "name": "metal-panel-screws-half",
+        "glb": "models\\metal-panel-screws-half.glb",
+        "preview": "Previews\\metal-panel-screws-half.png",
+        "size_kb": 26,
+        "vertices": 512
+    },
+    {
+        "name": "metal-panel-screws-narrow",
+        "glb": "models\\metal-panel-screws-narrow.glb",
+        "preview": "Previews\\metal-panel-screws-narrow.png",
+        "size_kb": 19,
+        "vertices": 320
+    },
+    {
+        "name": "metal-panel-screws",
+        "glb": "models\\metal-panel-screws.glb",
+        "preview": "Previews\\metal-panel-screws.png",
+        "size_kb": 26,
+        "vertices": 512
+    },
+    {
+        "name": "metal-panel",
+        "glb": "models\\metal-panel.glb",
+        "preview": "Previews\\metal-panel.png",
+        "size_kb": 23,
+        "vertices": 432
+    },
+    {
+        "name": "patch-grass-large",
+        "glb": "models\\patch-grass-large.glb",
+        "preview": "Previews\\patch-grass-large.png",
+        "size_kb": 9,
+        "vertices": 35
+    },
+    {
+        "name": "patch-grass",
+        "glb": "models\\patch-grass.glb",
+        "preview": "Previews\\patch-grass.png",
+        "size_kb": 9,
+        "vertices": 35
+    },
+    {
+        "name": "resource-planks",
+        "glb": "models\\resource-planks.glb",
+        "preview": "Previews\\resource-planks.png",
+        "size_kb": 13,
+        "vertices": 144
+    },
+    {
+        "name": "resource-stone-large",
+        "glb": "models\\resource-stone-large.glb",
+        "preview": "Previews\\resource-stone-large.png",
+        "size_kb": 16,
+        "vertices": 216
+    },
+    {
+        "name": "resource-stone",
+        "glb": "models\\resource-stone.glb",
+        "preview": "Previews\\resource-stone.png",
+        "size_kb": 11,
+        "vertices": 72
+    },
+    {
+        "name": "resource-wood",
+        "glb": "models\\resource-wood.glb",
+        "preview": "Previews\\resource-wood.png",
+        "size_kb": 12,
+        "vertices": 110
+    },
+    {
+        "name": "rock-a",
+        "glb": "models\\rock-a.glb",
+        "preview": "Previews\\rock-a.png",
+        "size_kb": 14,
+        "vertices": 180
+    },
+    {
+        "name": "rock-b",
+        "glb": "models\\rock-b.glb",
+        "preview": "Previews\\rock-b.png",
+        "size_kb": 17,
+        "vertices": 258
+    },
+    {
+        "name": "rock-c",
+        "glb": "models\\rock-c.glb",
+        "preview": "Previews\\rock-c.png",
+        "size_kb": 15,
+        "vertices": 198
+    },
+    {
+        "name": "rock-flat-grass",
+        "glb": "models\\rock-flat-grass.glb",
+        "preview": "Previews\\rock-flat-grass.png",
+        "size_kb": 51,
+        "vertices": 1228
+    },
+    {
+        "name": "rock-flat",
+        "glb": "models\\rock-flat.glb",
+        "preview": "Previews\\rock-flat.png",
+        "size_kb": 24,
+        "vertices": 444
+    },
+    {
+        "name": "rock-sand-a",
+        "glb": "models\\rock-sand-a.glb",
+        "preview": "Previews\\rock-sand-a.png",
+        "size_kb": 13,
+        "vertices": 156
+    },
+    {
+        "name": "rock-sand-b",
+        "glb": "models\\rock-sand-b.glb",
+        "preview": "Previews\\rock-sand-b.png",
+        "size_kb": 19,
+        "vertices": 306
+    },
+    {
+        "name": "rock-sand-c",
+        "glb": "models\\rock-sand-c.glb",
+        "preview": "Previews\\rock-sand-c.png",
+        "size_kb": 17,
+        "vertices": 246
+    },
+    {
+        "name": "signpost-single",
+        "glb": "models\\signpost-single.glb",
+        "preview": "Previews\\signpost-single.png",
+        "size_kb": 10,
+        "vertices": 54
+    },
+    {
+        "name": "signpost",
+        "glb": "models\\signpost.glb",
+        "preview": "Previews\\signpost.png",
+        "size_kb": 11,
+        "vertices": 84
+    },
+    {
+        "name": "structure-canvas",
+        "glb": "models\\structure-canvas.glb",
+        "preview": "Previews\\structure-canvas.png",
+        "size_kb": 15,
+        "vertices": 192
+    },
+    {
+        "name": "structure-floor",
+        "glb": "models\\structure-floor.glb",
+        "preview": "Previews\\structure-floor.png",
+        "size_kb": 20,
+        "vertices": 328
+    },
+    {
+        "name": "structure-metal-doorway",
+        "glb": "models\\structure-metal-doorway.glb",
+        "preview": "Previews\\structure-metal-doorway.png",
+        "size_kb": 19,
+        "vertices": 304
+    },
+    {
+        "name": "structure-metal-floor",
+        "glb": "models\\structure-metal-floor.glb",
+        "preview": "Previews\\structure-metal-floor.png",
+        "size_kb": 29,
+        "vertices": 608
+    },
+    {
+        "name": "structure-metal-roof",
+        "glb": "models\\structure-metal-roof.glb",
+        "preview": "Previews\\structure-metal-roof.png",
+        "size_kb": 34,
+        "vertices": 752
+    },
+    {
+        "name": "structure-metal-wall",
+        "glb": "models\\structure-metal-wall.glb",
+        "preview": "Previews\\structure-metal-wall.png",
+        "size_kb": 14,
+        "vertices": 168
+    },
+    {
+        "name": "structure-metal",
+        "glb": "models\\structure-metal.glb",
+        "preview": "Previews\\structure-metal.png",
+        "size_kb": 20,
+        "vertices": 336
+    },
+    {
+        "name": "structure-roof",
+        "glb": "models\\structure-roof.glb",
+        "preview": "Previews\\structure-roof.png",
+        "size_kb": 22,
+        "vertices": 376
+    },
+    {
+        "name": "structure",
+        "glb": "models\\structure.glb",
+        "preview": "Previews\\structure.png",
+        "size_kb": 14,
+        "vertices": 160
+    },
+    {
+        "name": "tent-canvas-half",
+        "glb": "models\\tent-canvas-half.glb",
+        "preview": "Previews\\tent-canvas-half.png",
+        "size_kb": 17,
+        "vertices": 272
+    },
+    {
+        "name": "tent-canvas",
+        "glb": "models\\tent-canvas.glb",
+        "preview": "Previews\\tent-canvas.png",
+        "size_kb": 18,
+        "vertices": 296
+    },
+    {
+        "name": "tent",
+        "glb": "models\\tent.glb",
+        "preview": "Previews\\tent.png",
+        "size_kb": 17,
+        "vertices": 248
+    },
+    {
+        "name": "tool-axe-upgraded",
+        "glb": "models\\tool-axe-upgraded.glb",
+        "preview": "Previews\\tool-axe-upgraded.png",
+        "size_kb": 16,
+        "vertices": 228
+    },
+    {
+        "name": "tool-axe",
+        "glb": "models\\tool-axe.glb",
+        "preview": "Previews\\tool-axe.png",
+        "size_kb": 13,
+        "vertices": 138
+    },
+    {
+        "name": "tool-hammer-upgraded",
+        "glb": "models\\tool-hammer-upgraded.glb",
+        "preview": "Previews\\tool-hammer-upgraded.png",
+        "size_kb": 13,
+        "vertices": 144
+    },
+    {
+        "name": "tool-hammer",
+        "glb": "models\\tool-hammer.glb",
+        "preview": "Previews\\tool-hammer.png",
+        "size_kb": 11,
+        "vertices": 96
+    },
+    {
+        "name": "tool-hoe-upgraded",
+        "glb": "models\\tool-hoe-upgraded.glb",
+        "preview": "Previews\\tool-hoe-upgraded.png",
+        "size_kb": 14,
+        "vertices": 180
+    },
+    {
+        "name": "tool-hoe",
+        "glb": "models\\tool-hoe.glb",
+        "preview": "Previews\\tool-hoe.png",
+        "size_kb": 11,
+        "vertices": 98
+    },
+    {
+        "name": "tool-pickaxe-upgraded",
+        "glb": "models\\tool-pickaxe-upgraded.glb",
+        "preview": "Previews\\tool-pickaxe-upgraded.png",
+        "size_kb": 15,
+        "vertices": 188
+    },
+    {
+        "name": "tool-pickaxe",
+        "glb": "models\\tool-pickaxe.glb",
+        "preview": "Previews\\tool-pickaxe.png",
+        "size_kb": 13,
+        "vertices": 128
+    },
+    {
+        "name": "tool-shovel-upgraded",
+        "glb": "models\\tool-shovel-upgraded.glb",
+        "preview": "Previews\\tool-shovel-upgraded.png",
+        "size_kb": 18,
+        "vertices": 282
+    },
+    {
+        "name": "tool-shovel",
+        "glb": "models\\tool-shovel.glb",
+        "preview": "Previews\\tool-shovel.png",
+        "size_kb": 15,
+        "vertices": 198
+    },
+    {
+        "name": "tree-autumn-tall",
+        "glb": "models\\tree-autumn-tall.glb",
+        "preview": "Previews\\tree-autumn-tall.png",
+        "size_kb": 20,
+        "vertices": 348
+    },
+    {
+        "name": "tree-autumn-trunk",
+        "glb": "models\\tree-autumn-trunk.glb",
+        "preview": "Previews\\tree-autumn-trunk.png",
+        "size_kb": 12,
+        "vertices": 104
+    },
+    {
+        "name": "tree-autumn",
+        "glb": "models\\tree-autumn.glb",
+        "preview": "Previews\\tree-autumn.png",
+        "size_kb": 20,
+        "vertices": 348
+    },
+    {
+        "name": "tree-log-small",
+        "glb": "models\\tree-log-small.glb",
+        "preview": "Previews\\tree-log-small.png",
+        "size_kb": 13,
+        "vertices": 148
+    },
+    {
+        "name": "tree-log",
+        "glb": "models\\tree-log.glb",
+        "preview": "Previews\\tree-log.png",
+        "size_kb": 13,
+        "vertices": 148
+    },
+    {
+        "name": "tree-tall",
+        "glb": "models\\tree-tall.glb",
+        "preview": "Previews\\tree-tall.png",
+        "size_kb": 23,
+        "vertices": 444
+    },
+    {
+        "name": "tree-trunk",
+        "glb": "models\\tree-trunk.glb",
+        "preview": "Previews\\tree-trunk.png",
+        "size_kb": 12,
+        "vertices": 104
+    },
+    {
+        "name": "tree",
+        "glb": "models\\tree.glb",
+        "preview": "Previews\\tree.png",
+        "size_kb": 22,
+        "vertices": 396
+    },
+    {
+        "name": "workbench-anvil",
+        "glb": "models\\workbench-anvil.glb",
+        "preview": "Previews\\workbench-anvil.png",
+        "size_kb": 27,
+        "vertices": 529
+    },
+    {
+        "name": "workbench-grind",
+        "glb": "models\\workbench-grind.glb",
+        "preview": "Previews\\workbench-grind.png",
+        "size_kb": 24,
+        "vertices": 428
+    },
+    {
+        "name": "workbench",
+        "glb": "models\\workbench.glb",
+        "preview": "Previews\\workbench.png",
+        "size_kb": 25,
+        "vertices": 427
+    }
+]

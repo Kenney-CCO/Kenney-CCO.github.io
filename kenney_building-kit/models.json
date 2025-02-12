@@ -1,0 +1,555 @@
+[
+    {
+        "name": "barricade-doorway-a",
+        "glb": "models\\barricade-doorway-a.glb",
+        "preview": "Previews\\barricade-doorway-a.png",
+        "size_kb": 15,
+        "vertices": 128
+    },
+    {
+        "name": "barricade-doorway-b",
+        "glb": "models\\barricade-doorway-b.glb",
+        "preview": "Previews\\barricade-doorway-b.png",
+        "size_kb": 18,
+        "vertices": 216
+    },
+    {
+        "name": "barricade-doorway-c",
+        "glb": "models\\barricade-doorway-c.glb",
+        "preview": "Previews\\barricade-doorway-c.png",
+        "size_kb": 19,
+        "vertices": 244
+    },
+    {
+        "name": "barricade-window-a",
+        "glb": "models\\barricade-window-a.glb",
+        "preview": "Previews\\barricade-window-a.png",
+        "size_kb": 15,
+        "vertices": 128
+    },
+    {
+        "name": "barricade-window-b",
+        "glb": "models\\barricade-window-b.glb",
+        "preview": "Previews\\barricade-window-b.png",
+        "size_kb": 18,
+        "vertices": 216
+    },
+    {
+        "name": "barricade-window-c",
+        "glb": "models\\barricade-window-c.glb",
+        "preview": "Previews\\barricade-window-c.png",
+        "size_kb": 19,
+        "vertices": 244
+    },
+    {
+        "name": "border-corner-diagonal",
+        "glb": "models\\border-corner-diagonal.glb",
+        "preview": "Previews\\border-corner-diagonal.png",
+        "size_kb": 13,
+        "vertices": 72
+    },
+    {
+        "name": "border-corner-round",
+        "glb": "models\\border-corner-round.glb",
+        "preview": "Previews\\border-corner-round.png",
+        "size_kb": 19,
+        "vertices": 261
+    },
+    {
+        "name": "border-corner-small",
+        "glb": "models\\border-corner-small.glb",
+        "preview": "Previews\\border-corner-small.png",
+        "size_kb": 13,
+        "vertices": 73
+    },
+    {
+        "name": "border-corner",
+        "glb": "models\\border-corner.glb",
+        "preview": "Previews\\border-corner.png",
+        "size_kb": 13,
+        "vertices": 73
+    },
+    {
+        "name": "border-high-corner-diagonal",
+        "glb": "models\\border-high-corner-diagonal.glb",
+        "preview": "Previews\\border-high-corner-diagonal.png",
+        "size_kb": 13,
+        "vertices": 72
+    },
+    {
+        "name": "border-high-corner-round",
+        "glb": "models\\border-high-corner-round.glb",
+        "preview": "Previews\\border-high-corner-round.png",
+        "size_kb": 19,
+        "vertices": 258
+    },
+    {
+        "name": "border-high-corner-small",
+        "glb": "models\\border-high-corner-small.glb",
+        "preview": "Previews\\border-high-corner-small.png",
+        "size_kb": 13,
+        "vertices": 73
+    },
+    {
+        "name": "border-high-corner",
+        "glb": "models\\border-high-corner.glb",
+        "preview": "Previews\\border-high-corner.png",
+        "size_kb": 13,
+        "vertices": 73
+    },
+    {
+        "name": "border-high",
+        "glb": "models\\border-high.glb",
+        "preview": "Previews\\border-high.png",
+        "size_kb": 11,
+        "vertices": 36
+    },
+    {
+        "name": "border",
+        "glb": "models\\border.glb",
+        "preview": "Previews\\border.png",
+        "size_kb": 11,
+        "vertices": 36
+    },
+    {
+        "name": "column-thin",
+        "glb": "models\\column-thin.glb",
+        "preview": "Previews\\column-thin.png",
+        "size_kb": 12,
+        "vertices": 56
+    },
+    {
+        "name": "column-wide",
+        "glb": "models\\column-wide.glb",
+        "preview": "Previews\\column-wide.png",
+        "size_kb": 12,
+        "vertices": 56
+    },
+    {
+        "name": "column",
+        "glb": "models\\column.glb",
+        "preview": "Previews\\column.png",
+        "size_kb": 12,
+        "vertices": 56
+    },
+    {
+        "name": "detail-pipe",
+        "glb": "models\\detail-pipe.glb",
+        "preview": "Previews\\detail-pipe.png",
+        "size_kb": 14,
+        "vertices": 112
+    },
+    {
+        "name": "door-rotate-round-a",
+        "glb": "models\\door-rotate-round-a.glb",
+        "preview": "Previews\\door-rotate-round-a.png",
+        "size_kb": 26,
+        "vertices": 282
+    },
+    {
+        "name": "door-rotate-round-b",
+        "glb": "models\\door-rotate-round-b.glb",
+        "preview": "Previews\\door-rotate-round-b.png",
+        "size_kb": 33,
+        "vertices": 458
+    },
+    {
+        "name": "door-rotate-round-c",
+        "glb": "models\\door-rotate-round-c.glb",
+        "preview": "Previews\\door-rotate-round-c.png",
+        "size_kb": 37,
+        "vertices": 599
+    },
+    {
+        "name": "door-rotate-round-d",
+        "glb": "models\\door-rotate-round-d.glb",
+        "preview": "Previews\\door-rotate-round-d.png",
+        "size_kb": 39,
+        "vertices": 613
+    },
+    {
+        "name": "door-rotate-square-a",
+        "glb": "models\\door-rotate-square-a.glb",
+        "preview": "Previews\\door-rotate-square-a.png",
+        "size_kb": 27,
+        "vertices": 320
+    },
+    {
+        "name": "door-rotate-square-b",
+        "glb": "models\\door-rotate-square-b.glb",
+        "preview": "Previews\\door-rotate-square-b.png",
+        "size_kb": 27,
+        "vertices": 304
+    },
+    {
+        "name": "door-rotate-square-c",
+        "glb": "models\\door-rotate-square-c.glb",
+        "preview": "Previews\\door-rotate-square-c.png",
+        "size_kb": 30,
+        "vertices": 388
+    },
+    {
+        "name": "door-rotate-square-d",
+        "glb": "models\\door-rotate-square-d.glb",
+        "preview": "Previews\\door-rotate-square-d.png",
+        "size_kb": 31,
+        "vertices": 396
+    },
+    {
+        "name": "floor-corner-diagonal",
+        "glb": "models\\floor-corner-diagonal.glb",
+        "preview": "Previews\\floor-corner-diagonal.png",
+        "size_kb": 11,
+        "vertices": 30
+    },
+    {
+        "name": "floor-corner-round",
+        "glb": "models\\floor-corner-round.glb",
+        "preview": "Previews\\floor-corner-round.png",
+        "size_kb": 13,
+        "vertices": 84
+    },
+    {
+        "name": "floor-half",
+        "glb": "models\\floor-half.glb",
+        "preview": "Previews\\floor-half.png",
+        "size_kb": 11,
+        "vertices": 24
+    },
+    {
+        "name": "floor-quarter",
+        "glb": "models\\floor-quarter.glb",
+        "preview": "Previews\\floor-quarter.png",
+        "size_kb": 11,
+        "vertices": 24
+    },
+    {
+        "name": "floor",
+        "glb": "models\\floor.glb",
+        "preview": "Previews\\floor.png",
+        "size_kb": 11,
+        "vertices": 24
+    },
+    {
+        "name": "gutter-vertical-bottom",
+        "glb": "models\\gutter-vertical-bottom.glb",
+        "preview": "Previews\\gutter-vertical-bottom.png",
+        "size_kb": 15,
+        "vertices": 140
+    },
+    {
+        "name": "gutter-vertical-short",
+        "glb": "models\\gutter-vertical-short.glb",
+        "preview": "Previews\\gutter-vertical-short.png",
+        "size_kb": 14,
+        "vertices": 96
+    },
+    {
+        "name": "gutter-vertical-top",
+        "glb": "models\\gutter-vertical-top.glb",
+        "preview": "Previews\\gutter-vertical-top.png",
+        "size_kb": 15,
+        "vertices": 140
+    },
+    {
+        "name": "gutter-vertical-wall",
+        "glb": "models\\gutter-vertical-wall.glb",
+        "preview": "Previews\\gutter-vertical-wall.png",
+        "size_kb": 15,
+        "vertices": 144
+    },
+    {
+        "name": "gutter-vertical",
+        "glb": "models\\gutter-vertical.glb",
+        "preview": "Previews\\gutter-vertical.png",
+        "size_kb": 15,
+        "vertices": 144
+    },
+    {
+        "name": "plating-detailed-wide",
+        "glb": "models\\plating-detailed-wide.glb",
+        "preview": "Previews\\plating-detailed-wide.png",
+        "size_kb": 21,
+        "vertices": 296
+    },
+    {
+        "name": "plating-detailed",
+        "glb": "models\\plating-detailed.glb",
+        "preview": "Previews\\plating-detailed.png",
+        "size_kb": 21,
+        "vertices": 296
+    },
+    {
+        "name": "plating-wide",
+        "glb": "models\\plating-wide.glb",
+        "preview": "Previews\\plating-wide.png",
+        "size_kb": 18,
+        "vertices": 216
+    },
+    {
+        "name": "plating",
+        "glb": "models\\plating.glb",
+        "preview": "Previews\\plating.png",
+        "size_kb": 18,
+        "vertices": 216
+    },
+    {
+        "name": "roof-flat-center",
+        "glb": "models\\roof-flat-center.glb",
+        "preview": "Previews\\roof-flat-center.png",
+        "size_kb": 11,
+        "vertices": 24
+    },
+    {
+        "name": "roof-flat-corner-inner",
+        "glb": "models\\roof-flat-corner-inner.glb",
+        "preview": "Previews\\roof-flat-corner-inner.png",
+        "size_kb": 13,
+        "vertices": 88
+    },
+    {
+        "name": "roof-flat-corner",
+        "glb": "models\\roof-flat-corner.glb",
+        "preview": "Previews\\roof-flat-corner.png",
+        "size_kb": 14,
+        "vertices": 108
+    },
+    {
+        "name": "roof-flat-patch-large",
+        "glb": "models\\roof-flat-patch-large.glb",
+        "preview": "Previews\\roof-flat-patch-large.png",
+        "size_kb": 13,
+        "vertices": 72
+    },
+    {
+        "name": "roof-flat-patch",
+        "glb": "models\\roof-flat-patch.glb",
+        "preview": "Previews\\roof-flat-patch.png",
+        "size_kb": 13,
+        "vertices": 72
+    },
+    {
+        "name": "roof-flat-side",
+        "glb": "models\\roof-flat-side.glb",
+        "preview": "Previews\\roof-flat-side.png",
+        "size_kb": 13,
+        "vertices": 80
+    },
+    {
+        "name": "roof-flat-square",
+        "glb": "models\\roof-flat-square.glb",
+        "preview": "Previews\\roof-flat-square.png",
+        "size_kb": 15,
+        "vertices": 136
+    },
+    {
+        "name": "stairs-center-short",
+        "glb": "models\\stairs-center-short.glb",
+        "preview": "Previews\\stairs-center-short.png",
+        "size_kb": 15,
+        "vertices": 128
+    },
+    {
+        "name": "stairs-center",
+        "glb": "models\\stairs-center.glb",
+        "preview": "Previews\\stairs-center.png",
+        "size_kb": 18,
+        "vertices": 224
+    },
+    {
+        "name": "stairs-closed-short",
+        "glb": "models\\stairs-closed-short.glb",
+        "preview": "Previews\\stairs-closed-short.png",
+        "size_kb": 15,
+        "vertices": 140
+    },
+    {
+        "name": "stairs-closed",
+        "glb": "models\\stairs-closed.glb",
+        "preview": "Previews\\stairs-closed.png",
+        "size_kb": 20,
+        "vertices": 268
+    },
+    {
+        "name": "stairs-open-short",
+        "glb": "models\\stairs-open-short.glb",
+        "preview": "Previews\\stairs-open-short.png",
+        "size_kb": 16,
+        "vertices": 160
+    },
+    {
+        "name": "stairs-open",
+        "glb": "models\\stairs-open.glb",
+        "preview": "Previews\\stairs-open.png",
+        "size_kb": 19,
+        "vertices": 256
+    },
+    {
+        "name": "stairs-sides-short",
+        "glb": "models\\stairs-sides-short.glb",
+        "preview": "Previews\\stairs-sides-short.png",
+        "size_kb": 18,
+        "vertices": 192
+    },
+    {
+        "name": "stairs-sides",
+        "glb": "models\\stairs-sides.glb",
+        "preview": "Previews\\stairs-sides.png",
+        "size_kb": 21,
+        "vertices": 288
+    },
+    {
+        "name": "wall-corner-column-bottom",
+        "glb": "models\\wall-corner-column-bottom.glb",
+        "preview": "Previews\\wall-corner-column-bottom.png",
+        "size_kb": 13,
+        "vertices": 90
+    },
+    {
+        "name": "wall-corner-column-small-bottom",
+        "glb": "models\\wall-corner-column-small-bottom.glb",
+        "preview": "Previews\\wall-corner-column-small-bottom.png",
+        "size_kb": 13,
+        "vertices": 90
+    },
+    {
+        "name": "wall-corner-column-small",
+        "glb": "models\\wall-corner-column-small.glb",
+        "preview": "Previews\\wall-corner-column-small.png",
+        "size_kb": 12,
+        "vertices": 58
+    },
+    {
+        "name": "wall-corner-column",
+        "glb": "models\\wall-corner-column.glb",
+        "preview": "Previews\\wall-corner-column.png",
+        "size_kb": 12,
+        "vertices": 58
+    },
+    {
+        "name": "wall-corner-diagonal",
+        "glb": "models\\wall-corner-diagonal.glb",
+        "preview": "Previews\\wall-corner-diagonal.png",
+        "size_kb": 12,
+        "vertices": 40
+    },
+    {
+        "name": "wall-corner-round",
+        "glb": "models\\wall-corner-round.glb",
+        "preview": "Previews\\wall-corner-round.png",
+        "size_kb": 15,
+        "vertices": 130
+    },
+    {
+        "name": "wall-corner",
+        "glb": "models\\wall-corner.glb",
+        "preview": "Previews\\wall-corner.png",
+        "size_kb": 11,
+        "vertices": 30
+    },
+    {
+        "name": "wall-doorway-round",
+        "glb": "models\\wall-doorway-round.glb",
+        "preview": "Previews\\wall-doorway-round.png",
+        "size_kb": 17,
+        "vertices": 190
+    },
+    {
+        "name": "wall-doorway-square",
+        "glb": "models\\wall-doorway-square.glb",
+        "preview": "Previews\\wall-doorway-square.png",
+        "size_kb": 13,
+        "vertices": 88
+    },
+    {
+        "name": "wall-doorway-wide-round",
+        "glb": "models\\wall-doorway-wide-round.glb",
+        "preview": "Previews\\wall-doorway-wide-round.png",
+        "size_kb": 18,
+        "vertices": 202
+    },
+    {
+        "name": "wall-doorway-wide-square",
+        "glb": "models\\wall-doorway-wide-square.glb",
+        "preview": "Previews\\wall-doorway-wide-square.png",
+        "size_kb": 13,
+        "vertices": 88
+    },
+    {
+        "name": "wall-half",
+        "glb": "models\\wall-half.glb",
+        "preview": "Previews\\wall-half.png",
+        "size_kb": 11,
+        "vertices": 20
+    },
+    {
+        "name": "wall-low",
+        "glb": "models\\wall-low.glb",
+        "preview": "Previews\\wall-low.png",
+        "size_kb": 11,
+        "vertices": 20
+    },
+    {
+        "name": "wall-window-round-detailed",
+        "glb": "models\\wall-window-round-detailed.glb",
+        "preview": "Previews\\wall-window-round-detailed.png",
+        "size_kb": 23,
+        "vertices": 320
+    },
+    {
+        "name": "wall-window-round",
+        "glb": "models\\wall-window-round.glb",
+        "preview": "Previews\\wall-window-round.png",
+        "size_kb": 20,
+        "vertices": 234
+    },
+    {
+        "name": "wall-window-square-detailed",
+        "glb": "models\\wall-window-square-detailed.glb",
+        "preview": "Previews\\wall-window-square-detailed.png",
+        "size_kb": 17,
+        "vertices": 164
+    },
+    {
+        "name": "wall-window-square",
+        "glb": "models\\wall-window-square.glb",
+        "preview": "Previews\\wall-window-square.png",
+        "size_kb": 16,
+        "vertices": 116
+    },
+    {
+        "name": "wall-window-wide-round-detailed",
+        "glb": "models\\wall-window-wide-round-detailed.glb",
+        "preview": "Previews\\wall-window-wide-round-detailed.png",
+        "size_kb": 25,
+        "vertices": 384
+    },
+    {
+        "name": "wall-window-wide-round",
+        "glb": "models\\wall-window-wide-round.glb",
+        "preview": "Previews\\wall-window-wide-round.png",
+        "size_kb": 20,
+        "vertices": 244
+    },
+    {
+        "name": "wall-window-wide-square-detailed",
+        "glb": "models\\wall-window-wide-square-detailed.glb",
+        "preview": "Previews\\wall-window-wide-square-detailed.png",
+        "size_kb": 19,
+        "vertices": 212
+    },
+    {
+        "name": "wall-window-wide-square",
+        "glb": "models\\wall-window-wide-square.glb",
+        "preview": "Previews\\wall-window-wide-square.png",
+        "size_kb": 16,
+        "vertices": 116
+    },
+    {
+        "name": "wall",
+        "glb": "models\\wall.glb",
+        "preview": "Previews\\wall.png",
+        "size_kb": 11,
+        "vertices": 20
+    }
+]

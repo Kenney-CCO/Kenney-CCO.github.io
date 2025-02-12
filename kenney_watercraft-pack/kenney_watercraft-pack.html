@@ -1,0 +1,473 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Kenney Watercraft Pack</title>
+    <meta name="description" content="Game assets overview">
+    <meta name="author" content="Kenney">
+    <style>
+        body {
+            font-family: system-ui;
+            font-size: 0.9em;
+            font-weight: 600;
+            color: #d7d9da;
+            background-color: #171B21;
+            margin: 2em auto;
+            max-width: 1120px;
+            text-align: center;
+        }
+        h1 { color: #FFF; }
+        .back-link {
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            font-size: 1.5em;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .search-container {
+            margin-bottom: 1em;
+        }
+        .search-input {
+            padding: 10px;
+            width: 50%;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #555;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .package {
+            width: 120px;
+            text-align: center;
+            background: #2f333a;
+            padding: 10px;
+            border-radius: 5px;
+            position: relative;
+        }
+        .package img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            cursor: grab;
+        }
+        .package img:active {
+            cursor: grabbing;
+        }
+        .tooltip {
+            visibility: hidden;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            border-radius: 5px;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            font-size: 0.8em;
+            pointer-events: none;
+        }
+        .package:hover .tooltip {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <a href="/index.html" class="back-link">Back</a>
+    <h1>Kenney Watercraft Pack</h1>
+    <div class="search-container">
+        <input type="text" id="search" class="search-input" placeholder="Search models...">
+    </div>
+    <div class="gallery" id="gallery">
+        
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="arrow-standing">
+            <a href="models\arrow-standing.glb" draggable="true">
+                <img src="Previews\arrow-standing.png" alt="arrow-standing">
+            </a>
+            <div>arrow-standing</div>
+            <div class="tooltip">Size: 11 KB<br>Vertices: 58</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="arrow">
+            <a href="models\arrow.glb" draggable="true">
+                <img src="Previews\arrow.png" alt="arrow">
+            </a>
+            <div>arrow</div>
+            <div class="tooltip">Size: 13 KB<br>Vertices: 102</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="boat-fan">
+            <a href="models\boat-fan.glb" draggable="true">
+                <img src="Previews\boat-fan.png" alt="boat-fan">
+            </a>
+            <div>boat-fan</div>
+            <div class="tooltip">Size: 28 KB<br>Vertices: 522</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="boat-fishing-small">
+            <a href="models\boat-fishing-small.glb" draggable="true">
+                <img src="Previews\boat-fishing-small.png" alt="boat-fishing-small">
+            </a>
+            <div>boat-fishing-small</div>
+            <div class="tooltip">Size: 24 KB<br>Vertices: 411</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="boat-house-a">
+            <a href="models\boat-house-a.glb" draggable="true">
+                <img src="Previews\boat-house-a.png" alt="boat-house-a">
+            </a>
+            <div>boat-house-a</div>
+            <div class="tooltip">Size: 34 KB<br>Vertices: 710</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="boat-house-b">
+            <a href="models\boat-house-b.glb" draggable="true">
+                <img src="Previews\boat-house-b.png" alt="boat-house-b">
+            </a>
+            <div>boat-house-b</div>
+            <div class="tooltip">Size: 33 KB<br>Vertices: 675</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="boat-house-c">
+            <a href="models\boat-house-c.glb" draggable="true">
+                <img src="Previews\boat-house-c.png" alt="boat-house-c">
+            </a>
+            <div>boat-house-c</div>
+            <div class="tooltip">Size: 36 KB<br>Vertices: 757</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="boat-house-d">
+            <a href="models\boat-house-d.glb" draggable="true">
+                <img src="Previews\boat-house-d.png" alt="boat-house-d">
+            </a>
+            <div>boat-house-d</div>
+            <div class="tooltip">Size: 41 KB<br>Vertices: 906</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="boat-row-large">
+            <a href="models\boat-row-large.glb" draggable="true">
+                <img src="Previews\boat-row-large.png" alt="boat-row-large">
+            </a>
+            <div>boat-row-large</div>
+            <div class="tooltip">Size: 19 KB<br>Vertices: 258</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="boat-row-small">
+            <a href="models\boat-row-small.glb" draggable="true">
+                <img src="Previews\boat-row-small.png" alt="boat-row-small">
+            </a>
+            <div>boat-row-small</div>
+            <div class="tooltip">Size: 20 KB<br>Vertices: 292</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="boat-sail-a">
+            <a href="models\boat-sail-a.glb" draggable="true">
+                <img src="Previews\boat-sail-a.png" alt="boat-sail-a">
+            </a>
+            <div>boat-sail-a</div>
+            <div class="tooltip">Size: 32 KB<br>Vertices: 624</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="boat-sail-b">
+            <a href="models\boat-sail-b.glb" draggable="true">
+                <img src="Previews\boat-sail-b.png" alt="boat-sail-b">
+            </a>
+            <div>boat-sail-b</div>
+            <div class="tooltip">Size: 34 KB<br>Vertices: 679</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="boat-speed-a">
+            <a href="models\boat-speed-a.glb" draggable="true">
+                <img src="Previews\boat-speed-a.png" alt="boat-speed-a">
+            </a>
+            <div>boat-speed-a</div>
+            <div class="tooltip">Size: 19 KB<br>Vertices: 288</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="boat-speed-b">
+            <a href="models\boat-speed-b.glb" draggable="true">
+                <img src="Previews\boat-speed-b.png" alt="boat-speed-b">
+            </a>
+            <div>boat-speed-b</div>
+            <div class="tooltip">Size: 19 KB<br>Vertices: 272</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="boat-speed-c">
+            <a href="models\boat-speed-c.glb" draggable="true">
+                <img src="Previews\boat-speed-c.png" alt="boat-speed-c">
+            </a>
+            <div>boat-speed-c</div>
+            <div class="tooltip">Size: 19 KB<br>Vertices: 284</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="boat-speed-d">
+            <a href="models\boat-speed-d.glb" draggable="true">
+                <img src="Previews\boat-speed-d.png" alt="boat-speed-d">
+            </a>
+            <div>boat-speed-d</div>
+            <div class="tooltip">Size: 24 KB<br>Vertices: 422</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="boat-speed-e">
+            <a href="models\boat-speed-e.glb" draggable="true">
+                <img src="Previews\boat-speed-e.png" alt="boat-speed-e">
+            </a>
+            <div>boat-speed-e</div>
+            <div class="tooltip">Size: 25 KB<br>Vertices: 453</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="boat-speed-f">
+            <a href="models\boat-speed-f.glb" draggable="true">
+                <img src="Previews\boat-speed-f.png" alt="boat-speed-f">
+            </a>
+            <div>boat-speed-f</div>
+            <div class="tooltip">Size: 23 KB<br>Vertices: 398</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="boat-speed-g">
+            <a href="models\boat-speed-g.glb" draggable="true">
+                <img src="Previews\boat-speed-g.png" alt="boat-speed-g">
+            </a>
+            <div>boat-speed-g</div>
+            <div class="tooltip">Size: 18 KB<br>Vertices: 248</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="boat-speed-h">
+            <a href="models\boat-speed-h.glb" draggable="true">
+                <img src="Previews\boat-speed-h.png" alt="boat-speed-h">
+            </a>
+            <div>boat-speed-h</div>
+            <div class="tooltip">Size: 20 KB<br>Vertices: 318</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="boat-speed-i">
+            <a href="models\boat-speed-i.glb" draggable="true">
+                <img src="Previews\boat-speed-i.png" alt="boat-speed-i">
+            </a>
+            <div>boat-speed-i</div>
+            <div class="tooltip">Size: 18 KB<br>Vertices: 260</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="boat-speed-j">
+            <a href="models\boat-speed-j.glb" draggable="true">
+                <img src="Previews\boat-speed-j.png" alt="boat-speed-j">
+            </a>
+            <div>boat-speed-j</div>
+            <div class="tooltip">Size: 20 KB<br>Vertices: 318</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="boat-tow-a">
+            <a href="models\boat-tow-a.glb" draggable="true">
+                <img src="Previews\boat-tow-a.png" alt="boat-tow-a">
+            </a>
+            <div>boat-tow-a</div>
+            <div class="tooltip">Size: 43 KB<br>Vertices: 952</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="boat-tow-b">
+            <a href="models\boat-tow-b.glb" draggable="true">
+                <img src="Previews\boat-tow-b.png" alt="boat-tow-b">
+            </a>
+            <div>boat-tow-b</div>
+            <div class="tooltip">Size: 43 KB<br>Vertices: 962</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="boat-tug-a">
+            <a href="models\boat-tug-a.glb" draggable="true">
+                <img src="Previews\boat-tug-a.png" alt="boat-tug-a">
+            </a>
+            <div>boat-tug-a</div>
+            <div class="tooltip">Size: 36 KB<br>Vertices: 761</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="boat-tug-b">
+            <a href="models\boat-tug-b.glb" draggable="true">
+                <img src="Previews\boat-tug-b.png" alt="boat-tug-b">
+            </a>
+            <div>boat-tug-b</div>
+            <div class="tooltip">Size: 31 KB<br>Vertices: 615</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="boat-tug-c">
+            <a href="models\boat-tug-c.glb" draggable="true">
+                <img src="Previews\boat-tug-c.png" alt="boat-tug-c">
+            </a>
+            <div>boat-tug-c</div>
+            <div class="tooltip">Size: 21 KB<br>Vertices: 334</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="buoy-flag">
+            <a href="models\buoy-flag.glb" draggable="true">
+                <img src="Previews\buoy-flag.png" alt="buoy-flag">
+            </a>
+            <div>buoy-flag</div>
+            <div class="tooltip">Size: 23 KB<br>Vertices: 388</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="buoy">
+            <a href="models\buoy.glb" draggable="true">
+                <img src="Previews\buoy.png" alt="buoy">
+            </a>
+            <div>buoy</div>
+            <div class="tooltip">Size: 17 KB<br>Vertices: 208</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cargo-container-a">
+            <a href="models\cargo-container-a.glb" draggable="true">
+                <img src="Previews\cargo-container-a.png" alt="cargo-container-a">
+            </a>
+            <div>cargo-container-a</div>
+            <div class="tooltip">Size: 19 KB<br>Vertices: 288</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cargo-container-b">
+            <a href="models\cargo-container-b.glb" draggable="true">
+                <img src="Previews\cargo-container-b.png" alt="cargo-container-b">
+            </a>
+            <div>cargo-container-b</div>
+            <div class="tooltip">Size: 19 KB<br>Vertices: 288</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cargo-container-c">
+            <a href="models\cargo-container-c.glb" draggable="true">
+                <img src="Previews\cargo-container-c.png" alt="cargo-container-c">
+            </a>
+            <div>cargo-container-c</div>
+            <div class="tooltip">Size: 19 KB<br>Vertices: 288</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cargo-pile-a">
+            <a href="models\cargo-pile-a.glb" draggable="true">
+                <img src="Previews\cargo-pile-a.png" alt="cargo-pile-a">
+            </a>
+            <div>cargo-pile-a</div>
+            <div class="tooltip">Size: 20 KB<br>Vertices: 320</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cargo-pile-b">
+            <a href="models\cargo-pile-b.glb" draggable="true">
+                <img src="Previews\cargo-pile-b.png" alt="cargo-pile-b">
+            </a>
+            <div>cargo-pile-b</div>
+            <div class="tooltip">Size: 32 KB<br>Vertices: 640</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="gate-finish">
+            <a href="models\gate-finish.glb" draggable="true">
+                <img src="Previews\gate-finish.png" alt="gate-finish">
+            </a>
+            <div>gate-finish</div>
+            <div class="tooltip">Size: 15 KB<br>Vertices: 146</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="gate">
+            <a href="models\gate.glb" draggable="true">
+                <img src="Previews\gate.png" alt="gate">
+            </a>
+            <div>gate</div>
+            <div class="tooltip">Size: 15 KB<br>Vertices: 162</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="ramp-wide">
+            <a href="models\ramp-wide.glb" draggable="true">
+                <img src="Previews\ramp-wide.png" alt="ramp-wide">
+            </a>
+            <div>ramp-wide</div>
+            <div class="tooltip">Size: 18 KB<br>Vertices: 256</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="ramp">
+            <a href="models\ramp.glb" draggable="true">
+                <img src="Previews\ramp.png" alt="ramp">
+            </a>
+            <div>ramp</div>
+            <div class="tooltip">Size: 18 KB<br>Vertices: 256</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="ship-cargo-a">
+            <a href="models\ship-cargo-a.glb" draggable="true">
+                <img src="Previews\ship-cargo-a.png" alt="ship-cargo-a">
+            </a>
+            <div>ship-cargo-a</div>
+            <div class="tooltip">Size: 72 KB<br>Vertices: 1796</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="ship-cargo-b">
+            <a href="models\ship-cargo-b.glb" draggable="true">
+                <img src="Previews\ship-cargo-b.png" alt="ship-cargo-b">
+            </a>
+            <div>ship-cargo-b</div>
+            <div class="tooltip">Size: 61 KB<br>Vertices: 1464</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="ship-cargo-c">
+            <a href="models\ship-cargo-c.glb" draggable="true">
+                <img src="Previews\ship-cargo-c.png" alt="ship-cargo-c">
+            </a>
+            <div>ship-cargo-c</div>
+            <div class="tooltip">Size: 30 KB<br>Vertices: 576</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="ship-large">
+            <a href="models\ship-large.glb" draggable="true">
+                <img src="Previews\ship-large.png" alt="ship-large">
+            </a>
+            <div>ship-large</div>
+            <div class="tooltip">Size: 113 KB<br>Vertices: 2882</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="ship-ocean-liner-small">
+            <a href="models\ship-ocean-liner-small.glb" draggable="true">
+                <img src="Previews\ship-ocean-liner-small.png" alt="ship-ocean-liner-small">
+            </a>
+            <div>ship-ocean-liner-small</div>
+            <div class="tooltip">Size: 108 KB<br>Vertices: 2830</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="ship-ocean-liner">
+            <a href="models\ship-ocean-liner.glb" draggable="true">
+                <img src="Previews\ship-ocean-liner.png" alt="ship-ocean-liner">
+            </a>
+            <div>ship-ocean-liner</div>
+            <div class="tooltip">Size: 166 KB<br>Vertices: 4478</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="ship-small-ghost">
+            <a href="models\ship-small-ghost.glb" draggable="true">
+                <img src="Previews\ship-small-ghost.png" alt="ship-small-ghost">
+            </a>
+            <div>ship-small-ghost</div>
+            <div class="tooltip">Size: 112 KB<br>Vertices: 2881</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="ship-small">
+            <a href="models\ship-small.glb" draggable="true">
+                <img src="Previews\ship-small.png" alt="ship-small">
+            </a>
+            <div>ship-small</div>
+            <div class="tooltip">Size: 106 KB<br>Vertices: 2671</div>
+        </div>
+    </div>
+    <script>
+        function drag(event) {
+            event.dataTransfer.setData("text/plain", event.target.parentElement.href);
+        }
+        
+        document.getElementById("search").addEventListener("input", function() {
+            let filter = this.value.toLowerCase();
+            document.querySelectorAll(".package").forEach(item => {
+                item.style.display = item.getAttribute("data-name").includes(filter) ? "block" : "none";
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,996 @@
+[
+    {
+        "name": "arrow",
+        "glb": "models\\arrow.glb",
+        "preview": "Previews\\arrow.png",
+        "size_kb": 13,
+        "vertices": 118
+    },
+    {
+        "name": "arrows",
+        "glb": "models\\arrows.glb",
+        "preview": "Previews\\arrows.png",
+        "size_kb": 15,
+        "vertices": 164
+    },
+    {
+        "name": "barrel",
+        "glb": "models\\barrel.glb",
+        "preview": "Previews\\barrel.png",
+        "size_kb": 18,
+        "vertices": 248
+    },
+    {
+        "name": "block-grass-corner-low",
+        "glb": "models\\block-grass-corner-low.glb",
+        "preview": "Previews\\block-grass-corner-low.png",
+        "size_kb": 14,
+        "vertices": 154
+    },
+    {
+        "name": "block-grass-corner-overhang-low",
+        "glb": "models\\block-grass-corner-overhang-low.glb",
+        "preview": "Previews\\block-grass-corner-overhang-low.png",
+        "size_kb": 16,
+        "vertices": 197
+    },
+    {
+        "name": "block-grass-corner-overhang",
+        "glb": "models\\block-grass-corner-overhang.glb",
+        "preview": "Previews\\block-grass-corner-overhang.png",
+        "size_kb": 16,
+        "vertices": 197
+    },
+    {
+        "name": "block-grass-corner",
+        "glb": "models\\block-grass-corner.glb",
+        "preview": "Previews\\block-grass-corner.png",
+        "size_kb": 14,
+        "vertices": 154
+    },
+    {
+        "name": "block-grass-curve-half",
+        "glb": "models\\block-grass-curve-half.glb",
+        "preview": "Previews\\block-grass-curve-half.png",
+        "size_kb": 16,
+        "vertices": 186
+    },
+    {
+        "name": "block-grass-curve-low",
+        "glb": "models\\block-grass-curve-low.glb",
+        "preview": "Previews\\block-grass-curve-low.png",
+        "size_kb": 18,
+        "vertices": 246
+    },
+    {
+        "name": "block-grass-curve",
+        "glb": "models\\block-grass-curve.glb",
+        "preview": "Previews\\block-grass-curve.png",
+        "size_kb": 21,
+        "vertices": 334
+    },
+    {
+        "name": "block-grass-edge",
+        "glb": "models\\block-grass-edge.glb",
+        "preview": "Previews\\block-grass-edge.png",
+        "size_kb": 16,
+        "vertices": 200
+    },
+    {
+        "name": "block-grass-hexagon",
+        "glb": "models\\block-grass-hexagon.glb",
+        "preview": "Previews\\block-grass-hexagon.png",
+        "size_kb": 12,
+        "vertices": 84
+    },
+    {
+        "name": "block-grass-large-slope-narrow",
+        "glb": "models\\block-grass-large-slope-narrow.glb",
+        "preview": "Previews\\block-grass-large-slope-narrow.png",
+        "size_kb": 15,
+        "vertices": 180
+    },
+    {
+        "name": "block-grass-large-slope-steep-narrow",
+        "glb": "models\\block-grass-large-slope-steep-narrow.glb",
+        "preview": "Previews\\block-grass-large-slope-steep-narrow.png",
+        "size_kb": 15,
+        "vertices": 180
+    },
+    {
+        "name": "block-grass-large-slope-steep",
+        "glb": "models\\block-grass-large-slope-steep.glb",
+        "preview": "Previews\\block-grass-large-slope-steep.png",
+        "size_kb": 15,
+        "vertices": 180
+    },
+    {
+        "name": "block-grass-large-slope",
+        "glb": "models\\block-grass-large-slope.glb",
+        "preview": "Previews\\block-grass-large-slope.png",
+        "size_kb": 15,
+        "vertices": 180
+    },
+    {
+        "name": "block-grass-large-tall",
+        "glb": "models\\block-grass-large-tall.glb",
+        "preview": "Previews\\block-grass-large-tall.png",
+        "size_kb": 15,
+        "vertices": 168
+    },
+    {
+        "name": "block-grass-large",
+        "glb": "models\\block-grass-large.glb",
+        "preview": "Previews\\block-grass-large.png",
+        "size_kb": 15,
+        "vertices": 168
+    },
+    {
+        "name": "block-grass-long",
+        "glb": "models\\block-grass-long.glb",
+        "preview": "Previews\\block-grass-long.png",
+        "size_kb": 15,
+        "vertices": 168
+    },
+    {
+        "name": "block-grass-low-hexagon",
+        "glb": "models\\block-grass-low-hexagon.glb",
+        "preview": "Previews\\block-grass-low-hexagon.png",
+        "size_kb": 12,
+        "vertices": 84
+    },
+    {
+        "name": "block-grass-low-large",
+        "glb": "models\\block-grass-low-large.glb",
+        "preview": "Previews\\block-grass-low-large.png",
+        "size_kb": 15,
+        "vertices": 168
+    },
+    {
+        "name": "block-grass-low-long",
+        "glb": "models\\block-grass-low-long.glb",
+        "preview": "Previews\\block-grass-low-long.png",
+        "size_kb": 15,
+        "vertices": 168
+    },
+    {
+        "name": "block-grass-low-narrow",
+        "glb": "models\\block-grass-low-narrow.glb",
+        "preview": "Previews\\block-grass-low-narrow.png",
+        "size_kb": 15,
+        "vertices": 168
+    },
+    {
+        "name": "block-grass-low",
+        "glb": "models\\block-grass-low.glb",
+        "preview": "Previews\\block-grass-low.png",
+        "size_kb": 15,
+        "vertices": 168
+    },
+    {
+        "name": "block-grass-narrow",
+        "glb": "models\\block-grass-narrow.glb",
+        "preview": "Previews\\block-grass-narrow.png",
+        "size_kb": 15,
+        "vertices": 168
+    },
+    {
+        "name": "block-grass-overhang-corner",
+        "glb": "models\\block-grass-overhang-corner.glb",
+        "preview": "Previews\\block-grass-overhang-corner.png",
+        "size_kb": 17,
+        "vertices": 220
+    },
+    {
+        "name": "block-grass-overhang-edge",
+        "glb": "models\\block-grass-overhang-edge.glb",
+        "preview": "Previews\\block-grass-overhang-edge.png",
+        "size_kb": 18,
+        "vertices": 252
+    },
+    {
+        "name": "block-grass-overhang-hexagon",
+        "glb": "models\\block-grass-overhang-hexagon.glb",
+        "preview": "Previews\\block-grass-overhang-hexagon.png",
+        "size_kb": 13,
+        "vertices": 114
+    },
+    {
+        "name": "block-grass-overhang-large-slope-narrow",
+        "glb": "models\\block-grass-overhang-large-slope-narrow.glb",
+        "preview": "Previews\\block-grass-overhang-large-slope-narrow.png",
+        "size_kb": 18,
+        "vertices": 248
+    },
+    {
+        "name": "block-grass-overhang-large-slope-steep-narrow",
+        "glb": "models\\block-grass-overhang-large-slope-steep-narrow.glb",
+        "preview": "Previews\\block-grass-overhang-large-slope-steep-narrow.png",
+        "size_kb": 18,
+        "vertices": 248
+    },
+    {
+        "name": "block-grass-overhang-large-slope-steep",
+        "glb": "models\\block-grass-overhang-large-slope-steep.glb",
+        "preview": "Previews\\block-grass-overhang-large-slope-steep.png",
+        "size_kb": 18,
+        "vertices": 264
+    },
+    {
+        "name": "block-grass-overhang-large-slope",
+        "glb": "models\\block-grass-overhang-large-slope.glb",
+        "preview": "Previews\\block-grass-overhang-large-slope.png",
+        "size_kb": 18,
+        "vertices": 264
+    },
+    {
+        "name": "block-grass-overhang-large-tall",
+        "glb": "models\\block-grass-overhang-large-tall.glb",
+        "preview": "Previews\\block-grass-overhang-large-tall.png",
+        "size_kb": 18,
+        "vertices": 252
+    },
+    {
+        "name": "block-grass-overhang-large",
+        "glb": "models\\block-grass-overhang-large.glb",
+        "preview": "Previews\\block-grass-overhang-large.png",
+        "size_kb": 18,
+        "vertices": 252
+    },
+    {
+        "name": "block-grass-overhang-long",
+        "glb": "models\\block-grass-overhang-long.glb",
+        "preview": "Previews\\block-grass-overhang-long.png",
+        "size_kb": 17,
+        "vertices": 236
+    },
+    {
+        "name": "block-grass-overhang-low-hexagon",
+        "glb": "models\\block-grass-overhang-low-hexagon.glb",
+        "preview": "Previews\\block-grass-overhang-low-hexagon.png",
+        "size_kb": 13,
+        "vertices": 114
+    },
+    {
+        "name": "block-grass-overhang-low-large",
+        "glb": "models\\block-grass-overhang-low-large.glb",
+        "preview": "Previews\\block-grass-overhang-low-large.png",
+        "size_kb": 18,
+        "vertices": 252
+    },
+    {
+        "name": "block-grass-overhang-low-long",
+        "glb": "models\\block-grass-overhang-low-long.glb",
+        "preview": "Previews\\block-grass-overhang-low-long.png",
+        "size_kb": 17,
+        "vertices": 236
+    },
+    {
+        "name": "block-grass-overhang-low-narrow",
+        "glb": "models\\block-grass-overhang-low-narrow.glb",
+        "preview": "Previews\\block-grass-overhang-low-narrow.png",
+        "size_kb": 17,
+        "vertices": 220
+    },
+    {
+        "name": "block-grass-overhang-low",
+        "glb": "models\\block-grass-overhang-low.glb",
+        "preview": "Previews\\block-grass-overhang-low.png",
+        "size_kb": 17,
+        "vertices": 220
+    },
+    {
+        "name": "block-grass-overhang-narrow",
+        "glb": "models\\block-grass-overhang-narrow.glb",
+        "preview": "Previews\\block-grass-overhang-narrow.png",
+        "size_kb": 17,
+        "vertices": 220
+    },
+    {
+        "name": "block-grass",
+        "glb": "models\\block-grass.glb",
+        "preview": "Previews\\block-grass.png",
+        "size_kb": 15,
+        "vertices": 168
+    },
+    {
+        "name": "block-moving-blue",
+        "glb": "models\\block-moving-blue.glb",
+        "preview": "Previews\\block-moving-blue.png",
+        "size_kb": 24,
+        "vertices": 416
+    },
+    {
+        "name": "block-moving-large",
+        "glb": "models\\block-moving-large.glb",
+        "preview": "Previews\\block-moving-large.png",
+        "size_kb": 17,
+        "vertices": 216
+    },
+    {
+        "name": "block-moving",
+        "glb": "models\\block-moving.glb",
+        "preview": "Previews\\block-moving.png",
+        "size_kb": 17,
+        "vertices": 216
+    },
+    {
+        "name": "block-snow-corner-low",
+        "glb": "models\\block-snow-corner-low.glb",
+        "preview": "Previews\\block-snow-corner-low.png",
+        "size_kb": 14,
+        "vertices": 154
+    },
+    {
+        "name": "block-snow-corner-overhang-low",
+        "glb": "models\\block-snow-corner-overhang-low.glb",
+        "preview": "Previews\\block-snow-corner-overhang-low.png",
+        "size_kb": 15,
+        "vertices": 182
+    },
+    {
+        "name": "block-snow-corner-overhang",
+        "glb": "models\\block-snow-corner-overhang.glb",
+        "preview": "Previews\\block-snow-corner-overhang.png",
+        "size_kb": 15,
+        "vertices": 182
+    },
+    {
+        "name": "block-snow-corner",
+        "glb": "models\\block-snow-corner.glb",
+        "preview": "Previews\\block-snow-corner.png",
+        "size_kb": 14,
+        "vertices": 154
+    },
+    {
+        "name": "block-snow-curve-half",
+        "glb": "models\\block-snow-curve-half.glb",
+        "preview": "Previews\\block-snow-curve-half.png",
+        "size_kb": 16,
+        "vertices": 186
+    },
+    {
+        "name": "block-snow-curve-low",
+        "glb": "models\\block-snow-curve-low.glb",
+        "preview": "Previews\\block-snow-curve-low.png",
+        "size_kb": 18,
+        "vertices": 246
+    },
+    {
+        "name": "block-snow-curve",
+        "glb": "models\\block-snow-curve.glb",
+        "preview": "Previews\\block-snow-curve.png",
+        "size_kb": 21,
+        "vertices": 334
+    },
+    {
+        "name": "block-snow-edge",
+        "glb": "models\\block-snow-edge.glb",
+        "preview": "Previews\\block-snow-edge.png",
+        "size_kb": 16,
+        "vertices": 200
+    },
+    {
+        "name": "block-snow-hexagon",
+        "glb": "models\\block-snow-hexagon.glb",
+        "preview": "Previews\\block-snow-hexagon.png",
+        "size_kb": 12,
+        "vertices": 84
+    },
+    {
+        "name": "block-snow-large-slope-narrow",
+        "glb": "models\\block-snow-large-slope-narrow.glb",
+        "preview": "Previews\\block-snow-large-slope-narrow.png",
+        "size_kb": 15,
+        "vertices": 180
+    },
+    {
+        "name": "block-snow-large-slope-steep-narrow",
+        "glb": "models\\block-snow-large-slope-steep-narrow.glb",
+        "preview": "Previews\\block-snow-large-slope-steep-narrow.png",
+        "size_kb": 15,
+        "vertices": 180
+    },
+    {
+        "name": "block-snow-large-slope-steep",
+        "glb": "models\\block-snow-large-slope-steep.glb",
+        "preview": "Previews\\block-snow-large-slope-steep.png",
+        "size_kb": 15,
+        "vertices": 180
+    },
+    {
+        "name": "block-snow-large-slope",
+        "glb": "models\\block-snow-large-slope.glb",
+        "preview": "Previews\\block-snow-large-slope.png",
+        "size_kb": 15,
+        "vertices": 180
+    },
+    {
+        "name": "block-snow-large-tall",
+        "glb": "models\\block-snow-large-tall.glb",
+        "preview": "Previews\\block-snow-large-tall.png",
+        "size_kb": 15,
+        "vertices": 168
+    },
+    {
+        "name": "block-snow-large",
+        "glb": "models\\block-snow-large.glb",
+        "preview": "Previews\\block-snow-large.png",
+        "size_kb": 15,
+        "vertices": 168
+    },
+    {
+        "name": "block-snow-long",
+        "glb": "models\\block-snow-long.glb",
+        "preview": "Previews\\block-snow-long.png",
+        "size_kb": 15,
+        "vertices": 168
+    },
+    {
+        "name": "block-snow-low-hexagon",
+        "glb": "models\\block-snow-low-hexagon.glb",
+        "preview": "Previews\\block-snow-low-hexagon.png",
+        "size_kb": 12,
+        "vertices": 84
+    },
+    {
+        "name": "block-snow-low-large",
+        "glb": "models\\block-snow-low-large.glb",
+        "preview": "Previews\\block-snow-low-large.png",
+        "size_kb": 15,
+        "vertices": 168
+    },
+    {
+        "name": "block-snow-low-long",
+        "glb": "models\\block-snow-low-long.glb",
+        "preview": "Previews\\block-snow-low-long.png",
+        "size_kb": 15,
+        "vertices": 168
+    },
+    {
+        "name": "block-snow-low-narrow",
+        "glb": "models\\block-snow-low-narrow.glb",
+        "preview": "Previews\\block-snow-low-narrow.png",
+        "size_kb": 15,
+        "vertices": 168
+    },
+    {
+        "name": "block-snow-low",
+        "glb": "models\\block-snow-low.glb",
+        "preview": "Previews\\block-snow-low.png",
+        "size_kb": 15,
+        "vertices": 168
+    },
+    {
+        "name": "block-snow-narrow",
+        "glb": "models\\block-snow-narrow.glb",
+        "preview": "Previews\\block-snow-narrow.png",
+        "size_kb": 15,
+        "vertices": 168
+    },
+    {
+        "name": "block-snow-overhang-corner",
+        "glb": "models\\block-snow-overhang-corner.glb",
+        "preview": "Previews\\block-snow-overhang-corner.png",
+        "size_kb": 16,
+        "vertices": 196
+    },
+    {
+        "name": "block-snow-overhang-edge",
+        "glb": "models\\block-snow-overhang-edge.glb",
+        "preview": "Previews\\block-snow-overhang-edge.png",
+        "size_kb": 17,
+        "vertices": 228
+    },
+    {
+        "name": "block-snow-overhang-hexagon",
+        "glb": "models\\block-snow-overhang-hexagon.glb",
+        "preview": "Previews\\block-snow-overhang-hexagon.png",
+        "size_kb": 13,
+        "vertices": 112
+    },
+    {
+        "name": "block-snow-overhang-large-slope-narrow",
+        "glb": "models\\block-snow-overhang-large-slope-narrow.glb",
+        "preview": "Previews\\block-snow-overhang-large-slope-narrow.png",
+        "size_kb": 17,
+        "vertices": 222
+    },
+    {
+        "name": "block-snow-overhang-large-slope-steep-narrow",
+        "glb": "models\\block-snow-overhang-large-slope-steep-narrow.glb",
+        "preview": "Previews\\block-snow-overhang-large-slope-steep-narrow.png",
+        "size_kb": 17,
+        "vertices": 222
+    },
+    {
+        "name": "block-snow-overhang-large-slope-steep",
+        "glb": "models\\block-snow-overhang-large-slope-steep.glb",
+        "preview": "Previews\\block-snow-overhang-large-slope-steep.png",
+        "size_kb": 18,
+        "vertices": 264
+    },
+    {
+        "name": "block-snow-overhang-large-slope",
+        "glb": "models\\block-snow-overhang-large-slope.glb",
+        "preview": "Previews\\block-snow-overhang-large-slope.png",
+        "size_kb": 18,
+        "vertices": 264
+    },
+    {
+        "name": "block-snow-overhang-large-tall",
+        "glb": "models\\block-snow-overhang-large-tall.glb",
+        "preview": "Previews\\block-snow-overhang-large-tall.png",
+        "size_kb": 18,
+        "vertices": 252
+    },
+    {
+        "name": "block-snow-overhang-large",
+        "glb": "models\\block-snow-overhang-large.glb",
+        "preview": "Previews\\block-snow-overhang-large.png",
+        "size_kb": 18,
+        "vertices": 252
+    },
+    {
+        "name": "block-snow-overhang-long",
+        "glb": "models\\block-snow-overhang-long.glb",
+        "preview": "Previews\\block-snow-overhang-long.png",
+        "size_kb": 16,
+        "vertices": 210
+    },
+    {
+        "name": "block-snow-overhang-low-hexagon",
+        "glb": "models\\block-snow-overhang-low-hexagon.glb",
+        "preview": "Previews\\block-snow-overhang-low-hexagon.png",
+        "size_kb": 13,
+        "vertices": 112
+    },
+    {
+        "name": "block-snow-overhang-low-large",
+        "glb": "models\\block-snow-overhang-low-large.glb",
+        "preview": "Previews\\block-snow-overhang-low-large.png",
+        "size_kb": 18,
+        "vertices": 252
+    },
+    {
+        "name": "block-snow-overhang-low-long",
+        "glb": "models\\block-snow-overhang-low-long.glb",
+        "preview": "Previews\\block-snow-overhang-low-long.png",
+        "size_kb": 16,
+        "vertices": 210
+    },
+    {
+        "name": "block-snow-overhang-low-narrow",
+        "glb": "models\\block-snow-overhang-low-narrow.glb",
+        "preview": "Previews\\block-snow-overhang-low-narrow.png",
+        "size_kb": 16,
+        "vertices": 188
+    },
+    {
+        "name": "block-snow-overhang-low",
+        "glb": "models\\block-snow-overhang-low.glb",
+        "preview": "Previews\\block-snow-overhang-low.png",
+        "size_kb": 16,
+        "vertices": 196
+    },
+    {
+        "name": "block-snow-overhang-narrow",
+        "glb": "models\\block-snow-overhang-narrow.glb",
+        "preview": "Previews\\block-snow-overhang-narrow.png",
+        "size_kb": 16,
+        "vertices": 188
+    },
+    {
+        "name": "block-snow",
+        "glb": "models\\block-snow.glb",
+        "preview": "Previews\\block-snow.png",
+        "size_kb": 15,
+        "vertices": 168
+    },
+    {
+        "name": "bomb",
+        "glb": "models\\bomb.glb",
+        "preview": "Previews\\bomb.png",
+        "size_kb": 15,
+        "vertices": 184
+    },
+    {
+        "name": "button-round",
+        "glb": "models\\button-round.glb",
+        "preview": "Previews\\button-round.png",
+        "size_kb": 16,
+        "vertices": 144
+    },
+    {
+        "name": "button-square",
+        "glb": "models\\button-square.glb",
+        "preview": "Previews\\button-square.png",
+        "size_kb": 16,
+        "vertices": 144
+    },
+    {
+        "name": "chest",
+        "glb": "models\\chest.glb",
+        "preview": "Previews\\chest.png",
+        "size_kb": 26,
+        "vertices": 378
+    },
+    {
+        "name": "coin-bronze",
+        "glb": "models\\coin-bronze.glb",
+        "preview": "Previews\\coin-bronze.png",
+        "size_kb": 14,
+        "vertices": 132
+    },
+    {
+        "name": "coin-gold",
+        "glb": "models\\coin-gold.glb",
+        "preview": "Previews\\coin-gold.png",
+        "size_kb": 14,
+        "vertices": 132
+    },
+    {
+        "name": "coin-silver",
+        "glb": "models\\coin-silver.glb",
+        "preview": "Previews\\coin-silver.png",
+        "size_kb": 14,
+        "vertices": 132
+    },
+    {
+        "name": "crate-item-strong",
+        "glb": "models\\crate-item-strong.glb",
+        "preview": "Previews\\crate-item-strong.png",
+        "size_kb": 33,
+        "vertices": 696
+    },
+    {
+        "name": "crate-item",
+        "glb": "models\\crate-item.glb",
+        "preview": "Previews\\crate-item.png",
+        "size_kb": 17,
+        "vertices": 240
+    },
+    {
+        "name": "crate-strong",
+        "glb": "models\\crate-strong.glb",
+        "preview": "Previews\\crate-strong.png",
+        "size_kb": 36,
+        "vertices": 780
+    },
+    {
+        "name": "crate",
+        "glb": "models\\crate.glb",
+        "preview": "Previews\\crate.png",
+        "size_kb": 18,
+        "vertices": 252
+    },
+    {
+        "name": "door-large-open",
+        "glb": "models\\door-large-open.glb",
+        "preview": "Previews\\door-large-open.png",
+        "size_kb": 19,
+        "vertices": 296
+    },
+    {
+        "name": "door-open",
+        "glb": "models\\door-open.glb",
+        "preview": "Previews\\door-open.png",
+        "size_kb": 13,
+        "vertices": 108
+    },
+    {
+        "name": "door-rotate-large",
+        "glb": "models\\door-rotate-large.glb",
+        "preview": "Previews\\door-rotate-large.png",
+        "size_kb": 34,
+        "vertices": 614
+    },
+    {
+        "name": "door-rotate",
+        "glb": "models\\door-rotate.glb",
+        "preview": "Previews\\door-rotate.png",
+        "size_kb": 34,
+        "vertices": 615
+    },
+    {
+        "name": "fence-broken",
+        "glb": "models\\fence-broken.glb",
+        "preview": "Previews\\fence-broken.png",
+        "size_kb": 22,
+        "vertices": 384
+    },
+    {
+        "name": "fence-corner-curved",
+        "glb": "models\\fence-corner-curved.glb",
+        "preview": "Previews\\fence-corner-curved.png",
+        "size_kb": 18,
+        "vertices": 264
+    },
+    {
+        "name": "fence-corner",
+        "glb": "models\\fence-corner.glb",
+        "preview": "Previews\\fence-corner.png",
+        "size_kb": 15,
+        "vertices": 168
+    },
+    {
+        "name": "fence-low-broken",
+        "glb": "models\\fence-low-broken.glb",
+        "preview": "Previews\\fence-low-broken.png",
+        "size_kb": 15,
+        "vertices": 176
+    },
+    {
+        "name": "fence-low-corner-curved",
+        "glb": "models\\fence-low-corner-curved.glb",
+        "preview": "Previews\\fence-low-corner-curved.png",
+        "size_kb": 22,
+        "vertices": 380
+    },
+    {
+        "name": "fence-low-corner",
+        "glb": "models\\fence-low-corner.glb",
+        "preview": "Previews\\fence-low-corner.png",
+        "size_kb": 16,
+        "vertices": 208
+    },
+    {
+        "name": "fence-low-straight",
+        "glb": "models\\fence-low-straight.glb",
+        "preview": "Previews\\fence-low-straight.png",
+        "size_kb": 14,
+        "vertices": 128
+    },
+    {
+        "name": "fence-straight",
+        "glb": "models\\fence-straight.glb",
+        "preview": "Previews\\fence-straight.png",
+        "size_kb": 12,
+        "vertices": 96
+    },
+    {
+        "name": "flag",
+        "glb": "models\\flag.glb",
+        "preview": "Previews\\flag.png",
+        "size_kb": 16,
+        "vertices": 194
+    },
+    {
+        "name": "flowers-tall",
+        "glb": "models\\flowers-tall.glb",
+        "preview": "Previews\\flowers-tall.png",
+        "size_kb": 34,
+        "vertices": 728
+    },
+    {
+        "name": "flowers",
+        "glb": "models\\flowers.glb",
+        "preview": "Previews\\flowers.png",
+        "size_kb": 26,
+        "vertices": 468
+    },
+    {
+        "name": "grass",
+        "glb": "models\\grass.glb",
+        "preview": "Previews\\grass.png",
+        "size_kb": 14,
+        "vertices": 144
+    },
+    {
+        "name": "heart",
+        "glb": "models\\heart.glb",
+        "preview": "Previews\\heart.png",
+        "size_kb": 12,
+        "vertices": 80
+    },
+    {
+        "name": "hedge-corner",
+        "glb": "models\\hedge-corner.glb",
+        "preview": "Previews\\hedge-corner.png",
+        "size_kb": 16,
+        "vertices": 200
+    },
+    {
+        "name": "hedge",
+        "glb": "models\\hedge.glb",
+        "preview": "Previews\\hedge.png",
+        "size_kb": 14,
+        "vertices": 144
+    },
+    {
+        "name": "jewel",
+        "glb": "models\\jewel.glb",
+        "preview": "Previews\\jewel.png",
+        "size_kb": 10,
+        "vertices": 36
+    },
+    {
+        "name": "key",
+        "glb": "models\\key.glb",
+        "preview": "Previews\\key.png",
+        "size_kb": 17,
+        "vertices": 230
+    },
+    {
+        "name": "ladder-broken",
+        "glb": "models\\ladder-broken.glb",
+        "preview": "Previews\\ladder-broken.png",
+        "size_kb": 15,
+        "vertices": 184
+    },
+    {
+        "name": "ladder-long",
+        "glb": "models\\ladder-long.glb",
+        "preview": "Previews\\ladder-long.png",
+        "size_kb": 15,
+        "vertices": 176
+    },
+    {
+        "name": "ladder",
+        "glb": "models\\ladder.glb",
+        "preview": "Previews\\ladder.png",
+        "size_kb": 13,
+        "vertices": 112
+    },
+    {
+        "name": "lever",
+        "glb": "models\\lever.glb",
+        "preview": "Previews\\lever.png",
+        "size_kb": 20,
+        "vertices": 230
+    },
+    {
+        "name": "lock",
+        "glb": "models\\lock.glb",
+        "preview": "Previews\\lock.png",
+        "size_kb": 15,
+        "vertices": 164
+    },
+    {
+        "name": "mushrooms",
+        "glb": "models\\mushrooms.glb",
+        "preview": "Previews\\mushrooms.png",
+        "size_kb": 17,
+        "vertices": 240
+    },
+    {
+        "name": "plant",
+        "glb": "models\\plant.glb",
+        "preview": "Previews\\plant.png",
+        "size_kb": 12,
+        "vertices": 72
+    },
+    {
+        "name": "platform-fortified",
+        "glb": "models\\platform-fortified.glb",
+        "preview": "Previews\\platform-fortified.png",
+        "size_kb": 16,
+        "vertices": 216
+    },
+    {
+        "name": "platform-overhang",
+        "glb": "models\\platform-overhang.glb",
+        "preview": "Previews\\platform-overhang.png",
+        "size_kb": 14,
+        "vertices": 136
+    },
+    {
+        "name": "platform-ramp",
+        "glb": "models\\platform-ramp.glb",
+        "preview": "Previews\\platform-ramp.png",
+        "size_kb": 15,
+        "vertices": 168
+    },
+    {
+        "name": "platform",
+        "glb": "models\\platform.glb",
+        "preview": "Previews\\platform.png",
+        "size_kb": 15,
+        "vertices": 168
+    },
+    {
+        "name": "poles",
+        "glb": "models\\poles.glb",
+        "preview": "Previews\\poles.png",
+        "size_kb": 24,
+        "vertices": 432
+    },
+    {
+        "name": "rocks",
+        "glb": "models\\rocks.glb",
+        "preview": "Previews\\rocks.png",
+        "size_kb": 15,
+        "vertices": 158
+    },
+    {
+        "name": "saw",
+        "glb": "models\\saw.glb",
+        "preview": "Previews\\saw.png",
+        "size_kb": 18,
+        "vertices": 248
+    },
+    {
+        "name": "sign",
+        "glb": "models\\sign.glb",
+        "preview": "Previews\\sign.png",
+        "size_kb": 14,
+        "vertices": 144
+    },
+    {
+        "name": "spike-block-wide",
+        "glb": "models\\spike-block-wide.glb",
+        "preview": "Previews\\spike-block-wide.png",
+        "size_kb": 26,
+        "vertices": 496
+    },
+    {
+        "name": "spike-block",
+        "glb": "models\\spike-block.glb",
+        "preview": "Previews\\spike-block.png",
+        "size_kb": 18,
+        "vertices": 264
+    },
+    {
+        "name": "stones",
+        "glb": "models\\stones.glb",
+        "preview": "Previews\\stones.png",
+        "size_kb": 17,
+        "vertices": 240
+    },
+    {
+        "name": "trap-spikes-large",
+        "glb": "models\\trap-spikes-large.glb",
+        "preview": "Previews\\trap-spikes-large.png",
+        "size_kb": 26,
+        "vertices": 420
+    },
+    {
+        "name": "trap-spikes",
+        "glb": "models\\trap-spikes.glb",
+        "preview": "Previews\\trap-spikes.png",
+        "size_kb": 21,
+        "vertices": 272
+    },
+    {
+        "name": "tree-pine-small",
+        "glb": "models\\tree-pine-small.glb",
+        "preview": "Previews\\tree-pine-small.png",
+        "size_kb": 23,
+        "vertices": 402
+    },
+    {
+        "name": "tree-pine-snow-small",
+        "glb": "models\\tree-pine-snow-small.glb",
+        "preview": "Previews\\tree-pine-snow-small.png",
+        "size_kb": 23,
+        "vertices": 402
+    },
+    {
+        "name": "tree-pine-snow",
+        "glb": "models\\tree-pine-snow.glb",
+        "preview": "Previews\\tree-pine-snow.png",
+        "size_kb": 23,
+        "vertices": 402
+    },
+    {
+        "name": "tree-pine",
+        "glb": "models\\tree-pine.glb",
+        "preview": "Previews\\tree-pine.png",
+        "size_kb": 23,
+        "vertices": 402
+    },
+    {
+        "name": "tree-snow",
+        "glb": "models\\tree-snow.glb",
+        "preview": "Previews\\tree-snow.png",
+        "size_kb": 47,
+        "vertices": 800
+    },
+    {
+        "name": "tree",
+        "glb": "models\\tree.glb",
+        "preview": "Previews\\tree.png",
+        "size_kb": 47,
+        "vertices": 800
+    }
+]

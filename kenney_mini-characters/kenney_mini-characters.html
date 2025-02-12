@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Kenney Mini Characters</title>
+    <meta name="description" content="Game assets overview">
+    <meta name="author" content="Kenney">
+    <style>
+        body {
+            font-family: system-ui;
+            font-size: 0.9em;
+            font-weight: 600;
+            color: #d7d9da;
+            background-color: #171B21;
+            margin: 2em auto;
+            max-width: 1120px;
+            text-align: center;
+        }
+        h1 { color: #FFF; }
+        .back-link {
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            font-size: 1.5em;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .search-container {
+            margin-bottom: 1em;
+        }
+        .search-input {
+            padding: 10px;
+            width: 50%;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #555;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .package {
+            width: 120px;
+            text-align: center;
+            background: #2f333a;
+            padding: 10px;
+            border-radius: 5px;
+            position: relative;
+        }
+        .package img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            cursor: grab;
+        }
+        .package img:active {
+            cursor: grabbing;
+        }
+        .tooltip {
+            visibility: hidden;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            border-radius: 5px;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            font-size: 0.8em;
+            pointer-events: none;
+        }
+        .package:hover .tooltip {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <a href="/index.html" class="back-link">Back</a>
+    <h1>Kenney Mini Characters</h1>
+    <div class="search-container">
+        <input type="text" id="search" class="search-input" placeholder="Search models...">
+    </div>
+    <div class="gallery" id="gallery">
+        
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="aid-cane-blind">
+            <a href="models\aid-cane-blind.glb" draggable="true">
+                <img src="Previews\aid-cane-blind.png" alt="aid-cane-blind">
+            </a>
+            <div>aid-cane-blind</div>
+            <div class="tooltip">Size: 12 KB<br>Vertices: 84</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="aid-cane-low-vision">
+            <a href="models\aid-cane-low-vision.glb" draggable="true">
+                <img src="Previews\aid-cane-low-vision.png" alt="aid-cane-low-vision">
+            </a>
+            <div>aid-cane-low-vision</div>
+            <div class="tooltip">Size: 13 KB<br>Vertices: 92</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="aid-cane">
+            <a href="models\aid-cane.glb" draggable="true">
+                <img src="Previews\aid-cane.png" alt="aid-cane">
+            </a>
+            <div>aid-cane</div>
+            <div class="tooltip">Size: 14 KB<br>Vertices: 132</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="aid-crutch">
+            <a href="models\aid-crutch.glb" draggable="true">
+                <img src="Previews\aid-crutch.png" alt="aid-crutch">
+            </a>
+            <div>aid-crutch</div>
+            <div class="tooltip">Size: 19 KB<br>Vertices: 267</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="aid-defibrillator-green">
+            <a href="models\aid-defibrillator-green.glb" draggable="true">
+                <img src="Previews\aid-defibrillator-green.png" alt="aid-defibrillator-green">
+            </a>
+            <div>aid-defibrillator-green</div>
+            <div class="tooltip">Size: 15 KB<br>Vertices: 144</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="aid-defibrillator-red">
+            <a href="models\aid-defibrillator-red.glb" draggable="true">
+                <img src="Previews\aid-defibrillator-red.png" alt="aid-defibrillator-red">
+            </a>
+            <div>aid-defibrillator-red</div>
+            <div class="tooltip">Size: 15 KB<br>Vertices: 144</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="aid-glasses">
+            <a href="models\aid-glasses.glb" draggable="true">
+                <img src="Previews\aid-glasses.png" alt="aid-glasses">
+            </a>
+            <div>aid-glasses</div>
+            <div class="tooltip">Size: 13 KB<br>Vertices: 82</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="aid-mask">
+            <a href="models\aid-mask.glb" draggable="true">
+                <img src="Previews\aid-mask.png" alt="aid-mask">
+            </a>
+            <div>aid-mask</div>
+            <div class="tooltip">Size: 19 KB<br>Vertices: 268</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="aid-sunglasses">
+            <a href="models\aid-sunglasses.glb" draggable="true">
+                <img src="Previews\aid-sunglasses.png" alt="aid-sunglasses">
+            </a>
+            <div>aid-sunglasses</div>
+            <div class="tooltip">Size: 13 KB<br>Vertices: 90</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="aid_hearing">
+            <a href="models\aid_hearing.glb" draggable="true">
+                <img src="Previews\aid_hearing.png" alt="aid_hearing">
+            </a>
+            <div>aid_hearing</div>
+            <div class="tooltip">Size: 13 KB<br>Vertices: 88</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="character-female-a">
+            <a href="models\character-female-a.glb" draggable="true">
+                <img src="Previews\character-female-a.png" alt="character-female-a">
+            </a>
+            <div>character-female-a</div>
+            <div class="tooltip">Size: 292 KB<br>Vertices: 1576</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="character-female-b">
+            <a href="models\character-female-b.glb" draggable="true">
+                <img src="Previews\character-female-b.png" alt="character-female-b">
+            </a>
+            <div>character-female-b</div>
+            <div class="tooltip">Size: 276 KB<br>Vertices: 1324</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="character-female-c">
+            <a href="models\character-female-c.glb" draggable="true">
+                <img src="Previews\character-female-c.png" alt="character-female-c">
+            </a>
+            <div>character-female-c</div>
+            <div class="tooltip">Size: 276 KB<br>Vertices: 1324</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="character-female-d">
+            <a href="models\character-female-d.glb" draggable="true">
+                <img src="Previews\character-female-d.png" alt="character-female-d">
+            </a>
+            <div>character-female-d</div>
+            <div class="tooltip">Size: 281 KB<br>Vertices: 1407</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="character-female-e">
+            <a href="models\character-female-e.glb" draggable="true">
+                <img src="Previews\character-female-e.png" alt="character-female-e">
+            </a>
+            <div>character-female-e</div>
+            <div class="tooltip">Size: 273 KB<br>Vertices: 1276</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="character-female-f">
+            <a href="models\character-female-f.glb" draggable="true">
+                <img src="Previews\character-female-f.png" alt="character-female-f">
+            </a>
+            <div>character-female-f</div>
+            <div class="tooltip">Size: 282 KB<br>Vertices: 1413</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="character-male-a">
+            <a href="models\character-male-a.glb" draggable="true">
+                <img src="Previews\character-male-a.png" alt="character-male-a">
+            </a>
+            <div>character-male-a</div>
+            <div class="tooltip">Size: 272 KB<br>Vertices: 1259</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="character-male-b">
+            <a href="models\character-male-b.glb" draggable="true">
+                <img src="Previews\character-male-b.png" alt="character-male-b">
+            </a>
+            <div>character-male-b</div>
+            <div class="tooltip">Size: 272 KB<br>Vertices: 1266</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="character-male-c">
+            <a href="models\character-male-c.glb" draggable="true">
+                <img src="Previews\character-male-c.png" alt="character-male-c">
+            </a>
+            <div>character-male-c</div>
+            <div class="tooltip">Size: 285 KB<br>Vertices: 1463</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="character-male-d">
+            <a href="models\character-male-d.glb" draggable="true">
+                <img src="Previews\character-male-d.png" alt="character-male-d">
+            </a>
+            <div>character-male-d</div>
+            <div class="tooltip">Size: 271 KB<br>Vertices: 1245</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="character-male-e">
+            <a href="models\character-male-e.glb" draggable="true">
+                <img src="Previews\character-male-e.png" alt="character-male-e">
+            </a>
+            <div>character-male-e</div>
+            <div class="tooltip">Size: 270 KB<br>Vertices: 1217</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="character-male-f">
+            <a href="models\character-male-f.glb" draggable="true">
+                <img src="Previews\character-male-f.png" alt="character-male-f">
+            </a>
+            <div>character-male-f</div>
+            <div class="tooltip">Size: 275 KB<br>Vertices: 1302</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="wheelchair-deluxe">
+            <a href="models\wheelchair-deluxe.glb" draggable="true">
+                <img src="Previews\wheelchair-deluxe.png" alt="wheelchair-deluxe">
+            </a>
+            <div>wheelchair-deluxe</div>
+            <div class="tooltip">Size: 49 KB<br>Vertices: 1134</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="wheelchair-power-deluxe">
+            <a href="models\wheelchair-power-deluxe.glb" draggable="true">
+                <img src="Previews\wheelchair-power-deluxe.png" alt="wheelchair-power-deluxe">
+            </a>
+            <div>wheelchair-power-deluxe</div>
+            <div class="tooltip">Size: 69 KB<br>Vertices: 1714</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="wheelchair-power">
+            <a href="models\wheelchair-power.glb" draggable="true">
+                <img src="Previews\wheelchair-power.png" alt="wheelchair-power">
+            </a>
+            <div>wheelchair-power</div>
+            <div class="tooltip">Size: 60 KB<br>Vertices: 1446</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="wheelchair">
+            <a href="models\wheelchair.glb" draggable="true">
+                <img src="Previews\wheelchair.png" alt="wheelchair">
+            </a>
+            <div>wheelchair</div>
+            <div class="tooltip">Size: 46 KB<br>Vertices: 1058</div>
+        </div>
+    </div>
+    <script>
+        function drag(event) {
+            event.dataTransfer.setData("text/plain", event.target.parentElement.href);
+        }
+        
+        document.getElementById("search").addEventListener("input", function() {
+            let filter = this.value.toLowerCase();
+            document.querySelectorAll(".package").forEach(item => {
+                item.style.display = item.getAttribute("data-name").includes(filter) ? "block" : "none";
+            });
+        });
+    </script>
+</body>
+</html>

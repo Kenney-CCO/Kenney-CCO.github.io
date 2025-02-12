@@ -1,0 +1,149 @@
+[
+    {
+        "name": "banner",
+        "glb": "models\\banner.glb",
+        "preview": "Previews\\banner.png",
+        "size_kb": 18,
+        "vertices": 270
+    },
+    {
+        "name": "barrel",
+        "glb": "models\\barrel.glb",
+        "preview": "Previews\\barrel.png",
+        "size_kb": 18,
+        "vertices": 248
+    },
+    {
+        "name": "character-human",
+        "glb": "models\\character-human.glb",
+        "preview": "Previews\\character-human.png",
+        "size_kb": 207,
+        "vertices": 825
+    },
+    {
+        "name": "character-orc",
+        "glb": "models\\character-orc.glb",
+        "preview": "Previews\\character-orc.png",
+        "size_kb": 198,
+        "vertices": 681
+    },
+    {
+        "name": "chest",
+        "glb": "models\\chest.glb",
+        "preview": "Previews\\chest.png",
+        "size_kb": 26,
+        "vertices": 378
+    },
+    {
+        "name": "coin",
+        "glb": "models\\coin.glb",
+        "preview": "Previews\\coin.png",
+        "size_kb": 23,
+        "vertices": 392
+    },
+    {
+        "name": "column",
+        "glb": "models\\column.glb",
+        "preview": "Previews\\column.png",
+        "size_kb": 13,
+        "vertices": 112
+    },
+    {
+        "name": "dirt",
+        "glb": "models\\dirt.glb",
+        "preview": "Previews\\dirt.png",
+        "size_kb": 10,
+        "vertices": 24
+    },
+    {
+        "name": "floor-detail",
+        "glb": "models\\floor-detail.glb",
+        "preview": "Previews\\floor-detail.png",
+        "size_kb": 16,
+        "vertices": 204
+    },
+    {
+        "name": "floor",
+        "glb": "models\\floor.glb",
+        "preview": "Previews\\floor.png",
+        "size_kb": 9,
+        "vertices": 4
+    },
+    {
+        "name": "gate",
+        "glb": "models\\gate.glb",
+        "preview": "Previews\\gate.png",
+        "size_kb": 16,
+        "vertices": 132
+    },
+    {
+        "name": "rocks",
+        "glb": "models\\rocks.glb",
+        "preview": "Previews\\rocks.png",
+        "size_kb": 20,
+        "vertices": 328
+    },
+    {
+        "name": "stairs",
+        "glb": "models\\stairs.glb",
+        "preview": "Previews\\stairs.png",
+        "size_kb": 16,
+        "vertices": 198
+    },
+    {
+        "name": "stones",
+        "glb": "models\\stones.glb",
+        "preview": "Previews\\stones.png",
+        "size_kb": 24,
+        "vertices": 438
+    },
+    {
+        "name": "trap",
+        "glb": "models\\trap.glb",
+        "preview": "Previews\\trap.png",
+        "size_kb": 21,
+        "vertices": 272
+    },
+    {
+        "name": "wall-half",
+        "glb": "models\\wall-half.glb",
+        "preview": "Previews\\wall-half.png",
+        "size_kb": 18,
+        "vertices": 276
+    },
+    {
+        "name": "wall-narrow",
+        "glb": "models\\wall-narrow.glb",
+        "preview": "Previews\\wall-narrow.png",
+        "size_kb": 23,
+        "vertices": 420
+    },
+    {
+        "name": "wall-opening",
+        "glb": "models\\wall-opening.glb",
+        "preview": "Previews\\wall-opening.png",
+        "size_kb": 21,
+        "vertices": 340
+    },
+    {
+        "name": "wall",
+        "glb": "models\\wall.glb",
+        "preview": "Previews\\wall.png",
+        "size_kb": 20,
+        "vertices": 329
+    },
+    {
+        "name": "wood-structure",
+        "glb": "models\\wood-structure.glb",
+        "preview": "Previews\\wood-structure.png",
+        "size_kb": 19,
+        "vertices": 288
+    },
+    {
+        "name": "wood-support",
+        "glb": "models\\wood-support.glb",
+        "preview": "Previews\\wood-support.png",
+        "size_kb": 12,
+        "vertices": 96
+    }
+]

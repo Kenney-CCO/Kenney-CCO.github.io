@@ -1,0 +1,723 @@
+[
+    {
+        "name": "railroad-corner-large-ramp",
+        "glb": "models\\railroad-corner-large-ramp.glb",
+        "preview": "Previews\\railroad-corner-large-ramp.png",
+        "size_kb": 47,
+        "vertices": 960
+    },
+    {
+        "name": "railroad-corner-large",
+        "glb": "models\\railroad-corner-large.glb",
+        "preview": "Previews\\railroad-corner-large.png",
+        "size_kb": 47,
+        "vertices": 960
+    },
+    {
+        "name": "railroad-corner-small-ramp",
+        "glb": "models\\railroad-corner-small-ramp.glb",
+        "preview": "Previews\\railroad-corner-small-ramp.png",
+        "size_kb": 36,
+        "vertices": 648
+    },
+    {
+        "name": "railroad-corner-small",
+        "glb": "models\\railroad-corner-small.glb",
+        "preview": "Previews\\railroad-corner-small.png",
+        "size_kb": 35,
+        "vertices": 640
+    },
+    {
+        "name": "railroad-curve",
+        "glb": "models\\railroad-curve.glb",
+        "preview": "Previews\\railroad-curve.png",
+        "size_kb": 40,
+        "vertices": 768
+    },
+    {
+        "name": "railroad-damaged-corner-large-ramp",
+        "glb": "models\\railroad-damaged-corner-large-ramp.glb",
+        "preview": "Previews\\railroad-damaged-corner-large-ramp.png",
+        "size_kb": 49,
+        "vertices": 1033
+    },
+    {
+        "name": "railroad-damaged-corner-large",
+        "glb": "models\\railroad-damaged-corner-large.glb",
+        "preview": "Previews\\railroad-damaged-corner-large.png",
+        "size_kb": 49,
+        "vertices": 1030
+    },
+    {
+        "name": "railroad-damaged-corner-small-ramp",
+        "glb": "models\\railroad-damaged-corner-small-ramp.glb",
+        "preview": "Previews\\railroad-damaged-corner-small-ramp.png",
+        "size_kb": 37,
+        "vertices": 690
+    },
+    {
+        "name": "railroad-damaged-corner-small",
+        "glb": "models\\railroad-damaged-corner-small.glb",
+        "preview": "Previews\\railroad-damaged-corner-small.png",
+        "size_kb": 37,
+        "vertices": 690
+    },
+    {
+        "name": "railroad-damaged-curve",
+        "glb": "models\\railroad-damaged-curve.glb",
+        "preview": "Previews\\railroad-damaged-curve.png",
+        "size_kb": 42,
+        "vertices": 820
+    },
+    {
+        "name": "railroad-damaged-straight-bend-large",
+        "glb": "models\\railroad-damaged-straight-bend-large.glb",
+        "preview": "Previews\\railroad-damaged-straight-bend-large.png",
+        "size_kb": 49,
+        "vertices": 1050
+    },
+    {
+        "name": "railroad-damaged-straight-bend",
+        "glb": "models\\railroad-damaged-straight-bend.glb",
+        "preview": "Previews\\railroad-damaged-straight-bend.png",
+        "size_kb": 37,
+        "vertices": 677
+    },
+    {
+        "name": "railroad-damaged-straight-bump-down",
+        "glb": "models\\railroad-damaged-straight-bump-down.glb",
+        "preview": "Previews\\railroad-damaged-straight-bump-down.png",
+        "size_kb": 40,
+        "vertices": 766
+    },
+    {
+        "name": "railroad-damaged-straight-bump-up",
+        "glb": "models\\railroad-damaged-straight-bump-up.glb",
+        "preview": "Previews\\railroad-damaged-straight-bump-up.png",
+        "size_kb": 39,
+        "vertices": 754
+    },
+    {
+        "name": "railroad-damaged-straight-hill-beginning",
+        "glb": "models\\railroad-damaged-straight-hill-beginning.glb",
+        "preview": "Previews\\railroad-damaged-straight-hill-beginning.png",
+        "size_kb": 39,
+        "vertices": 750
+    },
+    {
+        "name": "railroad-damaged-straight-hill-complete-half",
+        "glb": "models\\railroad-damaged-straight-hill-complete-half.glb",
+        "preview": "Previews\\railroad-damaged-straight-hill-complete-half.png",
+        "size_kb": 39,
+        "vertices": 756
+    },
+    {
+        "name": "railroad-damaged-straight-hill-complete",
+        "glb": "models\\railroad-damaged-straight-hill-complete.glb",
+        "preview": "Previews\\railroad-damaged-straight-hill-complete.png",
+        "size_kb": 39,
+        "vertices": 750
+    },
+    {
+        "name": "railroad-damaged-straight-hill-end",
+        "glb": "models\\railroad-damaged-straight-hill-end.glb",
+        "preview": "Previews\\railroad-damaged-straight-hill-end.png",
+        "size_kb": 39,
+        "vertices": 748
+    },
+    {
+        "name": "railroad-damaged-straight-skew-left-side",
+        "glb": "models\\railroad-damaged-straight-skew-left-side.glb",
+        "preview": "Previews\\railroad-damaged-straight-skew-left-side.png",
+        "size_kb": 37,
+        "vertices": 672
+    },
+    {
+        "name": "railroad-damaged-straight-skew-left",
+        "glb": "models\\railroad-damaged-straight-skew-left.glb",
+        "preview": "Previews\\railroad-damaged-straight-skew-left.png",
+        "size_kb": 37,
+        "vertices": 682
+    },
+    {
+        "name": "railroad-damaged-straight-skew-right-side",
+        "glb": "models\\railroad-damaged-straight-skew-right-side.glb",
+        "preview": "Previews\\railroad-damaged-straight-skew-right-side.png",
+        "size_kb": 37,
+        "vertices": 672
+    },
+    {
+        "name": "railroad-damaged-straight-skew-right",
+        "glb": "models\\railroad-damaged-straight-skew-right.glb",
+        "preview": "Previews\\railroad-damaged-straight-skew-right.png",
+        "size_kb": 37,
+        "vertices": 675
+    },
+    {
+        "name": "railroad-damaged-straight",
+        "glb": "models\\railroad-damaged-straight.glb",
+        "preview": "Previews\\railroad-damaged-straight.png",
+        "size_kb": 36,
+        "vertices": 672
+    },
+    {
+        "name": "railroad-rail-corner-large-ramp",
+        "glb": "models\\railroad-rail-corner-large-ramp.glb",
+        "preview": "Previews\\railroad-rail-corner-large-ramp.png",
+        "size_kb": 29,
+        "vertices": 448
+    },
+    {
+        "name": "railroad-rail-corner-large",
+        "glb": "models\\railroad-rail-corner-large.glb",
+        "preview": "Previews\\railroad-rail-corner-large.png",
+        "size_kb": 29,
+        "vertices": 448
+    },
+    {
+        "name": "railroad-rail-corner-small-ramp",
+        "glb": "models\\railroad-rail-corner-small-ramp.glb",
+        "preview": "Previews\\railroad-rail-corner-small-ramp.png",
+        "size_kb": 22,
+        "vertices": 256
+    },
+    {
+        "name": "railroad-rail-corner-small",
+        "glb": "models\\railroad-rail-corner-small.glb",
+        "preview": "Previews\\railroad-rail-corner-small.png",
+        "size_kb": 22,
+        "vertices": 256
+    },
+    {
+        "name": "railroad-rail-curve",
+        "glb": "models\\railroad-rail-curve.glb",
+        "preview": "Previews\\railroad-rail-curve.png",
+        "size_kb": 24,
+        "vertices": 320
+    },
+    {
+        "name": "railroad-rail-straight-bend-large",
+        "glb": "models\\railroad-rail-straight-bend-large.glb",
+        "preview": "Previews\\railroad-rail-straight-bend-large.png",
+        "size_kb": 29,
+        "vertices": 448
+    },
+    {
+        "name": "railroad-rail-straight-bend",
+        "glb": "models\\railroad-rail-straight-bend.glb",
+        "preview": "Previews\\railroad-rail-straight-bend.png",
+        "size_kb": 22,
+        "vertices": 256
+    },
+    {
+        "name": "railroad-rail-straight-bump-down",
+        "glb": "models\\railroad-rail-straight-bump-down.glb",
+        "preview": "Previews\\railroad-rail-straight-bump-down.png",
+        "size_kb": 25,
+        "vertices": 328
+    },
+    {
+        "name": "railroad-rail-straight-bump-up",
+        "glb": "models\\railroad-rail-straight-bump-up.glb",
+        "preview": "Previews\\railroad-rail-straight-bump-up.png",
+        "size_kb": 24,
+        "vertices": 320
+    },
+    {
+        "name": "railroad-rail-straight-hill-beginning",
+        "glb": "models\\railroad-rail-straight-hill-beginning.glb",
+        "preview": "Previews\\railroad-rail-straight-hill-beginning.png",
+        "size_kb": 24,
+        "vertices": 320
+    },
+    {
+        "name": "railroad-rail-straight-hill-complete-half",
+        "glb": "models\\railroad-rail-straight-hill-complete-half.glb",
+        "preview": "Previews\\railroad-rail-straight-hill-complete-half.png",
+        "size_kb": 24,
+        "vertices": 320
+    },
+    {
+        "name": "railroad-rail-straight-hill-complete",
+        "glb": "models\\railroad-rail-straight-hill-complete.glb",
+        "preview": "Previews\\railroad-rail-straight-hill-complete.png",
+        "size_kb": 24,
+        "vertices": 320
+    },
+    {
+        "name": "railroad-rail-straight-hill-end",
+        "glb": "models\\railroad-rail-straight-hill-end.glb",
+        "preview": "Previews\\railroad-rail-straight-hill-end.png",
+        "size_kb": 24,
+        "vertices": 320
+    },
+    {
+        "name": "railroad-rail-straight-skew-left-side",
+        "glb": "models\\railroad-rail-straight-skew-left-side.glb",
+        "preview": "Previews\\railroad-rail-straight-skew-left-side.png",
+        "size_kb": 22,
+        "vertices": 256
+    },
+    {
+        "name": "railroad-rail-straight-skew-left",
+        "glb": "models\\railroad-rail-straight-skew-left.glb",
+        "preview": "Previews\\railroad-rail-straight-skew-left.png",
+        "size_kb": 22,
+        "vertices": 256
+    },
+    {
+        "name": "railroad-rail-straight-skew-right-side",
+        "glb": "models\\railroad-rail-straight-skew-right-side.glb",
+        "preview": "Previews\\railroad-rail-straight-skew-right-side.png",
+        "size_kb": 22,
+        "vertices": 256
+    },
+    {
+        "name": "railroad-rail-straight-skew-right",
+        "glb": "models\\railroad-rail-straight-skew-right.glb",
+        "preview": "Previews\\railroad-rail-straight-skew-right.png",
+        "size_kb": 22,
+        "vertices": 256
+    },
+    {
+        "name": "railroad-rail-straight",
+        "glb": "models\\railroad-rail-straight.glb",
+        "preview": "Previews\\railroad-rail-straight.png",
+        "size_kb": 22,
+        "vertices": 256
+    },
+    {
+        "name": "railroad-straight-bend-large",
+        "glb": "models\\railroad-straight-bend-large.glb",
+        "preview": "Previews\\railroad-straight-bend-large.png",
+        "size_kb": 47,
+        "vertices": 960
+    },
+    {
+        "name": "railroad-straight-bend",
+        "glb": "models\\railroad-straight-bend.glb",
+        "preview": "Previews\\railroad-straight-bend.png",
+        "size_kb": 35,
+        "vertices": 640
+    },
+    {
+        "name": "railroad-straight-bump-down",
+        "glb": "models\\railroad-straight-bump-down.glb",
+        "preview": "Previews\\railroad-straight-bump-down.png",
+        "size_kb": 38,
+        "vertices": 724
+    },
+    {
+        "name": "railroad-straight-bump-up",
+        "glb": "models\\railroad-straight-bump-up.glb",
+        "preview": "Previews\\railroad-straight-bump-up.png",
+        "size_kb": 38,
+        "vertices": 708
+    },
+    {
+        "name": "railroad-straight-hill-beginning",
+        "glb": "models\\railroad-straight-hill-beginning.glb",
+        "preview": "Previews\\railroad-straight-hill-beginning.png",
+        "size_kb": 38,
+        "vertices": 704
+    },
+    {
+        "name": "railroad-straight-hill-complete-half",
+        "glb": "models\\railroad-straight-hill-complete-half.glb",
+        "preview": "Previews\\railroad-straight-hill-complete-half.png",
+        "size_kb": 38,
+        "vertices": 720
+    },
+    {
+        "name": "railroad-straight-hill-complete",
+        "glb": "models\\railroad-straight-hill-complete.glb",
+        "preview": "Previews\\railroad-straight-hill-complete.png",
+        "size_kb": 38,
+        "vertices": 726
+    },
+    {
+        "name": "railroad-straight-hill-end",
+        "glb": "models\\railroad-straight-hill-end.glb",
+        "preview": "Previews\\railroad-straight-hill-end.png",
+        "size_kb": 38,
+        "vertices": 708
+    },
+    {
+        "name": "railroad-straight-skew-left-side",
+        "glb": "models\\railroad-straight-skew-left-side.glb",
+        "preview": "Previews\\railroad-straight-skew-left-side.png",
+        "size_kb": 35,
+        "vertices": 640
+    },
+    {
+        "name": "railroad-straight-skew-left",
+        "glb": "models\\railroad-straight-skew-left.glb",
+        "preview": "Previews\\railroad-straight-skew-left.png",
+        "size_kb": 35,
+        "vertices": 640
+    },
+    {
+        "name": "railroad-straight-skew-right-side",
+        "glb": "models\\railroad-straight-skew-right-side.glb",
+        "preview": "Previews\\railroad-straight-skew-right-side.png",
+        "size_kb": 35,
+        "vertices": 640
+    },
+    {
+        "name": "railroad-straight-skew-right",
+        "glb": "models\\railroad-straight-skew-right.glb",
+        "preview": "Previews\\railroad-straight-skew-right.png",
+        "size_kb": 35,
+        "vertices": 640
+    },
+    {
+        "name": "railroad-straight",
+        "glb": "models\\railroad-straight.glb",
+        "preview": "Previews\\railroad-straight.png",
+        "size_kb": 35,
+        "vertices": 640
+    },
+    {
+        "name": "spline-segment",
+        "glb": "models\\spline-segment.glb",
+        "preview": "Previews\\spline-segment.png",
+        "size_kb": 15,
+        "vertices": 64
+    },
+    {
+        "name": "spline-track-damaged",
+        "glb": "models\\spline-track-damaged.glb",
+        "preview": "Previews\\spline-track-damaged.png",
+        "size_kb": 16,
+        "vertices": 72
+    },
+    {
+        "name": "spline-track",
+        "glb": "models\\spline-track.glb",
+        "preview": "Previews\\spline-track.png",
+        "size_kb": 15,
+        "vertices": 64
+    },
+    {
+        "name": "track-detailed",
+        "glb": "models\\track-detailed.glb",
+        "preview": "Previews\\track-detailed.png",
+        "size_kb": 21,
+        "vertices": 232
+    },
+    {
+        "name": "track-single-detailed",
+        "glb": "models\\track-single-detailed.glb",
+        "preview": "Previews\\track-single-detailed.png",
+        "size_kb": 17,
+        "vertices": 120
+    },
+    {
+        "name": "track-single",
+        "glb": "models\\track-single.glb",
+        "preview": "Previews\\track-single.png",
+        "size_kb": 16,
+        "vertices": 88
+    },
+    {
+        "name": "track",
+        "glb": "models\\track.glb",
+        "preview": "Previews\\track.png",
+        "size_kb": 18,
+        "vertices": 136
+    },
+    {
+        "name": "train-carriage-box",
+        "glb": "models\\train-carriage-box.glb",
+        "preview": "Previews\\train-carriage-box.png",
+        "size_kb": 77,
+        "vertices": 1834
+    },
+    {
+        "name": "train-carriage-coal",
+        "glb": "models\\train-carriage-coal.glb",
+        "preview": "Previews\\train-carriage-coal.png",
+        "size_kb": 84,
+        "vertices": 2038
+    },
+    {
+        "name": "train-carriage-container-blue",
+        "glb": "models\\train-carriage-container-blue.glb",
+        "preview": "Previews\\train-carriage-container-blue.png",
+        "size_kb": 88,
+        "vertices": 2152
+    },
+    {
+        "name": "train-carriage-container-green",
+        "glb": "models\\train-carriage-container-green.glb",
+        "preview": "Previews\\train-carriage-container-green.png",
+        "size_kb": 88,
+        "vertices": 2152
+    },
+    {
+        "name": "train-carriage-container-red",
+        "glb": "models\\train-carriage-container-red.glb",
+        "preview": "Previews\\train-carriage-container-red.png",
+        "size_kb": 88,
+        "vertices": 2152
+    },
+    {
+        "name": "train-carriage-dirt",
+        "glb": "models\\train-carriage-dirt.glb",
+        "preview": "Previews\\train-carriage-dirt.png",
+        "size_kb": 84,
+        "vertices": 2038
+    },
+    {
+        "name": "train-carriage-flatbed-wood",
+        "glb": "models\\train-carriage-flatbed-wood.glb",
+        "preview": "Previews\\train-carriage-flatbed-wood.png",
+        "size_kb": 79,
+        "vertices": 1920
+    },
+    {
+        "name": "train-carriage-flatbed",
+        "glb": "models\\train-carriage-flatbed.glb",
+        "preview": "Previews\\train-carriage-flatbed.png",
+        "size_kb": 77,
+        "vertices": 1864
+    },
+    {
+        "name": "train-carriage-lumber",
+        "glb": "models\\train-carriage-lumber.glb",
+        "preview": "Previews\\train-carriage-lumber.png",
+        "size_kb": 84,
+        "vertices": 2044
+    },
+    {
+        "name": "train-carriage-tank-large",
+        "glb": "models\\train-carriage-tank-large.glb",
+        "preview": "Previews\\train-carriage-tank-large.png",
+        "size_kb": 82,
+        "vertices": 1992
+    },
+    {
+        "name": "train-carriage-tank",
+        "glb": "models\\train-carriage-tank.glb",
+        "preview": "Previews\\train-carriage-tank.png",
+        "size_kb": 82,
+        "vertices": 1992
+    },
+    {
+        "name": "train-carriage-wood",
+        "glb": "models\\train-carriage-wood.glb",
+        "preview": "Previews\\train-carriage-wood.png",
+        "size_kb": 81,
+        "vertices": 1942
+    },
+    {
+        "name": "train-connector",
+        "glb": "models\\train-connector.glb",
+        "preview": "Previews\\train-connector.png",
+        "size_kb": 15,
+        "vertices": 64
+    },
+    {
+        "name": "train-diesel-a",
+        "glb": "models\\train-diesel-a.glb",
+        "preview": "Previews\\train-diesel-a.png",
+        "size_kb": 117,
+        "vertices": 3004
+    },
+    {
+        "name": "train-diesel-b",
+        "glb": "models\\train-diesel-b.glb",
+        "preview": "Previews\\train-diesel-b.png",
+        "size_kb": 87,
+        "vertices": 2153
+    },
+    {
+        "name": "train-diesel-box-a",
+        "glb": "models\\train-diesel-box-a.glb",
+        "preview": "Previews\\train-diesel-box-a.png",
+        "size_kb": 116,
+        "vertices": 2962
+    },
+    {
+        "name": "train-diesel-box-b",
+        "glb": "models\\train-diesel-box-b.glb",
+        "preview": "Previews\\train-diesel-box-b.png",
+        "size_kb": 87,
+        "vertices": 2124
+    },
+    {
+        "name": "train-diesel-box-c",
+        "glb": "models\\train-diesel-box-c.glb",
+        "preview": "Previews\\train-diesel-box-c.png",
+        "size_kb": 102,
+        "vertices": 2572
+    },
+    {
+        "name": "train-diesel-c",
+        "glb": "models\\train-diesel-c.glb",
+        "preview": "Previews\\train-diesel-c.png",
+        "size_kb": 88,
+        "vertices": 2182
+    },
+    {
+        "name": "train-electric-bullet-a",
+        "glb": "models\\train-electric-bullet-a.glb",
+        "preview": "Previews\\train-electric-bullet-a.png",
+        "size_kb": 87,
+        "vertices": 2139
+    },
+    {
+        "name": "train-electric-bullet-b",
+        "glb": "models\\train-electric-bullet-b.glb",
+        "preview": "Previews\\train-electric-bullet-b.png",
+        "size_kb": 95,
+        "vertices": 2356
+    },
+    {
+        "name": "train-electric-bullet-c",
+        "glb": "models\\train-electric-bullet-c.glb",
+        "preview": "Previews\\train-electric-bullet-c.png",
+        "size_kb": 80,
+        "vertices": 1932
+    },
+    {
+        "name": "train-electric-city-a",
+        "glb": "models\\train-electric-city-a.glb",
+        "preview": "Previews\\train-electric-city-a.png",
+        "size_kb": 80,
+        "vertices": 1940
+    },
+    {
+        "name": "train-electric-city-b",
+        "glb": "models\\train-electric-city-b.glb",
+        "preview": "Previews\\train-electric-city-b.png",
+        "size_kb": 102,
+        "vertices": 2532
+    },
+    {
+        "name": "train-electric-city-c",
+        "glb": "models\\train-electric-city-c.glb",
+        "preview": "Previews\\train-electric-city-c.png",
+        "size_kb": 92,
+        "vertices": 2274
+    },
+    {
+        "name": "train-electric-double-a",
+        "glb": "models\\train-electric-double-a.glb",
+        "preview": "Previews\\train-electric-double-a.png",
+        "size_kb": 100,
+        "vertices": 2525
+    },
+    {
+        "name": "train-electric-double-b",
+        "glb": "models\\train-electric-double-b.glb",
+        "preview": "Previews\\train-electric-double-b.png",
+        "size_kb": 100,
+        "vertices": 2524
+    },
+    {
+        "name": "train-electric-double-c",
+        "glb": "models\\train-electric-double-c.glb",
+        "preview": "Previews\\train-electric-double-c.png",
+        "size_kb": 89,
+        "vertices": 2188
+    },
+    {
+        "name": "train-electric-square-a",
+        "glb": "models\\train-electric-square-a.glb",
+        "preview": "Previews\\train-electric-square-a.png",
+        "size_kb": 108,
+        "vertices": 2728
+    },
+    {
+        "name": "train-electric-square-b",
+        "glb": "models\\train-electric-square-b.glb",
+        "preview": "Previews\\train-electric-square-b.png",
+        "size_kb": 97,
+        "vertices": 2420
+    },
+    {
+        "name": "train-electric-square-c",
+        "glb": "models\\train-electric-square-c.glb",
+        "preview": "Previews\\train-electric-square-c.png",
+        "size_kb": 94,
+        "vertices": 2324
+    },
+    {
+        "name": "train-electric-subway-a",
+        "glb": "models\\train-electric-subway-a.glb",
+        "preview": "Previews\\train-electric-subway-a.png",
+        "size_kb": 105,
+        "vertices": 2650
+    },
+    {
+        "name": "train-electric-subway-b",
+        "glb": "models\\train-electric-subway-b.glb",
+        "preview": "Previews\\train-electric-subway-b.png",
+        "size_kb": 91,
+        "vertices": 2240
+    },
+    {
+        "name": "train-electric-subway-c",
+        "glb": "models\\train-electric-subway-c.glb",
+        "preview": "Previews\\train-electric-subway-c.png",
+        "size_kb": 105,
+        "vertices": 2646
+    },
+    {
+        "name": "train-locomotive-a",
+        "glb": "models\\train-locomotive-a.glb",
+        "preview": "Previews\\train-locomotive-a.png",
+        "size_kb": 117,
+        "vertices": 2864
+    },
+    {
+        "name": "train-locomotive-b",
+        "glb": "models\\train-locomotive-b.glb",
+        "preview": "Previews\\train-locomotive-b.png",
+        "size_kb": 108,
+        "vertices": 2633
+    },
+    {
+        "name": "train-locomotive-c",
+        "glb": "models\\train-locomotive-c.glb",
+        "preview": "Previews\\train-locomotive-c.png",
+        "size_kb": 119,
+        "vertices": 2918
+    },
+    {
+        "name": "train-locomotive-passenger-a",
+        "glb": "models\\train-locomotive-passenger-a.glb",
+        "preview": "Previews\\train-locomotive-passenger-a.png",
+        "size_kb": 91,
+        "vertices": 2244
+    },
+    {
+        "name": "train-locomotive-passenger-b",
+        "glb": "models\\train-locomotive-passenger-b.glb",
+        "preview": "Previews\\train-locomotive-passenger-b.png",
+        "size_kb": 97,
+        "vertices": 2420
+    },
+    {
+        "name": "train-tram-classic",
+        "glb": "models\\train-tram-classic.glb",
+        "preview": "Previews\\train-tram-classic.png",
+        "size_kb": 107,
+        "vertices": 2672
+    },
+    {
+        "name": "train-tram-modern",
+        "glb": "models\\train-tram-modern.glb",
+        "preview": "Previews\\train-tram-modern.png",
+        "size_kb": 101,
+        "vertices": 2526
+    },
+    {
+        "name": "train-tram-round",
+        "glb": "models\\train-tram-round.glb",
+        "preview": "Previews\\train-tram-round.png",
+        "size_kb": 129,
+        "vertices": 3308
+    }
+]

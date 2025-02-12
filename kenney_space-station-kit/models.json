@@ -1,0 +1,681 @@
+[
+    {
+        "name": "balcony-floor-center",
+        "glb": "models\\balcony-floor-center.glb",
+        "preview": "Previews\\balcony-floor-center.png",
+        "size_kb": 9,
+        "vertices": 36
+    },
+    {
+        "name": "balcony-floor-corner",
+        "glb": "models\\balcony-floor-corner.glb",
+        "preview": "Previews\\balcony-floor-corner.png",
+        "size_kb": 10,
+        "vertices": 54
+    },
+    {
+        "name": "balcony-floor",
+        "glb": "models\\balcony-floor.glb",
+        "preview": "Previews\\balcony-floor.png",
+        "size_kb": 11,
+        "vertices": 72
+    },
+    {
+        "name": "balcony-rail-center",
+        "glb": "models\\balcony-rail-center.glb",
+        "preview": "Previews\\balcony-rail-center.png",
+        "size_kb": 11,
+        "vertices": 72
+    },
+    {
+        "name": "balcony-rail-corner",
+        "glb": "models\\balcony-rail-corner.glb",
+        "preview": "Previews\\balcony-rail-corner.png",
+        "size_kb": 16,
+        "vertices": 224
+    },
+    {
+        "name": "balcony-rail",
+        "glb": "models\\balcony-rail.glb",
+        "preview": "Previews\\balcony-rail.png",
+        "size_kb": 21,
+        "vertices": 388
+    },
+    {
+        "name": "bed-double-cover",
+        "glb": "models\\bed-double-cover.glb",
+        "preview": "Previews\\bed-double-cover.png",
+        "size_kb": 11,
+        "vertices": 72
+    },
+    {
+        "name": "bed-double",
+        "glb": "models\\bed-double.glb",
+        "preview": "Previews\\bed-double.png",
+        "size_kb": 12,
+        "vertices": 120
+    },
+    {
+        "name": "bed-single-cover",
+        "glb": "models\\bed-single-cover.glb",
+        "preview": "Previews\\bed-single-cover.png",
+        "size_kb": 11,
+        "vertices": 72
+    },
+    {
+        "name": "bed-single",
+        "glb": "models\\bed-single.glb",
+        "preview": "Previews\\bed-single.png",
+        "size_kb": 11,
+        "vertices": 96
+    },
+    {
+        "name": "chair-armrest-headrest",
+        "glb": "models\\chair-armrest-headrest.glb",
+        "preview": "Previews\\chair-armrest-headrest.png",
+        "size_kb": 17,
+        "vertices": 252
+    },
+    {
+        "name": "chair-armrest",
+        "glb": "models\\chair-armrest.glb",
+        "preview": "Previews\\chair-armrest.png",
+        "size_kb": 14,
+        "vertices": 172
+    },
+    {
+        "name": "chair-cushion-headrest",
+        "glb": "models\\chair-cushion-headrest.glb",
+        "preview": "Previews\\chair-cushion-headrest.png",
+        "size_kb": 15,
+        "vertices": 200
+    },
+    {
+        "name": "chair-cushion",
+        "glb": "models\\chair-cushion.glb",
+        "preview": "Previews\\chair-cushion.png",
+        "size_kb": 12,
+        "vertices": 120
+    },
+    {
+        "name": "chair-headrest",
+        "glb": "models\\chair-headrest.glb",
+        "preview": "Previews\\chair-headrest.png",
+        "size_kb": 14,
+        "vertices": 184
+    },
+    {
+        "name": "chair",
+        "glb": "models\\chair.glb",
+        "preview": "Previews\\chair.png",
+        "size_kb": 12,
+        "vertices": 104
+    },
+    {
+        "name": "computer-screen",
+        "glb": "models\\computer-screen.glb",
+        "preview": "Previews\\computer-screen.png",
+        "size_kb": 20,
+        "vertices": 347
+    },
+    {
+        "name": "computer-system",
+        "glb": "models\\computer-system.glb",
+        "preview": "Previews\\computer-system.png",
+        "size_kb": 19,
+        "vertices": 306
+    },
+    {
+        "name": "computer-wide",
+        "glb": "models\\computer-wide.glb",
+        "preview": "Previews\\computer-wide.png",
+        "size_kb": 19,
+        "vertices": 301
+    },
+    {
+        "name": "computer",
+        "glb": "models\\computer.glb",
+        "preview": "Previews\\computer.png",
+        "size_kb": 17,
+        "vertices": 244
+    },
+    {
+        "name": "container-flat-open",
+        "glb": "models\\container-flat-open.glb",
+        "preview": "Previews\\container-flat-open.png",
+        "size_kb": 16,
+        "vertices": 224
+    },
+    {
+        "name": "container-flat",
+        "glb": "models\\container-flat.glb",
+        "preview": "Previews\\container-flat.png",
+        "size_kb": 15,
+        "vertices": 208
+    },
+    {
+        "name": "container-tall",
+        "glb": "models\\container-tall.glb",
+        "preview": "Previews\\container-tall.png",
+        "size_kb": 16,
+        "vertices": 204
+    },
+    {
+        "name": "container-wide",
+        "glb": "models\\container-wide.glb",
+        "preview": "Previews\\container-wide.png",
+        "size_kb": 15,
+        "vertices": 208
+    },
+    {
+        "name": "container",
+        "glb": "models\\container.glb",
+        "preview": "Previews\\container.png",
+        "size_kb": 14,
+        "vertices": 160
+    },
+    {
+        "name": "display-wall-wide",
+        "glb": "models\\display-wall-wide.glb",
+        "preview": "Previews\\display-wall-wide.png",
+        "size_kb": 14,
+        "vertices": 162
+    },
+    {
+        "name": "display-wall",
+        "glb": "models\\display-wall.glb",
+        "preview": "Previews\\display-wall.png",
+        "size_kb": 13,
+        "vertices": 143
+    },
+    {
+        "name": "door-double-closed",
+        "glb": "models\\door-double-closed.glb",
+        "preview": "Previews\\door-double-closed.png",
+        "size_kb": 12,
+        "vertices": 80
+    },
+    {
+        "name": "door-double-half",
+        "glb": "models\\door-double-half.glb",
+        "preview": "Previews\\door-double-half.png",
+        "size_kb": 10,
+        "vertices": 60
+    },
+    {
+        "name": "door-double",
+        "glb": "models\\door-double.glb",
+        "preview": "Previews\\door-double.png",
+        "size_kb": 11,
+        "vertices": 72
+    },
+    {
+        "name": "door-single-closed",
+        "glb": "models\\door-single-closed.glb",
+        "preview": "Previews\\door-single-closed.png",
+        "size_kb": 12,
+        "vertices": 80
+    },
+    {
+        "name": "door-single-half",
+        "glb": "models\\door-single-half.glb",
+        "preview": "Previews\\door-single-half.png",
+        "size_kb": 10,
+        "vertices": 60
+    },
+    {
+        "name": "door-single",
+        "glb": "models\\door-single.glb",
+        "preview": "Previews\\door-single.png",
+        "size_kb": 11,
+        "vertices": 72
+    },
+    {
+        "name": "floor-corner",
+        "glb": "models\\floor-corner.glb",
+        "preview": "Previews\\floor-corner.png",
+        "size_kb": 9,
+        "vertices": 30
+    },
+    {
+        "name": "floor-detail",
+        "glb": "models\\floor-detail.glb",
+        "preview": "Previews\\floor-detail.png",
+        "size_kb": 11,
+        "vertices": 76
+    },
+    {
+        "name": "floor-panel-corner",
+        "glb": "models\\floor-panel-corner.glb",
+        "preview": "Previews\\floor-panel-corner.png",
+        "size_kb": 11,
+        "vertices": 84
+    },
+    {
+        "name": "floor-panel-end",
+        "glb": "models\\floor-panel-end.glb",
+        "preview": "Previews\\floor-panel-end.png",
+        "size_kb": 11,
+        "vertices": 96
+    },
+    {
+        "name": "floor-panel-straight",
+        "glb": "models\\floor-panel-straight.glb",
+        "preview": "Previews\\floor-panel-straight.png",
+        "size_kb": 11,
+        "vertices": 96
+    },
+    {
+        "name": "floor-panel",
+        "glb": "models\\floor-panel.glb",
+        "preview": "Previews\\floor-panel.png",
+        "size_kb": 13,
+        "vertices": 144
+    },
+    {
+        "name": "floor",
+        "glb": "models\\floor.glb",
+        "preview": "Previews\\floor.png",
+        "size_kb": 9,
+        "vertices": 24
+    },
+    {
+        "name": "pipe-bend-diagonal",
+        "glb": "models\\pipe-bend-diagonal.glb",
+        "preview": "Previews\\pipe-bend-diagonal.png",
+        "size_kb": 11,
+        "vertices": 78
+    },
+    {
+        "name": "pipe-bend",
+        "glb": "models\\pipe-bend.glb",
+        "preview": "Previews\\pipe-bend.png",
+        "size_kb": 11,
+        "vertices": 96
+    },
+    {
+        "name": "pipe-end-colored",
+        "glb": "models\\pipe-end-colored.glb",
+        "preview": "Previews\\pipe-end-colored.png",
+        "size_kb": 10,
+        "vertices": 66
+    },
+    {
+        "name": "pipe-end",
+        "glb": "models\\pipe-end.glb",
+        "preview": "Previews\\pipe-end.png",
+        "size_kb": 10,
+        "vertices": 66
+    },
+    {
+        "name": "pipe-ring-colored",
+        "glb": "models\\pipe-ring-colored.glb",
+        "preview": "Previews\\pipe-ring-colored.png",
+        "size_kb": 11,
+        "vertices": 72
+    },
+    {
+        "name": "pipe-ring",
+        "glb": "models\\pipe-ring.glb",
+        "preview": "Previews\\pipe-ring.png",
+        "size_kb": 11,
+        "vertices": 72
+    },
+    {
+        "name": "pipe",
+        "glb": "models\\pipe.glb",
+        "preview": "Previews\\pipe.png",
+        "size_kb": 9,
+        "vertices": 36
+    },
+    {
+        "name": "rail-narrow",
+        "glb": "models\\rail-narrow.glb",
+        "preview": "Previews\\rail-narrow.png",
+        "size_kb": 14,
+        "vertices": 160
+    },
+    {
+        "name": "rail",
+        "glb": "models\\rail.glb",
+        "preview": "Previews\\rail.png",
+        "size_kb": 14,
+        "vertices": 160
+    },
+    {
+        "name": "rocks",
+        "glb": "models\\rocks.glb",
+        "preview": "Previews\\rocks.png",
+        "size_kb": 13,
+        "vertices": 150
+    },
+    {
+        "name": "skip-rocks",
+        "glb": "models\\skip-rocks.glb",
+        "preview": "Previews\\skip-rocks.png",
+        "size_kb": 16,
+        "vertices": 236
+    },
+    {
+        "name": "skip",
+        "glb": "models\\skip.glb",
+        "preview": "Previews\\skip.png",
+        "size_kb": 13,
+        "vertices": 142
+    },
+    {
+        "name": "stairs-corner-inner",
+        "glb": "models\\stairs-corner-inner.glb",
+        "preview": "Previews\\stairs-corner-inner.png",
+        "size_kb": 12,
+        "vertices": 112
+    },
+    {
+        "name": "stairs-corner",
+        "glb": "models\\stairs-corner.glb",
+        "preview": "Previews\\stairs-corner.png",
+        "size_kb": 13,
+        "vertices": 143
+    },
+    {
+        "name": "stairs-handrail-single",
+        "glb": "models\\stairs-handrail-single.glb",
+        "preview": "Previews\\stairs-handrail-single.png",
+        "size_kb": 10,
+        "vertices": 68
+    },
+    {
+        "name": "stairs-handrail",
+        "glb": "models\\stairs-handrail.glb",
+        "preview": "Previews\\stairs-handrail.png",
+        "size_kb": 13,
+        "vertices": 136
+    },
+    {
+        "name": "stairs-ramp",
+        "glb": "models\\stairs-ramp.glb",
+        "preview": "Previews\\stairs-ramp.png",
+        "size_kb": 12,
+        "vertices": 102
+    },
+    {
+        "name": "stairs-small-center",
+        "glb": "models\\stairs-small-center.glb",
+        "preview": "Previews\\stairs-small-center.png",
+        "size_kb": 10,
+        "vertices": 48
+    },
+    {
+        "name": "stairs-small-corner-inner",
+        "glb": "models\\stairs-small-corner-inner.glb",
+        "preview": "Previews\\stairs-small-corner-inner.png",
+        "size_kb": 10,
+        "vertices": 60
+    },
+    {
+        "name": "stairs-small-corner",
+        "glb": "models\\stairs-small-corner.glb",
+        "preview": "Previews\\stairs-small-corner.png",
+        "size_kb": 11,
+        "vertices": 81
+    },
+    {
+        "name": "stairs-small-edge-handrail",
+        "glb": "models\\stairs-small-edge-handrail.glb",
+        "preview": "Previews\\stairs-small-edge-handrail.png",
+        "size_kb": 13,
+        "vertices": 150
+    },
+    {
+        "name": "stairs-small-edge",
+        "glb": "models\\stairs-small-edge.glb",
+        "preview": "Previews\\stairs-small-edge.png",
+        "size_kb": 10,
+        "vertices": 70
+    },
+    {
+        "name": "stairs-small-edges-handrail",
+        "glb": "models\\stairs-small-edges-handrail.glb",
+        "preview": "Previews\\stairs-small-edges-handrail.png",
+        "size_kb": 17,
+        "vertices": 252
+    },
+    {
+        "name": "stairs-small-edges",
+        "glb": "models\\stairs-small-edges.glb",
+        "preview": "Previews\\stairs-small-edges.png",
+        "size_kb": 11,
+        "vertices": 92
+    },
+    {
+        "name": "stairs",
+        "glb": "models\\stairs.glb",
+        "preview": "Previews\\stairs.png",
+        "size_kb": 11,
+        "vertices": 84
+    },
+    {
+        "name": "structure-barrier-high",
+        "glb": "models\\structure-barrier-high.glb",
+        "preview": "Previews\\structure-barrier-high.png",
+        "size_kb": 35,
+        "vertices": 480
+    },
+    {
+        "name": "structure-barrier",
+        "glb": "models\\structure-barrier.glb",
+        "preview": "Previews\\structure-barrier.png",
+        "size_kb": 35,
+        "vertices": 480
+    },
+    {
+        "name": "structure-panel",
+        "glb": "models\\structure-panel.glb",
+        "preview": "Previews\\structure-panel.png",
+        "size_kb": 16,
+        "vertices": 216
+    },
+    {
+        "name": "structure",
+        "glb": "models\\structure.glb",
+        "preview": "Previews\\structure.png",
+        "size_kb": 26,
+        "vertices": 288
+    },
+    {
+        "name": "table-display-planet",
+        "glb": "models\\table-display-planet.glb",
+        "preview": "Previews\\table-display-planet.png",
+        "size_kb": 18,
+        "vertices": 248
+    },
+    {
+        "name": "table-display-small",
+        "glb": "models\\table-display-small.glb",
+        "preview": "Previews\\table-display-small.png",
+        "size_kb": 27,
+        "vertices": 486
+    },
+    {
+        "name": "table-display",
+        "glb": "models\\table-display.glb",
+        "preview": "Previews\\table-display.png",
+        "size_kb": 23,
+        "vertices": 418
+    },
+    {
+        "name": "table-inset-small",
+        "glb": "models\\table-inset-small.glb",
+        "preview": "Previews\\table-inset-small.png",
+        "size_kb": 15,
+        "vertices": 208
+    },
+    {
+        "name": "table-inset",
+        "glb": "models\\table-inset.glb",
+        "preview": "Previews\\table-inset.png",
+        "size_kb": 15,
+        "vertices": 208
+    },
+    {
+        "name": "table-large",
+        "glb": "models\\table-large.glb",
+        "preview": "Previews\\table-large.png",
+        "size_kb": 14,
+        "vertices": 160
+    },
+    {
+        "name": "table",
+        "glb": "models\\table.glb",
+        "preview": "Previews\\table.png",
+        "size_kb": 14,
+        "vertices": 160
+    },
+    {
+        "name": "wall-banner",
+        "glb": "models\\wall-banner.glb",
+        "preview": "Previews\\wall-banner.png",
+        "size_kb": 11,
+        "vertices": 86
+    },
+    {
+        "name": "wall-corner-banner",
+        "glb": "models\\wall-corner-banner.glb",
+        "preview": "Previews\\wall-corner-banner.png",
+        "size_kb": 14,
+        "vertices": 180
+    },
+    {
+        "name": "wall-corner-round-banner",
+        "glb": "models\\wall-corner-round-banner.glb",
+        "preview": "Previews\\wall-corner-round-banner.png",
+        "size_kb": 19,
+        "vertices": 324
+    },
+    {
+        "name": "wall-corner-round",
+        "glb": "models\\wall-corner-round.glb",
+        "preview": "Previews\\wall-corner-round.png",
+        "size_kb": 18,
+        "vertices": 272
+    },
+    {
+        "name": "wall-corner",
+        "glb": "models\\wall-corner.glb",
+        "preview": "Previews\\wall-corner.png",
+        "size_kb": 13,
+        "vertices": 152
+    },
+    {
+        "name": "wall-detail",
+        "glb": "models\\wall-detail.glb",
+        "preview": "Previews\\wall-detail.png",
+        "size_kb": 17,
+        "vertices": 216
+    },
+    {
+        "name": "wall-door-banner",
+        "glb": "models\\wall-door-banner.glb",
+        "preview": "Previews\\wall-door-banner.png",
+        "size_kb": 15,
+        "vertices": 186
+    },
+    {
+        "name": "wall-door-center",
+        "glb": "models\\wall-door-center.glb",
+        "preview": "Previews\\wall-door-center.png",
+        "size_kb": 9,
+        "vertices": 40
+    },
+    {
+        "name": "wall-door-edge-banner",
+        "glb": "models\\wall-door-edge-banner.glb",
+        "preview": "Previews\\wall-door-edge-banner.png",
+        "size_kb": 12,
+        "vertices": 118
+    },
+    {
+        "name": "wall-door-edge",
+        "glb": "models\\wall-door-edge.glb",
+        "preview": "Previews\\wall-door-edge.png",
+        "size_kb": 12,
+        "vertices": 108
+    },
+    {
+        "name": "wall-door-wide-banner",
+        "glb": "models\\wall-door-wide-banner.glb",
+        "preview": "Previews\\wall-door-wide-banner.png",
+        "size_kb": 15,
+        "vertices": 186
+    },
+    {
+        "name": "wall-door-wide",
+        "glb": "models\\wall-door-wide.glb",
+        "preview": "Previews\\wall-door-wide.png",
+        "size_kb": 14,
+        "vertices": 164
+    },
+    {
+        "name": "wall-door",
+        "glb": "models\\wall-door.glb",
+        "preview": "Previews\\wall-door.png",
+        "size_kb": 14,
+        "vertices": 164
+    },
+    {
+        "name": "wall-pillar-banner",
+        "glb": "models\\wall-pillar-banner.glb",
+        "preview": "Previews\\wall-pillar-banner.png",
+        "size_kb": 18,
+        "vertices": 286
+    },
+    {
+        "name": "wall-pillar",
+        "glb": "models\\wall-pillar.glb",
+        "preview": "Previews\\wall-pillar.png",
+        "size_kb": 13,
+        "vertices": 152
+    },
+    {
+        "name": "wall-switch",
+        "glb": "models\\wall-switch.glb",
+        "preview": "Previews\\wall-switch.png",
+        "size_kb": 9,
+        "vertices": 28
+    },
+    {
+        "name": "wall-window-banner",
+        "glb": "models\\wall-window-banner.glb",
+        "preview": "Previews\\wall-window-banner.png",
+        "size_kb": 14,
+        "vertices": 178
+    },
+    {
+        "name": "wall-window-frame",
+        "glb": "models\\wall-window-frame.glb",
+        "preview": "Previews\\wall-window-frame.png",
+        "size_kb": 10,
+        "vertices": 56
+    },
+    {
+        "name": "wall-window-shutters",
+        "glb": "models\\wall-window-shutters.glb",
+        "preview": "Previews\\wall-window-shutters.png",
+        "size_kb": 11,
+        "vertices": 72
+    },
+    {
+        "name": "wall-window",
+        "glb": "models\\wall-window.glb",
+        "preview": "Previews\\wall-window.png",
+        "size_kb": 14,
+        "vertices": 160
+    },
+    {
+        "name": "wall",
+        "glb": "models\\wall.glb",
+        "preview": "Previews\\wall.png",
+        "size_kb": 11,
+        "vertices": 72
+    }
+]

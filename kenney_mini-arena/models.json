@@ -1,0 +1,156 @@
+[
+    {
+        "name": "banner",
+        "glb": "models\\banner.glb",
+        "preview": "Previews\\banner.png",
+        "size_kb": 23,
+        "vertices": 396
+    },
+    {
+        "name": "block",
+        "glb": "models\\block.glb",
+        "preview": "Previews\\block.png",
+        "size_kb": 10,
+        "vertices": 24
+    },
+    {
+        "name": "border-corner",
+        "glb": "models\\border-corner.glb",
+        "preview": "Previews\\border-corner.png",
+        "size_kb": 16,
+        "vertices": 188
+    },
+    {
+        "name": "border-straight",
+        "glb": "models\\border-straight.glb",
+        "preview": "Previews\\border-straight.png",
+        "size_kb": 13,
+        "vertices": 96
+    },
+    {
+        "name": "bricks",
+        "glb": "models\\bricks.glb",
+        "preview": "Previews\\bricks.png",
+        "size_kb": 18,
+        "vertices": 228
+    },
+    {
+        "name": "character-soldier",
+        "glb": "models\\character-soldier.glb",
+        "preview": "Previews\\character-soldier.png",
+        "size_kb": 211,
+        "vertices": 889
+    },
+    {
+        "name": "column-damaged",
+        "glb": "models\\column-damaged.glb",
+        "preview": "Previews\\column-damaged.png",
+        "size_kb": 18,
+        "vertices": 253
+    },
+    {
+        "name": "column",
+        "glb": "models\\column.glb",
+        "preview": "Previews\\column.png",
+        "size_kb": 20,
+        "vertices": 300
+    },
+    {
+        "name": "floor-detail",
+        "glb": "models\\floor-detail.glb",
+        "preview": "Previews\\floor-detail.png",
+        "size_kb": 13,
+        "vertices": 94
+    },
+    {
+        "name": "floor",
+        "glb": "models\\floor.glb",
+        "preview": "Previews\\floor.png",
+        "size_kb": 10,
+        "vertices": 4
+    },
+    {
+        "name": "stairs-corner-inner",
+        "glb": "models\\stairs-corner-inner.glb",
+        "preview": "Previews\\stairs-corner-inner.png",
+        "size_kb": 14,
+        "vertices": 118
+    },
+    {
+        "name": "stairs-corner",
+        "glb": "models\\stairs-corner.glb",
+        "preview": "Previews\\stairs-corner.png",
+        "size_kb": 15,
+        "vertices": 146
+    },
+    {
+        "name": "stairs",
+        "glb": "models\\stairs.glb",
+        "preview": "Previews\\stairs.png",
+        "size_kb": 12,
+        "vertices": 74
+    },
+    {
+        "name": "statue",
+        "glb": "models\\statue.glb",
+        "preview": "Previews\\statue.png",
+        "size_kb": 43,
+        "vertices": 957
+    },
+    {
+        "name": "tree",
+        "glb": "models\\tree.glb",
+        "preview": "Previews\\tree.png",
+        "size_kb": 31,
+        "vertices": 632
+    },
+    {
+        "name": "trophy",
+        "glb": "models\\trophy.glb",
+        "preview": "Previews\\trophy.png",
+        "size_kb": 25,
+        "vertices": 428
+    },
+    {
+        "name": "wall-corner",
+        "glb": "models\\wall-corner.glb",
+        "preview": "Previews\\wall-corner.png",
+        "size_kb": 24,
+        "vertices": 402
+    },
+    {
+        "name": "wall-gate",
+        "glb": "models\\wall-gate.glb",
+        "preview": "Previews\\wall-gate.png",
+        "size_kb": 30,
+        "vertices": 550
+    },
+    {
+        "name": "wall",
+        "glb": "models\\wall.glb",
+        "preview": "Previews\\wall.png",
+        "size_kb": 19,
+        "vertices": 276
+    },
+    {
+        "name": "weapon-rack",
+        "glb": "models\\weapon-rack.glb",
+        "preview": "Previews\\weapon-rack.png",
+        "size_kb": 23,
+        "vertices": 344
+    },
+    {
+        "name": "weapon-spear",
+        "glb": "models\\weapon-spear.glb",
+        "preview": "Previews\\weapon-spear.png",
+        "size_kb": 13,
+        "vertices": 108
+    },
+    {
+        "name": "weapon-sword",
+        "glb": "models\\weapon-sword.glb",
+        "preview": "Previews\\weapon-sword.png",
+        "size_kb": 15,
+        "vertices": 150
+    }
+]

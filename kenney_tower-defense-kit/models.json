@@ -1,0 +1,1122 @@
+[
+    {
+        "name": "detail-crystal-large",
+        "glb": "models\\detail-crystal-large.glb",
+        "preview": "Previews\\detail-crystal-large.png",
+        "size_kb": 41,
+        "vertices": 840
+    },
+    {
+        "name": "detail-crystal",
+        "glb": "models\\detail-crystal.glb",
+        "preview": "Previews\\detail-crystal.png",
+        "size_kb": 17,
+        "vertices": 144
+    },
+    {
+        "name": "detail-dirt-large",
+        "glb": "models\\detail-dirt-large.glb",
+        "preview": "Previews\\detail-dirt-large.png",
+        "size_kb": 26,
+        "vertices": 408
+    },
+    {
+        "name": "detail-dirt",
+        "glb": "models\\detail-dirt.glb",
+        "preview": "Previews\\detail-dirt.png",
+        "size_kb": 26,
+        "vertices": 408
+    },
+    {
+        "name": "detail-rocks-large",
+        "glb": "models\\detail-rocks-large.glb",
+        "preview": "Previews\\detail-rocks-large.png",
+        "size_kb": 26,
+        "vertices": 408
+    },
+    {
+        "name": "detail-rocks",
+        "glb": "models\\detail-rocks.glb",
+        "preview": "Previews\\detail-rocks.png",
+        "size_kb": 24,
+        "vertices": 324
+    },
+    {
+        "name": "detail-tree-large",
+        "glb": "models\\detail-tree-large.glb",
+        "preview": "Previews\\detail-tree-large.png",
+        "size_kb": 24,
+        "vertices": 336
+    },
+    {
+        "name": "detail-tree",
+        "glb": "models\\detail-tree.glb",
+        "preview": "Previews\\detail-tree.png",
+        "size_kb": 24,
+        "vertices": 336
+    },
+    {
+        "name": "enemy-ufo-a-weapon",
+        "glb": "models\\enemy-ufo-a-weapon.glb",
+        "preview": "Previews\\enemy-ufo-a-weapon.png",
+        "size_kb": 76,
+        "vertices": 1828
+    },
+    {
+        "name": "enemy-ufo-a",
+        "glb": "models\\enemy-ufo-a.glb",
+        "preview": "Previews\\enemy-ufo-a.png",
+        "size_kb": 40,
+        "vertices": 786
+    },
+    {
+        "name": "enemy-ufo-b-weapon",
+        "glb": "models\\enemy-ufo-b-weapon.glb",
+        "preview": "Previews\\enemy-ufo-b-weapon.png",
+        "size_kb": 72,
+        "vertices": 1688
+    },
+    {
+        "name": "enemy-ufo-b",
+        "glb": "models\\enemy-ufo-b.glb",
+        "preview": "Previews\\enemy-ufo-b.png",
+        "size_kb": 37,
+        "vertices": 690
+    },
+    {
+        "name": "enemy-ufo-beam-burst",
+        "glb": "models\\enemy-ufo-beam-burst.glb",
+        "preview": "Previews\\enemy-ufo-beam-burst.png",
+        "size_kb": 17,
+        "vertices": 144
+    },
+    {
+        "name": "enemy-ufo-beam",
+        "glb": "models\\enemy-ufo-beam.glb",
+        "preview": "Previews\\enemy-ufo-beam.png",
+        "size_kb": 16,
+        "vertices": 96
+    },
+    {
+        "name": "enemy-ufo-c-weapon",
+        "glb": "models\\enemy-ufo-c-weapon.glb",
+        "preview": "Previews\\enemy-ufo-c-weapon.png",
+        "size_kb": 71,
+        "vertices": 1656
+    },
+    {
+        "name": "enemy-ufo-c",
+        "glb": "models\\enemy-ufo-c.glb",
+        "preview": "Previews\\enemy-ufo-c.png",
+        "size_kb": 35,
+        "vertices": 642
+    },
+    {
+        "name": "enemy-ufo-d-weapon",
+        "glb": "models\\enemy-ufo-d-weapon.glb",
+        "preview": "Previews\\enemy-ufo-d-weapon.png",
+        "size_kb": 72,
+        "vertices": 1704
+    },
+    {
+        "name": "enemy-ufo-d",
+        "glb": "models\\enemy-ufo-d.glb",
+        "preview": "Previews\\enemy-ufo-d.png",
+        "size_kb": 42,
+        "vertices": 834
+    },
+    {
+        "name": "selection-a",
+        "glb": "models\\selection-a.glb",
+        "preview": "Previews\\selection-a.png",
+        "size_kb": 24,
+        "vertices": 336
+    },
+    {
+        "name": "selection-b",
+        "glb": "models\\selection-b.glb",
+        "preview": "Previews\\selection-b.png",
+        "size_kb": 14,
+        "vertices": 64
+    },
+    {
+        "name": "snow-detail-crystal-large",
+        "glb": "models\\snow-detail-crystal-large.glb",
+        "preview": "Previews\\snow-detail-crystal-large.png",
+        "size_kb": 41,
+        "vertices": 840
+    },
+    {
+        "name": "snow-detail-crystal",
+        "glb": "models\\snow-detail-crystal.glb",
+        "preview": "Previews\\snow-detail-crystal.png",
+        "size_kb": 17,
+        "vertices": 144
+    },
+    {
+        "name": "snow-detail-dirt-large",
+        "glb": "models\\snow-detail-dirt-large.glb",
+        "preview": "Previews\\snow-detail-dirt-large.png",
+        "size_kb": 26,
+        "vertices": 408
+    },
+    {
+        "name": "snow-detail-dirt",
+        "glb": "models\\snow-detail-dirt.glb",
+        "preview": "Previews\\snow-detail-dirt.png",
+        "size_kb": 26,
+        "vertices": 408
+    },
+    {
+        "name": "snow-detail-rocks-large",
+        "glb": "models\\snow-detail-rocks-large.glb",
+        "preview": "Previews\\snow-detail-rocks-large.png",
+        "size_kb": 26,
+        "vertices": 408
+    },
+    {
+        "name": "snow-detail-rocks",
+        "glb": "models\\snow-detail-rocks.glb",
+        "preview": "Previews\\snow-detail-rocks.png",
+        "size_kb": 24,
+        "vertices": 324
+    },
+    {
+        "name": "snow-detail-tree-large",
+        "glb": "models\\snow-detail-tree-large.glb",
+        "preview": "Previews\\snow-detail-tree-large.png",
+        "size_kb": 24,
+        "vertices": 336
+    },
+    {
+        "name": "snow-detail-tree",
+        "glb": "models\\snow-detail-tree.glb",
+        "preview": "Previews\\snow-detail-tree.png",
+        "size_kb": 24,
+        "vertices": 336
+    },
+    {
+        "name": "snow-tile-bump",
+        "glb": "models\\snow-tile-bump.glb",
+        "preview": "Previews\\snow-tile-bump.png",
+        "size_kb": 31,
+        "vertices": 528
+    },
+    {
+        "name": "snow-tile-corner-inner",
+        "glb": "models\\snow-tile-corner-inner.glb",
+        "preview": "Previews\\snow-tile-corner-inner.png",
+        "size_kb": 14,
+        "vertices": 52
+    },
+    {
+        "name": "snow-tile-corner-large",
+        "glb": "models\\snow-tile-corner-large.glb",
+        "preview": "Previews\\snow-tile-corner-large.png",
+        "size_kb": 83,
+        "vertices": 2040
+    },
+    {
+        "name": "snow-tile-corner-outer",
+        "glb": "models\\snow-tile-corner-outer.glb",
+        "preview": "Previews\\snow-tile-corner-outer.png",
+        "size_kb": 14,
+        "vertices": 52
+    },
+    {
+        "name": "snow-tile-corner-round",
+        "glb": "models\\snow-tile-corner-round.glb",
+        "preview": "Previews\\snow-tile-corner-round.png",
+        "size_kb": 32,
+        "vertices": 568
+    },
+    {
+        "name": "snow-tile-corner-square",
+        "glb": "models\\snow-tile-corner-square.glb",
+        "preview": "Previews\\snow-tile-corner-square.png",
+        "size_kb": 23,
+        "vertices": 300
+    },
+    {
+        "name": "snow-tile-crossing",
+        "glb": "models\\snow-tile-crossing.glb",
+        "preview": "Previews\\snow-tile-crossing.png",
+        "size_kb": 28,
+        "vertices": 460
+    },
+    {
+        "name": "snow-tile-crystal",
+        "glb": "models\\snow-tile-crystal.glb",
+        "preview": "Previews\\snow-tile-crystal.png",
+        "size_kb": 43,
+        "vertices": 888
+    },
+    {
+        "name": "snow-tile-dirt",
+        "glb": "models\\snow-tile-dirt.glb",
+        "preview": "Previews\\snow-tile-dirt.png",
+        "size_kb": 14,
+        "vertices": 48
+    },
+    {
+        "name": "snow-tile-end-round",
+        "glb": "models\\snow-tile-end-round.glb",
+        "preview": "Previews\\snow-tile-end-round.png",
+        "size_kb": 25,
+        "vertices": 360
+    },
+    {
+        "name": "snow-tile-end",
+        "glb": "models\\snow-tile-end.glb",
+        "preview": "Previews\\snow-tile-end.png",
+        "size_kb": 22,
+        "vertices": 276
+    },
+    {
+        "name": "snow-tile-hill",
+        "glb": "models\\snow-tile-hill.glb",
+        "preview": "Previews\\snow-tile-hill.png",
+        "size_kb": 35,
+        "vertices": 672
+    },
+    {
+        "name": "snow-tile-river-bridge",
+        "glb": "models\\snow-tile-river-bridge.glb",
+        "preview": "Previews\\snow-tile-river-bridge.png",
+        "size_kb": 33,
+        "vertices": 584
+    },
+    {
+        "name": "snow-tile-river-corner",
+        "glb": "models\\snow-tile-river-corner.glb",
+        "preview": "Previews\\snow-tile-river-corner.png",
+        "size_kb": 52,
+        "vertices": 1152
+    },
+    {
+        "name": "snow-tile-river-slope-large",
+        "glb": "models\\snow-tile-river-slope-large.glb",
+        "preview": "Previews\\snow-tile-river-slope-large.png",
+        "size_kb": 17,
+        "vertices": 144
+    },
+    {
+        "name": "snow-tile-river-slope",
+        "glb": "models\\snow-tile-river-slope.glb",
+        "preview": "Previews\\snow-tile-river-slope.png",
+        "size_kb": 23,
+        "vertices": 324
+    },
+    {
+        "name": "snow-tile-river-straight",
+        "glb": "models\\snow-tile-river-straight.glb",
+        "preview": "Previews\\snow-tile-river-straight.png",
+        "size_kb": 23,
+        "vertices": 324
+    },
+    {
+        "name": "snow-tile-river-transition",
+        "glb": "models\\snow-tile-river-transition.glb",
+        "preview": "Previews\\snow-tile-river-transition.png",
+        "size_kb": 27,
+        "vertices": 418
+    },
+    {
+        "name": "snow-tile-river-waterfall",
+        "glb": "models\\snow-tile-river-waterfall.glb",
+        "preview": "Previews\\snow-tile-river-waterfall.png",
+        "size_kb": 38,
+        "vertices": 726
+    },
+    {
+        "name": "snow-tile-rock",
+        "glb": "models\\snow-tile-rock.glb",
+        "preview": "Previews\\snow-tile-rock.png",
+        "size_kb": 35,
+        "vertices": 672
+    },
+    {
+        "name": "snow-tile-slope",
+        "glb": "models\\snow-tile-slope.glb",
+        "preview": "Previews\\snow-tile-slope.png",
+        "size_kb": 14,
+        "vertices": 48
+    },
+    {
+        "name": "snow-tile-spawn-end-round",
+        "glb": "models\\snow-tile-spawn-end-round.glb",
+        "preview": "Previews\\snow-tile-spawn-end-round.png",
+        "size_kb": 35,
+        "vertices": 652
+    },
+    {
+        "name": "snow-tile-spawn-end",
+        "glb": "models\\snow-tile-spawn-end.glb",
+        "preview": "Previews\\snow-tile-spawn-end.png",
+        "size_kb": 27,
+        "vertices": 412
+    },
+    {
+        "name": "snow-tile-spawn-round",
+        "glb": "models\\snow-tile-spawn-round.glb",
+        "preview": "Previews\\snow-tile-spawn-round.png",
+        "size_kb": 34,
+        "vertices": 628
+    },
+    {
+        "name": "snow-tile-spawn",
+        "glb": "models\\snow-tile-spawn.glb",
+        "preview": "Previews\\snow-tile-spawn.png",
+        "size_kb": 29,
+        "vertices": 472
+    },
+    {
+        "name": "snow-tile-split",
+        "glb": "models\\snow-tile-split.glb",
+        "preview": "Previews\\snow-tile-split.png",
+        "size_kb": 26,
+        "vertices": 388
+    },
+    {
+        "name": "snow-tile-straight-slope-large",
+        "glb": "models\\snow-tile-straight-slope-large.glb",
+        "preview": "Previews\\snow-tile-straight-slope-large.png",
+        "size_kb": 16,
+        "vertices": 96
+    },
+    {
+        "name": "snow-tile-straight-slope",
+        "glb": "models\\snow-tile-straight-slope.glb",
+        "preview": "Previews\\snow-tile-straight-slope.png",
+        "size_kb": 22,
+        "vertices": 276
+    },
+    {
+        "name": "snow-tile-straight",
+        "glb": "models\\snow-tile-straight.glb",
+        "preview": "Previews\\snow-tile-straight.png",
+        "size_kb": 22,
+        "vertices": 276
+    },
+    {
+        "name": "snow-tile-transition",
+        "glb": "models\\snow-tile-transition.glb",
+        "preview": "Previews\\snow-tile-transition.png",
+        "size_kb": 22,
+        "vertices": 276
+    },
+    {
+        "name": "snow-tile-tree-double",
+        "glb": "models\\snow-tile-tree-double.glb",
+        "preview": "Previews\\snow-tile-tree-double.png",
+        "size_kb": 37,
+        "vertices": 720
+    },
+    {
+        "name": "snow-tile-tree-quad",
+        "glb": "models\\snow-tile-tree-quad.glb",
+        "preview": "Previews\\snow-tile-tree-quad.png",
+        "size_kb": 75,
+        "vertices": 1824
+    },
+    {
+        "name": "snow-tile-tree",
+        "glb": "models\\snow-tile-tree.glb",
+        "preview": "Previews\\snow-tile-tree.png",
+        "size_kb": 25,
+        "vertices": 384
+    },
+    {
+        "name": "snow-tile-wide-corner",
+        "glb": "models\\snow-tile-wide-corner.glb",
+        "preview": "Previews\\snow-tile-wide-corner.png",
+        "size_kb": 62,
+        "vertices": 1452
+    },
+    {
+        "name": "snow-tile-wide-split",
+        "glb": "models\\snow-tile-wide-split.glb",
+        "preview": "Previews\\snow-tile-wide-split.png",
+        "size_kb": 25,
+        "vertices": 370
+    },
+    {
+        "name": "snow-tile-wide-straight",
+        "glb": "models\\snow-tile-wide-straight.glb",
+        "preview": "Previews\\snow-tile-wide-straight.png",
+        "size_kb": 18,
+        "vertices": 166
+    },
+    {
+        "name": "snow-tile-wide-transition",
+        "glb": "models\\snow-tile-wide-transition.glb",
+        "preview": "Previews\\snow-tile-wide-transition.png",
+        "size_kb": 23,
+        "vertices": 312
+    },
+    {
+        "name": "snow-tile",
+        "glb": "models\\snow-tile.glb",
+        "preview": "Previews\\snow-tile.png",
+        "size_kb": 14,
+        "vertices": 48
+    },
+    {
+        "name": "snow-wood-structure-high-part",
+        "glb": "models\\snow-wood-structure-high-part.glb",
+        "preview": "Previews\\snow-wood-structure-high-part.png",
+        "size_kb": 21,
+        "vertices": 256
+    },
+    {
+        "name": "snow-wood-structure-high",
+        "glb": "models\\snow-wood-structure-high.glb",
+        "preview": "Previews\\snow-wood-structure-high.png",
+        "size_kb": 41,
+        "vertices": 832
+    },
+    {
+        "name": "snow-wood-structure-part",
+        "glb": "models\\snow-wood-structure-part.glb",
+        "preview": "Previews\\snow-wood-structure-part.png",
+        "size_kb": 18,
+        "vertices": 176
+    },
+    {
+        "name": "snow-wood-structure",
+        "glb": "models\\snow-wood-structure.glb",
+        "preview": "Previews\\snow-wood-structure.png",
+        "size_kb": 30,
+        "vertices": 512
+    },
+    {
+        "name": "spawn-round",
+        "glb": "models\\spawn-round.glb",
+        "preview": "Previews\\spawn-round.png",
+        "size_kb": 24,
+        "vertices": 336
+    },
+    {
+        "name": "spawn-square",
+        "glb": "models\\spawn-square.glb",
+        "preview": "Previews\\spawn-square.png",
+        "size_kb": 21,
+        "vertices": 248
+    },
+    {
+        "name": "tile-bump",
+        "glb": "models\\tile-bump.glb",
+        "preview": "Previews\\tile-bump.png",
+        "size_kb": 31,
+        "vertices": 528
+    },
+    {
+        "name": "tile-corner-inner",
+        "glb": "models\\tile-corner-inner.glb",
+        "preview": "Previews\\tile-corner-inner.png",
+        "size_kb": 14,
+        "vertices": 52
+    },
+    {
+        "name": "tile-corner-large",
+        "glb": "models\\tile-corner-large.glb",
+        "preview": "Previews\\tile-corner-large.png",
+        "size_kb": 83,
+        "vertices": 2040
+    },
+    {
+        "name": "tile-corner-outer",
+        "glb": "models\\tile-corner-outer.glb",
+        "preview": "Previews\\tile-corner-outer.png",
+        "size_kb": 14,
+        "vertices": 52
+    },
+    {
+        "name": "tile-corner-round",
+        "glb": "models\\tile-corner-round.glb",
+        "preview": "Previews\\tile-corner-round.png",
+        "size_kb": 32,
+        "vertices": 568
+    },
+    {
+        "name": "tile-corner-square",
+        "glb": "models\\tile-corner-square.glb",
+        "preview": "Previews\\tile-corner-square.png",
+        "size_kb": 23,
+        "vertices": 300
+    },
+    {
+        "name": "tile-crossing",
+        "glb": "models\\tile-crossing.glb",
+        "preview": "Previews\\tile-crossing.png",
+        "size_kb": 28,
+        "vertices": 460
+    },
+    {
+        "name": "tile-crystal",
+        "glb": "models\\tile-crystal.glb",
+        "preview": "Previews\\tile-crystal.png",
+        "size_kb": 43,
+        "vertices": 888
+    },
+    {
+        "name": "tile-dirt",
+        "glb": "models\\tile-dirt.glb",
+        "preview": "Previews\\tile-dirt.png",
+        "size_kb": 14,
+        "vertices": 48
+    },
+    {
+        "name": "tile-end-round",
+        "glb": "models\\tile-end-round.glb",
+        "preview": "Previews\\tile-end-round.png",
+        "size_kb": 25,
+        "vertices": 360
+    },
+    {
+        "name": "tile-end",
+        "glb": "models\\tile-end.glb",
+        "preview": "Previews\\tile-end.png",
+        "size_kb": 22,
+        "vertices": 276
+    },
+    {
+        "name": "tile-hill",
+        "glb": "models\\tile-hill.glb",
+        "preview": "Previews\\tile-hill.png",
+        "size_kb": 35,
+        "vertices": 672
+    },
+    {
+        "name": "tile-river-bridge",
+        "glb": "models\\tile-river-bridge.glb",
+        "preview": "Previews\\tile-river-bridge.png",
+        "size_kb": 33,
+        "vertices": 584
+    },
+    {
+        "name": "tile-river-corner",
+        "glb": "models\\tile-river-corner.glb",
+        "preview": "Previews\\tile-river-corner.png",
+        "size_kb": 52,
+        "vertices": 1152
+    },
+    {
+        "name": "tile-river-slope-large",
+        "glb": "models\\tile-river-slope-large.glb",
+        "preview": "Previews\\tile-river-slope-large.png",
+        "size_kb": 17,
+        "vertices": 144
+    },
+    {
+        "name": "tile-river-slope",
+        "glb": "models\\tile-river-slope.glb",
+        "preview": "Previews\\tile-river-slope.png",
+        "size_kb": 23,
+        "vertices": 324
+    },
+    {
+        "name": "tile-river-straight",
+        "glb": "models\\tile-river-straight.glb",
+        "preview": "Previews\\tile-river-straight.png",
+        "size_kb": 23,
+        "vertices": 324
+    },
+    {
+        "name": "tile-river-transition",
+        "glb": "models\\tile-river-transition.glb",
+        "preview": "Previews\\tile-river-transition.png",
+        "size_kb": 27,
+        "vertices": 418
+    },
+    {
+        "name": "tile-river-waterfall",
+        "glb": "models\\tile-river-waterfall.glb",
+        "preview": "Previews\\tile-river-waterfall.png",
+        "size_kb": 38,
+        "vertices": 726
+    },
+    {
+        "name": "tile-rock",
+        "glb": "models\\tile-rock.glb",
+        "preview": "Previews\\tile-rock.png",
+        "size_kb": 35,
+        "vertices": 672
+    },
+    {
+        "name": "tile-slope",
+        "glb": "models\\tile-slope.glb",
+        "preview": "Previews\\tile-slope.png",
+        "size_kb": 14,
+        "vertices": 48
+    },
+    {
+        "name": "tile-spawn-end-round",
+        "glb": "models\\tile-spawn-end-round.glb",
+        "preview": "Previews\\tile-spawn-end-round.png",
+        "size_kb": 35,
+        "vertices": 652
+    },
+    {
+        "name": "tile-spawn-end",
+        "glb": "models\\tile-spawn-end.glb",
+        "preview": "Previews\\tile-spawn-end.png",
+        "size_kb": 27,
+        "vertices": 412
+    },
+    {
+        "name": "tile-spawn-round",
+        "glb": "models\\tile-spawn-round.glb",
+        "preview": "Previews\\tile-spawn-round.png",
+        "size_kb": 34,
+        "vertices": 628
+    },
+    {
+        "name": "tile-spawn",
+        "glb": "models\\tile-spawn.glb",
+        "preview": "Previews\\tile-spawn.png",
+        "size_kb": 29,
+        "vertices": 472
+    },
+    {
+        "name": "tile-split",
+        "glb": "models\\tile-split.glb",
+        "preview": "Previews\\tile-split.png",
+        "size_kb": 26,
+        "vertices": 388
+    },
+    {
+        "name": "tile-straight-slope-large",
+        "glb": "models\\tile-straight-slope-large.glb",
+        "preview": "Previews\\tile-straight-slope-large.png",
+        "size_kb": 16,
+        "vertices": 96
+    },
+    {
+        "name": "tile-straight-slope",
+        "glb": "models\\tile-straight-slope.glb",
+        "preview": "Previews\\tile-straight-slope.png",
+        "size_kb": 22,
+        "vertices": 276
+    },
+    {
+        "name": "tile-straight",
+        "glb": "models\\tile-straight.glb",
+        "preview": "Previews\\tile-straight.png",
+        "size_kb": 22,
+        "vertices": 276
+    },
+    {
+        "name": "tile-transition",
+        "glb": "models\\tile-transition.glb",
+        "preview": "Previews\\tile-transition.png",
+        "size_kb": 22,
+        "vertices": 276
+    },
+    {
+        "name": "tile-tree-double",
+        "glb": "models\\tile-tree-double.glb",
+        "preview": "Previews\\tile-tree-double.png",
+        "size_kb": 52,
+        "vertices": 1152
+    },
+    {
+        "name": "tile-tree-quad",
+        "glb": "models\\tile-tree-quad.glb",
+        "preview": "Previews\\tile-tree-quad.png",
+        "size_kb": 75,
+        "vertices": 1824
+    },
+    {
+        "name": "tile-tree",
+        "glb": "models\\tile-tree.glb",
+        "preview": "Previews\\tile-tree.png",
+        "size_kb": 33,
+        "vertices": 600
+    },
+    {
+        "name": "tile-wide-corner",
+        "glb": "models\\tile-wide-corner.glb",
+        "preview": "Previews\\tile-wide-corner.png",
+        "size_kb": 62,
+        "vertices": 1452
+    },
+    {
+        "name": "tile-wide-split",
+        "glb": "models\\tile-wide-split.glb",
+        "preview": "Previews\\tile-wide-split.png",
+        "size_kb": 25,
+        "vertices": 370
+    },
+    {
+        "name": "tile-wide-straight",
+        "glb": "models\\tile-wide-straight.glb",
+        "preview": "Previews\\tile-wide-straight.png",
+        "size_kb": 18,
+        "vertices": 166
+    },
+    {
+        "name": "tile-wide-transition",
+        "glb": "models\\tile-wide-transition.glb",
+        "preview": "Previews\\tile-wide-transition.png",
+        "size_kb": 23,
+        "vertices": 312
+    },
+    {
+        "name": "tile",
+        "glb": "models\\tile.glb",
+        "preview": "Previews\\tile.png",
+        "size_kb": 14,
+        "vertices": 48
+    },
+    {
+        "name": "tower-round-base",
+        "glb": "models\\tower-round-base.glb",
+        "preview": "Previews\\tower-round-base.png",
+        "size_kb": 36,
+        "vertices": 688
+    },
+    {
+        "name": "tower-round-bottom-a",
+        "glb": "models\\tower-round-bottom-a.glb",
+        "preview": "Previews\\tower-round-bottom-a.png",
+        "size_kb": 35,
+        "vertices": 664
+    },
+    {
+        "name": "tower-round-bottom-b",
+        "glb": "models\\tower-round-bottom-b.glb",
+        "preview": "Previews\\tower-round-bottom-b.png",
+        "size_kb": 33,
+        "vertices": 608
+    },
+    {
+        "name": "tower-round-bottom-c",
+        "glb": "models\\tower-round-bottom-c.glb",
+        "preview": "Previews\\tower-round-bottom-c.png",
+        "size_kb": 36,
+        "vertices": 688
+    },
+    {
+        "name": "tower-round-build-a",
+        "glb": "models\\tower-round-build-a.glb",
+        "preview": "Previews\\tower-round-build-a.png",
+        "size_kb": 45,
+        "vertices": 952
+    },
+    {
+        "name": "tower-round-build-b",
+        "glb": "models\\tower-round-build-b.glb",
+        "preview": "Previews\\tower-round-build-b.png",
+        "size_kb": 53,
+        "vertices": 1184
+    },
+    {
+        "name": "tower-round-build-c",
+        "glb": "models\\tower-round-build-c.glb",
+        "preview": "Previews\\tower-round-build-c.png",
+        "size_kb": 61,
+        "vertices": 1416
+    },
+    {
+        "name": "tower-round-build-d",
+        "glb": "models\\tower-round-build-d.glb",
+        "preview": "Previews\\tower-round-build-d.png",
+        "size_kb": 64,
+        "vertices": 1504
+    },
+    {
+        "name": "tower-round-build-e",
+        "glb": "models\\tower-round-build-e.glb",
+        "preview": "Previews\\tower-round-build-e.png",
+        "size_kb": 71,
+        "vertices": 1702
+    },
+    {
+        "name": "tower-round-build-f",
+        "glb": "models\\tower-round-build-f.glb",
+        "preview": "Previews\\tower-round-build-f.png",
+        "size_kb": 80,
+        "vertices": 1968
+    },
+    {
+        "name": "tower-round-crystals",
+        "glb": "models\\tower-round-crystals.glb",
+        "preview": "Previews\\tower-round-crystals.png",
+        "size_kb": 58,
+        "vertices": 1248
+    },
+    {
+        "name": "tower-round-middle-a",
+        "glb": "models\\tower-round-middle-a.glb",
+        "preview": "Previews\\tower-round-middle-a.png",
+        "size_kb": 52,
+        "vertices": 1156
+    },
+    {
+        "name": "tower-round-middle-b",
+        "glb": "models\\tower-round-middle-b.glb",
+        "preview": "Previews\\tower-round-middle-b.png",
+        "size_kb": 48,
+        "vertices": 1040
+    },
+    {
+        "name": "tower-round-middle-c",
+        "glb": "models\\tower-round-middle-c.glb",
+        "preview": "Previews\\tower-round-middle-c.png",
+        "size_kb": 47,
+        "vertices": 1008
+    },
+    {
+        "name": "tower-round-roof-a",
+        "glb": "models\\tower-round-roof-a.glb",
+        "preview": "Previews\\tower-round-roof-a.png",
+        "size_kb": 60,
+        "vertices": 1384
+    },
+    {
+        "name": "tower-round-roof-b",
+        "glb": "models\\tower-round-roof-b.glb",
+        "preview": "Previews\\tower-round-roof-b.png",
+        "size_kb": 62,
+        "vertices": 1440
+    },
+    {
+        "name": "tower-round-roof-c",
+        "glb": "models\\tower-round-roof-c.glb",
+        "preview": "Previews\\tower-round-roof-c.png",
+        "size_kb": 59,
+        "vertices": 1360
+    },
+    {
+        "name": "tower-round-top-a",
+        "glb": "models\\tower-round-top-a.glb",
+        "preview": "Previews\\tower-round-top-a.png",
+        "size_kb": 41,
+        "vertices": 832
+    },
+    {
+        "name": "tower-round-top-b",
+        "glb": "models\\tower-round-top-b.glb",
+        "preview": "Previews\\tower-round-top-b.png",
+        "size_kb": 43,
+        "vertices": 888
+    },
+    {
+        "name": "tower-round-top-c",
+        "glb": "models\\tower-round-top-c.glb",
+        "preview": "Previews\\tower-round-top-c.png",
+        "size_kb": 43,
+        "vertices": 880
+    },
+    {
+        "name": "tower-square-bottom-a",
+        "glb": "models\\tower-square-bottom-a.glb",
+        "preview": "Previews\\tower-square-bottom-a.png",
+        "size_kb": 20,
+        "vertices": 224
+    },
+    {
+        "name": "tower-square-bottom-b",
+        "glb": "models\\tower-square-bottom-b.glb",
+        "preview": "Previews\\tower-square-bottom-b.png",
+        "size_kb": 35,
+        "vertices": 656
+    },
+    {
+        "name": "tower-square-bottom-c",
+        "glb": "models\\tower-square-bottom-c.glb",
+        "preview": "Previews\\tower-square-bottom-c.png",
+        "size_kb": 28,
+        "vertices": 456
+    },
+    {
+        "name": "tower-square-build-a",
+        "glb": "models\\tower-square-build-a.glb",
+        "preview": "Previews\\tower-square-build-a.png",
+        "size_kb": 62,
+        "vertices": 1440
+    },
+    {
+        "name": "tower-square-build-b",
+        "glb": "models\\tower-square-build-b.glb",
+        "preview": "Previews\\tower-square-build-b.png",
+        "size_kb": 65,
+        "vertices": 1504
+    },
+    {
+        "name": "tower-square-build-c",
+        "glb": "models\\tower-square-build-c.glb",
+        "preview": "Previews\\tower-square-build-c.png",
+        "size_kb": 58,
+        "vertices": 1304
+    },
+    {
+        "name": "tower-square-build-d",
+        "glb": "models\\tower-square-build-d.glb",
+        "preview": "Previews\\tower-square-build-d.png",
+        "size_kb": 68,
+        "vertices": 1624
+    },
+    {
+        "name": "tower-square-build-e",
+        "glb": "models\\tower-square-build-e.glb",
+        "preview": "Previews\\tower-square-build-e.png",
+        "size_kb": 71,
+        "vertices": 1696
+    },
+    {
+        "name": "tower-square-build-f",
+        "glb": "models\\tower-square-build-f.glb",
+        "preview": "Previews\\tower-square-build-f.png",
+        "size_kb": 64,
+        "vertices": 1488
+    },
+    {
+        "name": "tower-square-middle-a",
+        "glb": "models\\tower-square-middle-a.glb",
+        "preview": "Previews\\tower-square-middle-a.png",
+        "size_kb": 41,
+        "vertices": 848
+    },
+    {
+        "name": "tower-square-middle-b",
+        "glb": "models\\tower-square-middle-b.glb",
+        "preview": "Previews\\tower-square-middle-b.png",
+        "size_kb": 28,
+        "vertices": 448
+    },
+    {
+        "name": "tower-square-middle-c",
+        "glb": "models\\tower-square-middle-c.glb",
+        "preview": "Previews\\tower-square-middle-c.png",
+        "size_kb": 28,
+        "vertices": 464
+    },
+    {
+        "name": "tower-square-roof-a",
+        "glb": "models\\tower-square-roof-a.glb",
+        "preview": "Previews\\tower-square-roof-a.png",
+        "size_kb": 62,
+        "vertices": 1432
+    },
+    {
+        "name": "tower-square-roof-b",
+        "glb": "models\\tower-square-roof-b.glb",
+        "preview": "Previews\\tower-square-roof-b.png",
+        "size_kb": 48,
+        "vertices": 1040
+    },
+    {
+        "name": "tower-square-roof-c",
+        "glb": "models\\tower-square-roof-c.glb",
+        "preview": "Previews\\tower-square-roof-c.png",
+        "size_kb": 48,
+        "vertices": 1032
+    },
+    {
+        "name": "tower-square-top-a",
+        "glb": "models\\tower-square-top-a.glb",
+        "preview": "Previews\\tower-square-top-a.png",
+        "size_kb": 56,
+        "vertices": 1248
+    },
+    {
+        "name": "tower-square-top-b",
+        "glb": "models\\tower-square-top-b.glb",
+        "preview": "Previews\\tower-square-top-b.png",
+        "size_kb": 42,
+        "vertices": 848
+    },
+    {
+        "name": "tower-square-top-c",
+        "glb": "models\\tower-square-top-c.glb",
+        "preview": "Previews\\tower-square-top-c.png",
+        "size_kb": 42,
+        "vertices": 848
+    },
+    {
+        "name": "weapon-ammo-arrow",
+        "glb": "models\\weapon-ammo-arrow.glb",
+        "preview": "Previews\\weapon-ammo-arrow.png",
+        "size_kb": 17,
+        "vertices": 144
+    },
+    {
+        "name": "weapon-ammo-boulder",
+        "glb": "models\\weapon-ammo-boulder.glb",
+        "preview": "Previews\\weapon-ammo-boulder.png",
+        "size_kb": 18,
+        "vertices": 168
+    },
+    {
+        "name": "weapon-ammo-bullet",
+        "glb": "models\\weapon-ammo-bullet.glb",
+        "preview": "Previews\\weapon-ammo-bullet.png",
+        "size_kb": 22,
+        "vertices": 288
+    },
+    {
+        "name": "weapon-ammo-cannonball",
+        "glb": "models\\weapon-ammo-cannonball.glb",
+        "preview": "Previews\\weapon-ammo-cannonball.png",
+        "size_kb": 24,
+        "vertices": 352
+    },
+    {
+        "name": "weapon-ballista",
+        "glb": "models\\weapon-ballista.glb",
+        "preview": "Previews\\weapon-ballista.png",
+        "size_kb": 51,
+        "vertices": 1080
+    },
+    {
+        "name": "weapon-cannon",
+        "glb": "models\\weapon-cannon.glb",
+        "preview": "Previews\\weapon-cannon.png",
+        "size_kb": 51,
+        "vertices": 1080
+    },
+    {
+        "name": "weapon-catapult",
+        "glb": "models\\weapon-catapult.glb",
+        "preview": "Previews\\weapon-catapult.png",
+        "size_kb": 50,
+        "vertices": 1064
+    },
+    {
+        "name": "weapon-turret",
+        "glb": "models\\weapon-turret.glb",
+        "preview": "Previews\\weapon-turret.png",
+        "size_kb": 51,
+        "vertices": 1108
+    },
+    {
+        "name": "wood-structure-high-part",
+        "glb": "models\\wood-structure-high-part.glb",
+        "preview": "Previews\\wood-structure-high-part.png",
+        "size_kb": 18,
+        "vertices": 160
+    },
+    {
+        "name": "wood-structure-high",
+        "glb": "models\\wood-structure-high.glb",
+        "preview": "Previews\\wood-structure-high.png",
+        "size_kb": 28,
+        "vertices": 448
+    },
+    {
+        "name": "wood-structure-part",
+        "glb": "models\\wood-structure-part.glb",
+        "preview": "Previews\\wood-structure-part.png",
+        "size_kb": 17,
+        "vertices": 128
+    },
+    {
+        "name": "wood-structure",
+        "glb": "models\\wood-structure.glb",
+        "preview": "Previews\\wood-structure.png",
+        "size_kb": 23,
+        "vertices": 320
+    }
+]

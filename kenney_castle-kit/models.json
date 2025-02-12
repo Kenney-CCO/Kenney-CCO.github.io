@@ -1,0 +1,534 @@
+[
+    {
+        "name": "bridge-draw",
+        "glb": "models\\bridge-draw.glb",
+        "preview": "Previews\\bridge-draw.png",
+        "size_kb": 11,
+        "vertices": 68
+    },
+    {
+        "name": "bridge-straight-pillar",
+        "glb": "models\\bridge-straight-pillar.glb",
+        "preview": "Previews\\bridge-straight-pillar.png",
+        "size_kb": 17,
+        "vertices": 252
+    },
+    {
+        "name": "bridge-straight",
+        "glb": "models\\bridge-straight.glb",
+        "preview": "Previews\\bridge-straight.png",
+        "size_kb": 18,
+        "vertices": 290
+    },
+    {
+        "name": "door",
+        "glb": "models\\door.glb",
+        "preview": "Previews\\door.png",
+        "size_kb": 18,
+        "vertices": 294
+    },
+    {
+        "name": "flag-banner-long",
+        "glb": "models\\flag-banner-long.glb",
+        "preview": "Previews\\flag-banner-long.png",
+        "size_kb": 12,
+        "vertices": 100
+    },
+    {
+        "name": "flag-banner-short",
+        "glb": "models\\flag-banner-short.glb",
+        "preview": "Previews\\flag-banner-short.png",
+        "size_kb": 12,
+        "vertices": 100
+    },
+    {
+        "name": "flag-pennant",
+        "glb": "models\\flag-pennant.glb",
+        "preview": "Previews\\flag-pennant.png",
+        "size_kb": 16,
+        "vertices": 238
+    },
+    {
+        "name": "flag-wide",
+        "glb": "models\\flag-wide.glb",
+        "preview": "Previews\\flag-wide.png",
+        "size_kb": 24,
+        "vertices": 460
+    },
+    {
+        "name": "flag",
+        "glb": "models\\flag.glb",
+        "preview": "Previews\\flag.png",
+        "size_kb": 17,
+        "vertices": 260
+    },
+    {
+        "name": "gate",
+        "glb": "models\\gate.glb",
+        "preview": "Previews\\gate.png",
+        "size_kb": 17,
+        "vertices": 244
+    },
+    {
+        "name": "ground-hills",
+        "glb": "models\\ground-hills.glb",
+        "preview": "Previews\\ground-hills.png",
+        "size_kb": 16,
+        "vertices": 220
+    },
+    {
+        "name": "ground",
+        "glb": "models\\ground.glb",
+        "preview": "Previews\\ground.png",
+        "size_kb": 8,
+        "vertices": 4
+    },
+    {
+        "name": "metal-gate",
+        "glb": "models\\metal-gate.glb",
+        "preview": "Previews\\metal-gate.png",
+        "size_kb": 23,
+        "vertices": 424
+    },
+    {
+        "name": "rocks-large",
+        "glb": "models\\rocks-large.glb",
+        "preview": "Previews\\rocks-large.png",
+        "size_kb": 18,
+        "vertices": 280
+    },
+    {
+        "name": "rocks-small",
+        "glb": "models\\rocks-small.glb",
+        "preview": "Previews\\rocks-small.png",
+        "size_kb": 17,
+        "vertices": 260
+    },
+    {
+        "name": "siege-ballista-demolished",
+        "glb": "models\\siege-ballista-demolished.glb",
+        "preview": "Previews\\siege-ballista-demolished.png",
+        "size_kb": 45,
+        "vertices": 1051
+    },
+    {
+        "name": "siege-ballista",
+        "glb": "models\\siege-ballista.glb",
+        "preview": "Previews\\siege-ballista.png",
+        "size_kb": 51,
+        "vertices": 1167
+    },
+    {
+        "name": "siege-catapult-demolished",
+        "glb": "models\\siege-catapult-demolished.glb",
+        "preview": "Previews\\siege-catapult-demolished.png",
+        "size_kb": 55,
+        "vertices": 1347
+    },
+    {
+        "name": "siege-catapult",
+        "glb": "models\\siege-catapult.glb",
+        "preview": "Previews\\siege-catapult.png",
+        "size_kb": 66,
+        "vertices": 1534
+    },
+    {
+        "name": "siege-ram-demolished",
+        "glb": "models\\siege-ram-demolished.glb",
+        "preview": "Previews\\siege-ram-demolished.png",
+        "size_kb": 53,
+        "vertices": 1282
+    },
+    {
+        "name": "siege-ram",
+        "glb": "models\\siege-ram.glb",
+        "preview": "Previews\\siege-ram.png",
+        "size_kb": 78,
+        "vertices": 1838
+    },
+    {
+        "name": "siege-tower-demolished",
+        "glb": "models\\siege-tower-demolished.glb",
+        "preview": "Previews\\siege-tower-demolished.png",
+        "size_kb": 89,
+        "vertices": 2312
+    },
+    {
+        "name": "siege-tower",
+        "glb": "models\\siege-tower.glb",
+        "preview": "Previews\\siege-tower.png",
+        "size_kb": 105,
+        "vertices": 2692
+    },
+    {
+        "name": "siege-trebuchet-demolished",
+        "glb": "models\\siege-trebuchet-demolished.glb",
+        "preview": "Previews\\siege-trebuchet-demolished.png",
+        "size_kb": 52,
+        "vertices": 1245
+    },
+    {
+        "name": "siege-trebuchet",
+        "glb": "models\\siege-trebuchet.glb",
+        "preview": "Previews\\siege-trebuchet.png",
+        "size_kb": 101,
+        "vertices": 2496
+    },
+    {
+        "name": "stairs-stone-square",
+        "glb": "models\\stairs-stone-square.glb",
+        "preview": "Previews\\stairs-stone-square.png",
+        "size_kb": 14,
+        "vertices": 156
+    },
+    {
+        "name": "stairs-stone",
+        "glb": "models\\stairs-stone.glb",
+        "preview": "Previews\\stairs-stone.png",
+        "size_kb": 14,
+        "vertices": 162
+    },
+    {
+        "name": "tower-base",
+        "glb": "models\\tower-base.glb",
+        "preview": "Previews\\tower-base.png",
+        "size_kb": 28,
+        "vertices": 576
+    },
+    {
+        "name": "tower-hexagon-base",
+        "glb": "models\\tower-hexagon-base.glb",
+        "preview": "Previews\\tower-hexagon-base.png",
+        "size_kb": 13,
+        "vertices": 132
+    },
+    {
+        "name": "tower-hexagon-mid",
+        "glb": "models\\tower-hexagon-mid.glb",
+        "preview": "Previews\\tower-hexagon-mid.png",
+        "size_kb": 30,
+        "vertices": 612
+    },
+    {
+        "name": "tower-hexagon-roof-secondary",
+        "glb": "models\\tower-hexagon-roof-secondary.glb",
+        "preview": "Previews\\tower-hexagon-roof-secondary.png",
+        "size_kb": 16,
+        "vertices": 216
+    },
+    {
+        "name": "tower-hexagon-roof",
+        "glb": "models\\tower-hexagon-roof.glb",
+        "preview": "Previews\\tower-hexagon-roof.png",
+        "size_kb": 13,
+        "vertices": 132
+    },
+    {
+        "name": "tower-hexagon-top-wood",
+        "glb": "models\\tower-hexagon-top-wood.glb",
+        "preview": "Previews\\tower-hexagon-top-wood.png",
+        "size_kb": 17,
+        "vertices": 240
+    },
+    {
+        "name": "tower-hexagon-top",
+        "glb": "models\\tower-hexagon-top.glb",
+        "preview": "Previews\\tower-hexagon-top.png",
+        "size_kb": 17,
+        "vertices": 240
+    },
+    {
+        "name": "tower-slant-roof",
+        "glb": "models\\tower-slant-roof.glb",
+        "preview": "Previews\\tower-slant-roof.png",
+        "size_kb": 39,
+        "vertices": 882
+    },
+    {
+        "name": "tower-square-arch",
+        "glb": "models\\tower-square-arch.glb",
+        "preview": "Previews\\tower-square-arch.png",
+        "size_kb": 25,
+        "vertices": 484
+    },
+    {
+        "name": "tower-square-base-border",
+        "glb": "models\\tower-square-base-border.glb",
+        "preview": "Previews\\tower-square-base-border.png",
+        "size_kb": 9,
+        "vertices": 40
+    },
+    {
+        "name": "tower-square-base-color",
+        "glb": "models\\tower-square-base-color.glb",
+        "preview": "Previews\\tower-square-base-color.png",
+        "size_kb": 12,
+        "vertices": 104
+    },
+    {
+        "name": "tower-square-base",
+        "glb": "models\\tower-square-base.glb",
+        "preview": "Previews\\tower-square-base.png",
+        "size_kb": 10,
+        "vertices": 56
+    },
+    {
+        "name": "tower-square-mid-color",
+        "glb": "models\\tower-square-mid-color.glb",
+        "preview": "Previews\\tower-square-mid-color.png",
+        "size_kb": 11,
+        "vertices": 72
+    },
+    {
+        "name": "tower-square-mid-door",
+        "glb": "models\\tower-square-mid-door.glb",
+        "preview": "Previews\\tower-square-mid-door.png",
+        "size_kb": 27,
+        "vertices": 524
+    },
+    {
+        "name": "tower-square-mid-open-simple",
+        "glb": "models\\tower-square-mid-open-simple.glb",
+        "preview": "Previews\\tower-square-mid-open-simple.png",
+        "size_kb": 20,
+        "vertices": 352
+    },
+    {
+        "name": "tower-square-mid-open",
+        "glb": "models\\tower-square-mid-open.glb",
+        "preview": "Previews\\tower-square-mid-open.png",
+        "size_kb": 23,
+        "vertices": 426
+    },
+    {
+        "name": "tower-square-mid-windows",
+        "glb": "models\\tower-square-mid-windows.glb",
+        "preview": "Previews\\tower-square-mid-windows.png",
+        "size_kb": 28,
+        "vertices": 565
+    },
+    {
+        "name": "tower-square-mid",
+        "glb": "models\\tower-square-mid.glb",
+        "preview": "Previews\\tower-square-mid.png",
+        "size_kb": 12,
+        "vertices": 120
+    },
+    {
+        "name": "tower-square-roof",
+        "glb": "models\\tower-square-roof.glb",
+        "preview": "Previews\\tower-square-roof.png",
+        "size_kb": 17,
+        "vertices": 250
+    },
+    {
+        "name": "tower-square-top-color",
+        "glb": "models\\tower-square-top-color.glb",
+        "preview": "Previews\\tower-square-top-color.png",
+        "size_kb": 17,
+        "vertices": 248
+    },
+    {
+        "name": "tower-square-top-roof-high-windows",
+        "glb": "models\\tower-square-top-roof-high-windows.glb",
+        "preview": "Previews\\tower-square-top-roof-high-windows.png",
+        "size_kb": 22,
+        "vertices": 406
+    },
+    {
+        "name": "tower-square-top-roof-high",
+        "glb": "models\\tower-square-top-roof-high.glb",
+        "preview": "Previews\\tower-square-top-roof-high.png",
+        "size_kb": 15,
+        "vertices": 192
+    },
+    {
+        "name": "tower-square-top-roof-rounded",
+        "glb": "models\\tower-square-top-roof-rounded.glb",
+        "preview": "Previews\\tower-square-top-roof-rounded.png",
+        "size_kb": 15,
+        "vertices": 192
+    },
+    {
+        "name": "tower-square-top-roof",
+        "glb": "models\\tower-square-top-roof.glb",
+        "preview": "Previews\\tower-square-top-roof.png",
+        "size_kb": 15,
+        "vertices": 192
+    },
+    {
+        "name": "tower-square-top",
+        "glb": "models\\tower-square-top.glb",
+        "preview": "Previews\\tower-square-top.png",
+        "size_kb": 16,
+        "vertices": 232
+    },
+    {
+        "name": "tower-square",
+        "glb": "models\\tower-square.glb",
+        "preview": "Previews\\tower-square.png",
+        "size_kb": 18,
+        "vertices": 290
+    },
+    {
+        "name": "tower-top",
+        "glb": "models\\tower-top.glb",
+        "preview": "Previews\\tower-top.png",
+        "size_kb": 25,
+        "vertices": 496
+    },
+    {
+        "name": "tree-large",
+        "glb": "models\\tree-large.glb",
+        "preview": "Previews\\tree-large.png",
+        "size_kb": 21,
+        "vertices": 377
+    },
+    {
+        "name": "tree-log",
+        "glb": "models\\tree-log.glb",
+        "preview": "Previews\\tree-log.png",
+        "size_kb": 12,
+        "vertices": 124
+    },
+    {
+        "name": "tree-small",
+        "glb": "models\\tree-small.glb",
+        "preview": "Previews\\tree-small.png",
+        "size_kb": 18,
+        "vertices": 272
+    },
+    {
+        "name": "tree-trunk",
+        "glb": "models\\tree-trunk.glb",
+        "preview": "Previews\\tree-trunk.png",
+        "size_kb": 11,
+        "vertices": 78
+    },
+    {
+        "name": "wall-corner-half-tower",
+        "glb": "models\\wall-corner-half-tower.glb",
+        "preview": "Previews\\wall-corner-half-tower.png",
+        "size_kb": 45,
+        "vertices": 1070
+    },
+    {
+        "name": "wall-corner-half",
+        "glb": "models\\wall-corner-half.glb",
+        "preview": "Previews\\wall-corner-half.png",
+        "size_kb": 16,
+        "vertices": 226
+    },
+    {
+        "name": "wall-corner-slant",
+        "glb": "models\\wall-corner-slant.glb",
+        "preview": "Previews\\wall-corner-slant.png",
+        "size_kb": 16,
+        "vertices": 223
+    },
+    {
+        "name": "wall-corner",
+        "glb": "models\\wall-corner.glb",
+        "preview": "Previews\\wall-corner.png",
+        "size_kb": 17,
+        "vertices": 262
+    },
+    {
+        "name": "wall-doorway",
+        "glb": "models\\wall-doorway.glb",
+        "preview": "Previews\\wall-doorway.png",
+        "size_kb": 33,
+        "vertices": 686
+    },
+    {
+        "name": "wall-half-modular",
+        "glb": "models\\wall-half-modular.glb",
+        "preview": "Previews\\wall-half-modular.png",
+        "size_kb": 13,
+        "vertices": 126
+    },
+    {
+        "name": "wall-half",
+        "glb": "models\\wall-half.glb",
+        "preview": "Previews\\wall-half.png",
+        "size_kb": 16,
+        "vertices": 214
+    },
+    {
+        "name": "wall-narrow-corner",
+        "glb": "models\\wall-narrow-corner.glb",
+        "preview": "Previews\\wall-narrow-corner.png",
+        "size_kb": 14,
+        "vertices": 154
+    },
+    {
+        "name": "wall-narrow-gate",
+        "glb": "models\\wall-narrow-gate.glb",
+        "preview": "Previews\\wall-narrow-gate.png",
+        "size_kb": 19,
+        "vertices": 298
+    },
+    {
+        "name": "wall-narrow-stairs-rail",
+        "glb": "models\\wall-narrow-stairs-rail.glb",
+        "preview": "Previews\\wall-narrow-stairs-rail.png",
+        "size_kb": 33,
+        "vertices": 698
+    },
+    {
+        "name": "wall-narrow-stairs",
+        "glb": "models\\wall-narrow-stairs.glb",
+        "preview": "Previews\\wall-narrow-stairs.png",
+        "size_kb": 23,
+        "vertices": 425
+    },
+    {
+        "name": "wall-narrow-wood-fence",
+        "glb": "models\\wall-narrow-wood-fence.glb",
+        "preview": "Previews\\wall-narrow-wood-fence.png",
+        "size_kb": 29,
+        "vertices": 612
+    },
+    {
+        "name": "wall-narrow-wood",
+        "glb": "models\\wall-narrow-wood.glb",
+        "preview": "Previews\\wall-narrow-wood.png",
+        "size_kb": 25,
+        "vertices": 492
+    },
+    {
+        "name": "wall-narrow",
+        "glb": "models\\wall-narrow.glb",
+        "preview": "Previews\\wall-narrow.png",
+        "size_kb": 15,
+        "vertices": 212
+    },
+    {
+        "name": "wall-pillar",
+        "glb": "models\\wall-pillar.glb",
+        "preview": "Previews\\wall-pillar.png",
+        "size_kb": 18,
+        "vertices": 286
+    },
+    {
+        "name": "wall-stud",
+        "glb": "models\\wall-stud.glb",
+        "preview": "Previews\\wall-stud.png",
+        "size_kb": 9,
+        "vertices": 30
+    },
+    {
+        "name": "wall-to-narrow",
+        "glb": "models\\wall-to-narrow.glb",
+        "preview": "Previews\\wall-to-narrow.png",
+        "size_kb": 20,
+        "vertices": 354
+    },
+    {
+        "name": "wall",
+        "glb": "models\\wall.glb",
+        "preview": "Previews\\wall.png",
+        "size_kb": 18,
+        "vertices": 292
+    }
+]

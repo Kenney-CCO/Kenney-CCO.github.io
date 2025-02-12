@@ -1,0 +1,2074 @@
+[
+    {
+        "name": "bevel-hq-brick-1x1-round",
+        "glb": "models\\bevel-hq-brick-1x1-round.glb",
+        "preview": "Previews\\bevel-hq-brick-1x1-round.png",
+        "size_kb": 13,
+        "vertices": 104
+    },
+    {
+        "name": "bevel-hq-brick-1x1",
+        "glb": "models\\bevel-hq-brick-1x1.glb",
+        "preview": "Previews\\bevel-hq-brick-1x1.png",
+        "size_kb": 12,
+        "vertices": 64
+    },
+    {
+        "name": "bevel-hq-brick-1x2",
+        "glb": "models\\bevel-hq-brick-1x2.glb",
+        "preview": "Previews\\bevel-hq-brick-1x2.png",
+        "size_kb": 13,
+        "vertices": 96
+    },
+    {
+        "name": "bevel-hq-brick-1x4",
+        "glb": "models\\bevel-hq-brick-1x4.glb",
+        "preview": "Previews\\bevel-hq-brick-1x4.png",
+        "size_kb": 15,
+        "vertices": 160
+    },
+    {
+        "name": "bevel-hq-brick-1x6",
+        "glb": "models\\bevel-hq-brick-1x6.glb",
+        "preview": "Previews\\bevel-hq-brick-1x6.png",
+        "size_kb": 18,
+        "vertices": 224
+    },
+    {
+        "name": "bevel-hq-brick-1x8",
+        "glb": "models\\bevel-hq-brick-1x8.glb",
+        "preview": "Previews\\bevel-hq-brick-1x8.png",
+        "size_kb": 20,
+        "vertices": 288
+    },
+    {
+        "name": "bevel-hq-brick-2x2",
+        "glb": "models\\bevel-hq-brick-2x2.glb",
+        "preview": "Previews\\bevel-hq-brick-2x2.png",
+        "size_kb": 15,
+        "vertices": 160
+    },
+    {
+        "name": "bevel-hq-brick-2x4",
+        "glb": "models\\bevel-hq-brick-2x4.glb",
+        "preview": "Previews\\bevel-hq-brick-2x4.png",
+        "size_kb": 20,
+        "vertices": 288
+    },
+    {
+        "name": "bevel-hq-brick-2x6",
+        "glb": "models\\bevel-hq-brick-2x6.glb",
+        "preview": "Previews\\bevel-hq-brick-2x6.png",
+        "size_kb": 25,
+        "vertices": 416
+    },
+    {
+        "name": "bevel-hq-brick-2x8",
+        "glb": "models\\bevel-hq-brick-2x8.glb",
+        "preview": "Previews\\bevel-hq-brick-2x8.png",
+        "size_kb": 30,
+        "vertices": 544
+    },
+    {
+        "name": "bevel-hq-brick-corner",
+        "glb": "models\\bevel-hq-brick-corner.glb",
+        "preview": "Previews\\bevel-hq-brick-corner.png",
+        "size_kb": 15,
+        "vertices": 144
+    },
+    {
+        "name": "bevel-hq-brick-slope-1x2",
+        "glb": "models\\bevel-hq-brick-slope-1x2.glb",
+        "preview": "Previews\\bevel-hq-brick-slope-1x2.png",
+        "size_kb": 12,
+        "vertices": 70
+    },
+    {
+        "name": "bevel-hq-brick-slope-2x2",
+        "glb": "models\\bevel-hq-brick-slope-2x2.glb",
+        "preview": "Previews\\bevel-hq-brick-slope-2x2.png",
+        "size_kb": 13,
+        "vertices": 102
+    },
+    {
+        "name": "bevel-hq-brick-slope-2x3",
+        "glb": "models\\bevel-hq-brick-slope-2x3.glb",
+        "preview": "Previews\\bevel-hq-brick-slope-2x3.png",
+        "size_kb": 14,
+        "vertices": 134
+    },
+    {
+        "name": "bevel-hq-brick-slope-2x4",
+        "glb": "models\\bevel-hq-brick-slope-2x4.glb",
+        "preview": "Previews\\bevel-hq-brick-slope-2x4.png",
+        "size_kb": 15,
+        "vertices": 166
+    },
+    {
+        "name": "bevel-hq-brick-slope-3x1",
+        "glb": "models\\bevel-hq-brick-slope-3x1.glb",
+        "preview": "Previews\\bevel-hq-brick-slope-3x1.png",
+        "size_kb": 12,
+        "vertices": 70
+    },
+    {
+        "name": "bevel-hq-brick-slope-3x2",
+        "glb": "models\\bevel-hq-brick-slope-3x2.glb",
+        "preview": "Previews\\bevel-hq-brick-slope-3x2.png",
+        "size_kb": 13,
+        "vertices": 102
+    },
+    {
+        "name": "bevel-hq-brick-slope-corner-inside-2x2",
+        "glb": "models\\bevel-hq-brick-slope-corner-inside-2x2.glb",
+        "preview": "Previews\\bevel-hq-brick-slope-corner-inside-2x2.png",
+        "size_kb": 14,
+        "vertices": 140
+    },
+    {
+        "name": "bevel-hq-brick-slope-corner-inside-inverted-2x2",
+        "glb": "models\\bevel-hq-brick-slope-corner-inside-inverted-2x2.glb",
+        "preview": "Previews\\bevel-hq-brick-slope-corner-inside-inverted-2x2.png",
+        "size_kb": 16,
+        "vertices": 170
+    },
+    {
+        "name": "bevel-hq-brick-slope-corner-outside-2x2",
+        "glb": "models\\bevel-hq-brick-slope-corner-outside-2x2.glb",
+        "preview": "Previews\\bevel-hq-brick-slope-corner-outside-2x2.png",
+        "size_kb": 12,
+        "vertices": 72
+    },
+    {
+        "name": "bevel-hq-brick-slope-corner-outside-inverted-2x2",
+        "glb": "models\\bevel-hq-brick-slope-corner-outside-inverted-2x2.glb",
+        "preview": "Previews\\bevel-hq-brick-slope-corner-outside-inverted-2x2.png",
+        "size_kb": 16,
+        "vertices": 170
+    },
+    {
+        "name": "bevel-hq-brick-slope-inverted-1x2",
+        "glb": "models\\bevel-hq-brick-slope-inverted-1x2.glb",
+        "preview": "Previews\\bevel-hq-brick-slope-inverted-1x2.png",
+        "size_kb": 13,
+        "vertices": 102
+    },
+    {
+        "name": "bevel-hq-brick-slope-inverted-2x2",
+        "glb": "models\\bevel-hq-brick-slope-inverted-2x2.glb",
+        "preview": "Previews\\bevel-hq-brick-slope-inverted-2x2.png",
+        "size_kb": 15,
+        "vertices": 166
+    },
+    {
+        "name": "bevel-hq-plate-1x1-round",
+        "glb": "models\\bevel-hq-plate-1x1-round.glb",
+        "preview": "Previews\\bevel-hq-plate-1x1-round.png",
+        "size_kb": 13,
+        "vertices": 104
+    },
+    {
+        "name": "bevel-hq-plate-1x1",
+        "glb": "models\\bevel-hq-plate-1x1.glb",
+        "preview": "Previews\\bevel-hq-plate-1x1.png",
+        "size_kb": 12,
+        "vertices": 64
+    },
+    {
+        "name": "bevel-hq-plate-1x2",
+        "glb": "models\\bevel-hq-plate-1x2.glb",
+        "preview": "Previews\\bevel-hq-plate-1x2.png",
+        "size_kb": 13,
+        "vertices": 96
+    },
+    {
+        "name": "bevel-hq-plate-1x4",
+        "glb": "models\\bevel-hq-plate-1x4.glb",
+        "preview": "Previews\\bevel-hq-plate-1x4.png",
+        "size_kb": 15,
+        "vertices": 160
+    },
+    {
+        "name": "bevel-hq-plate-1x6",
+        "glb": "models\\bevel-hq-plate-1x6.glb",
+        "preview": "Previews\\bevel-hq-plate-1x6.png",
+        "size_kb": 18,
+        "vertices": 224
+    },
+    {
+        "name": "bevel-hq-plate-1x8",
+        "glb": "models\\bevel-hq-plate-1x8.glb",
+        "preview": "Previews\\bevel-hq-plate-1x8.png",
+        "size_kb": 20,
+        "vertices": 288
+    },
+    {
+        "name": "bevel-hq-plate-2x2",
+        "glb": "models\\bevel-hq-plate-2x2.glb",
+        "preview": "Previews\\bevel-hq-plate-2x2.png",
+        "size_kb": 15,
+        "vertices": 160
+    },
+    {
+        "name": "bevel-hq-plate-2x4",
+        "glb": "models\\bevel-hq-plate-2x4.glb",
+        "preview": "Previews\\bevel-hq-plate-2x4.png",
+        "size_kb": 20,
+        "vertices": 288
+    },
+    {
+        "name": "bevel-hq-plate-2x6",
+        "glb": "models\\bevel-hq-plate-2x6.glb",
+        "preview": "Previews\\bevel-hq-plate-2x6.png",
+        "size_kb": 25,
+        "vertices": 416
+    },
+    {
+        "name": "bevel-hq-plate-2x8",
+        "glb": "models\\bevel-hq-plate-2x8.glb",
+        "preview": "Previews\\bevel-hq-plate-2x8.png",
+        "size_kb": 30,
+        "vertices": 544
+    },
+    {
+        "name": "bevel-hq-plate-4x4",
+        "glb": "models\\bevel-hq-plate-4x4.glb",
+        "preview": "Previews\\bevel-hq-plate-4x4.png",
+        "size_kb": 30,
+        "vertices": 544
+    },
+    {
+        "name": "bevel-hq-plate-4x6",
+        "glb": "models\\bevel-hq-plate-4x6.glb",
+        "preview": "Previews\\bevel-hq-plate-4x6.png",
+        "size_kb": 40,
+        "vertices": 800
+    },
+    {
+        "name": "bevel-hq-plate-4x8",
+        "glb": "models\\bevel-hq-plate-4x8.glb",
+        "preview": "Previews\\bevel-hq-plate-4x8.png",
+        "size_kb": 49,
+        "vertices": 1056
+    },
+    {
+        "name": "bevel-hq-plate-corner",
+        "glb": "models\\bevel-hq-plate-corner.glb",
+        "preview": "Previews\\bevel-hq-plate-corner.png",
+        "size_kb": 15,
+        "vertices": 144
+    },
+    {
+        "name": "bevel-lq-brick-1x1-round",
+        "glb": "models\\bevel-lq-brick-1x1-round.glb",
+        "preview": "Previews\\bevel-lq-brick-1x1-round.png",
+        "size_kb": 12,
+        "vertices": 88
+    },
+    {
+        "name": "bevel-lq-brick-1x1",
+        "glb": "models\\bevel-lq-brick-1x1.glb",
+        "preview": "Previews\\bevel-lq-brick-1x1.png",
+        "size_kb": 11,
+        "vertices": 48
+    },
+    {
+        "name": "bevel-lq-brick-1x2",
+        "glb": "models\\bevel-lq-brick-1x2.glb",
+        "preview": "Previews\\bevel-lq-brick-1x2.png",
+        "size_kb": 12,
+        "vertices": 72
+    },
+    {
+        "name": "bevel-lq-brick-1x4",
+        "glb": "models\\bevel-lq-brick-1x4.glb",
+        "preview": "Previews\\bevel-lq-brick-1x4.png",
+        "size_kb": 14,
+        "vertices": 120
+    },
+    {
+        "name": "bevel-lq-brick-1x6",
+        "glb": "models\\bevel-lq-brick-1x6.glb",
+        "preview": "Previews\\bevel-lq-brick-1x6.png",
+        "size_kb": 15,
+        "vertices": 168
+    },
+    {
+        "name": "bevel-lq-brick-1x8",
+        "glb": "models\\bevel-lq-brick-1x8.glb",
+        "preview": "Previews\\bevel-lq-brick-1x8.png",
+        "size_kb": 17,
+        "vertices": 216
+    },
+    {
+        "name": "bevel-lq-brick-2x2",
+        "glb": "models\\bevel-lq-brick-2x2.glb",
+        "preview": "Previews\\bevel-lq-brick-2x2.png",
+        "size_kb": 14,
+        "vertices": 120
+    },
+    {
+        "name": "bevel-lq-brick-2x4",
+        "glb": "models\\bevel-lq-brick-2x4.glb",
+        "preview": "Previews\\bevel-lq-brick-2x4.png",
+        "size_kb": 17,
+        "vertices": 216
+    },
+    {
+        "name": "bevel-lq-brick-2x6",
+        "glb": "models\\bevel-lq-brick-2x6.glb",
+        "preview": "Previews\\bevel-lq-brick-2x6.png",
+        "size_kb": 21,
+        "vertices": 312
+    },
+    {
+        "name": "bevel-lq-brick-2x8",
+        "glb": "models\\bevel-lq-brick-2x8.glb",
+        "preview": "Previews\\bevel-lq-brick-2x8.png",
+        "size_kb": 24,
+        "vertices": 408
+    },
+    {
+        "name": "bevel-lq-brick-corner",
+        "glb": "models\\bevel-lq-brick-corner.glb",
+        "preview": "Previews\\bevel-lq-brick-corner.png",
+        "size_kb": 13,
+        "vertices": 108
+    },
+    {
+        "name": "bevel-lq-brick-slope-1x2",
+        "glb": "models\\bevel-lq-brick-slope-1x2.glb",
+        "preview": "Previews\\bevel-lq-brick-slope-1x2.png",
+        "size_kb": 11,
+        "vertices": 54
+    },
+    {
+        "name": "bevel-lq-brick-slope-2x2",
+        "glb": "models\\bevel-lq-brick-slope-2x2.glb",
+        "preview": "Previews\\bevel-lq-brick-slope-2x2.png",
+        "size_kb": 12,
+        "vertices": 78
+    },
+    {
+        "name": "bevel-lq-brick-slope-2x3",
+        "glb": "models\\bevel-lq-brick-slope-2x3.glb",
+        "preview": "Previews\\bevel-lq-brick-slope-2x3.png",
+        "size_kb": 13,
+        "vertices": 102
+    },
+    {
+        "name": "bevel-lq-brick-slope-2x4",
+        "glb": "models\\bevel-lq-brick-slope-2x4.glb",
+        "preview": "Previews\\bevel-lq-brick-slope-2x4.png",
+        "size_kb": 14,
+        "vertices": 126
+    },
+    {
+        "name": "bevel-lq-brick-slope-3x1",
+        "glb": "models\\bevel-lq-brick-slope-3x1.glb",
+        "preview": "Previews\\bevel-lq-brick-slope-3x1.png",
+        "size_kb": 11,
+        "vertices": 54
+    },
+    {
+        "name": "bevel-lq-brick-slope-3x2",
+        "glb": "models\\bevel-lq-brick-slope-3x2.glb",
+        "preview": "Previews\\bevel-lq-brick-slope-3x2.png",
+        "size_kb": 12,
+        "vertices": 78
+    },
+    {
+        "name": "bevel-lq-brick-slope-corner-inside-2x2",
+        "glb": "models\\bevel-lq-brick-slope-corner-inside-2x2.glb",
+        "preview": "Previews\\bevel-lq-brick-slope-corner-inside-2x2.png",
+        "size_kb": 13,
+        "vertices": 106
+    },
+    {
+        "name": "bevel-lq-brick-slope-corner-inside-inverted-2x2",
+        "glb": "models\\bevel-lq-brick-slope-corner-inside-inverted-2x2.glb",
+        "preview": "Previews\\bevel-lq-brick-slope-corner-inside-inverted-2x2.png",
+        "size_kb": 14,
+        "vertices": 130
+    },
+    {
+        "name": "bevel-lq-brick-slope-corner-outside-2x2",
+        "glb": "models\\bevel-lq-brick-slope-corner-outside-2x2.glb",
+        "preview": "Previews\\bevel-lq-brick-slope-corner-outside-2x2.png",
+        "size_kb": 11,
+        "vertices": 58
+    },
+    {
+        "name": "bevel-lq-brick-slope-corner-outside-inverted-2x2",
+        "glb": "models\\bevel-lq-brick-slope-corner-outside-inverted-2x2.glb",
+        "preview": "Previews\\bevel-lq-brick-slope-corner-outside-inverted-2x2.png",
+        "size_kb": 14,
+        "vertices": 130
+    },
+    {
+        "name": "bevel-lq-brick-slope-inverted-1x2",
+        "glb": "models\\bevel-lq-brick-slope-inverted-1x2.glb",
+        "preview": "Previews\\bevel-lq-brick-slope-inverted-1x2.png",
+        "size_kb": 12,
+        "vertices": 78
+    },
+    {
+        "name": "bevel-lq-brick-slope-inverted-2x2",
+        "glb": "models\\bevel-lq-brick-slope-inverted-2x2.glb",
+        "preview": "Previews\\bevel-lq-brick-slope-inverted-2x2.png",
+        "size_kb": 14,
+        "vertices": 126
+    },
+    {
+        "name": "bevel-lq-plate-1x1-round",
+        "glb": "models\\bevel-lq-plate-1x1-round.glb",
+        "preview": "Previews\\bevel-lq-plate-1x1-round.png",
+        "size_kb": 12,
+        "vertices": 88
+    },
+    {
+        "name": "bevel-lq-plate-1x1",
+        "glb": "models\\bevel-lq-plate-1x1.glb",
+        "preview": "Previews\\bevel-lq-plate-1x1.png",
+        "size_kb": 11,
+        "vertices": 48
+    },
+    {
+        "name": "bevel-lq-plate-1x2",
+        "glb": "models\\bevel-lq-plate-1x2.glb",
+        "preview": "Previews\\bevel-lq-plate-1x2.png",
+        "size_kb": 12,
+        "vertices": 72
+    },
+    {
+        "name": "bevel-lq-plate-1x4",
+        "glb": "models\\bevel-lq-plate-1x4.glb",
+        "preview": "Previews\\bevel-lq-plate-1x4.png",
+        "size_kb": 14,
+        "vertices": 120
+    },
+    {
+        "name": "bevel-lq-plate-1x6",
+        "glb": "models\\bevel-lq-plate-1x6.glb",
+        "preview": "Previews\\bevel-lq-plate-1x6.png",
+        "size_kb": 15,
+        "vertices": 168
+    },
+    {
+        "name": "bevel-lq-plate-1x8",
+        "glb": "models\\bevel-lq-plate-1x8.glb",
+        "preview": "Previews\\bevel-lq-plate-1x8.png",
+        "size_kb": 17,
+        "vertices": 216
+    },
+    {
+        "name": "bevel-lq-plate-2x2",
+        "glb": "models\\bevel-lq-plate-2x2.glb",
+        "preview": "Previews\\bevel-lq-plate-2x2.png",
+        "size_kb": 14,
+        "vertices": 120
+    },
+    {
+        "name": "bevel-lq-plate-2x4",
+        "glb": "models\\bevel-lq-plate-2x4.glb",
+        "preview": "Previews\\bevel-lq-plate-2x4.png",
+        "size_kb": 17,
+        "vertices": 216
+    },
+    {
+        "name": "bevel-lq-plate-2x6",
+        "glb": "models\\bevel-lq-plate-2x6.glb",
+        "preview": "Previews\\bevel-lq-plate-2x6.png",
+        "size_kb": 21,
+        "vertices": 312
+    },
+    {
+        "name": "bevel-lq-plate-2x8",
+        "glb": "models\\bevel-lq-plate-2x8.glb",
+        "preview": "Previews\\bevel-lq-plate-2x8.png",
+        "size_kb": 24,
+        "vertices": 408
+    },
+    {
+        "name": "bevel-lq-plate-4x4",
+        "glb": "models\\bevel-lq-plate-4x4.glb",
+        "preview": "Previews\\bevel-lq-plate-4x4.png",
+        "size_kb": 24,
+        "vertices": 408
+    },
+    {
+        "name": "bevel-lq-plate-4x6",
+        "glb": "models\\bevel-lq-plate-4x6.glb",
+        "preview": "Previews\\bevel-lq-plate-4x6.png",
+        "size_kb": 31,
+        "vertices": 600
+    },
+    {
+        "name": "bevel-lq-plate-4x8",
+        "glb": "models\\bevel-lq-plate-4x8.glb",
+        "preview": "Previews\\bevel-lq-plate-4x8.png",
+        "size_kb": 38,
+        "vertices": 792
+    },
+    {
+        "name": "bevel-lq-plate-corner",
+        "glb": "models\\bevel-lq-plate-corner.glb",
+        "preview": "Previews\\bevel-lq-plate-corner.png",
+        "size_kb": 13,
+        "vertices": 108
+    },
+    {
+        "name": "none-hq-brick-1x1-round",
+        "glb": "models\\none-hq-brick-1x1-round.glb",
+        "preview": "Previews\\none-hq-brick-1x1-round.png",
+        "size_kb": 12,
+        "vertices": 72
+    },
+    {
+        "name": "none-hq-brick-1x1",
+        "glb": "models\\none-hq-brick-1x1.glb",
+        "preview": "Previews\\none-hq-brick-1x1.png",
+        "size_kb": 10,
+        "vertices": 32
+    },
+    {
+        "name": "none-hq-brick-1x2",
+        "glb": "models\\none-hq-brick-1x2.glb",
+        "preview": "Previews\\none-hq-brick-1x2.png",
+        "size_kb": 10,
+        "vertices": 32
+    },
+    {
+        "name": "none-hq-brick-1x4",
+        "glb": "models\\none-hq-brick-1x4.glb",
+        "preview": "Previews\\none-hq-brick-1x4.png",
+        "size_kb": 10,
+        "vertices": 32
+    },
+    {
+        "name": "none-hq-brick-1x6",
+        "glb": "models\\none-hq-brick-1x6.glb",
+        "preview": "Previews\\none-hq-brick-1x6.png",
+        "size_kb": 10,
+        "vertices": 32
+    },
+    {
+        "name": "none-hq-brick-1x8",
+        "glb": "models\\none-hq-brick-1x8.glb",
+        "preview": "Previews\\none-hq-brick-1x8.png",
+        "size_kb": 10,
+        "vertices": 32
+    },
+    {
+        "name": "none-hq-brick-2x2",
+        "glb": "models\\none-hq-brick-2x2.glb",
+        "preview": "Previews\\none-hq-brick-2x2.png",
+        "size_kb": 10,
+        "vertices": 32
+    },
+    {
+        "name": "none-hq-brick-2x4",
+        "glb": "models\\none-hq-brick-2x4.glb",
+        "preview": "Previews\\none-hq-brick-2x4.png",
+        "size_kb": 10,
+        "vertices": 32
+    },
+    {
+        "name": "none-hq-brick-2x6",
+        "glb": "models\\none-hq-brick-2x6.glb",
+        "preview": "Previews\\none-hq-brick-2x6.png",
+        "size_kb": 10,
+        "vertices": 32
+    },
+    {
+        "name": "none-hq-brick-2x8",
+        "glb": "models\\none-hq-brick-2x8.glb",
+        "preview": "Previews\\none-hq-brick-2x8.png",
+        "size_kb": 10,
+        "vertices": 32
+    },
+    {
+        "name": "none-hq-brick-corner",
+        "glb": "models\\none-hq-brick-corner.glb",
+        "preview": "Previews\\none-hq-brick-corner.png",
+        "size_kb": 11,
+        "vertices": 48
+    },
+    {
+        "name": "none-hq-brick-slope-1x2",
+        "glb": "models\\none-hq-brick-slope-1x2.glb",
+        "preview": "Previews\\none-hq-brick-slope-1x2.png",
+        "size_kb": 10,
+        "vertices": 38
+    },
+    {
+        "name": "none-hq-brick-slope-2x2",
+        "glb": "models\\none-hq-brick-slope-2x2.glb",
+        "preview": "Previews\\none-hq-brick-slope-2x2.png",
+        "size_kb": 10,
+        "vertices": 38
+    },
+    {
+        "name": "none-hq-brick-slope-2x3",
+        "glb": "models\\none-hq-brick-slope-2x3.glb",
+        "preview": "Previews\\none-hq-brick-slope-2x3.png",
+        "size_kb": 10,
+        "vertices": 38
+    },
+    {
+        "name": "none-hq-brick-slope-2x4",
+        "glb": "models\\none-hq-brick-slope-2x4.glb",
+        "preview": "Previews\\none-hq-brick-slope-2x4.png",
+        "size_kb": 10,
+        "vertices": 38
+    },
+    {
+        "name": "none-hq-brick-slope-3x1",
+        "glb": "models\\none-hq-brick-slope-3x1.glb",
+        "preview": "Previews\\none-hq-brick-slope-3x1.png",
+        "size_kb": 10,
+        "vertices": 38
+    },
+    {
+        "name": "none-hq-brick-slope-3x2",
+        "glb": "models\\none-hq-brick-slope-3x2.glb",
+        "preview": "Previews\\none-hq-brick-slope-3x2.png",
+        "size_kb": 10,
+        "vertices": 38
+    },
+    {
+        "name": "none-hq-brick-slope-corner-inside-2x2",
+        "glb": "models\\none-hq-brick-slope-corner-inside-2x2.glb",
+        "preview": "Previews\\none-hq-brick-slope-corner-inside-2x2.png",
+        "size_kb": 11,
+        "vertices": 44
+    },
+    {
+        "name": "none-hq-brick-slope-corner-inside-inverted-2x2",
+        "glb": "models\\none-hq-brick-slope-corner-inside-inverted-2x2.glb",
+        "preview": "Previews\\none-hq-brick-slope-corner-inside-inverted-2x2.png",
+        "size_kb": 11,
+        "vertices": 42
+    },
+    {
+        "name": "none-hq-brick-slope-corner-outside-2x2",
+        "glb": "models\\none-hq-brick-slope-corner-outside-2x2.glb",
+        "preview": "Previews\\none-hq-brick-slope-corner-outside-2x2.png",
+        "size_kb": 11,
+        "vertices": 40
+    },
+    {
+        "name": "none-hq-brick-slope-corner-outside-inverted-2x2",
+        "glb": "models\\none-hq-brick-slope-corner-outside-inverted-2x2.glb",
+        "preview": "Previews\\none-hq-brick-slope-corner-outside-inverted-2x2.png",
+        "size_kb": 11,
+        "vertices": 42
+    },
+    {
+        "name": "none-hq-brick-slope-inverted-1x2",
+        "glb": "models\\none-hq-brick-slope-inverted-1x2.glb",
+        "preview": "Previews\\none-hq-brick-slope-inverted-1x2.png",
+        "size_kb": 11,
+        "vertices": 38
+    },
+    {
+        "name": "none-hq-brick-slope-inverted-2x2",
+        "glb": "models\\none-hq-brick-slope-inverted-2x2.glb",
+        "preview": "Previews\\none-hq-brick-slope-inverted-2x2.png",
+        "size_kb": 11,
+        "vertices": 38
+    },
+    {
+        "name": "none-hq-plate-1x1-round",
+        "glb": "models\\none-hq-plate-1x1-round.glb",
+        "preview": "Previews\\none-hq-plate-1x1-round.png",
+        "size_kb": 12,
+        "vertices": 72
+    },
+    {
+        "name": "none-hq-plate-1x1",
+        "glb": "models\\none-hq-plate-1x1.glb",
+        "preview": "Previews\\none-hq-plate-1x1.png",
+        "size_kb": 10,
+        "vertices": 32
+    },
+    {
+        "name": "none-hq-plate-1x2",
+        "glb": "models\\none-hq-plate-1x2.glb",
+        "preview": "Previews\\none-hq-plate-1x2.png",
+        "size_kb": 10,
+        "vertices": 32
+    },
+    {
+        "name": "none-hq-plate-1x4",
+        "glb": "models\\none-hq-plate-1x4.glb",
+        "preview": "Previews\\none-hq-plate-1x4.png",
+        "size_kb": 10,
+        "vertices": 32
+    },
+    {
+        "name": "none-hq-plate-1x6",
+        "glb": "models\\none-hq-plate-1x6.glb",
+        "preview": "Previews\\none-hq-plate-1x6.png",
+        "size_kb": 10,
+        "vertices": 32
+    },
+    {
+        "name": "none-hq-plate-1x8",
+        "glb": "models\\none-hq-plate-1x8.glb",
+        "preview": "Previews\\none-hq-plate-1x8.png",
+        "size_kb": 10,
+        "vertices": 32
+    },
+    {
+        "name": "none-hq-plate-2x2",
+        "glb": "models\\none-hq-plate-2x2.glb",
+        "preview": "Previews\\none-hq-plate-2x2.png",
+        "size_kb": 10,
+        "vertices": 32
+    },
+    {
+        "name": "none-hq-plate-2x4",
+        "glb": "models\\none-hq-plate-2x4.glb",
+        "preview": "Previews\\none-hq-plate-2x4.png",
+        "size_kb": 10,
+        "vertices": 32
+    },
+    {
+        "name": "none-hq-plate-2x6",
+        "glb": "models\\none-hq-plate-2x6.glb",
+        "preview": "Previews\\none-hq-plate-2x6.png",
+        "size_kb": 10,
+        "vertices": 32
+    },
+    {
+        "name": "none-hq-plate-2x8",
+        "glb": "models\\none-hq-plate-2x8.glb",
+        "preview": "Previews\\none-hq-plate-2x8.png",
+        "size_kb": 10,
+        "vertices": 32
+    },
+    {
+        "name": "none-hq-plate-4x4",
+        "glb": "models\\none-hq-plate-4x4.glb",
+        "preview": "Previews\\none-hq-plate-4x4.png",
+        "size_kb": 10,
+        "vertices": 32
+    },
+    {
+        "name": "none-hq-plate-4x6",
+        "glb": "models\\none-hq-plate-4x6.glb",
+        "preview": "Previews\\none-hq-plate-4x6.png",
+        "size_kb": 10,
+        "vertices": 32
+    },
+    {
+        "name": "none-hq-plate-4x8",
+        "glb": "models\\none-hq-plate-4x8.glb",
+        "preview": "Previews\\none-hq-plate-4x8.png",
+        "size_kb": 10,
+        "vertices": 32
+    },
+    {
+        "name": "none-hq-plate-corner",
+        "glb": "models\\none-hq-plate-corner.glb",
+        "preview": "Previews\\none-hq-plate-corner.png",
+        "size_kb": 11,
+        "vertices": 48
+    },
+    {
+        "name": "none-lq-brick-1x1-round",
+        "glb": "models\\none-lq-brick-1x1-round.glb",
+        "preview": "Previews\\none-lq-brick-1x1-round.png",
+        "size_kb": 12,
+        "vertices": 64
+    },
+    {
+        "name": "none-lq-brick-1x1",
+        "glb": "models\\none-lq-brick-1x1.glb",
+        "preview": "Previews\\none-lq-brick-1x1.png",
+        "size_kb": 10,
+        "vertices": 24
+    },
+    {
+        "name": "none-lq-brick-1x2",
+        "glb": "models\\none-lq-brick-1x2.glb",
+        "preview": "Previews\\none-lq-brick-1x2.png",
+        "size_kb": 10,
+        "vertices": 24
+    },
+    {
+        "name": "none-lq-brick-1x4",
+        "glb": "models\\none-lq-brick-1x4.glb",
+        "preview": "Previews\\none-lq-brick-1x4.png",
+        "size_kb": 10,
+        "vertices": 24
+    },
+    {
+        "name": "none-lq-brick-1x6",
+        "glb": "models\\none-lq-brick-1x6.glb",
+        "preview": "Previews\\none-lq-brick-1x6.png",
+        "size_kb": 10,
+        "vertices": 24
+    },
+    {
+        "name": "none-lq-brick-1x8",
+        "glb": "models\\none-lq-brick-1x8.glb",
+        "preview": "Previews\\none-lq-brick-1x8.png",
+        "size_kb": 10,
+        "vertices": 24
+    },
+    {
+        "name": "none-lq-brick-2x2",
+        "glb": "models\\none-lq-brick-2x2.glb",
+        "preview": "Previews\\none-lq-brick-2x2.png",
+        "size_kb": 10,
+        "vertices": 24
+    },
+    {
+        "name": "none-lq-brick-2x4",
+        "glb": "models\\none-lq-brick-2x4.glb",
+        "preview": "Previews\\none-lq-brick-2x4.png",
+        "size_kb": 10,
+        "vertices": 24
+    },
+    {
+        "name": "none-lq-brick-2x6",
+        "glb": "models\\none-lq-brick-2x6.glb",
+        "preview": "Previews\\none-lq-brick-2x6.png",
+        "size_kb": 10,
+        "vertices": 24
+    },
+    {
+        "name": "none-lq-brick-2x8",
+        "glb": "models\\none-lq-brick-2x8.glb",
+        "preview": "Previews\\none-lq-brick-2x8.png",
+        "size_kb": 10,
+        "vertices": 24
+    },
+    {
+        "name": "none-lq-brick-corner",
+        "glb": "models\\none-lq-brick-corner.glb",
+        "preview": "Previews\\none-lq-brick-corner.png",
+        "size_kb": 10,
+        "vertices": 36
+    },
+    {
+        "name": "none-lq-brick-slope-1x2",
+        "glb": "models\\none-lq-brick-slope-1x2.glb",
+        "preview": "Previews\\none-lq-brick-slope-1x2.png",
+        "size_kb": 10,
+        "vertices": 30
+    },
+    {
+        "name": "none-lq-brick-slope-2x2",
+        "glb": "models\\none-lq-brick-slope-2x2.glb",
+        "preview": "Previews\\none-lq-brick-slope-2x2.png",
+        "size_kb": 10,
+        "vertices": 30
+    },
+    {
+        "name": "none-lq-brick-slope-2x3",
+        "glb": "models\\none-lq-brick-slope-2x3.glb",
+        "preview": "Previews\\none-lq-brick-slope-2x3.png",
+        "size_kb": 10,
+        "vertices": 30
+    },
+    {
+        "name": "none-lq-brick-slope-2x4",
+        "glb": "models\\none-lq-brick-slope-2x4.glb",
+        "preview": "Previews\\none-lq-brick-slope-2x4.png",
+        "size_kb": 10,
+        "vertices": 30
+    },
+    {
+        "name": "none-lq-brick-slope-3x1",
+        "glb": "models\\none-lq-brick-slope-3x1.glb",
+        "preview": "Previews\\none-lq-brick-slope-3x1.png",
+        "size_kb": 10,
+        "vertices": 30
+    },
+    {
+        "name": "none-lq-brick-slope-3x2",
+        "glb": "models\\none-lq-brick-slope-3x2.glb",
+        "preview": "Previews\\none-lq-brick-slope-3x2.png",
+        "size_kb": 10,
+        "vertices": 30
+    },
+    {
+        "name": "none-lq-brick-slope-corner-inside-2x2",
+        "glb": "models\\none-lq-brick-slope-corner-inside-2x2.glb",
+        "preview": "Previews\\none-lq-brick-slope-corner-inside-2x2.png",
+        "size_kb": 10,
+        "vertices": 34
+    },
+    {
+        "name": "none-lq-brick-slope-corner-inside-inverted-2x2",
+        "glb": "models\\none-lq-brick-slope-corner-inside-inverted-2x2.glb",
+        "preview": "Previews\\none-lq-brick-slope-corner-inside-inverted-2x2.png",
+        "size_kb": 10,
+        "vertices": 34
+    },
+    {
+        "name": "none-lq-brick-slope-corner-outside-2x2",
+        "glb": "models\\none-lq-brick-slope-corner-outside-2x2.glb",
+        "preview": "Previews\\none-lq-brick-slope-corner-outside-2x2.png",
+        "size_kb": 10,
+        "vertices": 34
+    },
+    {
+        "name": "none-lq-brick-slope-corner-outside-inverted-2x2",
+        "glb": "models\\none-lq-brick-slope-corner-outside-inverted-2x2.glb",
+        "preview": "Previews\\none-lq-brick-slope-corner-outside-inverted-2x2.png",
+        "size_kb": 10,
+        "vertices": 34
+    },
+    {
+        "name": "none-lq-brick-slope-inverted-1x2",
+        "glb": "models\\none-lq-brick-slope-inverted-1x2.glb",
+        "preview": "Previews\\none-lq-brick-slope-inverted-1x2.png",
+        "size_kb": 10,
+        "vertices": 30
+    },
+    {
+        "name": "none-lq-brick-slope-inverted-2x2",
+        "glb": "models\\none-lq-brick-slope-inverted-2x2.glb",
+        "preview": "Previews\\none-lq-brick-slope-inverted-2x2.png",
+        "size_kb": 10,
+        "vertices": 30
+    },
+    {
+        "name": "none-lq-plate-1x1-round",
+        "glb": "models\\none-lq-plate-1x1-round.glb",
+        "preview": "Previews\\none-lq-plate-1x1-round.png",
+        "size_kb": 12,
+        "vertices": 64
+    },
+    {
+        "name": "none-lq-plate-1x1",
+        "glb": "models\\none-lq-plate-1x1.glb",
+        "preview": "Previews\\none-lq-plate-1x1.png",
+        "size_kb": 10,
+        "vertices": 24
+    },
+    {
+        "name": "none-lq-plate-1x2",
+        "glb": "models\\none-lq-plate-1x2.glb",
+        "preview": "Previews\\none-lq-plate-1x2.png",
+        "size_kb": 10,
+        "vertices": 24
+    },
+    {
+        "name": "none-lq-plate-1x4",
+        "glb": "models\\none-lq-plate-1x4.glb",
+        "preview": "Previews\\none-lq-plate-1x4.png",
+        "size_kb": 10,
+        "vertices": 24
+    },
+    {
+        "name": "none-lq-plate-1x6",
+        "glb": "models\\none-lq-plate-1x6.glb",
+        "preview": "Previews\\none-lq-plate-1x6.png",
+        "size_kb": 10,
+        "vertices": 24
+    },
+    {
+        "name": "none-lq-plate-1x8",
+        "glb": "models\\none-lq-plate-1x8.glb",
+        "preview": "Previews\\none-lq-plate-1x8.png",
+        "size_kb": 10,
+        "vertices": 24
+    },
+    {
+        "name": "none-lq-plate-2x2",
+        "glb": "models\\none-lq-plate-2x2.glb",
+        "preview": "Previews\\none-lq-plate-2x2.png",
+        "size_kb": 10,
+        "vertices": 24
+    },
+    {
+        "name": "none-lq-plate-2x4",
+        "glb": "models\\none-lq-plate-2x4.glb",
+        "preview": "Previews\\none-lq-plate-2x4.png",
+        "size_kb": 10,
+        "vertices": 24
+    },
+    {
+        "name": "none-lq-plate-2x6",
+        "glb": "models\\none-lq-plate-2x6.glb",
+        "preview": "Previews\\none-lq-plate-2x6.png",
+        "size_kb": 10,
+        "vertices": 24
+    },
+    {
+        "name": "none-lq-plate-2x8",
+        "glb": "models\\none-lq-plate-2x8.glb",
+        "preview": "Previews\\none-lq-plate-2x8.png",
+        "size_kb": 10,
+        "vertices": 24
+    },
+    {
+        "name": "none-lq-plate-4x4",
+        "glb": "models\\none-lq-plate-4x4.glb",
+        "preview": "Previews\\none-lq-plate-4x4.png",
+        "size_kb": 10,
+        "vertices": 24
+    },
+    {
+        "name": "none-lq-plate-4x6",
+        "glb": "models\\none-lq-plate-4x6.glb",
+        "preview": "Previews\\none-lq-plate-4x6.png",
+        "size_kb": 10,
+        "vertices": 24
+    },
+    {
+        "name": "none-lq-plate-4x8",
+        "glb": "models\\none-lq-plate-4x8.glb",
+        "preview": "Previews\\none-lq-plate-4x8.png",
+        "size_kb": 10,
+        "vertices": 24
+    },
+    {
+        "name": "none-lq-plate-corner",
+        "glb": "models\\none-lq-plate-corner.glb",
+        "preview": "Previews\\none-lq-plate-corner.png",
+        "size_kb": 10,
+        "vertices": 36
+    },
+    {
+        "name": "round-hq-brick-1x1-round",
+        "glb": "models\\round-hq-brick-1x1-round.glb",
+        "preview": "Previews\\round-hq-brick-1x1-round.png",
+        "size_kb": 13,
+        "vertices": 104
+    },
+    {
+        "name": "round-hq-brick-1x1",
+        "glb": "models\\round-hq-brick-1x1.glb",
+        "preview": "Previews\\round-hq-brick-1x1.png",
+        "size_kb": 12,
+        "vertices": 64
+    },
+    {
+        "name": "round-hq-brick-1x2",
+        "glb": "models\\round-hq-brick-1x2.glb",
+        "preview": "Previews\\round-hq-brick-1x2.png",
+        "size_kb": 13,
+        "vertices": 96
+    },
+    {
+        "name": "round-hq-brick-1x4",
+        "glb": "models\\round-hq-brick-1x4.glb",
+        "preview": "Previews\\round-hq-brick-1x4.png",
+        "size_kb": 15,
+        "vertices": 160
+    },
+    {
+        "name": "round-hq-brick-1x6",
+        "glb": "models\\round-hq-brick-1x6.glb",
+        "preview": "Previews\\round-hq-brick-1x6.png",
+        "size_kb": 18,
+        "vertices": 224
+    },
+    {
+        "name": "round-hq-brick-1x8",
+        "glb": "models\\round-hq-brick-1x8.glb",
+        "preview": "Previews\\round-hq-brick-1x8.png",
+        "size_kb": 20,
+        "vertices": 288
+    },
+    {
+        "name": "round-hq-brick-2x2",
+        "glb": "models\\round-hq-brick-2x2.glb",
+        "preview": "Previews\\round-hq-brick-2x2.png",
+        "size_kb": 15,
+        "vertices": 160
+    },
+    {
+        "name": "round-hq-brick-2x4",
+        "glb": "models\\round-hq-brick-2x4.glb",
+        "preview": "Previews\\round-hq-brick-2x4.png",
+        "size_kb": 20,
+        "vertices": 288
+    },
+    {
+        "name": "round-hq-brick-2x6",
+        "glb": "models\\round-hq-brick-2x6.glb",
+        "preview": "Previews\\round-hq-brick-2x6.png",
+        "size_kb": 25,
+        "vertices": 416
+    },
+    {
+        "name": "round-hq-brick-2x8",
+        "glb": "models\\round-hq-brick-2x8.glb",
+        "preview": "Previews\\round-hq-brick-2x8.png",
+        "size_kb": 30,
+        "vertices": 544
+    },
+    {
+        "name": "round-hq-brick-corner",
+        "glb": "models\\round-hq-brick-corner.glb",
+        "preview": "Previews\\round-hq-brick-corner.png",
+        "size_kb": 15,
+        "vertices": 144
+    },
+    {
+        "name": "round-hq-brick-slope-1x2",
+        "glb": "models\\round-hq-brick-slope-1x2.glb",
+        "preview": "Previews\\round-hq-brick-slope-1x2.png",
+        "size_kb": 12,
+        "vertices": 70
+    },
+    {
+        "name": "round-hq-brick-slope-2x2",
+        "glb": "models\\round-hq-brick-slope-2x2.glb",
+        "preview": "Previews\\round-hq-brick-slope-2x2.png",
+        "size_kb": 13,
+        "vertices": 102
+    },
+    {
+        "name": "round-hq-brick-slope-2x3",
+        "glb": "models\\round-hq-brick-slope-2x3.glb",
+        "preview": "Previews\\round-hq-brick-slope-2x3.png",
+        "size_kb": 14,
+        "vertices": 134
+    },
+    {
+        "name": "round-hq-brick-slope-2x4",
+        "glb": "models\\round-hq-brick-slope-2x4.glb",
+        "preview": "Previews\\round-hq-brick-slope-2x4.png",
+        "size_kb": 15,
+        "vertices": 166
+    },
+    {
+        "name": "round-hq-brick-slope-3x1",
+        "glb": "models\\round-hq-brick-slope-3x1.glb",
+        "preview": "Previews\\round-hq-brick-slope-3x1.png",
+        "size_kb": 12,
+        "vertices": 70
+    },
+    {
+        "name": "round-hq-brick-slope-3x2",
+        "glb": "models\\round-hq-brick-slope-3x2.glb",
+        "preview": "Previews\\round-hq-brick-slope-3x2.png",
+        "size_kb": 13,
+        "vertices": 102
+    },
+    {
+        "name": "round-hq-brick-slope-corner-inside-2x2",
+        "glb": "models\\round-hq-brick-slope-corner-inside-2x2.glb",
+        "preview": "Previews\\round-hq-brick-slope-corner-inside-2x2.png",
+        "size_kb": 14,
+        "vertices": 140
+    },
+    {
+        "name": "round-hq-brick-slope-corner-inside-inverted-2x2",
+        "glb": "models\\round-hq-brick-slope-corner-inside-inverted-2x2.glb",
+        "preview": "Previews\\round-hq-brick-slope-corner-inside-inverted-2x2.png",
+        "size_kb": 16,
+        "vertices": 170
+    },
+    {
+        "name": "round-hq-brick-slope-corner-outside-2x2",
+        "glb": "models\\round-hq-brick-slope-corner-outside-2x2.glb",
+        "preview": "Previews\\round-hq-brick-slope-corner-outside-2x2.png",
+        "size_kb": 12,
+        "vertices": 72
+    },
+    {
+        "name": "round-hq-brick-slope-corner-outside-inverted-2x2",
+        "glb": "models\\round-hq-brick-slope-corner-outside-inverted-2x2.glb",
+        "preview": "Previews\\round-hq-brick-slope-corner-outside-inverted-2x2.png",
+        "size_kb": 16,
+        "vertices": 170
+    },
+    {
+        "name": "round-hq-brick-slope-inverted-1x2",
+        "glb": "models\\round-hq-brick-slope-inverted-1x2.glb",
+        "preview": "Previews\\round-hq-brick-slope-inverted-1x2.png",
+        "size_kb": 13,
+        "vertices": 102
+    },
+    {
+        "name": "round-hq-brick-slope-inverted-2x2",
+        "glb": "models\\round-hq-brick-slope-inverted-2x2.glb",
+        "preview": "Previews\\round-hq-brick-slope-inverted-2x2.png",
+        "size_kb": 15,
+        "vertices": 166
+    },
+    {
+        "name": "round-hq-plate-1x1-round",
+        "glb": "models\\round-hq-plate-1x1-round.glb",
+        "preview": "Previews\\round-hq-plate-1x1-round.png",
+        "size_kb": 13,
+        "vertices": 104
+    },
+    {
+        "name": "round-hq-plate-1x1",
+        "glb": "models\\round-hq-plate-1x1.glb",
+        "preview": "Previews\\round-hq-plate-1x1.png",
+        "size_kb": 12,
+        "vertices": 64
+    },
+    {
+        "name": "round-hq-plate-1x2",
+        "glb": "models\\round-hq-plate-1x2.glb",
+        "preview": "Previews\\round-hq-plate-1x2.png",
+        "size_kb": 13,
+        "vertices": 96
+    },
+    {
+        "name": "round-hq-plate-1x4",
+        "glb": "models\\round-hq-plate-1x4.glb",
+        "preview": "Previews\\round-hq-plate-1x4.png",
+        "size_kb": 15,
+        "vertices": 160
+    },
+    {
+        "name": "round-hq-plate-1x6",
+        "glb": "models\\round-hq-plate-1x6.glb",
+        "preview": "Previews\\round-hq-plate-1x6.png",
+        "size_kb": 18,
+        "vertices": 224
+    },
+    {
+        "name": "round-hq-plate-1x8",
+        "glb": "models\\round-hq-plate-1x8.glb",
+        "preview": "Previews\\round-hq-plate-1x8.png",
+        "size_kb": 20,
+        "vertices": 288
+    },
+    {
+        "name": "round-hq-plate-2x2",
+        "glb": "models\\round-hq-plate-2x2.glb",
+        "preview": "Previews\\round-hq-plate-2x2.png",
+        "size_kb": 15,
+        "vertices": 160
+    },
+    {
+        "name": "round-hq-plate-2x4",
+        "glb": "models\\round-hq-plate-2x4.glb",
+        "preview": "Previews\\round-hq-plate-2x4.png",
+        "size_kb": 20,
+        "vertices": 288
+    },
+    {
+        "name": "round-hq-plate-2x6",
+        "glb": "models\\round-hq-plate-2x6.glb",
+        "preview": "Previews\\round-hq-plate-2x6.png",
+        "size_kb": 25,
+        "vertices": 416
+    },
+    {
+        "name": "round-hq-plate-2x8",
+        "glb": "models\\round-hq-plate-2x8.glb",
+        "preview": "Previews\\round-hq-plate-2x8.png",
+        "size_kb": 30,
+        "vertices": 544
+    },
+    {
+        "name": "round-hq-plate-4x4",
+        "glb": "models\\round-hq-plate-4x4.glb",
+        "preview": "Previews\\round-hq-plate-4x4.png",
+        "size_kb": 30,
+        "vertices": 544
+    },
+    {
+        "name": "round-hq-plate-4x6",
+        "glb": "models\\round-hq-plate-4x6.glb",
+        "preview": "Previews\\round-hq-plate-4x6.png",
+        "size_kb": 40,
+        "vertices": 800
+    },
+    {
+        "name": "round-hq-plate-4x8",
+        "glb": "models\\round-hq-plate-4x8.glb",
+        "preview": "Previews\\round-hq-plate-4x8.png",
+        "size_kb": 49,
+        "vertices": 1056
+    },
+    {
+        "name": "round-hq-plate-corner",
+        "glb": "models\\round-hq-plate-corner.glb",
+        "preview": "Previews\\round-hq-plate-corner.png",
+        "size_kb": 15,
+        "vertices": 144
+    },
+    {
+        "name": "round-lq-brick-1x1-round",
+        "glb": "models\\round-lq-brick-1x1-round.glb",
+        "preview": "Previews\\round-lq-brick-1x1-round.png",
+        "size_kb": 12,
+        "vertices": 88
+    },
+    {
+        "name": "round-lq-brick-1x1",
+        "glb": "models\\round-lq-brick-1x1.glb",
+        "preview": "Previews\\round-lq-brick-1x1.png",
+        "size_kb": 11,
+        "vertices": 48
+    },
+    {
+        "name": "round-lq-brick-1x2",
+        "glb": "models\\round-lq-brick-1x2.glb",
+        "preview": "Previews\\round-lq-brick-1x2.png",
+        "size_kb": 12,
+        "vertices": 72
+    },
+    {
+        "name": "round-lq-brick-1x4",
+        "glb": "models\\round-lq-brick-1x4.glb",
+        "preview": "Previews\\round-lq-brick-1x4.png",
+        "size_kb": 14,
+        "vertices": 120
+    },
+    {
+        "name": "round-lq-brick-1x6",
+        "glb": "models\\round-lq-brick-1x6.glb",
+        "preview": "Previews\\round-lq-brick-1x6.png",
+        "size_kb": 15,
+        "vertices": 168
+    },
+    {
+        "name": "round-lq-brick-1x8",
+        "glb": "models\\round-lq-brick-1x8.glb",
+        "preview": "Previews\\round-lq-brick-1x8.png",
+        "size_kb": 17,
+        "vertices": 216
+    },
+    {
+        "name": "round-lq-brick-2x2",
+        "glb": "models\\round-lq-brick-2x2.glb",
+        "preview": "Previews\\round-lq-brick-2x2.png",
+        "size_kb": 14,
+        "vertices": 120
+    },
+    {
+        "name": "round-lq-brick-2x4",
+        "glb": "models\\round-lq-brick-2x4.glb",
+        "preview": "Previews\\round-lq-brick-2x4.png",
+        "size_kb": 17,
+        "vertices": 216
+    },
+    {
+        "name": "round-lq-brick-2x6",
+        "glb": "models\\round-lq-brick-2x6.glb",
+        "preview": "Previews\\round-lq-brick-2x6.png",
+        "size_kb": 21,
+        "vertices": 312
+    },
+    {
+        "name": "round-lq-brick-2x8",
+        "glb": "models\\round-lq-brick-2x8.glb",
+        "preview": "Previews\\round-lq-brick-2x8.png",
+        "size_kb": 24,
+        "vertices": 408
+    },
+    {
+        "name": "round-lq-brick-corner",
+        "glb": "models\\round-lq-brick-corner.glb",
+        "preview": "Previews\\round-lq-brick-corner.png",
+        "size_kb": 13,
+        "vertices": 108
+    },
+    {
+        "name": "round-lq-brick-slope-1x2",
+        "glb": "models\\round-lq-brick-slope-1x2.glb",
+        "preview": "Previews\\round-lq-brick-slope-1x2.png",
+        "size_kb": 11,
+        "vertices": 54
+    },
+    {
+        "name": "round-lq-brick-slope-2x2",
+        "glb": "models\\round-lq-brick-slope-2x2.glb",
+        "preview": "Previews\\round-lq-brick-slope-2x2.png",
+        "size_kb": 12,
+        "vertices": 78
+    },
+    {
+        "name": "round-lq-brick-slope-2x3",
+        "glb": "models\\round-lq-brick-slope-2x3.glb",
+        "preview": "Previews\\round-lq-brick-slope-2x3.png",
+        "size_kb": 13,
+        "vertices": 102
+    },
+    {
+        "name": "round-lq-brick-slope-2x4",
+        "glb": "models\\round-lq-brick-slope-2x4.glb",
+        "preview": "Previews\\round-lq-brick-slope-2x4.png",
+        "size_kb": 14,
+        "vertices": 126
+    },
+    {
+        "name": "round-lq-brick-slope-3x1",
+        "glb": "models\\round-lq-brick-slope-3x1.glb",
+        "preview": "Previews\\round-lq-brick-slope-3x1.png",
+        "size_kb": 11,
+        "vertices": 54
+    },
+    {
+        "name": "round-lq-brick-slope-3x2",
+        "glb": "models\\round-lq-brick-slope-3x2.glb",
+        "preview": "Previews\\round-lq-brick-slope-3x2.png",
+        "size_kb": 12,
+        "vertices": 78
+    },
+    {
+        "name": "round-lq-brick-slope-corner-inside-2x2",
+        "glb": "models\\round-lq-brick-slope-corner-inside-2x2.glb",
+        "preview": "Previews\\round-lq-brick-slope-corner-inside-2x2.png",
+        "size_kb": 13,
+        "vertices": 106
+    },
+    {
+        "name": "round-lq-brick-slope-corner-inside-inverted-2x2",
+        "glb": "models\\round-lq-brick-slope-corner-inside-inverted-2x2.glb",
+        "preview": "Previews\\round-lq-brick-slope-corner-inside-inverted-2x2.png",
+        "size_kb": 14,
+        "vertices": 130
+    },
+    {
+        "name": "round-lq-brick-slope-corner-outside-2x2",
+        "glb": "models\\round-lq-brick-slope-corner-outside-2x2.glb",
+        "preview": "Previews\\round-lq-brick-slope-corner-outside-2x2.png",
+        "size_kb": 11,
+        "vertices": 58
+    },
+    {
+        "name": "round-lq-brick-slope-corner-outside-inverted-2x2",
+        "glb": "models\\round-lq-brick-slope-corner-outside-inverted-2x2.glb",
+        "preview": "Previews\\round-lq-brick-slope-corner-outside-inverted-2x2.png",
+        "size_kb": 14,
+        "vertices": 130
+    },
+    {
+        "name": "round-lq-brick-slope-inverted-1x2",
+        "glb": "models\\round-lq-brick-slope-inverted-1x2.glb",
+        "preview": "Previews\\round-lq-brick-slope-inverted-1x2.png",
+        "size_kb": 12,
+        "vertices": 78
+    },
+    {
+        "name": "round-lq-brick-slope-inverted-2x2",
+        "glb": "models\\round-lq-brick-slope-inverted-2x2.glb",
+        "preview": "Previews\\round-lq-brick-slope-inverted-2x2.png",
+        "size_kb": 14,
+        "vertices": 126
+    },
+    {
+        "name": "round-lq-plate-1x1-round",
+        "glb": "models\\round-lq-plate-1x1-round.glb",
+        "preview": "Previews\\round-lq-plate-1x1-round.png",
+        "size_kb": 12,
+        "vertices": 88
+    },
+    {
+        "name": "round-lq-plate-1x1",
+        "glb": "models\\round-lq-plate-1x1.glb",
+        "preview": "Previews\\round-lq-plate-1x1.png",
+        "size_kb": 11,
+        "vertices": 48
+    },
+    {
+        "name": "round-lq-plate-1x2",
+        "glb": "models\\round-lq-plate-1x2.glb",
+        "preview": "Previews\\round-lq-plate-1x2.png",
+        "size_kb": 12,
+        "vertices": 72
+    },
+    {
+        "name": "round-lq-plate-1x4",
+        "glb": "models\\round-lq-plate-1x4.glb",
+        "preview": "Previews\\round-lq-plate-1x4.png",
+        "size_kb": 14,
+        "vertices": 120
+    },
+    {
+        "name": "round-lq-plate-1x6",
+        "glb": "models\\round-lq-plate-1x6.glb",
+        "preview": "Previews\\round-lq-plate-1x6.png",
+        "size_kb": 15,
+        "vertices": 168
+    },
+    {
+        "name": "round-lq-plate-1x8",
+        "glb": "models\\round-lq-plate-1x8.glb",
+        "preview": "Previews\\round-lq-plate-1x8.png",
+        "size_kb": 17,
+        "vertices": 216
+    },
+    {
+        "name": "round-lq-plate-2x2",
+        "glb": "models\\round-lq-plate-2x2.glb",
+        "preview": "Previews\\round-lq-plate-2x2.png",
+        "size_kb": 14,
+        "vertices": 120
+    },
+    {
+        "name": "round-lq-plate-2x4",
+        "glb": "models\\round-lq-plate-2x4.glb",
+        "preview": "Previews\\round-lq-plate-2x4.png",
+        "size_kb": 17,
+        "vertices": 216
+    },
+    {
+        "name": "round-lq-plate-2x6",
+        "glb": "models\\round-lq-plate-2x6.glb",
+        "preview": "Previews\\round-lq-plate-2x6.png",
+        "size_kb": 21,
+        "vertices": 312
+    },
+    {
+        "name": "round-lq-plate-2x8",
+        "glb": "models\\round-lq-plate-2x8.glb",
+        "preview": "Previews\\round-lq-plate-2x8.png",
+        "size_kb": 24,
+        "vertices": 408
+    },
+    {
+        "name": "round-lq-plate-4x4",
+        "glb": "models\\round-lq-plate-4x4.glb",
+        "preview": "Previews\\round-lq-plate-4x4.png",
+        "size_kb": 24,
+        "vertices": 408
+    },
+    {
+        "name": "round-lq-plate-4x6",
+        "glb": "models\\round-lq-plate-4x6.glb",
+        "preview": "Previews\\round-lq-plate-4x6.png",
+        "size_kb": 31,
+        "vertices": 600
+    },
+    {
+        "name": "round-lq-plate-4x8",
+        "glb": "models\\round-lq-plate-4x8.glb",
+        "preview": "Previews\\round-lq-plate-4x8.png",
+        "size_kb": 38,
+        "vertices": 792
+    },
+    {
+        "name": "round-lq-plate-corner",
+        "glb": "models\\round-lq-plate-corner.glb",
+        "preview": "Previews\\round-lq-plate-corner.png",
+        "size_kb": 13,
+        "vertices": 108
+    },
+    {
+        "name": "square-hq-brick-1x1-round",
+        "glb": "models\\square-hq-brick-1x1-round.glb",
+        "preview": "Previews\\square-hq-brick-1x1-round.png",
+        "size_kb": 13,
+        "vertices": 104
+    },
+    {
+        "name": "square-hq-brick-1x1",
+        "glb": "models\\square-hq-brick-1x1.glb",
+        "preview": "Previews\\square-hq-brick-1x1.png",
+        "size_kb": 11,
+        "vertices": 60
+    },
+    {
+        "name": "square-hq-brick-1x2",
+        "glb": "models\\square-hq-brick-1x2.glb",
+        "preview": "Previews\\square-hq-brick-1x2.png",
+        "size_kb": 12,
+        "vertices": 88
+    },
+    {
+        "name": "square-hq-brick-1x4",
+        "glb": "models\\square-hq-brick-1x4.glb",
+        "preview": "Previews\\square-hq-brick-1x4.png",
+        "size_kb": 14,
+        "vertices": 144
+    },
+    {
+        "name": "square-hq-brick-1x6",
+        "glb": "models\\square-hq-brick-1x6.glb",
+        "preview": "Previews\\square-hq-brick-1x6.png",
+        "size_kb": 16,
+        "vertices": 200
+    },
+    {
+        "name": "square-hq-brick-1x8",
+        "glb": "models\\square-hq-brick-1x8.glb",
+        "preview": "Previews\\square-hq-brick-1x8.png",
+        "size_kb": 18,
+        "vertices": 256
+    },
+    {
+        "name": "square-hq-brick-2x2",
+        "glb": "models\\square-hq-brick-2x2.glb",
+        "preview": "Previews\\square-hq-brick-2x2.png",
+        "size_kb": 14,
+        "vertices": 144
+    },
+    {
+        "name": "square-hq-brick-2x4",
+        "glb": "models\\square-hq-brick-2x4.glb",
+        "preview": "Previews\\square-hq-brick-2x4.png",
+        "size_kb": 18,
+        "vertices": 256
+    },
+    {
+        "name": "square-hq-brick-2x6",
+        "glb": "models\\square-hq-brick-2x6.glb",
+        "preview": "Previews\\square-hq-brick-2x6.png",
+        "size_kb": 22,
+        "vertices": 368
+    },
+    {
+        "name": "square-hq-brick-2x8",
+        "glb": "models\\square-hq-brick-2x8.glb",
+        "preview": "Previews\\square-hq-brick-2x8.png",
+        "size_kb": 26,
+        "vertices": 480
+    },
+    {
+        "name": "square-hq-brick-corner",
+        "glb": "models\\square-hq-brick-corner.glb",
+        "preview": "Previews\\square-hq-brick-corner.png",
+        "size_kb": 14,
+        "vertices": 132
+    },
+    {
+        "name": "square-hq-brick-slope-1x2",
+        "glb": "models\\square-hq-brick-slope-1x2.glb",
+        "preview": "Previews\\square-hq-brick-slope-1x2.png",
+        "size_kb": 11,
+        "vertices": 66
+    },
+    {
+        "name": "square-hq-brick-slope-2x2",
+        "glb": "models\\square-hq-brick-slope-2x2.glb",
+        "preview": "Previews\\square-hq-brick-slope-2x2.png",
+        "size_kb": 12,
+        "vertices": 94
+    },
+    {
+        "name": "square-hq-brick-slope-2x3",
+        "glb": "models\\square-hq-brick-slope-2x3.glb",
+        "preview": "Previews\\square-hq-brick-slope-2x3.png",
+        "size_kb": 13,
+        "vertices": 122
+    },
+    {
+        "name": "square-hq-brick-slope-2x4",
+        "glb": "models\\square-hq-brick-slope-2x4.glb",
+        "preview": "Previews\\square-hq-brick-slope-2x4.png",
+        "size_kb": 14,
+        "vertices": 150
+    },
+    {
+        "name": "square-hq-brick-slope-3x1",
+        "glb": "models\\square-hq-brick-slope-3x1.glb",
+        "preview": "Previews\\square-hq-brick-slope-3x1.png",
+        "size_kb": 11,
+        "vertices": 66
+    },
+    {
+        "name": "square-hq-brick-slope-3x2",
+        "glb": "models\\square-hq-brick-slope-3x2.glb",
+        "preview": "Previews\\square-hq-brick-slope-3x2.png",
+        "size_kb": 12,
+        "vertices": 94
+    },
+    {
+        "name": "square-hq-brick-slope-corner-inside-2x2",
+        "glb": "models\\square-hq-brick-slope-corner-inside-2x2.glb",
+        "preview": "Previews\\square-hq-brick-slope-corner-inside-2x2.png",
+        "size_kb": 14,
+        "vertices": 128
+    },
+    {
+        "name": "square-hq-brick-slope-corner-inside-inverted-2x2",
+        "glb": "models\\square-hq-brick-slope-corner-inside-inverted-2x2.glb",
+        "preview": "Previews\\square-hq-brick-slope-corner-inside-inverted-2x2.png",
+        "size_kb": 15,
+        "vertices": 154
+    },
+    {
+        "name": "square-hq-brick-slope-corner-outside-2x2",
+        "glb": "models\\square-hq-brick-slope-corner-outside-2x2.glb",
+        "preview": "Previews\\square-hq-brick-slope-corner-outside-2x2.png",
+        "size_kb": 12,
+        "vertices": 68
+    },
+    {
+        "name": "square-hq-brick-slope-corner-outside-inverted-2x2",
+        "glb": "models\\square-hq-brick-slope-corner-outside-inverted-2x2.glb",
+        "preview": "Previews\\square-hq-brick-slope-corner-outside-inverted-2x2.png",
+        "size_kb": 15,
+        "vertices": 154
+    },
+    {
+        "name": "square-hq-brick-slope-inverted-1x2",
+        "glb": "models\\square-hq-brick-slope-inverted-1x2.glb",
+        "preview": "Previews\\square-hq-brick-slope-inverted-1x2.png",
+        "size_kb": 12,
+        "vertices": 94
+    },
+    {
+        "name": "square-hq-brick-slope-inverted-2x2",
+        "glb": "models\\square-hq-brick-slope-inverted-2x2.glb",
+        "preview": "Previews\\square-hq-brick-slope-inverted-2x2.png",
+        "size_kb": 14,
+        "vertices": 150
+    },
+    {
+        "name": "square-hq-plate-1x1-round",
+        "glb": "models\\square-hq-plate-1x1-round.glb",
+        "preview": "Previews\\square-hq-plate-1x1-round.png",
+        "size_kb": 13,
+        "vertices": 104
+    },
+    {
+        "name": "square-hq-plate-1x1",
+        "glb": "models\\square-hq-plate-1x1.glb",
+        "preview": "Previews\\square-hq-plate-1x1.png",
+        "size_kb": 11,
+        "vertices": 60
+    },
+    {
+        "name": "square-hq-plate-1x2",
+        "glb": "models\\square-hq-plate-1x2.glb",
+        "preview": "Previews\\square-hq-plate-1x2.png",
+        "size_kb": 12,
+        "vertices": 88
+    },
+    {
+        "name": "square-hq-plate-1x4",
+        "glb": "models\\square-hq-plate-1x4.glb",
+        "preview": "Previews\\square-hq-plate-1x4.png",
+        "size_kb": 14,
+        "vertices": 144
+    },
+    {
+        "name": "square-hq-plate-1x6",
+        "glb": "models\\square-hq-plate-1x6.glb",
+        "preview": "Previews\\square-hq-plate-1x6.png",
+        "size_kb": 16,
+        "vertices": 200
+    },
+    {
+        "name": "square-hq-plate-1x8",
+        "glb": "models\\square-hq-plate-1x8.glb",
+        "preview": "Previews\\square-hq-plate-1x8.png",
+        "size_kb": 18,
+        "vertices": 256
+    },
+    {
+        "name": "square-hq-plate-2x2",
+        "glb": "models\\square-hq-plate-2x2.glb",
+        "preview": "Previews\\square-hq-plate-2x2.png",
+        "size_kb": 14,
+        "vertices": 144
+    },
+    {
+        "name": "square-hq-plate-2x4",
+        "glb": "models\\square-hq-plate-2x4.glb",
+        "preview": "Previews\\square-hq-plate-2x4.png",
+        "size_kb": 18,
+        "vertices": 256
+    },
+    {
+        "name": "square-hq-plate-2x6",
+        "glb": "models\\square-hq-plate-2x6.glb",
+        "preview": "Previews\\square-hq-plate-2x6.png",
+        "size_kb": 22,
+        "vertices": 368
+    },
+    {
+        "name": "square-hq-plate-2x8",
+        "glb": "models\\square-hq-plate-2x8.glb",
+        "preview": "Previews\\square-hq-plate-2x8.png",
+        "size_kb": 26,
+        "vertices": 480
+    },
+    {
+        "name": "square-hq-plate-4x4",
+        "glb": "models\\square-hq-plate-4x4.glb",
+        "preview": "Previews\\square-hq-plate-4x4.png",
+        "size_kb": 26,
+        "vertices": 480
+    },
+    {
+        "name": "square-hq-plate-4x6",
+        "glb": "models\\square-hq-plate-4x6.glb",
+        "preview": "Previews\\square-hq-plate-4x6.png",
+        "size_kb": 34,
+        "vertices": 704
+    },
+    {
+        "name": "square-hq-plate-4x8",
+        "glb": "models\\square-hq-plate-4x8.glb",
+        "preview": "Previews\\square-hq-plate-4x8.png",
+        "size_kb": 42,
+        "vertices": 928
+    },
+    {
+        "name": "square-hq-plate-corner",
+        "glb": "models\\square-hq-plate-corner.glb",
+        "preview": "Previews\\square-hq-plate-corner.png",
+        "size_kb": 14,
+        "vertices": 132
+    },
+    {
+        "name": "square-lq-brick-1x1-round",
+        "glb": "models\\square-lq-brick-1x1-round.glb",
+        "preview": "Previews\\square-lq-brick-1x1-round.png",
+        "size_kb": 12,
+        "vertices": 88
+    },
+    {
+        "name": "square-lq-brick-1x1",
+        "glb": "models\\square-lq-brick-1x1.glb",
+        "preview": "Previews\\square-lq-brick-1x1.png",
+        "size_kb": 11,
+        "vertices": 44
+    },
+    {
+        "name": "square-lq-brick-1x2",
+        "glb": "models\\square-lq-brick-1x2.glb",
+        "preview": "Previews\\square-lq-brick-1x2.png",
+        "size_kb": 11,
+        "vertices": 64
+    },
+    {
+        "name": "square-lq-brick-1x4",
+        "glb": "models\\square-lq-brick-1x4.glb",
+        "preview": "Previews\\square-lq-brick-1x4.png",
+        "size_kb": 13,
+        "vertices": 104
+    },
+    {
+        "name": "square-lq-brick-1x6",
+        "glb": "models\\square-lq-brick-1x6.glb",
+        "preview": "Previews\\square-lq-brick-1x6.png",
+        "size_kb": 14,
+        "vertices": 144
+    },
+    {
+        "name": "square-lq-brick-1x8",
+        "glb": "models\\square-lq-brick-1x8.glb",
+        "preview": "Previews\\square-lq-brick-1x8.png",
+        "size_kb": 15,
+        "vertices": 184
+    },
+    {
+        "name": "square-lq-brick-2x2",
+        "glb": "models\\square-lq-brick-2x2.glb",
+        "preview": "Previews\\square-lq-brick-2x2.png",
+        "size_kb": 13,
+        "vertices": 104
+    },
+    {
+        "name": "square-lq-brick-2x4",
+        "glb": "models\\square-lq-brick-2x4.glb",
+        "preview": "Previews\\square-lq-brick-2x4.png",
+        "size_kb": 15,
+        "vertices": 184
+    },
+    {
+        "name": "square-lq-brick-2x6",
+        "glb": "models\\square-lq-brick-2x6.glb",
+        "preview": "Previews\\square-lq-brick-2x6.png",
+        "size_kb": 18,
+        "vertices": 264
+    },
+    {
+        "name": "square-lq-brick-2x8",
+        "glb": "models\\square-lq-brick-2x8.glb",
+        "preview": "Previews\\square-lq-brick-2x8.png",
+        "size_kb": 21,
+        "vertices": 344
+    },
+    {
+        "name": "square-lq-brick-corner",
+        "glb": "models\\square-lq-brick-corner.glb",
+        "preview": "Previews\\square-lq-brick-corner.png",
+        "size_kb": 12,
+        "vertices": 96
+    },
+    {
+        "name": "square-lq-brick-slope-1x2",
+        "glb": "models\\square-lq-brick-slope-1x2.glb",
+        "preview": "Previews\\square-lq-brick-slope-1x2.png",
+        "size_kb": 11,
+        "vertices": 50
+    },
+    {
+        "name": "square-lq-brick-slope-2x2",
+        "glb": "models\\square-lq-brick-slope-2x2.glb",
+        "preview": "Previews\\square-lq-brick-slope-2x2.png",
+        "size_kb": 12,
+        "vertices": 70
+    },
+    {
+        "name": "square-lq-brick-slope-2x3",
+        "glb": "models\\square-lq-brick-slope-2x3.glb",
+        "preview": "Previews\\square-lq-brick-slope-2x3.png",
+        "size_kb": 12,
+        "vertices": 90
+    },
+    {
+        "name": "square-lq-brick-slope-2x4",
+        "glb": "models\\square-lq-brick-slope-2x4.glb",
+        "preview": "Previews\\square-lq-brick-slope-2x4.png",
+        "size_kb": 13,
+        "vertices": 110
+    },
+    {
+        "name": "square-lq-brick-slope-3x1",
+        "glb": "models\\square-lq-brick-slope-3x1.glb",
+        "preview": "Previews\\square-lq-brick-slope-3x1.png",
+        "size_kb": 11,
+        "vertices": 50
+    },
+    {
+        "name": "square-lq-brick-slope-3x2",
+        "glb": "models\\square-lq-brick-slope-3x2.glb",
+        "preview": "Previews\\square-lq-brick-slope-3x2.png",
+        "size_kb": 12,
+        "vertices": 70
+    },
+    {
+        "name": "square-lq-brick-slope-corner-inside-2x2",
+        "glb": "models\\square-lq-brick-slope-corner-inside-2x2.glb",
+        "preview": "Previews\\square-lq-brick-slope-corner-inside-2x2.png",
+        "size_kb": 12,
+        "vertices": 94
+    },
+    {
+        "name": "square-lq-brick-slope-corner-inside-inverted-2x2",
+        "glb": "models\\square-lq-brick-slope-corner-inside-inverted-2x2.glb",
+        "preview": "Previews\\square-lq-brick-slope-corner-inside-inverted-2x2.png",
+        "size_kb": 13,
+        "vertices": 114
+    },
+    {
+        "name": "square-lq-brick-slope-corner-outside-2x2",
+        "glb": "models\\square-lq-brick-slope-corner-outside-2x2.glb",
+        "preview": "Previews\\square-lq-brick-slope-corner-outside-2x2.png",
+        "size_kb": 11,
+        "vertices": 54
+    },
+    {
+        "name": "square-lq-brick-slope-corner-outside-inverted-2x2",
+        "glb": "models\\square-lq-brick-slope-corner-outside-inverted-2x2.glb",
+        "preview": "Previews\\square-lq-brick-slope-corner-outside-inverted-2x2.png",
+        "size_kb": 13,
+        "vertices": 114
+    },
+    {
+        "name": "square-lq-brick-slope-inverted-1x2",
+        "glb": "models\\square-lq-brick-slope-inverted-1x2.glb",
+        "preview": "Previews\\square-lq-brick-slope-inverted-1x2.png",
+        "size_kb": 12,
+        "vertices": 70
+    },
+    {
+        "name": "square-lq-brick-slope-inverted-2x2",
+        "glb": "models\\square-lq-brick-slope-inverted-2x2.glb",
+        "preview": "Previews\\square-lq-brick-slope-inverted-2x2.png",
+        "size_kb": 13,
+        "vertices": 110
+    },
+    {
+        "name": "square-lq-plate-1x1-round",
+        "glb": "models\\square-lq-plate-1x1-round.glb",
+        "preview": "Previews\\square-lq-plate-1x1-round.png",
+        "size_kb": 12,
+        "vertices": 88
+    },
+    {
+        "name": "square-lq-plate-1x1",
+        "glb": "models\\square-lq-plate-1x1.glb",
+        "preview": "Previews\\square-lq-plate-1x1.png",
+        "size_kb": 11,
+        "vertices": 44
+    },
+    {
+        "name": "square-lq-plate-1x2",
+        "glb": "models\\square-lq-plate-1x2.glb",
+        "preview": "Previews\\square-lq-plate-1x2.png",
+        "size_kb": 11,
+        "vertices": 64
+    },
+    {
+        "name": "square-lq-plate-1x4",
+        "glb": "models\\square-lq-plate-1x4.glb",
+        "preview": "Previews\\square-lq-plate-1x4.png",
+        "size_kb": 13,
+        "vertices": 104
+    },
+    {
+        "name": "square-lq-plate-1x6",
+        "glb": "models\\square-lq-plate-1x6.glb",
+        "preview": "Previews\\square-lq-plate-1x6.png",
+        "size_kb": 14,
+        "vertices": 144
+    },
+    {
+        "name": "square-lq-plate-1x8",
+        "glb": "models\\square-lq-plate-1x8.glb",
+        "preview": "Previews\\square-lq-plate-1x8.png",
+        "size_kb": 15,
+        "vertices": 184
+    },
+    {
+        "name": "square-lq-plate-2x2",
+        "glb": "models\\square-lq-plate-2x2.glb",
+        "preview": "Previews\\square-lq-plate-2x2.png",
+        "size_kb": 13,
+        "vertices": 104
+    },
+    {
+        "name": "square-lq-plate-2x4",
+        "glb": "models\\square-lq-plate-2x4.glb",
+        "preview": "Previews\\square-lq-plate-2x4.png",
+        "size_kb": 15,
+        "vertices": 184
+    },
+    {
+        "name": "square-lq-plate-2x6",
+        "glb": "models\\square-lq-plate-2x6.glb",
+        "preview": "Previews\\square-lq-plate-2x6.png",
+        "size_kb": 18,
+        "vertices": 264
+    },
+    {
+        "name": "square-lq-plate-2x8",
+        "glb": "models\\square-lq-plate-2x8.glb",
+        "preview": "Previews\\square-lq-plate-2x8.png",
+        "size_kb": 21,
+        "vertices": 344
+    },
+    {
+        "name": "square-lq-plate-4x4",
+        "glb": "models\\square-lq-plate-4x4.glb",
+        "preview": "Previews\\square-lq-plate-4x4.png",
+        "size_kb": 21,
+        "vertices": 344
+    },
+    {
+        "name": "square-lq-plate-4x6",
+        "glb": "models\\square-lq-plate-4x6.glb",
+        "preview": "Previews\\square-lq-plate-4x6.png",
+        "size_kb": 26,
+        "vertices": 504
+    },
+    {
+        "name": "square-lq-plate-4x8",
+        "glb": "models\\square-lq-plate-4x8.glb",
+        "preview": "Previews\\square-lq-plate-4x8.png",
+        "size_kb": 32,
+        "vertices": 664
+    },
+    {
+        "name": "square-lq-plate-corner",
+        "glb": "models\\square-lq-plate-corner.glb",
+        "preview": "Previews\\square-lq-plate-corner.png",
+        "size_kb": 12,
+        "vertices": 96
+    }
+]

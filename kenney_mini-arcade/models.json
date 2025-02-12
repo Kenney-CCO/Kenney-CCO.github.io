@@ -1,0 +1,142 @@
+[
+    {
+        "name": "air-hockey",
+        "glb": "models\\air-hockey.glb",
+        "preview": "Previews\\air-hockey.png",
+        "size_kb": 36,
+        "vertices": 716
+    },
+    {
+        "name": "arcade-machine",
+        "glb": "models\\arcade-machine.glb",
+        "preview": "Previews\\arcade-machine.png",
+        "size_kb": 34,
+        "vertices": 725
+    },
+    {
+        "name": "basketball-game",
+        "glb": "models\\basketball-game.glb",
+        "preview": "Previews\\basketball-game.png",
+        "size_kb": 42,
+        "vertices": 916
+    },
+    {
+        "name": "cash-register",
+        "glb": "models\\cash-register.glb",
+        "preview": "Previews\\cash-register.png",
+        "size_kb": 25,
+        "vertices": 454
+    },
+    {
+        "name": "character-employee",
+        "glb": "models\\character-employee.glb",
+        "preview": "Previews\\character-employee.png",
+        "size_kb": 250,
+        "vertices": 910
+    },
+    {
+        "name": "character-gamer",
+        "glb": "models\\character-gamer.glb",
+        "preview": "Previews\\character-gamer.png",
+        "size_kb": 245,
+        "vertices": 829
+    },
+    {
+        "name": "claw-machine",
+        "glb": "models\\claw-machine.glb",
+        "preview": "Previews\\claw-machine.png",
+        "size_kb": 58,
+        "vertices": 1304
+    },
+    {
+        "name": "column",
+        "glb": "models\\column.glb",
+        "preview": "Previews\\column.png",
+        "size_kb": 21,
+        "vertices": 336
+    },
+    {
+        "name": "dance-machine",
+        "glb": "models\\dance-machine.glb",
+        "preview": "Previews\\dance-machine.png",
+        "size_kb": 50,
+        "vertices": 1159
+    },
+    {
+        "name": "floor",
+        "glb": "models\\floor.glb",
+        "preview": "Previews\\floor.png",
+        "size_kb": 11,
+        "vertices": 46
+    },
+    {
+        "name": "gambling-machine",
+        "glb": "models\\gambling-machine.glb",
+        "preview": "Previews\\gambling-machine.png",
+        "size_kb": 45,
+        "vertices": 1031
+    },
+    {
+        "name": "pinball",
+        "glb": "models\\pinball.glb",
+        "preview": "Previews\\pinball.png",
+        "size_kb": 48,
+        "vertices": 1085
+    },
+    {
+        "name": "prize-wheel",
+        "glb": "models\\prize-wheel.glb",
+        "preview": "Previews\\prize-wheel.png",
+        "size_kb": 24,
+        "vertices": 370
+    },
+    {
+        "name": "prizes",
+        "glb": "models\\prizes.glb",
+        "preview": "Previews\\prizes.png",
+        "size_kb": 37,
+        "vertices": 784
+    },
+    {
+        "name": "ticket-machine",
+        "glb": "models\\ticket-machine.glb",
+        "preview": "Previews\\ticket-machine.png",
+        "size_kb": 28,
+        "vertices": 465
+    },
+    {
+        "name": "vending-machine",
+        "glb": "models\\vending-machine.glb",
+        "preview": "Previews\\vending-machine.png",
+        "size_kb": 19,
+        "vertices": 280
+    },
+    {
+        "name": "wall-corner",
+        "glb": "models\\wall-corner.glb",
+        "preview": "Previews\\wall-corner.png",
+        "size_kb": 13,
+        "vertices": 118
+    },
+    {
+        "name": "wall-door-rotate",
+        "glb": "models\\wall-door-rotate.glb",
+        "preview": "Previews\\wall-door-rotate.png",
+        "size_kb": 34,
+        "vertices": 507
+    },
+    {
+        "name": "wall-window",
+        "glb": "models\\wall-window.glb",
+        "preview": "Previews\\wall-window.png",
+        "size_kb": 19,
+        "vertices": 240
+    },
+    {
+        "name": "wall",
+        "glb": "models\\wall.glb",
+        "preview": "Previews\\wall.png",
+        "size_kb": 12,
+        "vertices": 68
+    }
+]

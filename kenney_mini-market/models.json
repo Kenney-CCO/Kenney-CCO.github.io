@@ -1,0 +1,142 @@
+[
+    {
+        "name": "bottle-return",
+        "glb": "models\\bottle-return.glb",
+        "preview": "Previews\\bottle-return.png",
+        "size_kb": 29,
+        "vertices": 568
+    },
+    {
+        "name": "cash-register",
+        "glb": "models\\cash-register.glb",
+        "preview": "Previews\\cash-register.png",
+        "size_kb": 22,
+        "vertices": 361
+    },
+    {
+        "name": "character-employee",
+        "glb": "models\\character-employee.glb",
+        "preview": "Previews\\character-employee.png",
+        "size_kb": 249,
+        "vertices": 894
+    },
+    {
+        "name": "column",
+        "glb": "models\\column.glb",
+        "preview": "Previews\\column.png",
+        "size_kb": 21,
+        "vertices": 336
+    },
+    {
+        "name": "display-bread",
+        "glb": "models\\display-bread.glb",
+        "preview": "Previews\\display-bread.png",
+        "size_kb": 33,
+        "vertices": 648
+    },
+    {
+        "name": "display-fruit",
+        "glb": "models\\display-fruit.glb",
+        "preview": "Previews\\display-fruit.png",
+        "size_kb": 51,
+        "vertices": 1203
+    },
+    {
+        "name": "fence-door-rotate",
+        "glb": "models\\fence-door-rotate.glb",
+        "preview": "Previews\\fence-door-rotate.png",
+        "size_kb": 33,
+        "vertices": 480
+    },
+    {
+        "name": "fence",
+        "glb": "models\\fence.glb",
+        "preview": "Previews\\fence.png",
+        "size_kb": 14,
+        "vertices": 136
+    },
+    {
+        "name": "floor",
+        "glb": "models\\floor.glb",
+        "preview": "Previews\\floor.png",
+        "size_kb": 11,
+        "vertices": 46
+    },
+    {
+        "name": "freezer",
+        "glb": "models\\freezer.glb",
+        "preview": "Previews\\freezer.png",
+        "size_kb": 19,
+        "vertices": 292
+    },
+    {
+        "name": "freezers-standing",
+        "glb": "models\\freezers-standing.glb",
+        "preview": "Previews\\freezers-standing.png",
+        "size_kb": 18,
+        "vertices": 258
+    },
+    {
+        "name": "shelf-bags",
+        "glb": "models\\shelf-bags.glb",
+        "preview": "Previews\\shelf-bags.png",
+        "size_kb": 60,
+        "vertices": 1324
+    },
+    {
+        "name": "shelf-boxes",
+        "glb": "models\\shelf-boxes.glb",
+        "preview": "Previews\\shelf-boxes.png",
+        "size_kb": 45,
+        "vertices": 856
+    },
+    {
+        "name": "shelf-end",
+        "glb": "models\\shelf-end.glb",
+        "preview": "Previews\\shelf-end.png",
+        "size_kb": 37,
+        "vertices": 690
+    },
+    {
+        "name": "shopping-basket",
+        "glb": "models\\shopping-basket.glb",
+        "preview": "Previews\\shopping-basket.png",
+        "size_kb": 26,
+        "vertices": 464
+    },
+    {
+        "name": "shopping-cart",
+        "glb": "models\\shopping-cart.glb",
+        "preview": "Previews\\shopping-cart.png",
+        "size_kb": 32,
+        "vertices": 640
+    },
+    {
+        "name": "wall-corner",
+        "glb": "models\\wall-corner.glb",
+        "preview": "Previews\\wall-corner.png",
+        "size_kb": 13,
+        "vertices": 114
+    },
+    {
+        "name": "wall-door-rotate",
+        "glb": "models\\wall-door-rotate.glb",
+        "preview": "Previews\\wall-door-rotate.png",
+        "size_kb": 35,
+        "vertices": 521
+    },
+    {
+        "name": "wall-window",
+        "glb": "models\\wall-window.glb",
+        "preview": "Previews\\wall-window.png",
+        "size_kb": 19,
+        "vertices": 256
+    },
+    {
+        "name": "wall",
+        "glb": "models\\wall.glb",
+        "preview": "Previews\\wall.png",
+        "size_kb": 11,
+        "vertices": 54
+    }
+]

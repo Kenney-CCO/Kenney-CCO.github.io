@@ -1,0 +1,429 @@
+[
+    {
+        "name": "arrow-basic",
+        "glb": "models\\arrow-basic.glb",
+        "preview": "Previews\\arrow-basic.png",
+        "size_kb": 9,
+        "vertices": 36
+    },
+    {
+        "name": "arrow",
+        "glb": "models\\arrow.glb",
+        "preview": "Previews\\arrow.png",
+        "size_kb": 10,
+        "vertices": 42
+    },
+    {
+        "name": "box-large",
+        "glb": "models\\box-large.glb",
+        "preview": "Previews\\box-large.png",
+        "size_kb": 10,
+        "vertices": 48
+    },
+    {
+        "name": "box-long",
+        "glb": "models\\box-long.glb",
+        "preview": "Previews\\box-long.png",
+        "size_kb": 10,
+        "vertices": 48
+    },
+    {
+        "name": "box-small",
+        "glb": "models\\box-small.glb",
+        "preview": "Previews\\box-small.png",
+        "size_kb": 10,
+        "vertices": 48
+    },
+    {
+        "name": "box-wide",
+        "glb": "models\\box-wide.glb",
+        "preview": "Previews\\box-wide.png",
+        "size_kb": 10,
+        "vertices": 48
+    },
+    {
+        "name": "conveyor-bars-fence",
+        "glb": "models\\conveyor-bars-fence.glb",
+        "preview": "Previews\\conveyor-bars-fence.png",
+        "size_kb": 27,
+        "vertices": 504
+    },
+    {
+        "name": "conveyor-bars-high",
+        "glb": "models\\conveyor-bars-high.glb",
+        "preview": "Previews\\conveyor-bars-high.png",
+        "size_kb": 20,
+        "vertices": 316
+    },
+    {
+        "name": "conveyor-bars-sides",
+        "glb": "models\\conveyor-bars-sides.glb",
+        "preview": "Previews\\conveyor-bars-sides.png",
+        "size_kb": 19,
+        "vertices": 280
+    },
+    {
+        "name": "conveyor-bars-stripe-fence",
+        "glb": "models\\conveyor-bars-stripe-fence.glb",
+        "preview": "Previews\\conveyor-bars-stripe-fence.png",
+        "size_kb": 34,
+        "vertices": 712
+    },
+    {
+        "name": "conveyor-bars-stripe-high",
+        "glb": "models\\conveyor-bars-stripe-high.glb",
+        "preview": "Previews\\conveyor-bars-stripe-high.png",
+        "size_kb": 27,
+        "vertices": 524
+    },
+    {
+        "name": "conveyor-bars-stripe-side",
+        "glb": "models\\conveyor-bars-stripe-side.glb",
+        "preview": "Previews\\conveyor-bars-stripe-side.png",
+        "size_kb": 26,
+        "vertices": 488
+    },
+    {
+        "name": "conveyor-bars-stripe",
+        "glb": "models\\conveyor-bars-stripe.glb",
+        "preview": "Previews\\conveyor-bars-stripe.png",
+        "size_kb": 23,
+        "vertices": 428
+    },
+    {
+        "name": "conveyor-bars",
+        "glb": "models\\conveyor-bars.glb",
+        "preview": "Previews\\conveyor-bars.png",
+        "size_kb": 16,
+        "vertices": 220
+    },
+    {
+        "name": "conveyor-long-sides",
+        "glb": "models\\conveyor-long-sides.glb",
+        "preview": "Previews\\conveyor-long-sides.png",
+        "size_kb": 14,
+        "vertices": 140
+    },
+    {
+        "name": "conveyor-long-stripe-sides",
+        "glb": "models\\conveyor-long-stripe-sides.glb",
+        "preview": "Previews\\conveyor-long-stripe-sides.png",
+        "size_kb": 18,
+        "vertices": 268
+    },
+    {
+        "name": "conveyor-long-stripe",
+        "glb": "models\\conveyor-long-stripe.glb",
+        "preview": "Previews\\conveyor-long-stripe.png",
+        "size_kb": 15,
+        "vertices": 208
+    },
+    {
+        "name": "conveyor-long",
+        "glb": "models\\conveyor-long.glb",
+        "preview": "Previews\\conveyor-long.png",
+        "size_kb": 13,
+        "vertices": 144
+    },
+    {
+        "name": "conveyor-sides",
+        "glb": "models\\conveyor-sides.glb",
+        "preview": "Previews\\conveyor-sides.png",
+        "size_kb": 14,
+        "vertices": 140
+    },
+    {
+        "name": "conveyor-stripe-sides",
+        "glb": "models\\conveyor-stripe-sides.glb",
+        "preview": "Previews\\conveyor-stripe-sides.png",
+        "size_kb": 18,
+        "vertices": 268
+    },
+    {
+        "name": "conveyor-stripe",
+        "glb": "models\\conveyor-stripe.glb",
+        "preview": "Previews\\conveyor-stripe.png",
+        "size_kb": 15,
+        "vertices": 208
+    },
+    {
+        "name": "conveyor",
+        "glb": "models\\conveyor.glb",
+        "preview": "Previews\\conveyor.png",
+        "size_kb": 13,
+        "vertices": 144
+    },
+    {
+        "name": "cover-bar",
+        "glb": "models\\cover-bar.glb",
+        "preview": "Previews\\cover-bar.png",
+        "size_kb": 16,
+        "vertices": 224
+    },
+    {
+        "name": "cover-corner",
+        "glb": "models\\cover-corner.glb",
+        "preview": "Previews\\cover-corner.png",
+        "size_kb": 12,
+        "vertices": 123
+    },
+    {
+        "name": "cover-hopper",
+        "glb": "models\\cover-hopper.glb",
+        "preview": "Previews\\cover-hopper.png",
+        "size_kb": 15,
+        "vertices": 204
+    },
+    {
+        "name": "cover-stripe-bar",
+        "glb": "models\\cover-stripe-bar.glb",
+        "preview": "Previews\\cover-stripe-bar.png",
+        "size_kb": 17,
+        "vertices": 242
+    },
+    {
+        "name": "cover-stripe-corner",
+        "glb": "models\\cover-stripe-corner.glb",
+        "preview": "Previews\\cover-stripe-corner.png",
+        "size_kb": 13,
+        "vertices": 139
+    },
+    {
+        "name": "cover-stripe-hopper",
+        "glb": "models\\cover-stripe-hopper.glb",
+        "preview": "Previews\\cover-stripe-hopper.png",
+        "size_kb": 16,
+        "vertices": 216
+    },
+    {
+        "name": "cover-stripe-top",
+        "glb": "models\\cover-stripe-top.glb",
+        "preview": "Previews\\cover-stripe-top.png",
+        "size_kb": 13,
+        "vertices": 144
+    },
+    {
+        "name": "cover-stripe-window",
+        "glb": "models\\cover-stripe-window.glb",
+        "preview": "Previews\\cover-stripe-window.png",
+        "size_kb": 15,
+        "vertices": 184
+    },
+    {
+        "name": "cover-stripe",
+        "glb": "models\\cover-stripe.glb",
+        "preview": "Previews\\cover-stripe.png",
+        "size_kb": 12,
+        "vertices": 120
+    },
+    {
+        "name": "cover-top",
+        "glb": "models\\cover-top.glb",
+        "preview": "Previews\\cover-top.png",
+        "size_kb": 13,
+        "vertices": 132
+    },
+    {
+        "name": "cover-window",
+        "glb": "models\\cover-window.glb",
+        "preview": "Previews\\cover-window.png",
+        "size_kb": 14,
+        "vertices": 170
+    },
+    {
+        "name": "cover",
+        "glb": "models\\cover.glb",
+        "preview": "Previews\\cover.png",
+        "size_kb": 12,
+        "vertices": 108
+    },
+    {
+        "name": "door-wide-closed",
+        "glb": "models\\door-wide-closed.glb",
+        "preview": "Previews\\door-wide-closed.png",
+        "size_kb": 9,
+        "vertices": 36
+    },
+    {
+        "name": "door-wide-half",
+        "glb": "models\\door-wide-half.glb",
+        "preview": "Previews\\door-wide-half.png",
+        "size_kb": 9,
+        "vertices": 32
+    },
+    {
+        "name": "door-wide-open",
+        "glb": "models\\door-wide-open.glb",
+        "preview": "Previews\\door-wide-open.png",
+        "size_kb": 9,
+        "vertices": 24
+    },
+    {
+        "name": "door",
+        "glb": "models\\door.glb",
+        "preview": "Previews\\door.png",
+        "size_kb": 14,
+        "vertices": 80
+    },
+    {
+        "name": "floor-large",
+        "glb": "models\\floor-large.glb",
+        "preview": "Previews\\floor-large.png",
+        "size_kb": 8,
+        "vertices": 4
+    },
+    {
+        "name": "floor",
+        "glb": "models\\floor.glb",
+        "preview": "Previews\\floor.png",
+        "size_kb": 8,
+        "vertices": 4
+    },
+    {
+        "name": "robot-arm-a",
+        "glb": "models\\robot-arm-a.glb",
+        "preview": "Previews\\robot-arm-a.png",
+        "size_kb": 42,
+        "vertices": 786
+    },
+    {
+        "name": "robot-arm-b",
+        "glb": "models\\robot-arm-b.glb",
+        "preview": "Previews\\robot-arm-b.png",
+        "size_kb": 38,
+        "vertices": 712
+    },
+    {
+        "name": "scanner-high",
+        "glb": "models\\scanner-high.glb",
+        "preview": "Previews\\scanner-high.png",
+        "size_kb": 14,
+        "vertices": 168
+    },
+    {
+        "name": "scanner-low",
+        "glb": "models\\scanner-low.glb",
+        "preview": "Previews\\scanner-low.png",
+        "size_kb": 14,
+        "vertices": 168
+    },
+    {
+        "name": "structure-corner-inner",
+        "glb": "models\\structure-corner-inner.glb",
+        "preview": "Previews\\structure-corner-inner.png",
+        "size_kb": 11,
+        "vertices": 92
+    },
+    {
+        "name": "structure-corner-outer",
+        "glb": "models\\structure-corner-outer.glb",
+        "preview": "Previews\\structure-corner-outer.png",
+        "size_kb": 11,
+        "vertices": 92
+    },
+    {
+        "name": "structure-doorway-wide",
+        "glb": "models\\structure-doorway-wide.glb",
+        "preview": "Previews\\structure-doorway-wide.png",
+        "size_kb": 11,
+        "vertices": 86
+    },
+    {
+        "name": "structure-doorway",
+        "glb": "models\\structure-doorway.glb",
+        "preview": "Previews\\structure-doorway.png",
+        "size_kb": 12,
+        "vertices": 104
+    },
+    {
+        "name": "structure-high",
+        "glb": "models\\structure-high.glb",
+        "preview": "Previews\\structure-high.png",
+        "size_kb": 13,
+        "vertices": 144
+    },
+    {
+        "name": "structure-medium",
+        "glb": "models\\structure-medium.glb",
+        "preview": "Previews\\structure-medium.png",
+        "size_kb": 13,
+        "vertices": 144
+    },
+    {
+        "name": "structure-short",
+        "glb": "models\\structure-short.glb",
+        "preview": "Previews\\structure-short.png",
+        "size_kb": 13,
+        "vertices": 144
+    },
+    {
+        "name": "structure-tall",
+        "glb": "models\\structure-tall.glb",
+        "preview": "Previews\\structure-tall.png",
+        "size_kb": 13,
+        "vertices": 144
+    },
+    {
+        "name": "structure-wall",
+        "glb": "models\\structure-wall.glb",
+        "preview": "Previews\\structure-wall.png",
+        "size_kb": 10,
+        "vertices": 52
+    },
+    {
+        "name": "structure-window-wide",
+        "glb": "models\\structure-window-wide.glb",
+        "preview": "Previews\\structure-window-wide.png",
+        "size_kb": 14,
+        "vertices": 156
+    },
+    {
+        "name": "structure-window",
+        "glb": "models\\structure-window.glb",
+        "preview": "Previews\\structure-window.png",
+        "size_kb": 14,
+        "vertices": 156
+    },
+    {
+        "name": "structure-yellow-high",
+        "glb": "models\\structure-yellow-high.glb",
+        "preview": "Previews\\structure-yellow-high.png",
+        "size_kb": 14,
+        "vertices": 160
+    },
+    {
+        "name": "structure-yellow-medium",
+        "glb": "models\\structure-yellow-medium.glb",
+        "preview": "Previews\\structure-yellow-medium.png",
+        "size_kb": 14,
+        "vertices": 160
+    },
+    {
+        "name": "structure-yellow-short",
+        "glb": "models\\structure-yellow-short.glb",
+        "preview": "Previews\\structure-yellow-short.png",
+        "size_kb": 13,
+        "vertices": 144
+    },
+    {
+        "name": "structure-yellow-tall",
+        "glb": "models\\structure-yellow-tall.glb",
+        "preview": "Previews\\structure-yellow-tall.png",
+        "size_kb": 14,
+        "vertices": 160
+    },
+    {
+        "name": "top-large",
+        "glb": "models\\top-large.glb",
+        "preview": "Previews\\top-large.png",
+        "size_kb": 8,
+        "vertices": 4
+    },
+    {
+        "name": "top",
+        "glb": "models\\top.glb",
+        "preview": "Previews\\top.png",
+        "size_kb": 8,
+        "vertices": 4
+    }
+]

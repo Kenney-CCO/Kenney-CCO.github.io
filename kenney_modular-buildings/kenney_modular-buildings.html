@@ -1,0 +1,969 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Kenney Modular Buildings</title>
+    <meta name="description" content="Game assets overview">
+    <meta name="author" content="Kenney">
+    <style>
+        body {
+            font-family: system-ui;
+            font-size: 0.9em;
+            font-weight: 600;
+            color: #d7d9da;
+            background-color: #171B21;
+            margin: 2em auto;
+            max-width: 1120px;
+            text-align: center;
+        }
+        h1 { color: #FFF; }
+        .back-link {
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            font-size: 1.5em;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .search-container {
+            margin-bottom: 1em;
+        }
+        .search-input {
+            padding: 10px;
+            width: 50%;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #555;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .package {
+            width: 120px;
+            text-align: center;
+            background: #2f333a;
+            padding: 10px;
+            border-radius: 5px;
+            position: relative;
+        }
+        .package img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            cursor: grab;
+        }
+        .package img:active {
+            cursor: grabbing;
+        }
+        .tooltip {
+            visibility: hidden;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            border-radius: 5px;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            font-size: 0.8em;
+            pointer-events: none;
+        }
+        .package:hover .tooltip {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <a href="/index.html" class="back-link">Back</a>
+    <h1>Kenney Modular Buildings</h1>
+    <div class="search-container">
+        <input type="text" id="search" class="search-input" placeholder="Search models...">
+    </div>
+    <div class="gallery" id="gallery">
+        
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-block">
+            <a href="models\building-block.glb" draggable="true">
+                <img src="Previews\building-block.png" alt="building-block">
+            </a>
+            <div>building-block</div>
+            <div class="tooltip">Size: 9 KB<br>Vertices: 24</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-corner-bottom">
+            <a href="models\building-corner-bottom.glb" draggable="true">
+                <img src="Previews\building-corner-bottom.png" alt="building-corner-bottom">
+            </a>
+            <div>building-corner-bottom</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 56</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-corner-top">
+            <a href="models\building-corner-top.glb" draggable="true">
+                <img src="Previews\building-corner-top.png" alt="building-corner-top">
+            </a>
+            <div>building-corner-top</div>
+            <div class="tooltip">Size: 9 KB<br>Vertices: 28</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-corner-window-middle">
+            <a href="models\building-corner-window-middle.glb" draggable="true">
+                <img src="Previews\building-corner-window-middle.png" alt="building-corner-window-middle">
+            </a>
+            <div>building-corner-window-middle</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 54</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-corner-window-narrow">
+            <a href="models\building-corner-window-narrow.glb" draggable="true">
+                <img src="Previews\building-corner-window-narrow.png" alt="building-corner-window-narrow">
+            </a>
+            <div>building-corner-window-narrow</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 54</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-corner-window-sill">
+            <a href="models\building-corner-window-sill.glb" draggable="true">
+                <img src="Previews\building-corner-window-sill.png" alt="building-corner-window-sill">
+            </a>
+            <div>building-corner-window-sill</div>
+            <div class="tooltip">Size: 13 KB<br>Vertices: 128</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-corner-window-top-round">
+            <a href="models\building-corner-window-top-round.glb" draggable="true">
+                <img src="Previews\building-corner-window-top-round.png" alt="building-corner-window-top-round">
+            </a>
+            <div>building-corner-window-top-round</div>
+            <div class="tooltip">Size: 11 KB<br>Vertices: 72</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-corner-window-top-square">
+            <a href="models\building-corner-window-top-square.glb" draggable="true">
+                <img src="Previews\building-corner-window-top-square.png" alt="building-corner-window-top-square">
+            </a>
+            <div>building-corner-window-top-square</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 54</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-corner-window">
+            <a href="models\building-corner-window.glb" draggable="true">
+                <img src="Previews\building-corner-window.png" alt="building-corner-window">
+            </a>
+            <div>building-corner-window</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 54</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-corner">
+            <a href="models\building-corner.glb" draggable="true">
+                <img src="Previews\building-corner.png" alt="building-corner">
+            </a>
+            <div>building-corner</div>
+            <div class="tooltip">Size: 9 KB<br>Vertices: 30</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-door-window-narrow">
+            <a href="models\building-door-window-narrow.glb" draggable="true">
+                <img src="Previews\building-door-window-narrow.png" alt="building-door-window-narrow">
+            </a>
+            <div>building-door-window-narrow</div>
+            <div class="tooltip">Size: 11 KB<br>Vertices: 72</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-door-window">
+            <a href="models\building-door-window.glb" draggable="true">
+                <img src="Previews\building-door-window.png" alt="building-door-window">
+            </a>
+            <div>building-door-window</div>
+            <div class="tooltip">Size: 11 KB<br>Vertices: 72</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-door">
+            <a href="models\building-door.glb" draggable="true">
+                <img src="Previews\building-door.png" alt="building-door">
+            </a>
+            <div>building-door</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 48</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-edges-door">
+            <a href="models\building-edges-door.glb" draggable="true">
+                <img src="Previews\building-edges-door.png" alt="building-edges-door">
+            </a>
+            <div>building-edges-door</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 60</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-sample-house-a">
+            <a href="models\building-sample-house-a.glb" draggable="true">
+                <img src="Previews\building-sample-house-a.png" alt="building-sample-house-a">
+            </a>
+            <div>building-sample-house-a</div>
+            <div class="tooltip">Size: 26 KB<br>Vertices: 512</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-sample-house-b">
+            <a href="models\building-sample-house-b.glb" draggable="true">
+                <img src="Previews\building-sample-house-b.png" alt="building-sample-house-b">
+            </a>
+            <div>building-sample-house-b</div>
+            <div class="tooltip">Size: 30 KB<br>Vertices: 620</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-sample-house-c">
+            <a href="models\building-sample-house-c.glb" draggable="true">
+                <img src="Previews\building-sample-house-c.png" alt="building-sample-house-c">
+            </a>
+            <div>building-sample-house-c</div>
+            <div class="tooltip">Size: 28 KB<br>Vertices: 580</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-sample-tower-a">
+            <a href="models\building-sample-tower-a.glb" draggable="true">
+                <img src="Previews\building-sample-tower-a.png" alt="building-sample-tower-a">
+            </a>
+            <div>building-sample-tower-a</div>
+            <div class="tooltip">Size: 31 KB<br>Vertices: 654</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-sample-tower-b">
+            <a href="models\building-sample-tower-b.glb" draggable="true">
+                <img src="Previews\building-sample-tower-b.png" alt="building-sample-tower-b">
+            </a>
+            <div>building-sample-tower-b</div>
+            <div class="tooltip">Size: 27 KB<br>Vertices: 524</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-sample-tower-c">
+            <a href="models\building-sample-tower-c.glb" draggable="true">
+                <img src="Previews\building-sample-tower-c.png" alt="building-sample-tower-c">
+            </a>
+            <div>building-sample-tower-c</div>
+            <div class="tooltip">Size: 30 KB<br>Vertices: 620</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-sample-tower-d">
+            <a href="models\building-sample-tower-d.glb" draggable="true">
+                <img src="Previews\building-sample-tower-d.png" alt="building-sample-tower-d">
+            </a>
+            <div>building-sample-tower-d</div>
+            <div class="tooltip">Size: 37 KB<br>Vertices: 832</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-steps-narrow-windows-round">
+            <a href="models\building-steps-narrow-windows-round.glb" draggable="true">
+                <img src="Previews\building-steps-narrow-windows-round.png" alt="building-steps-narrow-windows-round">
+            </a>
+            <div>building-steps-narrow-windows-round</div>
+            <div class="tooltip">Size: 15 KB<br>Vertices: 208</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-steps-narrow-windows">
+            <a href="models\building-steps-narrow-windows.glb" draggable="true">
+                <img src="Previews\building-steps-narrow-windows.png" alt="building-steps-narrow-windows">
+            </a>
+            <div>building-steps-narrow-windows</div>
+            <div class="tooltip">Size: 14 KB<br>Vertices: 172</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-steps-narrow">
+            <a href="models\building-steps-narrow.glb" draggable="true">
+                <img src="Previews\building-steps-narrow.png" alt="building-steps-narrow">
+            </a>
+            <div>building-steps-narrow</div>
+            <div class="tooltip">Size: 12 KB<br>Vertices: 124</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-steps-wide">
+            <a href="models\building-steps-wide.glb" draggable="true">
+                <img src="Previews\building-steps-wide.png" alt="building-steps-wide">
+            </a>
+            <div>building-steps-wide</div>
+            <div class="tooltip">Size: 13 KB<br>Vertices: 136</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-window-awnings">
+            <a href="models\building-window-awnings.glb" draggable="true">
+                <img src="Previews\building-window-awnings.png" alt="building-window-awnings">
+            </a>
+            <div>building-window-awnings</div>
+            <div class="tooltip">Size: 15 KB<br>Vertices: 188</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-window-balcony">
+            <a href="models\building-window-balcony.glb" draggable="true">
+                <img src="Previews\building-window-balcony.png" alt="building-window-balcony">
+            </a>
+            <div>building-window-balcony</div>
+            <div class="tooltip">Size: 12 KB<br>Vertices: 116</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-window-door-window-round">
+            <a href="models\building-window-door-window-round.glb" draggable="true">
+                <img src="Previews\building-window-door-window-round.png" alt="building-window-door-window-round">
+            </a>
+            <div>building-window-door-window-round</div>
+            <div class="tooltip">Size: 13 KB<br>Vertices: 132</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-window-door-window">
+            <a href="models\building-window-door-window.glb" draggable="true">
+                <img src="Previews\building-window-door-window.png" alt="building-window-door-window">
+            </a>
+            <div>building-window-door-window</div>
+            <div class="tooltip">Size: 11 KB<br>Vertices: 96</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-window-large-left">
+            <a href="models\building-window-large-left.glb" draggable="true">
+                <img src="Previews\building-window-large-left.png" alt="building-window-large-left">
+            </a>
+            <div>building-window-large-left</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 42</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-window-large-middle">
+            <a href="models\building-window-large-middle.glb" draggable="true">
+                <img src="Previews\building-window-large-middle.png" alt="building-window-large-middle">
+            </a>
+            <div>building-window-large-middle</div>
+            <div class="tooltip">Size: 9 KB<br>Vertices: 36</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-window-large-right">
+            <a href="models\building-window-large-right.glb" draggable="true">
+                <img src="Previews\building-window-large-right.png" alt="building-window-large-right">
+            </a>
+            <div>building-window-large-right</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 42</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-window-large">
+            <a href="models\building-window-large.glb" draggable="true">
+                <img src="Previews\building-window-large.png" alt="building-window-large">
+            </a>
+            <div>building-window-large</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 48</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-window-left-sill">
+            <a href="models\building-window-left-sill.glb" draggable="true">
+                <img src="Previews\building-window-left-sill.png" alt="building-window-left-sill">
+            </a>
+            <div>building-window-left-sill</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 68</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-window-left">
+            <a href="models\building-window-left.glb" draggable="true">
+                <img src="Previews\building-window-left.png" alt="building-window-left">
+            </a>
+            <div>building-window-left</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 48</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-window-right-sill">
+            <a href="models\building-window-right-sill.glb" draggable="true">
+                <img src="Previews\building-window-right-sill.png" alt="building-window-right-sill">
+            </a>
+            <div>building-window-right-sill</div>
+            <div class="tooltip">Size: 12 KB<br>Vertices: 120</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-window-right">
+            <a href="models\building-window-right.glb" draggable="true">
+                <img src="Previews\building-window-right.png" alt="building-window-right">
+            </a>
+            <div>building-window-right</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 48</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-window-sill">
+            <a href="models\building-window-sill.glb" draggable="true">
+                <img src="Previews\building-window-sill.png" alt="building-window-sill">
+            </a>
+            <div>building-window-sill</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 68</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-window-wide-sill">
+            <a href="models\building-window-wide-sill.glb" draggable="true">
+                <img src="Previews\building-window-wide-sill.png" alt="building-window-wide-sill">
+            </a>
+            <div>building-window-wide-sill</div>
+            <div class="tooltip">Size: 11 KB<br>Vertices: 68</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-window-wide">
+            <a href="models\building-window-wide.glb" draggable="true">
+                <img src="Previews\building-window-wide.png" alt="building-window-wide">
+            </a>
+            <div>building-window-wide</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 48</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-window">
+            <a href="models\building-window.glb" draggable="true">
+                <img src="Previews\building-window.png" alt="building-window">
+            </a>
+            <div>building-window</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 48</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-windows-high-middle">
+            <a href="models\building-windows-high-middle.glb" draggable="true">
+                <img src="Previews\building-windows-high-middle.png" alt="building-windows-high-middle">
+            </a>
+            <div>building-windows-high-middle</div>
+            <div class="tooltip">Size: 11 KB<br>Vertices: 72</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-windows-high-top-round">
+            <a href="models\building-windows-high-top-round.glb" draggable="true">
+                <img src="Previews\building-windows-high-top-round.png" alt="building-windows-high-top-round">
+            </a>
+            <div>building-windows-high-top-round</div>
+            <div class="tooltip">Size: 12 KB<br>Vertices: 108</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-windows-high-top-square">
+            <a href="models\building-windows-high-top-square.glb" draggable="true">
+                <img src="Previews\building-windows-high-top-square.png" alt="building-windows-high-top-square">
+            </a>
+            <div>building-windows-high-top-square</div>
+            <div class="tooltip">Size: 11 KB<br>Vertices: 72</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-windows-round">
+            <a href="models\building-windows-round.glb" draggable="true">
+                <img src="Previews\building-windows-round.png" alt="building-windows-round">
+            </a>
+            <div>building-windows-round</div>
+            <div class="tooltip">Size: 12 KB<br>Vertices: 108</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-windows-sills-round">
+            <a href="models\building-windows-sills-round.glb" draggable="true">
+                <img src="Previews\building-windows-sills-round.png" alt="building-windows-sills-round">
+            </a>
+            <div>building-windows-sills-round</div>
+            <div class="tooltip">Size: 13 KB<br>Vertices: 148</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-windows-sills">
+            <a href="models\building-windows-sills.glb" draggable="true">
+                <img src="Previews\building-windows-sills.png" alt="building-windows-sills">
+            </a>
+            <div>building-windows-sills</div>
+            <div class="tooltip">Size: 12 KB<br>Vertices: 112</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="building-windows">
+            <a href="models\building-windows.glb" draggable="true">
+                <img src="Previews\building-windows.png" alt="building-windows">
+            </a>
+            <div>building-windows</div>
+            <div class="tooltip">Size: 11 KB<br>Vertices: 72</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="detail-ac-a">
+            <a href="models\detail-ac-a.glb" draggable="true">
+                <img src="Previews\detail-ac-a.png" alt="detail-ac-a">
+            </a>
+            <div>detail-ac-a</div>
+            <div class="tooltip">Size: 12 KB<br>Vertices: 96</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="detail-ac-b">
+            <a href="models\detail-ac-b.glb" draggable="true">
+                <img src="Previews\detail-ac-b.png" alt="detail-ac-b">
+            </a>
+            <div>detail-ac-b</div>
+            <div class="tooltip">Size: 13 KB<br>Vertices: 144</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="door-brown-glass">
+            <a href="models\door-brown-glass.glb" draggable="true">
+                <img src="Previews\door-brown-glass.png" alt="door-brown-glass">
+            </a>
+            <div>door-brown-glass</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 48</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="door-brown-window">
+            <a href="models\door-brown-window.glb" draggable="true">
+                <img src="Previews\door-brown-window.png" alt="door-brown-window">
+            </a>
+            <div>door-brown-window</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 48</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="door-brown">
+            <a href="models\door-brown.glb" draggable="true">
+                <img src="Previews\door-brown.png" alt="door-brown">
+            </a>
+            <div>door-brown</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 48</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="door-white-glass">
+            <a href="models\door-white-glass.glb" draggable="true">
+                <img src="Previews\door-white-glass.png" alt="door-white-glass">
+            </a>
+            <div>door-white-glass</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 48</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="door-white-window">
+            <a href="models\door-white-window.glb" draggable="true">
+                <img src="Previews\door-white-window.png" alt="door-white-window">
+            </a>
+            <div>door-white-window</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 48</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="door-white">
+            <a href="models\door-white.glb" draggable="true">
+                <img src="Previews\door-white.png" alt="door-white">
+            </a>
+            <div>door-white</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 48</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-flat-awning-a">
+            <a href="models\roof-flat-awning-a.glb" draggable="true">
+                <img src="Previews\roof-flat-awning-a.png" alt="roof-flat-awning-a">
+            </a>
+            <div>roof-flat-awning-a</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 52</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-flat-awning-b">
+            <a href="models\roof-flat-awning-b.glb" draggable="true">
+                <img src="Previews\roof-flat-awning-b.png" alt="roof-flat-awning-b">
+            </a>
+            <div>roof-flat-awning-b</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 40</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-flat-awning-c">
+            <a href="models\roof-flat-awning-c.glb" draggable="true">
+                <img src="Previews\roof-flat-awning-c.png" alt="roof-flat-awning-c">
+            </a>
+            <div>roof-flat-awning-c</div>
+            <div class="tooltip">Size: 12 KB<br>Vertices: 104</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-flat-border-center-corner">
+            <a href="models\roof-flat-border-center-corner.glb" draggable="true">
+                <img src="Previews\roof-flat-border-center-corner.png" alt="roof-flat-border-center-corner">
+            </a>
+            <div>roof-flat-border-center-corner</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 60</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-flat-border-center">
+            <a href="models\roof-flat-border-center.glb" draggable="true">
+                <img src="Previews\roof-flat-border-center.png" alt="roof-flat-border-center">
+            </a>
+            <div>roof-flat-border-center</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 48</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-flat-border-corner-slanted-passage">
+            <a href="models\roof-flat-border-corner-slanted-passage.glb" draggable="true">
+                <img src="Previews\roof-flat-border-corner-slanted-passage.png" alt="roof-flat-border-corner-slanted-passage">
+            </a>
+            <div>roof-flat-border-corner-slanted-passage</div>
+            <div class="tooltip">Size: 11 KB<br>Vertices: 72</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-flat-border-corner-slanted">
+            <a href="models\roof-flat-border-corner-slanted.glb" draggable="true">
+                <img src="Previews\roof-flat-border-corner-slanted.png" alt="roof-flat-border-corner-slanted">
+            </a>
+            <div>roof-flat-border-corner-slanted</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 54</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-flat-border-corner">
+            <a href="models\roof-flat-border-corner.glb" draggable="true">
+                <img src="Previews\roof-flat-border-corner.png" alt="roof-flat-border-corner">
+            </a>
+            <div>roof-flat-border-corner</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 42</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-flat-border-end">
+            <a href="models\roof-flat-border-end.glb" draggable="true">
+                <img src="Previews\roof-flat-border-end.png" alt="roof-flat-border-end">
+            </a>
+            <div>roof-flat-border-end</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 48</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-flat-border-side">
+            <a href="models\roof-flat-border-side.glb" draggable="true">
+                <img src="Previews\roof-flat-border-side.png" alt="roof-flat-border-side">
+            </a>
+            <div>roof-flat-border-side</div>
+            <div class="tooltip">Size: 9 KB<br>Vertices: 36</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-flat-border-straight">
+            <a href="models\roof-flat-border-straight.glb" draggable="true">
+                <img src="Previews\roof-flat-border-straight.png" alt="roof-flat-border-straight">
+            </a>
+            <div>roof-flat-border-straight</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 48</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-flat-center">
+            <a href="models\roof-flat-center.glb" draggable="true">
+                <img src="Previews\roof-flat-center.png" alt="roof-flat-center">
+            </a>
+            <div>roof-flat-center</div>
+            <div class="tooltip">Size: 9 KB<br>Vertices: 24</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-flat-corner-high">
+            <a href="models\roof-flat-corner-high.glb" draggable="true">
+                <img src="Previews\roof-flat-corner-high.png" alt="roof-flat-corner-high">
+            </a>
+            <div>roof-flat-corner-high</div>
+            <div class="tooltip">Size: 9 KB<br>Vertices: 30</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-flat-corner">
+            <a href="models\roof-flat-corner.glb" draggable="true">
+                <img src="Previews\roof-flat-corner.png" alt="roof-flat-corner">
+            </a>
+            <div>roof-flat-corner</div>
+            <div class="tooltip">Size: 9 KB<br>Vertices: 30</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-flat-detail-a">
+            <a href="models\roof-flat-detail-a.glb" draggable="true">
+                <img src="Previews\roof-flat-detail-a.png" alt="roof-flat-detail-a">
+            </a>
+            <div>roof-flat-detail-a</div>
+            <div class="tooltip">Size: 11 KB<br>Vertices: 88</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-flat-detail-b">
+            <a href="models\roof-flat-detail-b.glb" draggable="true">
+                <img src="Previews\roof-flat-detail-b.png" alt="roof-flat-detail-b">
+            </a>
+            <div>roof-flat-detail-b</div>
+            <div class="tooltip">Size: 11 KB<br>Vertices: 80</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-flat-detail-c">
+            <a href="models\roof-flat-detail-c.glb" draggable="true">
+                <img src="Previews\roof-flat-detail-c.png" alt="roof-flat-detail-c">
+            </a>
+            <div>roof-flat-detail-c</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 68</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-flat-detail-d">
+            <a href="models\roof-flat-detail-d.glb" draggable="true">
+                <img src="Previews\roof-flat-detail-d.png" alt="roof-flat-detail-d">
+            </a>
+            <div>roof-flat-detail-d</div>
+            <div class="tooltip">Size: 11 KB<br>Vertices: 80</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-flat-top">
+            <a href="models\roof-flat-top.glb" draggable="true">
+                <img src="Previews\roof-flat-top.png" alt="roof-flat-top">
+            </a>
+            <div>roof-flat-top</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 48</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-gable-corner">
+            <a href="models\roof-gable-corner.glb" draggable="true">
+                <img src="Previews\roof-gable-corner.png" alt="roof-gable-corner">
+            </a>
+            <div>roof-gable-corner</div>
+            <div class="tooltip">Size: 9 KB<br>Vertices: 36</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-gable-end">
+            <a href="models\roof-gable-end.glb" draggable="true">
+                <img src="Previews\roof-gable-end.png" alt="roof-gable-end">
+            </a>
+            <div>roof-gable-end</div>
+            <div class="tooltip">Size: 9 KB<br>Vertices: 34</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-gable">
+            <a href="models\roof-gable.glb" draggable="true">
+                <img src="Previews\roof-gable.png" alt="roof-gable">
+            </a>
+            <div>roof-gable</div>
+            <div class="tooltip">Size: 9 KB<br>Vertices: 38</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-slanted-corner-a">
+            <a href="models\roof-slanted-corner-a.glb" draggable="true">
+                <img src="Previews\roof-slanted-corner-a.png" alt="roof-slanted-corner-a">
+            </a>
+            <div>roof-slanted-corner-a</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 58</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-slanted-corner-b">
+            <a href="models\roof-slanted-corner-b.glb" draggable="true">
+                <img src="Previews\roof-slanted-corner-b.png" alt="roof-slanted-corner-b">
+            </a>
+            <div>roof-slanted-corner-b</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 50</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-slanted-corner-c">
+            <a href="models\roof-slanted-corner-c.glb" draggable="true">
+                <img src="Previews\roof-slanted-corner-c.png" alt="roof-slanted-corner-c">
+            </a>
+            <div>roof-slanted-corner-c</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 44</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-slanted-corner-inner">
+            <a href="models\roof-slanted-corner-inner.glb" draggable="true">
+                <img src="Previews\roof-slanted-corner-inner.png" alt="roof-slanted-corner-inner">
+            </a>
+            <div>roof-slanted-corner-inner</div>
+            <div class="tooltip">Size: 9 KB<br>Vertices: 34</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-slanted-detail">
+            <a href="models\roof-slanted-detail.glb" draggable="true">
+                <img src="Previews\roof-slanted-detail.png" alt="roof-slanted-detail">
+            </a>
+            <div>roof-slanted-detail</div>
+            <div class="tooltip">Size: 11 KB<br>Vertices: 68</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-slanted-flat">
+            <a href="models\roof-slanted-flat.glb" draggable="true">
+                <img src="Previews\roof-slanted-flat.png" alt="roof-slanted-flat">
+            </a>
+            <div>roof-slanted-flat</div>
+            <div class="tooltip">Size: 9 KB<br>Vertices: 24</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-slanted-window">
+            <a href="models\roof-slanted-window.glb" draggable="true">
+                <img src="Previews\roof-slanted-window.png" alt="roof-slanted-window">
+            </a>
+            <div>roof-slanted-window</div>
+            <div class="tooltip">Size: 13 KB<br>Vertices: 134</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="roof-slanted">
+            <a href="models\roof-slanted.glb" draggable="true">
+                <img src="Previews\roof-slanted.png" alt="roof-slanted">
+            </a>
+            <div>roof-slanted</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 48</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="window-brown-detailed">
+            <a href="models\window-brown-detailed.glb" draggable="true">
+                <img src="Previews\window-brown-detailed.png" alt="window-brown-detailed">
+            </a>
+            <div>window-brown-detailed</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 52</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="window-brown-large">
+            <a href="models\window-brown-large.glb" draggable="true">
+                <img src="Previews\window-brown-large.png" alt="window-brown-large">
+            </a>
+            <div>window-brown-large</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 56</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="window-brown-narrow">
+            <a href="models\window-brown-narrow.glb" draggable="true">
+                <img src="Previews\window-brown-narrow.png" alt="window-brown-narrow">
+            </a>
+            <div>window-brown-narrow</div>
+            <div class="tooltip">Size: 12 KB<br>Vertices: 112</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="window-brown-round-low">
+            <a href="models\window-brown-round-low.glb" draggable="true">
+                <img src="Previews\window-brown-round-low.png" alt="window-brown-round-low">
+            </a>
+            <div>window-brown-round-low</div>
+            <div class="tooltip">Size: 11 KB<br>Vertices: 84</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="window-brown-round-middle">
+            <a href="models\window-brown-round-middle.glb" draggable="true">
+                <img src="Previews\window-brown-round-middle.png" alt="window-brown-round-middle">
+            </a>
+            <div>window-brown-round-middle</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 48</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="window-brown-round-narrow">
+            <a href="models\window-brown-round-narrow.glb" draggable="true">
+                <img src="Previews\window-brown-round-narrow.png" alt="window-brown-round-narrow">
+            </a>
+            <div>window-brown-round-narrow</div>
+            <div class="tooltip">Size: 11 KB<br>Vertices: 84</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="window-brown-round-top">
+            <a href="models\window-brown-round-top.glb" draggable="true">
+                <img src="Previews\window-brown-round-top.png" alt="window-brown-round-top">
+            </a>
+            <div>window-brown-round-top</div>
+            <div class="tooltip">Size: 11 KB<br>Vertices: 84</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="window-brown-round-wide">
+            <a href="models\window-brown-round-wide.glb" draggable="true">
+                <img src="Previews\window-brown-round-wide.png" alt="window-brown-round-wide">
+            </a>
+            <div>window-brown-round-wide</div>
+            <div class="tooltip">Size: 11 KB<br>Vertices: 84</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="window-brown-tall">
+            <a href="models\window-brown-tall.glb" draggable="true">
+                <img src="Previews\window-brown-tall.png" alt="window-brown-tall">
+            </a>
+            <div>window-brown-tall</div>
+            <div class="tooltip">Size: 12 KB<br>Vertices: 112</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="window-brown-wide">
+            <a href="models\window-brown-wide.glb" draggable="true">
+                <img src="Previews\window-brown-wide.png" alt="window-brown-wide">
+            </a>
+            <div>window-brown-wide</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 56</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="window-brown">
+            <a href="models\window-brown.glb" draggable="true">
+                <img src="Previews\window-brown.png" alt="window-brown">
+            </a>
+            <div>window-brown</div>
+            <div class="tooltip">Size: 12 KB<br>Vertices: 112</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="window-white-detailed">
+            <a href="models\window-white-detailed.glb" draggable="true">
+                <img src="Previews\window-white-detailed.png" alt="window-white-detailed">
+            </a>
+            <div>window-white-detailed</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 52</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="window-white-large">
+            <a href="models\window-white-large.glb" draggable="true">
+                <img src="Previews\window-white-large.png" alt="window-white-large">
+            </a>
+            <div>window-white-large</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 56</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="window-white-narrow">
+            <a href="models\window-white-narrow.glb" draggable="true">
+                <img src="Previews\window-white-narrow.png" alt="window-white-narrow">
+            </a>
+            <div>window-white-narrow</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 56</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="window-white-round-low">
+            <a href="models\window-white-round-low.glb" draggable="true">
+                <img src="Previews\window-white-round-low.png" alt="window-white-round-low">
+            </a>
+            <div>window-white-round-low</div>
+            <div class="tooltip">Size: 11 KB<br>Vertices: 84</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="window-white-round-middle">
+            <a href="models\window-white-round-middle.glb" draggable="true">
+                <img src="Previews\window-white-round-middle.png" alt="window-white-round-middle">
+            </a>
+            <div>window-white-round-middle</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 48</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="window-white-round-narrow">
+            <a href="models\window-white-round-narrow.glb" draggable="true">
+                <img src="Previews\window-white-round-narrow.png" alt="window-white-round-narrow">
+            </a>
+            <div>window-white-round-narrow</div>
+            <div class="tooltip">Size: 11 KB<br>Vertices: 84</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="window-white-round-top">
+            <a href="models\window-white-round-top.glb" draggable="true">
+                <img src="Previews\window-white-round-top.png" alt="window-white-round-top">
+            </a>
+            <div>window-white-round-top</div>
+            <div class="tooltip">Size: 11 KB<br>Vertices: 84</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="window-white-round-wide">
+            <a href="models\window-white-round-wide.glb" draggable="true">
+                <img src="Previews\window-white-round-wide.png" alt="window-white-round-wide">
+            </a>
+            <div>window-white-round-wide</div>
+            <div class="tooltip">Size: 11 KB<br>Vertices: 84</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="window-white-tall">
+            <a href="models\window-white-tall.glb" draggable="true">
+                <img src="Previews\window-white-tall.png" alt="window-white-tall">
+            </a>
+            <div>window-white-tall</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 56</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="window-white-wide">
+            <a href="models\window-white-wide.glb" draggable="true">
+                <img src="Previews\window-white-wide.png" alt="window-white-wide">
+            </a>
+            <div>window-white-wide</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 56</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="window-white">
+            <a href="models\window-white.glb" draggable="true">
+                <img src="Previews\window-white.png" alt="window-white">
+            </a>
+            <div>window-white</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 56</div>
+        </div>
+    </div>
+    <script>
+        function drag(event) {
+            event.dataTransfer.setData("text/plain", event.target.parentElement.href);
+        }
+        
+        document.getElementById("search").addEventListener("input", function() {
+            let filter = this.value.toLowerCase();
+            document.querySelectorAll(".package").forEach(item => {
+                item.style.display = item.getAttribute("data-name").includes(filter) ? "block" : "none";
+            });
+        });
+    </script>
+</body>
+</html>

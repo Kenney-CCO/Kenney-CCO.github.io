@@ -1,0 +1,897 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Kenney Holiday Kit</title>
+    <meta name="description" content="Game assets overview">
+    <meta name="author" content="Kenney">
+    <style>
+        body {
+            font-family: system-ui;
+            font-size: 0.9em;
+            font-weight: 600;
+            color: #d7d9da;
+            background-color: #171B21;
+            margin: 2em auto;
+            max-width: 1120px;
+            text-align: center;
+        }
+        h1 { color: #FFF; }
+        .back-link {
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            font-size: 1.5em;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .search-container {
+            margin-bottom: 1em;
+        }
+        .search-input {
+            padding: 10px;
+            width: 50%;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #555;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .package {
+            width: 120px;
+            text-align: center;
+            background: #2f333a;
+            padding: 10px;
+            border-radius: 5px;
+            position: relative;
+        }
+        .package img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            cursor: grab;
+        }
+        .package img:active {
+            cursor: grabbing;
+        }
+        .tooltip {
+            visibility: hidden;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            border-radius: 5px;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            font-size: 0.8em;
+            pointer-events: none;
+        }
+        .package:hover .tooltip {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <a href="/index.html" class="back-link">Back</a>
+    <h1>Kenney Holiday Kit</h1>
+    <div class="search-container">
+        <input type="text" id="search" class="search-input" placeholder="Search models...">
+    </div>
+    <div class="gallery" id="gallery">
+        
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="bench-short">
+            <a href="models\bench-short.glb" draggable="true">
+                <img src="Previews\bench-short.png" alt="bench-short">
+            </a>
+            <div>bench-short</div>
+            <div class="tooltip">Size: 23 KB<br>Vertices: 276</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="bench">
+            <a href="models\bench.glb" draggable="true">
+                <img src="Previews\bench.png" alt="bench">
+            </a>
+            <div>bench</div>
+            <div class="tooltip">Size: 23 KB<br>Vertices: 276</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-corner-bottom">
+            <a href="models\cabin-corner-bottom.glb" draggable="true">
+                <img src="Previews\cabin-corner-bottom.png" alt="cabin-corner-bottom">
+            </a>
+            <div>cabin-corner-bottom</div>
+            <div class="tooltip">Size: 16 KB<br>Vertices: 68</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-corner-logs">
+            <a href="models\cabin-corner-logs.glb" draggable="true">
+                <img src="Previews\cabin-corner-logs.png" alt="cabin-corner-logs">
+            </a>
+            <div>cabin-corner-logs</div>
+            <div class="tooltip">Size: 23 KB<br>Vertices: 264</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-corner">
+            <a href="models\cabin-corner.glb" draggable="true">
+                <img src="Previews\cabin-corner.png" alt="cabin-corner">
+            </a>
+            <div>cabin-corner</div>
+            <div class="tooltip">Size: 14 KB<br>Vertices: 20</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-door-rotate">
+            <a href="models\cabin-door-rotate.glb" draggable="true">
+                <img src="Previews\cabin-door-rotate.png" alt="cabin-door-rotate">
+            </a>
+            <div>cabin-door-rotate</div>
+            <div class="tooltip">Size: 31 KB<br>Vertices: 410</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-doorway-center">
+            <a href="models\cabin-doorway-center.glb" draggable="true">
+                <img src="Previews\cabin-doorway-center.png" alt="cabin-doorway-center">
+            </a>
+            <div>cabin-doorway-center</div>
+            <div class="tooltip">Size: 15 KB<br>Vertices: 48</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-doorway-left">
+            <a href="models\cabin-doorway-left.glb" draggable="true">
+                <img src="Previews\cabin-doorway-left.png" alt="cabin-doorway-left">
+            </a>
+            <div>cabin-doorway-left</div>
+            <div class="tooltip">Size: 20 KB<br>Vertices: 186</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-doorway-right">
+            <a href="models\cabin-doorway-right.glb" draggable="true">
+                <img src="Previews\cabin-doorway-right.png" alt="cabin-doorway-right">
+            </a>
+            <div>cabin-doorway-right</div>
+            <div class="tooltip">Size: 20 KB<br>Vertices: 187</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-doorway">
+            <a href="models\cabin-doorway.glb" draggable="true">
+                <img src="Previews\cabin-doorway.png" alt="cabin-doorway">
+            </a>
+            <div>cabin-doorway</div>
+            <div class="tooltip">Size: 25 KB<br>Vertices: 328</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-fence">
+            <a href="models\cabin-fence.glb" draggable="true">
+                <img src="Previews\cabin-fence.png" alt="cabin-fence">
+            </a>
+            <div>cabin-fence</div>
+            <div class="tooltip">Size: 17 KB<br>Vertices: 112</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-overhang-door-rotate">
+            <a href="models\cabin-overhang-door-rotate.glb" draggable="true">
+                <img src="Previews\cabin-overhang-door-rotate.png" alt="cabin-overhang-door-rotate">
+            </a>
+            <div>cabin-overhang-door-rotate</div>
+            <div class="tooltip">Size: 35 KB<br>Vertices: 512</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-overhang-doorway">
+            <a href="models\cabin-overhang-doorway.glb" draggable="true">
+                <img src="Previews\cabin-overhang-doorway.png" alt="cabin-overhang-doorway">
+            </a>
+            <div>cabin-overhang-doorway</div>
+            <div class="tooltip">Size: 26 KB<br>Vertices: 364</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-roof-chimney">
+            <a href="models\cabin-roof-chimney.glb" draggable="true">
+                <img src="Previews\cabin-roof-chimney.png" alt="cabin-roof-chimney">
+            </a>
+            <div>cabin-roof-chimney</div>
+            <div class="tooltip">Size: 20 KB<br>Vertices: 186</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-roof-corner">
+            <a href="models\cabin-roof-corner.glb" draggable="true">
+                <img src="Previews\cabin-roof-corner.png" alt="cabin-roof-corner">
+            </a>
+            <div>cabin-roof-corner</div>
+            <div class="tooltip">Size: 20 KB<br>Vertices: 197</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-roof-dormer">
+            <a href="models\cabin-roof-dormer.glb" draggable="true">
+                <img src="Previews\cabin-roof-dormer.png" alt="cabin-roof-dormer">
+            </a>
+            <div>cabin-roof-dormer</div>
+            <div class="tooltip">Size: 20 KB<br>Vertices: 203</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-roof-point">
+            <a href="models\cabin-roof-point.glb" draggable="true">
+                <img src="Previews\cabin-roof-point.png" alt="cabin-roof-point">
+            </a>
+            <div>cabin-roof-point</div>
+            <div class="tooltip">Size: 17 KB<br>Vertices: 102</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-roof-snow-chimney">
+            <a href="models\cabin-roof-snow-chimney.glb" draggable="true">
+                <img src="Previews\cabin-roof-snow-chimney.png" alt="cabin-roof-snow-chimney">
+            </a>
+            <div>cabin-roof-snow-chimney</div>
+            <div class="tooltip">Size: 25 KB<br>Vertices: 330</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-roof-snow-corner">
+            <a href="models\cabin-roof-snow-corner.glb" draggable="true">
+                <img src="Previews\cabin-roof-snow-corner.png" alt="cabin-roof-snow-corner">
+            </a>
+            <div>cabin-roof-snow-corner</div>
+            <div class="tooltip">Size: 26 KB<br>Vertices: 365</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-roof-snow-dormer">
+            <a href="models\cabin-roof-snow-dormer.glb" draggable="true">
+                <img src="Previews\cabin-roof-snow-dormer.png" alt="cabin-roof-snow-dormer">
+            </a>
+            <div>cabin-roof-snow-dormer</div>
+            <div class="tooltip">Size: 23 KB<br>Vertices: 271</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-roof-snow-point">
+            <a href="models\cabin-roof-snow-point.glb" draggable="true">
+                <img src="Previews\cabin-roof-snow-point.png" alt="cabin-roof-snow-point">
+            </a>
+            <div>cabin-roof-snow-point</div>
+            <div class="tooltip">Size: 24 KB<br>Vertices: 314</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-roof-snow">
+            <a href="models\cabin-roof-snow.glb" draggable="true">
+                <img src="Previews\cabin-roof-snow.png" alt="cabin-roof-snow">
+            </a>
+            <div>cabin-roof-snow</div>
+            <div class="tooltip">Size: 21 KB<br>Vertices: 214</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-roof-top">
+            <a href="models\cabin-roof-top.glb" draggable="true">
+                <img src="Previews\cabin-roof-top.png" alt="cabin-roof-top">
+            </a>
+            <div>cabin-roof-top</div>
+            <div class="tooltip">Size: 14 KB<br>Vertices: 24</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-roof">
+            <a href="models\cabin-roof.glb" draggable="true">
+                <img src="Previews\cabin-roof.png" alt="cabin-roof">
+            </a>
+            <div>cabin-roof</div>
+            <div class="tooltip">Size: 16 KB<br>Vertices: 70</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-wall-low">
+            <a href="models\cabin-wall-low.glb" draggable="true">
+                <img src="Previews\cabin-wall-low.png" alt="cabin-wall-low">
+            </a>
+            <div>cabin-wall-low</div>
+            <div class="tooltip">Size: 15 KB<br>Vertices: 63</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-wall-roof-center">
+            <a href="models\cabin-wall-roof-center.glb" draggable="true">
+                <img src="Previews\cabin-wall-roof-center.png" alt="cabin-wall-roof-center">
+            </a>
+            <div>cabin-wall-roof-center</div>
+            <div class="tooltip">Size: 18 KB<br>Vertices: 134</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-wall-roof">
+            <a href="models\cabin-wall-roof.glb" draggable="true">
+                <img src="Previews\cabin-wall-roof.png" alt="cabin-wall-roof">
+            </a>
+            <div>cabin-wall-roof</div>
+            <div class="tooltip">Size: 18 KB<br>Vertices: 136</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-wall-wreath">
+            <a href="models\cabin-wall-wreath.glb" draggable="true">
+                <img src="Previews\cabin-wall-wreath.png" alt="cabin-wall-wreath">
+            </a>
+            <div>cabin-wall-wreath</div>
+            <div class="tooltip">Size: 37 KB<br>Vertices: 682</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-wall">
+            <a href="models\cabin-wall.glb" draggable="true">
+                <img src="Previews\cabin-wall.png" alt="cabin-wall">
+            </a>
+            <div>cabin-wall</div>
+            <div class="tooltip">Size: 18 KB<br>Vertices: 138</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-window-a">
+            <a href="models\cabin-window-a.glb" draggable="true">
+                <img src="Previews\cabin-window-a.png" alt="cabin-window-a">
+            </a>
+            <div>cabin-window-a</div>
+            <div class="tooltip">Size: 27 KB<br>Vertices: 400</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-window-b">
+            <a href="models\cabin-window-b.glb" draggable="true">
+                <img src="Previews\cabin-window-b.png" alt="cabin-window-b">
+            </a>
+            <div>cabin-window-b</div>
+            <div class="tooltip">Size: 26 KB<br>Vertices: 360</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-window-c">
+            <a href="models\cabin-window-c.glb" draggable="true">
+                <img src="Previews\cabin-window-c.png" alt="cabin-window-c">
+            </a>
+            <div>cabin-window-c</div>
+            <div class="tooltip">Size: 30 KB<br>Vertices: 480</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cabin-window-large">
+            <a href="models\cabin-window-large.glb" draggable="true">
+                <img src="Previews\cabin-window-large.png" alt="cabin-window-large">
+            </a>
+            <div>cabin-window-large</div>
+            <div class="tooltip">Size: 25 KB<br>Vertices: 328</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="candy-cane-green">
+            <a href="models\candy-cane-green.glb" draggable="true">
+                <img src="Previews\candy-cane-green.png" alt="candy-cane-green">
+            </a>
+            <div>candy-cane-green</div>
+            <div class="tooltip">Size: 18 KB<br>Vertices: 124</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="candy-cane-red">
+            <a href="models\candy-cane-red.glb" draggable="true">
+                <img src="Previews\candy-cane-red.png" alt="candy-cane-red">
+            </a>
+            <div>candy-cane-red</div>
+            <div class="tooltip">Size: 18 KB<br>Vertices: 124</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="festivus-pole">
+            <a href="models\festivus-pole.glb" draggable="true">
+                <img src="Previews\festivus-pole.png" alt="festivus-pole">
+            </a>
+            <div>festivus-pole</div>
+            <div class="tooltip">Size: 17 KB<br>Vertices: 112</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="floor-stone">
+            <a href="models\floor-stone.glb" draggable="true">
+                <img src="Previews\floor-stone.png" alt="floor-stone">
+            </a>
+            <div>floor-stone</div>
+            <div class="tooltip">Size: 16 KB<br>Vertices: 89</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="floor-wood-snow">
+            <a href="models\floor-wood-snow.glb" draggable="true">
+                <img src="Previews\floor-wood-snow.png" alt="floor-wood-snow">
+            </a>
+            <div>floor-wood-snow</div>
+            <div class="tooltip">Size: 20 KB<br>Vertices: 180</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="floor-wood">
+            <a href="models\floor-wood.glb" draggable="true">
+                <img src="Previews\floor-wood.png" alt="floor-wood">
+            </a>
+            <div>floor-wood</div>
+            <div class="tooltip">Size: 20 KB<br>Vertices: 180</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="gingerbread-man">
+            <a href="models\gingerbread-man.glb" draggable="true">
+                <img src="Previews\gingerbread-man.png" alt="gingerbread-man">
+            </a>
+            <div>gingerbread-man</div>
+            <div class="tooltip">Size: 22 KB<br>Vertices: 240</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="gingerbread-woman">
+            <a href="models\gingerbread-woman.glb" draggable="true">
+                <img src="Previews\gingerbread-woman.png" alt="gingerbread-woman">
+            </a>
+            <div>gingerbread-woman</div>
+            <div class="tooltip">Size: 27 KB<br>Vertices: 358</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="hanukkah-dreidel">
+            <a href="models\hanukkah-dreidel.glb" draggable="true">
+                <img src="Previews\hanukkah-dreidel.png" alt="hanukkah-dreidel">
+            </a>
+            <div>hanukkah-dreidel</div>
+            <div class="tooltip">Size: 16 KB<br>Vertices: 80</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="hanukkah-menorah-candles">
+            <a href="models\hanukkah-menorah-candles.glb" draggable="true">
+                <img src="Previews\hanukkah-menorah-candles.png" alt="hanukkah-menorah-candles">
+            </a>
+            <div>hanukkah-menorah-candles</div>
+            <div class="tooltip">Size: 71 KB<br>Vertices: 1638</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="hanukkah-menorah">
+            <a href="models\hanukkah-menorah.glb" draggable="true">
+                <img src="Previews\hanukkah-menorah.png" alt="hanukkah-menorah">
+            </a>
+            <div>hanukkah-menorah</div>
+            <div class="tooltip">Size: 42 KB<br>Vertices: 840</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="kwanzaa-kikombe">
+            <a href="models\kwanzaa-kikombe.glb" draggable="true">
+                <img src="Previews\kwanzaa-kikombe.png" alt="kwanzaa-kikombe">
+            </a>
+            <div>kwanzaa-kikombe</div>
+            <div class="tooltip">Size: 24 KB<br>Vertices: 304</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="kwanzaa-kinara-alternative">
+            <a href="models\kwanzaa-kinara-alternative.glb" draggable="true">
+                <img src="Previews\kwanzaa-kinara-alternative.png" alt="kwanzaa-kinara-alternative">
+            </a>
+            <div>kwanzaa-kinara-alternative</div>
+            <div class="tooltip">Size: 61 KB<br>Vertices: 1392</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="kwanzaa-kinara">
+            <a href="models\kwanzaa-kinara.glb" draggable="true">
+                <img src="Previews\kwanzaa-kinara.png" alt="kwanzaa-kinara">
+            </a>
+            <div>kwanzaa-kinara</div>
+            <div class="tooltip">Size: 68 KB<br>Vertices: 1592</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="lantern-hanging">
+            <a href="models\lantern-hanging.glb" draggable="true">
+                <img src="Previews\lantern-hanging.png" alt="lantern-hanging">
+            </a>
+            <div>lantern-hanging</div>
+            <div class="tooltip">Size: 23 KB<br>Vertices: 276</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="lantern">
+            <a href="models\lantern.glb" draggable="true">
+                <img src="Previews\lantern.png" alt="lantern">
+            </a>
+            <div>lantern</div>
+            <div class="tooltip">Size: 24 KB<br>Vertices: 306</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="lights-colored">
+            <a href="models\lights-colored.glb" draggable="true">
+                <img src="Previews\lights-colored.png" alt="lights-colored">
+            </a>
+            <div>lights-colored</div>
+            <div class="tooltip">Size: 66 KB<br>Vertices: 1548</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="lights-green">
+            <a href="models\lights-green.glb" draggable="true">
+                <img src="Previews\lights-green.png" alt="lights-green">
+            </a>
+            <div>lights-green</div>
+            <div class="tooltip">Size: 66 KB<br>Vertices: 1548</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="lights-red">
+            <a href="models\lights-red.glb" draggable="true">
+                <img src="Previews\lights-red.png" alt="lights-red">
+            </a>
+            <div>lights-red</div>
+            <div class="tooltip">Size: 66 KB<br>Vertices: 1548</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="nutcracker">
+            <a href="models\nutcracker.glb" draggable="true">
+                <img src="Previews\nutcracker.png" alt="nutcracker">
+            </a>
+            <div>nutcracker</div>
+            <div class="tooltip">Size: 62 KB<br>Vertices: 1413</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="present-a-cube">
+            <a href="models\present-a-cube.glb" draggable="true">
+                <img src="Previews\present-a-cube.png" alt="present-a-cube">
+            </a>
+            <div>present-a-cube</div>
+            <div class="tooltip">Size: 25 KB<br>Vertices: 318</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="present-a-rectangle">
+            <a href="models\present-a-rectangle.glb" draggable="true">
+                <img src="Previews\present-a-rectangle.png" alt="present-a-rectangle">
+            </a>
+            <div>present-a-rectangle</div>
+            <div class="tooltip">Size: 25 KB<br>Vertices: 318</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="present-a-round">
+            <a href="models\present-a-round.glb" draggable="true">
+                <img src="Previews\present-a-round.png" alt="present-a-round">
+            </a>
+            <div>present-a-round</div>
+            <div class="tooltip">Size: 25 KB<br>Vertices: 318</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="present-b-cube">
+            <a href="models\present-b-cube.glb" draggable="true">
+                <img src="Previews\present-b-cube.png" alt="present-b-cube">
+            </a>
+            <div>present-b-cube</div>
+            <div class="tooltip">Size: 27 KB<br>Vertices: 366</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="present-b-rectangle">
+            <a href="models\present-b-rectangle.glb" draggable="true">
+                <img src="Previews\present-b-rectangle.png" alt="present-b-rectangle">
+            </a>
+            <div>present-b-rectangle</div>
+            <div class="tooltip">Size: 27 KB<br>Vertices: 366</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="present-b-round">
+            <a href="models\present-b-round.glb" draggable="true">
+                <img src="Previews\present-b-round.png" alt="present-b-round">
+            </a>
+            <div>present-b-round</div>
+            <div class="tooltip">Size: 27 KB<br>Vertices: 366</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="reindeer">
+            <a href="models\reindeer.glb" draggable="true">
+                <img src="Previews\reindeer.png" alt="reindeer">
+            </a>
+            <div>reindeer</div>
+            <div class="tooltip">Size: 68 KB<br>Vertices: 1600</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="rocks-large">
+            <a href="models\rocks-large.glb" draggable="true">
+                <img src="Previews\rocks-large.png" alt="rocks-large">
+            </a>
+            <div>rocks-large</div>
+            <div class="tooltip">Size: 59 KB<br>Vertices: 1332</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="rocks-medium">
+            <a href="models\rocks-medium.glb" draggable="true">
+                <img src="Previews\rocks-medium.png" alt="rocks-medium">
+            </a>
+            <div>rocks-medium</div>
+            <div class="tooltip">Size: 35 KB<br>Vertices: 640</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="rocks-small">
+            <a href="models\rocks-small.glb" draggable="true">
+                <img src="Previews\rocks-small.png" alt="rocks-small">
+            </a>
+            <div>rocks-small</div>
+            <div class="tooltip">Size: 35 KB<br>Vertices: 640</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="sled-long">
+            <a href="models\sled-long.glb" draggable="true">
+                <img src="Previews\sled-long.png" alt="sled-long">
+            </a>
+            <div>sled-long</div>
+            <div class="tooltip">Size: 27 KB<br>Vertices: 388</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="sled">
+            <a href="models\sled.glb" draggable="true">
+                <img src="Previews\sled.png" alt="sled">
+            </a>
+            <div>sled</div>
+            <div class="tooltip">Size: 28 KB<br>Vertices: 424</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="snow-bunker">
+            <a href="models\snow-bunker.glb" draggable="true">
+                <img src="Previews\snow-bunker.png" alt="snow-bunker">
+            </a>
+            <div>snow-bunker</div>
+            <div class="tooltip">Size: 30 KB<br>Vertices: 480</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="snow-flat-large">
+            <a href="models\snow-flat-large.glb" draggable="true">
+                <img src="Previews\snow-flat-large.png" alt="snow-flat-large">
+            </a>
+            <div>snow-flat-large</div>
+            <div class="tooltip">Size: 19 KB<br>Vertices: 168</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="snow-flat">
+            <a href="models\snow-flat.glb" draggable="true">
+                <img src="Previews\snow-flat.png" alt="snow-flat">
+            </a>
+            <div>snow-flat</div>
+            <div class="tooltip">Size: 23 KB<br>Vertices: 264</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="snow-pile">
+            <a href="models\snow-pile.glb" draggable="true">
+                <img src="Previews\snow-pile.png" alt="snow-pile">
+            </a>
+            <div>snow-pile</div>
+            <div class="tooltip">Size: 22 KB<br>Vertices: 240</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="snowflake-a">
+            <a href="models\snowflake-a.glb" draggable="true">
+                <img src="Previews\snowflake-a.png" alt="snowflake-a">
+            </a>
+            <div>snowflake-a</div>
+            <div class="tooltip">Size: 28 KB<br>Vertices: 432</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="snowflake-b">
+            <a href="models\snowflake-b.glb" draggable="true">
+                <img src="Previews\snowflake-b.png" alt="snowflake-b">
+            </a>
+            <div>snowflake-b</div>
+            <div class="tooltip">Size: 25 KB<br>Vertices: 324</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="snowflake-c">
+            <a href="models\snowflake-c.glb" draggable="true">
+                <img src="Previews\snowflake-c.png" alt="snowflake-c">
+            </a>
+            <div>snowflake-c</div>
+            <div class="tooltip">Size: 22 KB<br>Vertices: 252</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="snowman-hat">
+            <a href="models\snowman-hat.glb" draggable="true">
+                <img src="Previews\snowman-hat.png" alt="snowman-hat">
+            </a>
+            <div>snowman-hat</div>
+            <div class="tooltip">Size: 50 KB<br>Vertices: 1066</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="snowman">
+            <a href="models\snowman.glb" draggable="true">
+                <img src="Previews\snowman.png" alt="snowman">
+            </a>
+            <div>snowman</div>
+            <div class="tooltip">Size: 43 KB<br>Vertices: 876</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="sock-green-cane">
+            <a href="models\sock-green-cane.glb" draggable="true">
+                <img src="Previews\sock-green-cane.png" alt="sock-green-cane">
+            </a>
+            <div>sock-green-cane</div>
+            <div class="tooltip">Size: 26 KB<br>Vertices: 362</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="sock-green">
+            <a href="models\sock-green.glb" draggable="true">
+                <img src="Previews\sock-green.png" alt="sock-green">
+            </a>
+            <div>sock-green</div>
+            <div class="tooltip">Size: 22 KB<br>Vertices: 238</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="sock-red-cane">
+            <a href="models\sock-red-cane.glb" draggable="true">
+                <img src="Previews\sock-red-cane.png" alt="sock-red-cane">
+            </a>
+            <div>sock-red-cane</div>
+            <div class="tooltip">Size: 26 KB<br>Vertices: 364</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="sock-red">
+            <a href="models\sock-red.glb" draggable="true">
+                <img src="Previews\sock-red.png" alt="sock-red">
+            </a>
+            <div>sock-red</div>
+            <div class="tooltip">Size: 22 KB<br>Vertices: 240</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="train-locomotive">
+            <a href="models\train-locomotive.glb" draggable="true">
+                <img src="Previews\train-locomotive.png" alt="train-locomotive">
+            </a>
+            <div>train-locomotive</div>
+            <div class="tooltip">Size: 56 KB<br>Vertices: 1226</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="train-tender">
+            <a href="models\train-tender.glb" draggable="true">
+                <img src="Previews\train-tender.png" alt="train-tender">
+            </a>
+            <div>train-tender</div>
+            <div class="tooltip">Size: 33 KB<br>Vertices: 562</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="train-wagon-flat-short">
+            <a href="models\train-wagon-flat-short.glb" draggable="true">
+                <img src="Previews\train-wagon-flat-short.png" alt="train-wagon-flat-short">
+            </a>
+            <div>train-wagon-flat-short</div>
+            <div class="tooltip">Size: 35 KB<br>Vertices: 626</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="train-wagon-flat">
+            <a href="models\train-wagon-flat.glb" draggable="true">
+                <img src="Previews\train-wagon-flat.png" alt="train-wagon-flat">
+            </a>
+            <div>train-wagon-flat</div>
+            <div class="tooltip">Size: 53 KB<br>Vertices: 1153</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="train-wagon-logs">
+            <a href="models\train-wagon-logs.glb" draggable="true">
+                <img src="Previews\train-wagon-logs.png" alt="train-wagon-logs">
+            </a>
+            <div>train-wagon-logs</div>
+            <div class="tooltip">Size: 59 KB<br>Vertices: 1333</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="train-wagon-short">
+            <a href="models\train-wagon-short.glb" draggable="true">
+                <img src="Previews\train-wagon-short.png" alt="train-wagon-short">
+            </a>
+            <div>train-wagon-short</div>
+            <div class="tooltip">Size: 43 KB<br>Vertices: 863</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="train-wagon">
+            <a href="models\train-wagon.glb" draggable="true">
+                <img src="Previews\train-wagon.png" alt="train-wagon">
+            </a>
+            <div>train-wagon</div>
+            <div class="tooltip">Size: 66 KB<br>Vertices: 1502</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="trainset-rail-bend">
+            <a href="models\trainset-rail-bend.glb" draggable="true">
+                <img src="Previews\trainset-rail-bend.png" alt="trainset-rail-bend">
+            </a>
+            <div>trainset-rail-bend</div>
+            <div class="tooltip">Size: 21 KB<br>Vertices: 216</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="trainset-rail-corner">
+            <a href="models\trainset-rail-corner.glb" draggable="true">
+                <img src="Previews\trainset-rail-corner.png" alt="trainset-rail-corner">
+            </a>
+            <div>trainset-rail-corner</div>
+            <div class="tooltip">Size: 18 KB<br>Vertices: 120</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="trainset-rail-detailed-bend">
+            <a href="models\trainset-rail-detailed-bend.glb" draggable="true">
+                <img src="Previews\trainset-rail-detailed-bend.png" alt="trainset-rail-detailed-bend">
+            </a>
+            <div>trainset-rail-detailed-bend</div>
+            <div class="tooltip">Size: 25 KB<br>Vertices: 336</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="trainset-rail-detailed-corner">
+            <a href="models\trainset-rail-detailed-corner.glb" draggable="true">
+                <img src="Previews\trainset-rail-detailed-corner.png" alt="trainset-rail-detailed-corner">
+            </a>
+            <div>trainset-rail-detailed-corner</div>
+            <div class="tooltip">Size: 19 KB<br>Vertices: 168</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="trainset-rail-detailed-straight">
+            <a href="models\trainset-rail-detailed-straight.glb" draggable="true">
+                <img src="Previews\trainset-rail-detailed-straight.png" alt="trainset-rail-detailed-straight">
+            </a>
+            <div>trainset-rail-detailed-straight</div>
+            <div class="tooltip">Size: 17 KB<br>Vertices: 120</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="trainset-rail-straight">
+            <a href="models\trainset-rail-straight.glb" draggable="true">
+                <img src="Previews\trainset-rail-straight.png" alt="trainset-rail-straight">
+            </a>
+            <div>trainset-rail-straight</div>
+            <div class="tooltip">Size: 15 KB<br>Vertices: 48</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="tree-decorated-snow">
+            <a href="models\tree-decorated-snow.glb" draggable="true">
+                <img src="Previews\tree-decorated-snow.png" alt="tree-decorated-snow">
+            </a>
+            <div>tree-decorated-snow</div>
+            <div class="tooltip">Size: 69 KB<br>Vertices: 1636</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="tree-decorated">
+            <a href="models\tree-decorated.glb" draggable="true">
+                <img src="Previews\tree-decorated.png" alt="tree-decorated">
+            </a>
+            <div>tree-decorated</div>
+            <div class="tooltip">Size: 60 KB<br>Vertices: 1364</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="tree-snow-a">
+            <a href="models\tree-snow-a.glb" draggable="true">
+                <img src="Previews\tree-snow-a.png" alt="tree-snow-a">
+            </a>
+            <div>tree-snow-a</div>
+            <div class="tooltip">Size: 35 KB<br>Vertices: 632</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="tree-snow-b">
+            <a href="models\tree-snow-b.glb" draggable="true">
+                <img src="Previews\tree-snow-b.png" alt="tree-snow-b">
+            </a>
+            <div>tree-snow-b</div>
+            <div class="tooltip">Size: 38 KB<br>Vertices: 712</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="tree-snow-c">
+            <a href="models\tree-snow-c.glb" draggable="true">
+                <img src="Previews\tree-snow-c.png" alt="tree-snow-c">
+            </a>
+            <div>tree-snow-c</div>
+            <div class="tooltip">Size: 28 KB<br>Vertices: 440</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="tree">
+            <a href="models\tree.glb" draggable="true">
+                <img src="Previews\tree.png" alt="tree">
+            </a>
+            <div>tree</div>
+            <div class="tooltip">Size: 28 KB<br>Vertices: 440</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="wreath-decorated">
+            <a href="models\wreath-decorated.glb" draggable="true">
+                <img src="Previews\wreath-decorated.png" alt="wreath-decorated">
+            </a>
+            <div>wreath-decorated</div>
+            <div class="tooltip">Size: 75 KB<br>Vertices: 1804</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="wreath">
+            <a href="models\wreath.glb" draggable="true">
+                <img src="Previews\wreath.png" alt="wreath">
+            </a>
+            <div>wreath</div>
+            <div class="tooltip">Size: 32 KB<br>Vertices: 544</div>
+        </div>
+    </div>
+    <script>
+        function drag(event) {
+            event.dataTransfer.setData("text/plain", event.target.parentElement.href);
+        }
+        
+        document.getElementById("search").addEventListener("input", function() {
+            let filter = this.value.toLowerCase();
+            document.querySelectorAll(".package").forEach(item => {
+                item.style.display = item.getAttribute("data-name").includes(filter) ? "block" : "none";
+            });
+        });
+    </script>
+</body>
+</html>

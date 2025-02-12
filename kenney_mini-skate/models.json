@@ -1,0 +1,142 @@
+[
+    {
+        "name": "bowl-corner-inner",
+        "glb": "models\\bowl-corner-inner.glb",
+        "preview": "Previews\\bowl-corner-inner.png",
+        "size_kb": 17,
+        "vertices": 249
+    },
+    {
+        "name": "bowl-corner-outer",
+        "glb": "models\\bowl-corner-outer.glb",
+        "preview": "Previews\\bowl-corner-outer.png",
+        "size_kb": 17,
+        "vertices": 246
+    },
+    {
+        "name": "bowl-side",
+        "glb": "models\\bowl-side.glb",
+        "preview": "Previews\\bowl-side.png",
+        "size_kb": 11,
+        "vertices": 73
+    },
+    {
+        "name": "character-skate-boy",
+        "glb": "models\\character-skate-boy.glb",
+        "preview": "Previews\\character-skate-boy.png",
+        "size_kb": 224,
+        "vertices": 727
+    },
+    {
+        "name": "character-skate-girl",
+        "glb": "models\\character-skate-girl.glb",
+        "preview": "Previews\\character-skate-girl.png",
+        "size_kb": 223,
+        "vertices": 720
+    },
+    {
+        "name": "floor-concrete",
+        "glb": "models\\floor-concrete.glb",
+        "preview": "Previews\\floor-concrete.png",
+        "size_kb": 8,
+        "vertices": 4
+    },
+    {
+        "name": "floor-wood",
+        "glb": "models\\floor-wood.glb",
+        "preview": "Previews\\floor-wood.png",
+        "size_kb": 11,
+        "vertices": 74
+    },
+    {
+        "name": "half-pipe",
+        "glb": "models\\half-pipe.glb",
+        "preview": "Previews\\half-pipe.png",
+        "size_kb": 11,
+        "vertices": 73
+    },
+    {
+        "name": "obstacle-box",
+        "glb": "models\\obstacle-box.glb",
+        "preview": "Previews\\obstacle-box.png",
+        "size_kb": 10,
+        "vertices": 56
+    },
+    {
+        "name": "obstacle-end",
+        "glb": "models\\obstacle-end.glb",
+        "preview": "Previews\\obstacle-end.png",
+        "size_kb": 14,
+        "vertices": 172
+    },
+    {
+        "name": "obstacle-middle",
+        "glb": "models\\obstacle-middle.glb",
+        "preview": "Previews\\obstacle-middle.png",
+        "size_kb": 16,
+        "vertices": 228
+    },
+    {
+        "name": "pallet",
+        "glb": "models\\pallet.glb",
+        "preview": "Previews\\pallet.png",
+        "size_kb": 15,
+        "vertices": 200
+    },
+    {
+        "name": "rail-curve",
+        "glb": "models\\rail-curve.glb",
+        "preview": "Previews\\rail-curve.png",
+        "size_kb": 13,
+        "vertices": 136
+    },
+    {
+        "name": "rail-high",
+        "glb": "models\\rail-high.glb",
+        "preview": "Previews\\rail-high.png",
+        "size_kb": 14,
+        "vertices": 156
+    },
+    {
+        "name": "rail-low",
+        "glb": "models\\rail-low.glb",
+        "preview": "Previews\\rail-low.png",
+        "size_kb": 14,
+        "vertices": 156
+    },
+    {
+        "name": "rail-slope",
+        "glb": "models\\rail-slope.glb",
+        "preview": "Previews\\rail-slope.png",
+        "size_kb": 14,
+        "vertices": 156
+    },
+    {
+        "name": "skateboard",
+        "glb": "models\\skateboard.glb",
+        "preview": "Previews\\skateboard.png",
+        "size_kb": 21,
+        "vertices": 372
+    },
+    {
+        "name": "steps",
+        "glb": "models\\steps.glb",
+        "preview": "Previews\\steps.png",
+        "size_kb": 13,
+        "vertices": 132
+    },
+    {
+        "name": "structure-platform",
+        "glb": "models\\structure-platform.glb",
+        "preview": "Previews\\structure-platform.png",
+        "size_kb": 16,
+        "vertices": 216
+    },
+    {
+        "name": "structure-wood",
+        "glb": "models\\structure-wood.glb",
+        "preview": "Previews\\structure-wood.png",
+        "size_kb": 21,
+        "vertices": 368
+    }
+]

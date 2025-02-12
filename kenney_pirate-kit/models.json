@@ -1,0 +1,464 @@
+[
+    {
+        "name": "barrel",
+        "glb": "models\\barrel.glb",
+        "preview": "Previews\\barrel.png",
+        "size_kb": 19,
+        "vertices": 248
+    },
+    {
+        "name": "boat-row-large",
+        "glb": "models\\boat-row-large.glb",
+        "preview": "Previews\\boat-row-large.png",
+        "size_kb": 20,
+        "vertices": 258
+    },
+    {
+        "name": "boat-row-small",
+        "glb": "models\\boat-row-small.glb",
+        "preview": "Previews\\boat-row-small.png",
+        "size_kb": 21,
+        "vertices": 292
+    },
+    {
+        "name": "bottle-large",
+        "glb": "models\\bottle-large.glb",
+        "preview": "Previews\\bottle-large.png",
+        "size_kb": 18,
+        "vertices": 208
+    },
+    {
+        "name": "bottle",
+        "glb": "models\\bottle.glb",
+        "preview": "Previews\\bottle.png",
+        "size_kb": 19,
+        "vertices": 240
+    },
+    {
+        "name": "cannon-ball",
+        "glb": "models\\cannon-ball.glb",
+        "preview": "Previews\\cannon-ball.png",
+        "size_kb": 14,
+        "vertices": 108
+    },
+    {
+        "name": "cannon-mobile",
+        "glb": "models\\cannon-mobile.glb",
+        "preview": "Previews\\cannon-mobile.png",
+        "size_kb": 39,
+        "vertices": 766
+    },
+    {
+        "name": "cannon",
+        "glb": "models\\cannon.glb",
+        "preview": "Previews\\cannon.png",
+        "size_kb": 26,
+        "vertices": 384
+    },
+    {
+        "name": "chest",
+        "glb": "models\\chest.glb",
+        "preview": "Previews\\chest.png",
+        "size_kb": 27,
+        "vertices": 378
+    },
+    {
+        "name": "crate-bottles",
+        "glb": "models\\crate-bottles.glb",
+        "preview": "Previews\\crate-bottles.png",
+        "size_kb": 49,
+        "vertices": 1112
+    },
+    {
+        "name": "crate",
+        "glb": "models\\crate.glb",
+        "preview": "Previews\\crate.png",
+        "size_kb": 16,
+        "vertices": 152
+    },
+    {
+        "name": "flag-high-pennant",
+        "glb": "models\\flag-high-pennant.glb",
+        "preview": "Previews\\flag-high-pennant.png",
+        "size_kb": 19,
+        "vertices": 238
+    },
+    {
+        "name": "flag-high",
+        "glb": "models\\flag-high.glb",
+        "preview": "Previews\\flag-high.png",
+        "size_kb": 19,
+        "vertices": 260
+    },
+    {
+        "name": "flag-pennant",
+        "glb": "models\\flag-pennant.glb",
+        "preview": "Previews\\flag-pennant.png",
+        "size_kb": 19,
+        "vertices": 238
+    },
+    {
+        "name": "flag-pirate-high-pennant",
+        "glb": "models\\flag-pirate-high-pennant.glb",
+        "preview": "Previews\\flag-pirate-high-pennant.png",
+        "size_kb": 19,
+        "vertices": 238
+    },
+    {
+        "name": "flag-pirate-high",
+        "glb": "models\\flag-pirate-high.glb",
+        "preview": "Previews\\flag-pirate-high.png",
+        "size_kb": 20,
+        "vertices": 260
+    },
+    {
+        "name": "flag-pirate-pennant",
+        "glb": "models\\flag-pirate-pennant.glb",
+        "preview": "Previews\\flag-pirate-pennant.png",
+        "size_kb": 19,
+        "vertices": 238
+    },
+    {
+        "name": "flag-pirate",
+        "glb": "models\\flag-pirate.glb",
+        "preview": "Previews\\flag-pirate.png",
+        "size_kb": 19,
+        "vertices": 260
+    },
+    {
+        "name": "flag",
+        "glb": "models\\flag.glb",
+        "preview": "Previews\\flag.png",
+        "size_kb": 19,
+        "vertices": 260
+    },
+    {
+        "name": "grass-patch",
+        "glb": "models\\grass-patch.glb",
+        "preview": "Previews\\grass-patch.png",
+        "size_kb": 35,
+        "vertices": 720
+    },
+    {
+        "name": "grass-plant",
+        "glb": "models\\grass-plant.glb",
+        "preview": "Previews\\grass-plant.png",
+        "size_kb": 19,
+        "vertices": 252
+    },
+    {
+        "name": "grass",
+        "glb": "models\\grass.glb",
+        "preview": "Previews\\grass.png",
+        "size_kb": 15,
+        "vertices": 144
+    },
+    {
+        "name": "hole",
+        "glb": "models\\hole.glb",
+        "preview": "Previews\\hole.png",
+        "size_kb": 28,
+        "vertices": 512
+    },
+    {
+        "name": "palm-bend",
+        "glb": "models\\palm-bend.glb",
+        "preview": "Previews\\palm-bend.png",
+        "size_kb": 34,
+        "vertices": 680
+    },
+    {
+        "name": "palm-detailed-bend",
+        "glb": "models\\palm-detailed-bend.glb",
+        "preview": "Previews\\palm-detailed-bend.png",
+        "size_kb": 44,
+        "vertices": 984
+    },
+    {
+        "name": "palm-detailed-straight",
+        "glb": "models\\palm-detailed-straight.glb",
+        "preview": "Previews\\palm-detailed-straight.png",
+        "size_kb": 44,
+        "vertices": 986
+    },
+    {
+        "name": "palm-straight",
+        "glb": "models\\palm-straight.glb",
+        "preview": "Previews\\palm-straight.png",
+        "size_kb": 34,
+        "vertices": 682
+    },
+    {
+        "name": "patch-grass-foliage",
+        "glb": "models\\patch-grass-foliage.glb",
+        "preview": "Previews\\patch-grass-foliage.png",
+        "size_kb": 30,
+        "vertices": 564
+    },
+    {
+        "name": "patch-grass",
+        "glb": "models\\patch-grass.glb",
+        "preview": "Previews\\patch-grass.png",
+        "size_kb": 15,
+        "vertices": 132
+    },
+    {
+        "name": "patch-sand-foliage",
+        "glb": "models\\patch-sand-foliage.glb",
+        "preview": "Previews\\patch-sand-foliage.png",
+        "size_kb": 52,
+        "vertices": 1194
+    },
+    {
+        "name": "patch-sand",
+        "glb": "models\\patch-sand.glb",
+        "preview": "Previews\\patch-sand.png",
+        "size_kb": 16,
+        "vertices": 168
+    },
+    {
+        "name": "platform-planks",
+        "glb": "models\\platform-planks.glb",
+        "preview": "Previews\\platform-planks.png",
+        "size_kb": 14,
+        "vertices": 96
+    },
+    {
+        "name": "platform",
+        "glb": "models\\platform.glb",
+        "preview": "Previews\\platform.png",
+        "size_kb": 15,
+        "vertices": 120
+    },
+    {
+        "name": "rocks-a",
+        "glb": "models\\rocks-a.glb",
+        "preview": "Previews\\rocks-a.png",
+        "size_kb": 28,
+        "vertices": 504
+    },
+    {
+        "name": "rocks-b",
+        "glb": "models\\rocks-b.glb",
+        "preview": "Previews\\rocks-b.png",
+        "size_kb": 30,
+        "vertices": 576
+    },
+    {
+        "name": "rocks-c",
+        "glb": "models\\rocks-c.glb",
+        "preview": "Previews\\rocks-c.png",
+        "size_kb": 26,
+        "vertices": 444
+    },
+    {
+        "name": "rocks-sand-a",
+        "glb": "models\\rocks-sand-a.glb",
+        "preview": "Previews\\rocks-sand-a.png",
+        "size_kb": 48,
+        "vertices": 1080
+    },
+    {
+        "name": "rocks-sand-b",
+        "glb": "models\\rocks-sand-b.glb",
+        "preview": "Previews\\rocks-sand-b.png",
+        "size_kb": 45,
+        "vertices": 1008
+    },
+    {
+        "name": "rocks-sand-c",
+        "glb": "models\\rocks-sand-c.glb",
+        "preview": "Previews\\rocks-sand-c.png",
+        "size_kb": 41,
+        "vertices": 876
+    },
+    {
+        "name": "ship-ghost",
+        "glb": "models\\ship-ghost.glb",
+        "preview": "Previews\\ship-ghost.png",
+        "size_kb": 113,
+        "vertices": 2881
+    },
+    {
+        "name": "ship-large",
+        "glb": "models\\ship-large.glb",
+        "preview": "Previews\\ship-large.png",
+        "size_kb": 114,
+        "vertices": 2882
+    },
+    {
+        "name": "ship-medium",
+        "glb": "models\\ship-medium.glb",
+        "preview": "Previews\\ship-medium.png",
+        "size_kb": 107,
+        "vertices": 2671
+    },
+    {
+        "name": "ship-pirate-large",
+        "glb": "models\\ship-pirate-large.glb",
+        "preview": "Previews\\ship-pirate-large.png",
+        "size_kb": 128,
+        "vertices": 3293
+    },
+    {
+        "name": "ship-pirate-medium",
+        "glb": "models\\ship-pirate-medium.glb",
+        "preview": "Previews\\ship-pirate-medium.png",
+        "size_kb": 120,
+        "vertices": 3082
+    },
+    {
+        "name": "ship-pirate-small",
+        "glb": "models\\ship-pirate-small.glb",
+        "preview": "Previews\\ship-pirate-small.png",
+        "size_kb": 97,
+        "vertices": 2447
+    },
+    {
+        "name": "ship-small",
+        "glb": "models\\ship-small.glb",
+        "preview": "Previews\\ship-small.png",
+        "size_kb": 88,
+        "vertices": 2158
+    },
+    {
+        "name": "ship-wreck",
+        "glb": "models\\ship-wreck.glb",
+        "preview": "Previews\\ship-wreck.png",
+        "size_kb": 155,
+        "vertices": 3978
+    },
+    {
+        "name": "structure-fence-sides",
+        "glb": "models\\structure-fence-sides.glb",
+        "preview": "Previews\\structure-fence-sides.png",
+        "size_kb": 39,
+        "vertices": 816
+    },
+    {
+        "name": "structure-fence",
+        "glb": "models\\structure-fence.glb",
+        "preview": "Previews\\structure-fence.png",
+        "size_kb": 33,
+        "vertices": 664
+    },
+    {
+        "name": "structure-platform-dock-small",
+        "glb": "models\\structure-platform-dock-small.glb",
+        "preview": "Previews\\structure-platform-dock-small.png",
+        "size_kb": 31,
+        "vertices": 592
+    },
+    {
+        "name": "structure-platform-dock",
+        "glb": "models\\structure-platform-dock.glb",
+        "preview": "Previews\\structure-platform-dock.png",
+        "size_kb": 32,
+        "vertices": 616
+    },
+    {
+        "name": "structure-platform-small",
+        "glb": "models\\structure-platform-small.glb",
+        "preview": "Previews\\structure-platform-small.png",
+        "size_kb": 25,
+        "vertices": 416
+    },
+    {
+        "name": "structure-platform",
+        "glb": "models\\structure-platform.glb",
+        "preview": "Previews\\structure-platform.png",
+        "size_kb": 26,
+        "vertices": 440
+    },
+    {
+        "name": "structure-roof",
+        "glb": "models\\structure-roof.glb",
+        "preview": "Previews\\structure-roof.png",
+        "size_kb": 32,
+        "vertices": 636
+    },
+    {
+        "name": "structure",
+        "glb": "models\\structure.glb",
+        "preview": "Previews\\structure.png",
+        "size_kb": 28,
+        "vertices": 512
+    },
+    {
+        "name": "tool-paddle",
+        "glb": "models\\tool-paddle.glb",
+        "preview": "Previews\\tool-paddle.png",
+        "size_kb": 14,
+        "vertices": 102
+    },
+    {
+        "name": "tool-shovel",
+        "glb": "models\\tool-shovel.glb",
+        "preview": "Previews\\tool-shovel.png",
+        "size_kb": 20,
+        "vertices": 278
+    },
+    {
+        "name": "tower-base-door",
+        "glb": "models\\tower-base-door.glb",
+        "preview": "Previews\\tower-base-door.png",
+        "size_kb": 18,
+        "vertices": 218
+    },
+    {
+        "name": "tower-base",
+        "glb": "models\\tower-base.glb",
+        "preview": "Previews\\tower-base.png",
+        "size_kb": 13,
+        "vertices": 80
+    },
+    {
+        "name": "tower-complete-large",
+        "glb": "models\\tower-complete-large.glb",
+        "preview": "Previews\\tower-complete-large.png",
+        "size_kb": 50,
+        "vertices": 1122
+    },
+    {
+        "name": "tower-complete-small",
+        "glb": "models\\tower-complete-small.glb",
+        "preview": "Previews\\tower-complete-small.png",
+        "size_kb": 53,
+        "vertices": 1212
+    },
+    {
+        "name": "tower-middle-windows",
+        "glb": "models\\tower-middle-windows.glb",
+        "preview": "Previews\\tower-middle-windows.png",
+        "size_kb": 26,
+        "vertices": 456
+    },
+    {
+        "name": "tower-middle",
+        "glb": "models\\tower-middle.glb",
+        "preview": "Previews\\tower-middle.png",
+        "size_kb": 25,
+        "vertices": 432
+    },
+    {
+        "name": "tower-roof",
+        "glb": "models\\tower-roof.glb",
+        "preview": "Previews\\tower-roof.png",
+        "size_kb": 17,
+        "vertices": 200
+    },
+    {
+        "name": "tower-top",
+        "glb": "models\\tower-top.glb",
+        "preview": "Previews\\tower-top.png",
+        "size_kb": 30,
+        "vertices": 562
+    },
+    {
+        "name": "tower-watch",
+        "glb": "models\\tower-watch.glb",
+        "preview": "Previews\\tower-watch.png",
+        "size_kb": 24,
+        "vertices": 385
+    }
+]

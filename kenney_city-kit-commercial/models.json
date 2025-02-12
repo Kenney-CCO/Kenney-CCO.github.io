@@ -1,0 +1,394 @@
+[
+    {
+        "name": "detail_awning",
+        "glb": "models\\detail_awning.glb",
+        "preview": "Previews\\detail_awning.png",
+        "size_kb": 5,
+        "vertices": 228
+    },
+    {
+        "name": "detail_awningWide",
+        "glb": "models\\detail_awningWide.glb",
+        "preview": "Previews\\detail_awningWide.png",
+        "size_kb": 5,
+        "vertices": 228
+    },
+    {
+        "name": "detail_overhang",
+        "glb": "models\\detail_overhang.glb",
+        "preview": "Previews\\detail_overhang.png",
+        "size_kb": 8,
+        "vertices": 370
+    },
+    {
+        "name": "detail_overhangWide",
+        "glb": "models\\detail_overhangWide.glb",
+        "preview": "Previews\\detail_overhangWide.png",
+        "size_kb": 8,
+        "vertices": 396
+    },
+    {
+        "name": "detail_umbrella",
+        "glb": "models\\detail_umbrella.glb",
+        "preview": "Previews\\detail_umbrella.png",
+        "size_kb": 8,
+        "vertices": 474
+    },
+    {
+        "name": "detail_umbrellaDetailed",
+        "glb": "models\\detail_umbrellaDetailed.glb",
+        "preview": "Previews\\detail_umbrellaDetailed.png",
+        "size_kb": 9,
+        "vertices": 582
+    },
+    {
+        "name": "large_buildingA",
+        "glb": "models\\large_buildingA.glb",
+        "preview": "Previews\\large_buildingA.png",
+        "size_kb": 155,
+        "vertices": 15968
+    },
+    {
+        "name": "large_buildingB",
+        "glb": "models\\large_buildingB.glb",
+        "preview": "Previews\\large_buildingB.png",
+        "size_kb": 52,
+        "vertices": 6350
+    },
+    {
+        "name": "large_buildingC",
+        "glb": "models\\large_buildingC.glb",
+        "preview": "Previews\\large_buildingC.png",
+        "size_kb": 59,
+        "vertices": 7315
+    },
+    {
+        "name": "large_buildingD",
+        "glb": "models\\large_buildingD.glb",
+        "preview": "Previews\\large_buildingD.png",
+        "size_kb": 84,
+        "vertices": 10400
+    },
+    {
+        "name": "large_buildingE",
+        "glb": "models\\large_buildingE.glb",
+        "preview": "Previews\\large_buildingE.png",
+        "size_kb": 99,
+        "vertices": 12360
+    },
+    {
+        "name": "large_buildingF",
+        "glb": "models\\large_buildingF.glb",
+        "preview": "Previews\\large_buildingF.png",
+        "size_kb": 82,
+        "vertices": 10065
+    },
+    {
+        "name": "large_buildingG",
+        "glb": "models\\large_buildingG.glb",
+        "preview": "Previews\\large_buildingG.png",
+        "size_kb": 118,
+        "vertices": 11620
+    },
+    {
+        "name": "low_buildingA",
+        "glb": "models\\low_buildingA.glb",
+        "preview": "Previews\\low_buildingA.png",
+        "size_kb": 13,
+        "vertices": 624
+    },
+    {
+        "name": "low_buildingB",
+        "glb": "models\\low_buildingB.glb",
+        "preview": "Previews\\low_buildingB.png",
+        "size_kb": 14,
+        "vertices": 694
+    },
+    {
+        "name": "low_buildingC",
+        "glb": "models\\low_buildingC.glb",
+        "preview": "Previews\\low_buildingC.png",
+        "size_kb": 19,
+        "vertices": 974
+    },
+    {
+        "name": "low_buildingD",
+        "glb": "models\\low_buildingD.glb",
+        "preview": "Previews\\low_buildingD.png",
+        "size_kb": 15,
+        "vertices": 780
+    },
+    {
+        "name": "low_buildingE",
+        "glb": "models\\low_buildingE.glb",
+        "preview": "Previews\\low_buildingE.png",
+        "size_kb": 10,
+        "vertices": 460
+    },
+    {
+        "name": "low_buildingF",
+        "glb": "models\\low_buildingF.glb",
+        "preview": "Previews\\low_buildingF.png",
+        "size_kb": 17,
+        "vertices": 896
+    },
+    {
+        "name": "low_buildingG",
+        "glb": "models\\low_buildingG.glb",
+        "preview": "Previews\\low_buildingG.png",
+        "size_kb": 12,
+        "vertices": 610
+    },
+    {
+        "name": "low_buildingH",
+        "glb": "models\\low_buildingH.glb",
+        "preview": "Previews\\low_buildingH.png",
+        "size_kb": 6,
+        "vertices": 276
+    },
+    {
+        "name": "low_buildingI",
+        "glb": "models\\low_buildingI.glb",
+        "preview": "Previews\\low_buildingI.png",
+        "size_kb": 9,
+        "vertices": 452
+    },
+    {
+        "name": "low_buildingJ",
+        "glb": "models\\low_buildingJ.glb",
+        "preview": "Previews\\low_buildingJ.png",
+        "size_kb": 17,
+        "vertices": 884
+    },
+    {
+        "name": "low_buildingK",
+        "glb": "models\\low_buildingK.glb",
+        "preview": "Previews\\low_buildingK.png",
+        "size_kb": 6,
+        "vertices": 268
+    },
+    {
+        "name": "low_buildingL",
+        "glb": "models\\low_buildingL.glb",
+        "preview": "Previews\\low_buildingL.png",
+        "size_kb": 5,
+        "vertices": 212
+    },
+    {
+        "name": "low_buildingM",
+        "glb": "models\\low_buildingM.glb",
+        "preview": "Previews\\low_buildingM.png",
+        "size_kb": 7,
+        "vertices": 320
+    },
+    {
+        "name": "low_buildingN",
+        "glb": "models\\low_buildingN.glb",
+        "preview": "Previews\\low_buildingN.png",
+        "size_kb": 27,
+        "vertices": 1432
+    },
+    {
+        "name": "low_wideA",
+        "glb": "models\\low_wideA.glb",
+        "preview": "Previews\\low_wideA.png",
+        "size_kb": 19,
+        "vertices": 960
+    },
+    {
+        "name": "low_wideB",
+        "glb": "models\\low_wideB.glb",
+        "preview": "Previews\\low_wideB.png",
+        "size_kb": 13,
+        "vertices": 640
+    },
+    {
+        "name": "roof_center",
+        "glb": "models\\roof_center.glb",
+        "preview": "Previews\\roof_center.png",
+        "size_kb": 1,
+        "vertices": 4
+    },
+    {
+        "name": "roof_corner",
+        "glb": "models\\roof_corner.glb",
+        "preview": "Previews\\roof_corner.png",
+        "size_kb": 4,
+        "vertices": 122
+    },
+    {
+        "name": "roof_overhang",
+        "glb": "models\\roof_overhang.glb",
+        "preview": "Previews\\roof_overhang.png",
+        "size_kb": 5,
+        "vertices": 196
+    },
+    {
+        "name": "roof_side",
+        "glb": "models\\roof_side.glb",
+        "preview": "Previews\\roof_side.png",
+        "size_kb": 3,
+        "vertices": 76
+    },
+    {
+        "name": "sign_billboard",
+        "glb": "models\\sign_billboard.glb",
+        "preview": "Previews\\sign_billboard.png",
+        "size_kb": 4,
+        "vertices": 144
+    },
+    {
+        "name": "sign_hospital",
+        "glb": "models\\sign_hospital.glb",
+        "preview": "Previews\\sign_hospital.png",
+        "size_kb": 8,
+        "vertices": 480
+    },
+    {
+        "name": "skyscraperA",
+        "glb": "models\\skyscraperA.glb",
+        "preview": "Previews\\skyscraperA.png",
+        "size_kb": 31,
+        "vertices": 3515
+    },
+    {
+        "name": "skyscraperB",
+        "glb": "models\\skyscraperB.glb",
+        "preview": "Previews\\skyscraperB.png",
+        "size_kb": 37,
+        "vertices": 4060
+    },
+    {
+        "name": "skyscraperC",
+        "glb": "models\\skyscraperC.glb",
+        "preview": "Previews\\skyscraperC.png",
+        "size_kb": 54,
+        "vertices": 7692
+    },
+    {
+        "name": "skyscraperD",
+        "glb": "models\\skyscraperD.glb",
+        "preview": "Previews\\skyscraperD.png",
+        "size_kb": 52,
+        "vertices": 7170
+    },
+    {
+        "name": "skyscraperE",
+        "glb": "models\\skyscraperE.glb",
+        "preview": "Previews\\skyscraperE.png",
+        "size_kb": 81,
+        "vertices": 11436
+    },
+    {
+        "name": "skyscraperF",
+        "glb": "models\\skyscraperF.glb",
+        "preview": "Previews\\skyscraperF.png",
+        "size_kb": 31,
+        "vertices": 3020
+    },
+    {
+        "name": "small_buildingA",
+        "glb": "models\\small_buildingA.glb",
+        "preview": "Previews\\small_buildingA.png",
+        "size_kb": 35,
+        "vertices": 3420
+    },
+    {
+        "name": "small_buildingB",
+        "glb": "models\\small_buildingB.glb",
+        "preview": "Previews\\small_buildingB.png",
+        "size_kb": 28,
+        "vertices": 2700
+    },
+    {
+        "name": "small_buildingC",
+        "glb": "models\\small_buildingC.glb",
+        "preview": "Previews\\small_buildingC.png",
+        "size_kb": 35,
+        "vertices": 3408
+    },
+    {
+        "name": "small_buildingD",
+        "glb": "models\\small_buildingD.glb",
+        "preview": "Previews\\small_buildingD.png",
+        "size_kb": 43,
+        "vertices": 5225
+    },
+    {
+        "name": "small_buildingE",
+        "glb": "models\\small_buildingE.glb",
+        "preview": "Previews\\small_buildingE.png",
+        "size_kb": 44,
+        "vertices": 5395
+    },
+    {
+        "name": "small_buildingF",
+        "glb": "models\\small_buildingF.glb",
+        "preview": "Previews\\small_buildingF.png",
+        "size_kb": 33,
+        "vertices": 3168
+    },
+    {
+        "name": "wall_doorA",
+        "glb": "models\\wall_doorA.glb",
+        "preview": "Previews\\wall_doorA.png",
+        "size_kb": 5,
+        "vertices": 272
+    },
+    {
+        "name": "wall_doorB",
+        "glb": "models\\wall_doorB.glb",
+        "preview": "Previews\\wall_doorB.png",
+        "size_kb": 5,
+        "vertices": 232
+    },
+    {
+        "name": "wall_solid",
+        "glb": "models\\wall_solid.glb",
+        "preview": "Previews\\wall_solid.png",
+        "size_kb": 2,
+        "vertices": 20
+    },
+    {
+        "name": "wall_windowA",
+        "glb": "models\\wall_windowA.glb",
+        "preview": "Previews\\wall_windowA.png",
+        "size_kb": 4,
+        "vertices": 180
+    },
+    {
+        "name": "wall_windowB",
+        "glb": "models\\wall_windowB.glb",
+        "preview": "Previews\\wall_windowB.png",
+        "size_kb": 5,
+        "vertices": 267
+    },
+    {
+        "name": "wall_windowC",
+        "glb": "models\\wall_windowC.glb",
+        "preview": "Previews\\wall_windowC.png",
+        "size_kb": 4,
+        "vertices": 192
+    },
+    {
+        "name": "wall_windowD",
+        "glb": "models\\wall_windowD.glb",
+        "preview": "Previews\\wall_windowD.png",
+        "size_kb": 5,
+        "vertices": 267
+    },
+    {
+        "name": "wall_windowE",
+        "glb": "models\\wall_windowE.glb",
+        "preview": "Previews\\wall_windowE.png",
+        "size_kb": 4,
+        "vertices": 200
+    },
+    {
+        "name": "wall_windowF",
+        "glb": "models\\wall_windowF.glb",
+        "preview": "Previews\\wall_windowF.png",
+        "size_kb": 5,
+        "vertices": 231
+    }
+]

@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Kenney Conveyor Kit</title>
+    <meta name="description" content="Game assets overview">
+    <meta name="author" content="Kenney">
+    <style>
+        body {
+            font-family: system-ui;
+            font-size: 0.9em;
+            font-weight: 600;
+            color: #d7d9da;
+            background-color: #171B21;
+            margin: 2em auto;
+            max-width: 1120px;
+            text-align: center;
+        }
+        h1 { color: #FFF; }
+        .back-link {
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            font-size: 1.5em;
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        .search-container {
+            margin-bottom: 1em;
+        }
+        .search-input {
+            padding: 10px;
+            width: 50%;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #555;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .package {
+            width: 120px;
+            text-align: center;
+            background: #2f333a;
+            padding: 10px;
+            border-radius: 5px;
+            position: relative;
+        }
+        .package img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            cursor: grab;
+        }
+        .package img:active {
+            cursor: grabbing;
+        }
+        .tooltip {
+            visibility: hidden;
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 5px;
+            border-radius: 5px;
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            font-size: 0.8em;
+            pointer-events: none;
+        }
+        .package:hover .tooltip {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+    <a href="/index.html" class="back-link">Back</a>
+    <h1>Kenney Conveyor Kit</h1>
+    <div class="search-container">
+        <input type="text" id="search" class="search-input" placeholder="Search models...">
+    </div>
+    <div class="gallery" id="gallery">
+        
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="arrow-basic">
+            <a href="models\arrow-basic.glb" draggable="true">
+                <img src="Previews\arrow-basic.png" alt="arrow-basic">
+            </a>
+            <div>arrow-basic</div>
+            <div class="tooltip">Size: 9 KB<br>Vertices: 36</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="arrow">
+            <a href="models\arrow.glb" draggable="true">
+                <img src="Previews\arrow.png" alt="arrow">
+            </a>
+            <div>arrow</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 42</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="box-large">
+            <a href="models\box-large.glb" draggable="true">
+                <img src="Previews\box-large.png" alt="box-large">
+            </a>
+            <div>box-large</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 48</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="box-long">
+            <a href="models\box-long.glb" draggable="true">
+                <img src="Previews\box-long.png" alt="box-long">
+            </a>
+            <div>box-long</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 48</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="box-small">
+            <a href="models\box-small.glb" draggable="true">
+                <img src="Previews\box-small.png" alt="box-small">
+            </a>
+            <div>box-small</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 48</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="box-wide">
+            <a href="models\box-wide.glb" draggable="true">
+                <img src="Previews\box-wide.png" alt="box-wide">
+            </a>
+            <div>box-wide</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 48</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="conveyor-bars-fence">
+            <a href="models\conveyor-bars-fence.glb" draggable="true">
+                <img src="Previews\conveyor-bars-fence.png" alt="conveyor-bars-fence">
+            </a>
+            <div>conveyor-bars-fence</div>
+            <div class="tooltip">Size: 27 KB<br>Vertices: 504</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="conveyor-bars-high">
+            <a href="models\conveyor-bars-high.glb" draggable="true">
+                <img src="Previews\conveyor-bars-high.png" alt="conveyor-bars-high">
+            </a>
+            <div>conveyor-bars-high</div>
+            <div class="tooltip">Size: 20 KB<br>Vertices: 316</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="conveyor-bars-sides">
+            <a href="models\conveyor-bars-sides.glb" draggable="true">
+                <img src="Previews\conveyor-bars-sides.png" alt="conveyor-bars-sides">
+            </a>
+            <div>conveyor-bars-sides</div>
+            <div class="tooltip">Size: 19 KB<br>Vertices: 280</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="conveyor-bars-stripe-fence">
+            <a href="models\conveyor-bars-stripe-fence.glb" draggable="true">
+                <img src="Previews\conveyor-bars-stripe-fence.png" alt="conveyor-bars-stripe-fence">
+            </a>
+            <div>conveyor-bars-stripe-fence</div>
+            <div class="tooltip">Size: 34 KB<br>Vertices: 712</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="conveyor-bars-stripe-high">
+            <a href="models\conveyor-bars-stripe-high.glb" draggable="true">
+                <img src="Previews\conveyor-bars-stripe-high.png" alt="conveyor-bars-stripe-high">
+            </a>
+            <div>conveyor-bars-stripe-high</div>
+            <div class="tooltip">Size: 27 KB<br>Vertices: 524</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="conveyor-bars-stripe-side">
+            <a href="models\conveyor-bars-stripe-side.glb" draggable="true">
+                <img src="Previews\conveyor-bars-stripe-side.png" alt="conveyor-bars-stripe-side">
+            </a>
+            <div>conveyor-bars-stripe-side</div>
+            <div class="tooltip">Size: 26 KB<br>Vertices: 488</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="conveyor-bars-stripe">
+            <a href="models\conveyor-bars-stripe.glb" draggable="true">
+                <img src="Previews\conveyor-bars-stripe.png" alt="conveyor-bars-stripe">
+            </a>
+            <div>conveyor-bars-stripe</div>
+            <div class="tooltip">Size: 23 KB<br>Vertices: 428</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="conveyor-bars">
+            <a href="models\conveyor-bars.glb" draggable="true">
+                <img src="Previews\conveyor-bars.png" alt="conveyor-bars">
+            </a>
+            <div>conveyor-bars</div>
+            <div class="tooltip">Size: 16 KB<br>Vertices: 220</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="conveyor-long-sides">
+            <a href="models\conveyor-long-sides.glb" draggable="true">
+                <img src="Previews\conveyor-long-sides.png" alt="conveyor-long-sides">
+            </a>
+            <div>conveyor-long-sides</div>
+            <div class="tooltip">Size: 14 KB<br>Vertices: 140</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="conveyor-long-stripe-sides">
+            <a href="models\conveyor-long-stripe-sides.glb" draggable="true">
+                <img src="Previews\conveyor-long-stripe-sides.png" alt="conveyor-long-stripe-sides">
+            </a>
+            <div>conveyor-long-stripe-sides</div>
+            <div class="tooltip">Size: 18 KB<br>Vertices: 268</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="conveyor-long-stripe">
+            <a href="models\conveyor-long-stripe.glb" draggable="true">
+                <img src="Previews\conveyor-long-stripe.png" alt="conveyor-long-stripe">
+            </a>
+            <div>conveyor-long-stripe</div>
+            <div class="tooltip">Size: 15 KB<br>Vertices: 208</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="conveyor-long">
+            <a href="models\conveyor-long.glb" draggable="true">
+                <img src="Previews\conveyor-long.png" alt="conveyor-long">
+            </a>
+            <div>conveyor-long</div>
+            <div class="tooltip">Size: 13 KB<br>Vertices: 144</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="conveyor-sides">
+            <a href="models\conveyor-sides.glb" draggable="true">
+                <img src="Previews\conveyor-sides.png" alt="conveyor-sides">
+            </a>
+            <div>conveyor-sides</div>
+            <div class="tooltip">Size: 14 KB<br>Vertices: 140</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="conveyor-stripe-sides">
+            <a href="models\conveyor-stripe-sides.glb" draggable="true">
+                <img src="Previews\conveyor-stripe-sides.png" alt="conveyor-stripe-sides">
+            </a>
+            <div>conveyor-stripe-sides</div>
+            <div class="tooltip">Size: 18 KB<br>Vertices: 268</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="conveyor-stripe">
+            <a href="models\conveyor-stripe.glb" draggable="true">
+                <img src="Previews\conveyor-stripe.png" alt="conveyor-stripe">
+            </a>
+            <div>conveyor-stripe</div>
+            <div class="tooltip">Size: 15 KB<br>Vertices: 208</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="conveyor">
+            <a href="models\conveyor.glb" draggable="true">
+                <img src="Previews\conveyor.png" alt="conveyor">
+            </a>
+            <div>conveyor</div>
+            <div class="tooltip">Size: 13 KB<br>Vertices: 144</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cover-bar">
+            <a href="models\cover-bar.glb" draggable="true">
+                <img src="Previews\cover-bar.png" alt="cover-bar">
+            </a>
+            <div>cover-bar</div>
+            <div class="tooltip">Size: 16 KB<br>Vertices: 224</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cover-corner">
+            <a href="models\cover-corner.glb" draggable="true">
+                <img src="Previews\cover-corner.png" alt="cover-corner">
+            </a>
+            <div>cover-corner</div>
+            <div class="tooltip">Size: 12 KB<br>Vertices: 123</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cover-hopper">
+            <a href="models\cover-hopper.glb" draggable="true">
+                <img src="Previews\cover-hopper.png" alt="cover-hopper">
+            </a>
+            <div>cover-hopper</div>
+            <div class="tooltip">Size: 15 KB<br>Vertices: 204</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cover-stripe-bar">
+            <a href="models\cover-stripe-bar.glb" draggable="true">
+                <img src="Previews\cover-stripe-bar.png" alt="cover-stripe-bar">
+            </a>
+            <div>cover-stripe-bar</div>
+            <div class="tooltip">Size: 17 KB<br>Vertices: 242</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cover-stripe-corner">
+            <a href="models\cover-stripe-corner.glb" draggable="true">
+                <img src="Previews\cover-stripe-corner.png" alt="cover-stripe-corner">
+            </a>
+            <div>cover-stripe-corner</div>
+            <div class="tooltip">Size: 13 KB<br>Vertices: 139</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cover-stripe-hopper">
+            <a href="models\cover-stripe-hopper.glb" draggable="true">
+                <img src="Previews\cover-stripe-hopper.png" alt="cover-stripe-hopper">
+            </a>
+            <div>cover-stripe-hopper</div>
+            <div class="tooltip">Size: 16 KB<br>Vertices: 216</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cover-stripe-top">
+            <a href="models\cover-stripe-top.glb" draggable="true">
+                <img src="Previews\cover-stripe-top.png" alt="cover-stripe-top">
+            </a>
+            <div>cover-stripe-top</div>
+            <div class="tooltip">Size: 13 KB<br>Vertices: 144</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cover-stripe-window">
+            <a href="models\cover-stripe-window.glb" draggable="true">
+                <img src="Previews\cover-stripe-window.png" alt="cover-stripe-window">
+            </a>
+            <div>cover-stripe-window</div>
+            <div class="tooltip">Size: 15 KB<br>Vertices: 184</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cover-stripe">
+            <a href="models\cover-stripe.glb" draggable="true">
+                <img src="Previews\cover-stripe.png" alt="cover-stripe">
+            </a>
+            <div>cover-stripe</div>
+            <div class="tooltip">Size: 12 KB<br>Vertices: 120</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cover-top">
+            <a href="models\cover-top.glb" draggable="true">
+                <img src="Previews\cover-top.png" alt="cover-top">
+            </a>
+            <div>cover-top</div>
+            <div class="tooltip">Size: 13 KB<br>Vertices: 132</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cover-window">
+            <a href="models\cover-window.glb" draggable="true">
+                <img src="Previews\cover-window.png" alt="cover-window">
+            </a>
+            <div>cover-window</div>
+            <div class="tooltip">Size: 14 KB<br>Vertices: 170</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="cover">
+            <a href="models\cover.glb" draggable="true">
+                <img src="Previews\cover.png" alt="cover">
+            </a>
+            <div>cover</div>
+            <div class="tooltip">Size: 12 KB<br>Vertices: 108</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="door-wide-closed">
+            <a href="models\door-wide-closed.glb" draggable="true">
+                <img src="Previews\door-wide-closed.png" alt="door-wide-closed">
+            </a>
+            <div>door-wide-closed</div>
+            <div class="tooltip">Size: 9 KB<br>Vertices: 36</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="door-wide-half">
+            <a href="models\door-wide-half.glb" draggable="true">
+                <img src="Previews\door-wide-half.png" alt="door-wide-half">
+            </a>
+            <div>door-wide-half</div>
+            <div class="tooltip">Size: 9 KB<br>Vertices: 32</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="door-wide-open">
+            <a href="models\door-wide-open.glb" draggable="true">
+                <img src="Previews\door-wide-open.png" alt="door-wide-open">
+            </a>
+            <div>door-wide-open</div>
+            <div class="tooltip">Size: 9 KB<br>Vertices: 24</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="door">
+            <a href="models\door.glb" draggable="true">
+                <img src="Previews\door.png" alt="door">
+            </a>
+            <div>door</div>
+            <div class="tooltip">Size: 14 KB<br>Vertices: 80</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="floor-large">
+            <a href="models\floor-large.glb" draggable="true">
+                <img src="Previews\floor-large.png" alt="floor-large">
+            </a>
+            <div>floor-large</div>
+            <div class="tooltip">Size: 8 KB<br>Vertices: 4</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="floor">
+            <a href="models\floor.glb" draggable="true">
+                <img src="Previews\floor.png" alt="floor">
+            </a>
+            <div>floor</div>
+            <div class="tooltip">Size: 8 KB<br>Vertices: 4</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="robot-arm-a">
+            <a href="models\robot-arm-a.glb" draggable="true">
+                <img src="Previews\robot-arm-a.png" alt="robot-arm-a">
+            </a>
+            <div>robot-arm-a</div>
+            <div class="tooltip">Size: 42 KB<br>Vertices: 786</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="robot-arm-b">
+            <a href="models\robot-arm-b.glb" draggable="true">
+                <img src="Previews\robot-arm-b.png" alt="robot-arm-b">
+            </a>
+            <div>robot-arm-b</div>
+            <div class="tooltip">Size: 38 KB<br>Vertices: 712</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="scanner-high">
+            <a href="models\scanner-high.glb" draggable="true">
+                <img src="Previews\scanner-high.png" alt="scanner-high">
+            </a>
+            <div>scanner-high</div>
+            <div class="tooltip">Size: 14 KB<br>Vertices: 168</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="scanner-low">
+            <a href="models\scanner-low.glb" draggable="true">
+                <img src="Previews\scanner-low.png" alt="scanner-low">
+            </a>
+            <div>scanner-low</div>
+            <div class="tooltip">Size: 14 KB<br>Vertices: 168</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="structure-corner-inner">
+            <a href="models\structure-corner-inner.glb" draggable="true">
+                <img src="Previews\structure-corner-inner.png" alt="structure-corner-inner">
+            </a>
+            <div>structure-corner-inner</div>
+            <div class="tooltip">Size: 11 KB<br>Vertices: 92</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="structure-corner-outer">
+            <a href="models\structure-corner-outer.glb" draggable="true">
+                <img src="Previews\structure-corner-outer.png" alt="structure-corner-outer">
+            </a>
+            <div>structure-corner-outer</div>
+            <div class="tooltip">Size: 11 KB<br>Vertices: 92</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="structure-doorway-wide">
+            <a href="models\structure-doorway-wide.glb" draggable="true">
+                <img src="Previews\structure-doorway-wide.png" alt="structure-doorway-wide">
+            </a>
+            <div>structure-doorway-wide</div>
+            <div class="tooltip">Size: 11 KB<br>Vertices: 86</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="structure-doorway">
+            <a href="models\structure-doorway.glb" draggable="true">
+                <img src="Previews\structure-doorway.png" alt="structure-doorway">
+            </a>
+            <div>structure-doorway</div>
+            <div class="tooltip">Size: 12 KB<br>Vertices: 104</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="structure-high">
+            <a href="models\structure-high.glb" draggable="true">
+                <img src="Previews\structure-high.png" alt="structure-high">
+            </a>
+            <div>structure-high</div>
+            <div class="tooltip">Size: 13 KB<br>Vertices: 144</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="structure-medium">
+            <a href="models\structure-medium.glb" draggable="true">
+                <img src="Previews\structure-medium.png" alt="structure-medium">
+            </a>
+            <div>structure-medium</div>
+            <div class="tooltip">Size: 13 KB<br>Vertices: 144</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="structure-short">
+            <a href="models\structure-short.glb" draggable="true">
+                <img src="Previews\structure-short.png" alt="structure-short">
+            </a>
+            <div>structure-short</div>
+            <div class="tooltip">Size: 13 KB<br>Vertices: 144</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="structure-tall">
+            <a href="models\structure-tall.glb" draggable="true">
+                <img src="Previews\structure-tall.png" alt="structure-tall">
+            </a>
+            <div>structure-tall</div>
+            <div class="tooltip">Size: 13 KB<br>Vertices: 144</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="structure-wall">
+            <a href="models\structure-wall.glb" draggable="true">
+                <img src="Previews\structure-wall.png" alt="structure-wall">
+            </a>
+            <div>structure-wall</div>
+            <div class="tooltip">Size: 10 KB<br>Vertices: 52</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="structure-window-wide">
+            <a href="models\structure-window-wide.glb" draggable="true">
+                <img src="Previews\structure-window-wide.png" alt="structure-window-wide">
+            </a>
+            <div>structure-window-wide</div>
+            <div class="tooltip">Size: 14 KB<br>Vertices: 156</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="structure-window">
+            <a href="models\structure-window.glb" draggable="true">
+                <img src="Previews\structure-window.png" alt="structure-window">
+            </a>
+            <div>structure-window</div>
+            <div class="tooltip">Size: 14 KB<br>Vertices: 156</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="structure-yellow-high">
+            <a href="models\structure-yellow-high.glb" draggable="true">
+                <img src="Previews\structure-yellow-high.png" alt="structure-yellow-high">
+            </a>
+            <div>structure-yellow-high</div>
+            <div class="tooltip">Size: 14 KB<br>Vertices: 160</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="structure-yellow-medium">
+            <a href="models\structure-yellow-medium.glb" draggable="true">
+                <img src="Previews\structure-yellow-medium.png" alt="structure-yellow-medium">
+            </a>
+            <div>structure-yellow-medium</div>
+            <div class="tooltip">Size: 14 KB<br>Vertices: 160</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="structure-yellow-short">
+            <a href="models\structure-yellow-short.glb" draggable="true">
+                <img src="Previews\structure-yellow-short.png" alt="structure-yellow-short">
+            </a>
+            <div>structure-yellow-short</div>
+            <div class="tooltip">Size: 13 KB<br>Vertices: 144</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="structure-yellow-tall">
+            <a href="models\structure-yellow-tall.glb" draggable="true">
+                <img src="Previews\structure-yellow-tall.png" alt="structure-yellow-tall">
+            </a>
+            <div>structure-yellow-tall</div>
+            <div class="tooltip">Size: 14 KB<br>Vertices: 160</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="top-large">
+            <a href="models\top-large.glb" draggable="true">
+                <img src="Previews\top-large.png" alt="top-large">
+            </a>
+            <div>top-large</div>
+            <div class="tooltip">Size: 8 KB<br>Vertices: 4</div>
+        </div>
+
+        <div class="package" draggable="true" ondragstart="drag(event)" data-name="top">
+            <a href="models\top.glb" draggable="true">
+                <img src="Previews\top.png" alt="top">
+            </a>
+            <div>top</div>
+            <div class="tooltip">Size: 8 KB<br>Vertices: 4</div>
+        </div>
+    </div>
+    <script>
+        function drag(event) {
+            event.dataTransfer.setData("text/plain", event.target.parentElement.href);
+        }
+        
+        document.getElementById("search").addEventListener("input", function() {
+            let filter = this.value.toLowerCase();
+            document.querySelectorAll(".package").forEach(item => {
+                item.style.display = item.getAttribute("data-name").includes(filter) ? "block" : "none";
+            });
+        });
+    </script>
+</body>
+</html>

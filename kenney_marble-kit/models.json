@@ -1,0 +1,1136 @@
+[
+    {
+        "name": "banner-double-high",
+        "glb": "models\\banner-double-high.glb",
+        "preview": "Previews\\banner-double-high.png",
+        "size_kb": 17,
+        "vertices": 216
+    },
+    {
+        "name": "banner-double",
+        "glb": "models\\banner-double.glb",
+        "preview": "Previews\\banner-double.png",
+        "size_kb": 17,
+        "vertices": 216
+    },
+    {
+        "name": "banner-hanging-double-high",
+        "glb": "models\\banner-hanging-double-high.glb",
+        "preview": "Previews\\banner-hanging-double-high.png",
+        "size_kb": 18,
+        "vertices": 256
+    },
+    {
+        "name": "banner-hanging-double",
+        "glb": "models\\banner-hanging-double.glb",
+        "preview": "Previews\\banner-hanging-double.png",
+        "size_kb": 18,
+        "vertices": 256
+    },
+    {
+        "name": "banner-hanging-high",
+        "glb": "models\\banner-hanging-high.glb",
+        "preview": "Previews\\banner-hanging-high.png",
+        "size_kb": 14,
+        "vertices": 128
+    },
+    {
+        "name": "banner-hanging",
+        "glb": "models\\banner-hanging.glb",
+        "preview": "Previews\\banner-hanging.png",
+        "size_kb": 14,
+        "vertices": 128
+    },
+    {
+        "name": "banner-high",
+        "glb": "models\\banner-high.glb",
+        "preview": "Previews\\banner-high.png",
+        "size_kb": 13,
+        "vertices": 108
+    },
+    {
+        "name": "banner",
+        "glb": "models\\banner.glb",
+        "preview": "Previews\\banner.png",
+        "size_kb": 13,
+        "vertices": 108
+    },
+    {
+        "name": "bend-large",
+        "glb": "models\\bend-large.glb",
+        "preview": "Previews\\bend-large.png",
+        "size_kb": 38,
+        "vertices": 828
+    },
+    {
+        "name": "bend-medium",
+        "glb": "models\\bend-medium.glb",
+        "preview": "Previews\\bend-medium.png",
+        "size_kb": 25,
+        "vertices": 444
+    },
+    {
+        "name": "bend-solid-large",
+        "glb": "models\\bend-solid-large.glb",
+        "preview": "Previews\\bend-solid-large.png",
+        "size_kb": 33,
+        "vertices": 672
+    },
+    {
+        "name": "bend-solid-medium",
+        "glb": "models\\bend-solid-medium.glb",
+        "preview": "Previews\\bend-solid-medium.png",
+        "size_kb": 22,
+        "vertices": 360
+    },
+    {
+        "name": "bend",
+        "glb": "models\\bend.glb",
+        "preview": "Previews\\bend.png",
+        "size_kb": 34,
+        "vertices": 728
+    },
+    {
+        "name": "bump-a",
+        "glb": "models\\bump-a.glb",
+        "preview": "Previews\\bump-a.png",
+        "size_kb": 32,
+        "vertices": 672
+    },
+    {
+        "name": "bump-b",
+        "glb": "models\\bump-b.glb",
+        "preview": "Previews\\bump-b.png",
+        "size_kb": 32,
+        "vertices": 672
+    },
+    {
+        "name": "bump-c",
+        "glb": "models\\bump-c.glb",
+        "preview": "Previews\\bump-c.png",
+        "size_kb": 32,
+        "vertices": 672
+    },
+    {
+        "name": "bump-d",
+        "glb": "models\\bump-d.glb",
+        "preview": "Previews\\bump-d.png",
+        "size_kb": 32,
+        "vertices": 672
+    },
+    {
+        "name": "bump-solid-a",
+        "glb": "models\\bump-solid-a.glb",
+        "preview": "Previews\\bump-solid-a.png",
+        "size_kb": 29,
+        "vertices": 570
+    },
+    {
+        "name": "bump-solid-b",
+        "glb": "models\\bump-solid-b.glb",
+        "preview": "Previews\\bump-solid-b.png",
+        "size_kb": 29,
+        "vertices": 570
+    },
+    {
+        "name": "bump-solid-c",
+        "glb": "models\\bump-solid-c.glb",
+        "preview": "Previews\\bump-solid-c.png",
+        "size_kb": 29,
+        "vertices": 570
+    },
+    {
+        "name": "bump-solid-d",
+        "glb": "models\\bump-solid-d.glb",
+        "preview": "Previews\\bump-solid-d.png",
+        "size_kb": 29,
+        "vertices": 570
+    },
+    {
+        "name": "corner-solid",
+        "glb": "models\\corner-solid.glb",
+        "preview": "Previews\\corner-solid.png",
+        "size_kb": 21,
+        "vertices": 328
+    },
+    {
+        "name": "corner",
+        "glb": "models\\corner.glb",
+        "preview": "Previews\\corner.png",
+        "size_kb": 23,
+        "vertices": 396
+    },
+    {
+        "name": "cross",
+        "glb": "models\\cross.glb",
+        "preview": "Previews\\cross.png",
+        "size_kb": 14,
+        "vertices": 136
+    },
+    {
+        "name": "curve-large",
+        "glb": "models\\curve-large.glb",
+        "preview": "Previews\\curve-large.png",
+        "size_kb": 25,
+        "vertices": 444
+    },
+    {
+        "name": "curve-solid-large",
+        "glb": "models\\curve-solid-large.glb",
+        "preview": "Previews\\curve-solid-large.png",
+        "size_kb": 22,
+        "vertices": 366
+    },
+    {
+        "name": "curve-solid",
+        "glb": "models\\curve-solid.glb",
+        "preview": "Previews\\curve-solid.png",
+        "size_kb": 16,
+        "vertices": 210
+    },
+    {
+        "name": "curve-wide-large",
+        "glb": "models\\curve-wide-large.glb",
+        "preview": "Previews\\curve-wide-large.png",
+        "size_kb": 26,
+        "vertices": 476
+    },
+    {
+        "name": "curve-wide-medium",
+        "glb": "models\\curve-wide-medium.glb",
+        "preview": "Previews\\curve-wide-medium.png",
+        "size_kb": 26,
+        "vertices": 476
+    },
+    {
+        "name": "curve-wide-solid-large",
+        "glb": "models\\curve-wide-solid-large.glb",
+        "preview": "Previews\\curve-wide-solid-large.png",
+        "size_kb": 23,
+        "vertices": 392
+    },
+    {
+        "name": "curve-wide-solid-medium",
+        "glb": "models\\curve-wide-solid-medium.glb",
+        "preview": "Previews\\curve-wide-solid-medium.png",
+        "size_kb": 23,
+        "vertices": 392
+    },
+    {
+        "name": "curve-wide",
+        "glb": "models\\curve-wide.glb",
+        "preview": "Previews\\curve-wide.png",
+        "size_kb": 23,
+        "vertices": 392
+    },
+    {
+        "name": "curve",
+        "glb": "models\\curve.glb",
+        "preview": "Previews\\curve.png",
+        "size_kb": 18,
+        "vertices": 252
+    },
+    {
+        "name": "end-hole-rounded",
+        "glb": "models\\end-hole-rounded.glb",
+        "preview": "Previews\\end-hole-rounded.png",
+        "size_kb": 16,
+        "vertices": 184
+    },
+    {
+        "name": "end-hole-square",
+        "glb": "models\\end-hole-square.glb",
+        "preview": "Previews\\end-hole-square.png",
+        "size_kb": 15,
+        "vertices": 160
+    },
+    {
+        "name": "end-rounded",
+        "glb": "models\\end-rounded.glb",
+        "preview": "Previews\\end-rounded.png",
+        "size_kb": 12,
+        "vertices": 86
+    },
+    {
+        "name": "end-square",
+        "glb": "models\\end-square.glb",
+        "preview": "Previews\\end-square.png",
+        "size_kb": 11,
+        "vertices": 62
+    },
+    {
+        "name": "fan-four",
+        "glb": "models\\fan-four.glb",
+        "preview": "Previews\\fan-four.png",
+        "size_kb": 20,
+        "vertices": 296
+    },
+    {
+        "name": "fan-simple-four",
+        "glb": "models\\fan-simple-four.glb",
+        "preview": "Previews\\fan-simple-four.png",
+        "size_kb": 19,
+        "vertices": 272
+    },
+    {
+        "name": "fan-simple-two",
+        "glb": "models\\fan-simple-two.glb",
+        "preview": "Previews\\fan-simple-two.png",
+        "size_kb": 17,
+        "vertices": 192
+    },
+    {
+        "name": "fan-standing-four",
+        "glb": "models\\fan-standing-four.glb",
+        "preview": "Previews\\fan-standing-four.png",
+        "size_kb": 22,
+        "vertices": 344
+    },
+    {
+        "name": "fan-standing-two",
+        "glb": "models\\fan-standing-two.glb",
+        "preview": "Previews\\fan-standing-two.png",
+        "size_kb": 19,
+        "vertices": 264
+    },
+    {
+        "name": "fan-two",
+        "glb": "models\\fan-two.glb",
+        "preview": "Previews\\fan-two.png",
+        "size_kb": 17,
+        "vertices": 216
+    },
+    {
+        "name": "funnel-long",
+        "glb": "models\\funnel-long.glb",
+        "preview": "Previews\\funnel-long.png",
+        "size_kb": 14,
+        "vertices": 132
+    },
+    {
+        "name": "funnel",
+        "glb": "models\\funnel.glb",
+        "preview": "Previews\\funnel.png",
+        "size_kb": 11,
+        "vertices": 68
+    },
+    {
+        "name": "helix-half-left",
+        "glb": "models\\helix-half-left.glb",
+        "preview": "Previews\\helix-half-left.png",
+        "size_kb": 39,
+        "vertices": 880
+    },
+    {
+        "name": "helix-half-right",
+        "glb": "models\\helix-half-right.glb",
+        "preview": "Previews\\helix-half-right.png",
+        "size_kb": 39,
+        "vertices": 880
+    },
+    {
+        "name": "helix-large-half-left",
+        "glb": "models\\helix-large-half-left.glb",
+        "preview": "Previews\\helix-large-half-left.png",
+        "size_kb": 63,
+        "vertices": 1624
+    },
+    {
+        "name": "helix-large-half-right",
+        "glb": "models\\helix-large-half-right.glb",
+        "preview": "Previews\\helix-large-half-right.png",
+        "size_kb": 63,
+        "vertices": 1624
+    },
+    {
+        "name": "helix-large-left",
+        "glb": "models\\helix-large-left.glb",
+        "preview": "Previews\\helix-large-left.png",
+        "size_kb": 117,
+        "vertices": 3227
+    },
+    {
+        "name": "helix-large-quarter-left",
+        "glb": "models\\helix-large-quarter-left.glb",
+        "preview": "Previews\\helix-large-quarter-left.png",
+        "size_kb": 37,
+        "vertices": 822
+    },
+    {
+        "name": "helix-large-quarter-right",
+        "glb": "models\\helix-large-quarter-right.glb",
+        "preview": "Previews\\helix-large-quarter-right.png",
+        "size_kb": 37,
+        "vertices": 822
+    },
+    {
+        "name": "helix-large-right",
+        "glb": "models\\helix-large-right.glb",
+        "preview": "Previews\\helix-large-right.png",
+        "size_kb": 117,
+        "vertices": 3227
+    },
+    {
+        "name": "helix-left",
+        "glb": "models\\helix-left.glb",
+        "preview": "Previews\\helix-left.png",
+        "size_kb": 67,
+        "vertices": 1739
+    },
+    {
+        "name": "helix-quarter-left",
+        "glb": "models\\helix-quarter-left.glb",
+        "preview": "Previews\\helix-quarter-left.png",
+        "size_kb": 24,
+        "vertices": 450
+    },
+    {
+        "name": "helix-quarter-right",
+        "glb": "models\\helix-quarter-right.glb",
+        "preview": "Previews\\helix-quarter-right.png",
+        "size_kb": 24,
+        "vertices": 450
+    },
+    {
+        "name": "helix-right",
+        "glb": "models\\helix-right.glb",
+        "preview": "Previews\\helix-right.png",
+        "size_kb": 67,
+        "vertices": 1739
+    },
+    {
+        "name": "marble-center-butterfly-high",
+        "glb": "models\\marble-center-butterfly-high.glb",
+        "preview": "Previews\\marble-center-butterfly-high.png",
+        "size_kb": 31,
+        "vertices": 598
+    },
+    {
+        "name": "marble-center-butterfly-low",
+        "glb": "models\\marble-center-butterfly-low.glb",
+        "preview": "Previews\\marble-center-butterfly-low.png",
+        "size_kb": 16,
+        "vertices": 174
+    },
+    {
+        "name": "marble-center-high",
+        "glb": "models\\marble-center-high.glb",
+        "preview": "Previews\\marble-center-high.png",
+        "size_kb": 31,
+        "vertices": 608
+    },
+    {
+        "name": "marble-center-low",
+        "glb": "models\\marble-center-low.glb",
+        "preview": "Previews\\marble-center-low.png",
+        "size_kb": 16,
+        "vertices": 176
+    },
+    {
+        "name": "marble-high",
+        "glb": "models\\marble-high.glb",
+        "preview": "Previews\\marble-high.png",
+        "size_kb": 19,
+        "vertices": 544
+    },
+    {
+        "name": "marble-low",
+        "glb": "models\\marble-low.glb",
+        "preview": "Previews\\marble-low.png",
+        "size_kb": 6,
+        "vertices": 144
+    },
+    {
+        "name": "ramp-end-a",
+        "glb": "models\\ramp-end-a.glb",
+        "preview": "Previews\\ramp-end-a.png",
+        "size_kb": 16,
+        "vertices": 204
+    },
+    {
+        "name": "ramp-end-b",
+        "glb": "models\\ramp-end-b.glb",
+        "preview": "Previews\\ramp-end-b.png",
+        "size_kb": 16,
+        "vertices": 204
+    },
+    {
+        "name": "ramp-end-c",
+        "glb": "models\\ramp-end-c.glb",
+        "preview": "Previews\\ramp-end-c.png",
+        "size_kb": 16,
+        "vertices": 204
+    },
+    {
+        "name": "ramp-end-d",
+        "glb": "models\\ramp-end-d.glb",
+        "preview": "Previews\\ramp-end-d.png",
+        "size_kb": 16,
+        "vertices": 204
+    },
+    {
+        "name": "ramp-end-solid-a",
+        "glb": "models\\ramp-end-solid-a.glb",
+        "preview": "Previews\\ramp-end-solid-a.png",
+        "size_kb": 15,
+        "vertices": 180
+    },
+    {
+        "name": "ramp-end-solid-b",
+        "glb": "models\\ramp-end-solid-b.glb",
+        "preview": "Previews\\ramp-end-solid-b.png",
+        "size_kb": 15,
+        "vertices": 180
+    },
+    {
+        "name": "ramp-end-solid-c",
+        "glb": "models\\ramp-end-solid-c.glb",
+        "preview": "Previews\\ramp-end-solid-c.png",
+        "size_kb": 15,
+        "vertices": 180
+    },
+    {
+        "name": "ramp-end-solid-d",
+        "glb": "models\\ramp-end-solid-d.glb",
+        "preview": "Previews\\ramp-end-solid-d.png",
+        "size_kb": 15,
+        "vertices": 180
+    },
+    {
+        "name": "ramp-long-a",
+        "glb": "models\\ramp-long-a.glb",
+        "preview": "Previews\\ramp-long-a.png",
+        "size_kb": 21,
+        "vertices": 348
+    },
+    {
+        "name": "ramp-long-b",
+        "glb": "models\\ramp-long-b.glb",
+        "preview": "Previews\\ramp-long-b.png",
+        "size_kb": 21,
+        "vertices": 348
+    },
+    {
+        "name": "ramp-long-c",
+        "glb": "models\\ramp-long-c.glb",
+        "preview": "Previews\\ramp-long-c.png",
+        "size_kb": 21,
+        "vertices": 348
+    },
+    {
+        "name": "ramp-long-d",
+        "glb": "models\\ramp-long-d.glb",
+        "preview": "Previews\\ramp-long-d.png",
+        "size_kb": 21,
+        "vertices": 348
+    },
+    {
+        "name": "ramp-long-solid-a",
+        "glb": "models\\ramp-long-solid-a.glb",
+        "preview": "Previews\\ramp-long-solid-a.png",
+        "size_kb": 19,
+        "vertices": 300
+    },
+    {
+        "name": "ramp-long-solid-b",
+        "glb": "models\\ramp-long-solid-b.glb",
+        "preview": "Previews\\ramp-long-solid-b.png",
+        "size_kb": 19,
+        "vertices": 300
+    },
+    {
+        "name": "ramp-long-solid-c",
+        "glb": "models\\ramp-long-solid-c.glb",
+        "preview": "Previews\\ramp-long-solid-c.png",
+        "size_kb": 19,
+        "vertices": 300
+    },
+    {
+        "name": "ramp-long-solid-d",
+        "glb": "models\\ramp-long-solid-d.glb",
+        "preview": "Previews\\ramp-long-solid-d.png",
+        "size_kb": 19,
+        "vertices": 300
+    },
+    {
+        "name": "ramp-start-a",
+        "glb": "models\\ramp-start-a.glb",
+        "preview": "Previews\\ramp-start-a.png",
+        "size_kb": 16,
+        "vertices": 204
+    },
+    {
+        "name": "ramp-start-b",
+        "glb": "models\\ramp-start-b.glb",
+        "preview": "Previews\\ramp-start-b.png",
+        "size_kb": 16,
+        "vertices": 204
+    },
+    {
+        "name": "ramp-start-c",
+        "glb": "models\\ramp-start-c.glb",
+        "preview": "Previews\\ramp-start-c.png",
+        "size_kb": 16,
+        "vertices": 204
+    },
+    {
+        "name": "ramp-start-d",
+        "glb": "models\\ramp-start-d.glb",
+        "preview": "Previews\\ramp-start-d.png",
+        "size_kb": 16,
+        "vertices": 204
+    },
+    {
+        "name": "ramp-start-solid-a",
+        "glb": "models\\ramp-start-solid-a.glb",
+        "preview": "Previews\\ramp-start-solid-a.png",
+        "size_kb": 15,
+        "vertices": 180
+    },
+    {
+        "name": "ramp-start-solid-b",
+        "glb": "models\\ramp-start-solid-b.glb",
+        "preview": "Previews\\ramp-start-solid-b.png",
+        "size_kb": 15,
+        "vertices": 180
+    },
+    {
+        "name": "ramp-start-solid-c",
+        "glb": "models\\ramp-start-solid-c.glb",
+        "preview": "Previews\\ramp-start-solid-c.png",
+        "size_kb": 15,
+        "vertices": 180
+    },
+    {
+        "name": "ramp-start-solid-d",
+        "glb": "models\\ramp-start-solid-d.glb",
+        "preview": "Previews\\ramp-start-solid-d.png",
+        "size_kb": 15,
+        "vertices": 180
+    },
+    {
+        "name": "s-curve-left-large",
+        "glb": "models\\s-curve-left-large.glb",
+        "preview": "Previews\\s-curve-left-large.png",
+        "size_kb": 38,
+        "vertices": 828
+    },
+    {
+        "name": "s-curve-left",
+        "glb": "models\\s-curve-left.glb",
+        "preview": "Previews\\s-curve-left.png",
+        "size_kb": 25,
+        "vertices": 444
+    },
+    {
+        "name": "s-curve-right-large",
+        "glb": "models\\s-curve-right-large.glb",
+        "preview": "Previews\\s-curve-right-large.png",
+        "size_kb": 38,
+        "vertices": 828
+    },
+    {
+        "name": "s-curve-right",
+        "glb": "models\\s-curve-right.glb",
+        "preview": "Previews\\s-curve-right.png",
+        "size_kb": 25,
+        "vertices": 444
+    },
+    {
+        "name": "s-curve-short-left-a",
+        "glb": "models\\s-curve-short-left-a.glb",
+        "preview": "Previews\\s-curve-short-left-a.png",
+        "size_kb": 24,
+        "vertices": 426
+    },
+    {
+        "name": "s-curve-short-left-b",
+        "glb": "models\\s-curve-short-left-b.glb",
+        "preview": "Previews\\s-curve-short-left-b.png",
+        "size_kb": 24,
+        "vertices": 428
+    },
+    {
+        "name": "s-curve-short-left-c",
+        "glb": "models\\s-curve-short-left-c.glb",
+        "preview": "Previews\\s-curve-short-left-c.png",
+        "size_kb": 24,
+        "vertices": 428
+    },
+    {
+        "name": "slant-a",
+        "glb": "models\\slant-a.glb",
+        "preview": "Previews\\slant-a.png",
+        "size_kb": 11,
+        "vertices": 60
+    },
+    {
+        "name": "slant-b",
+        "glb": "models\\slant-b.glb",
+        "preview": "Previews\\slant-b.png",
+        "size_kb": 13,
+        "vertices": 120
+    },
+    {
+        "name": "slant-c",
+        "glb": "models\\slant-c.glb",
+        "preview": "Previews\\slant-c.png",
+        "size_kb": 13,
+        "vertices": 120
+    },
+    {
+        "name": "slant-d",
+        "glb": "models\\slant-d.glb",
+        "preview": "Previews\\slant-d.png",
+        "size_kb": 11,
+        "vertices": 60
+    },
+    {
+        "name": "slant-long-a",
+        "glb": "models\\slant-long-a.glb",
+        "preview": "Previews\\slant-long-a.png",
+        "size_kb": 11,
+        "vertices": 60
+    },
+    {
+        "name": "slant-long-b",
+        "glb": "models\\slant-long-b.glb",
+        "preview": "Previews\\slant-long-b.png",
+        "size_kb": 11,
+        "vertices": 60
+    },
+    {
+        "name": "slant-long-c",
+        "glb": "models\\slant-long-c.glb",
+        "preview": "Previews\\slant-long-c.png",
+        "size_kb": 11,
+        "vertices": 60
+    },
+    {
+        "name": "slant-long-d",
+        "glb": "models\\slant-long-d.glb",
+        "preview": "Previews\\slant-long-d.png",
+        "size_kb": 11,
+        "vertices": 60
+    },
+    {
+        "name": "slant-solid-a",
+        "glb": "models\\slant-solid-a.glb",
+        "preview": "Previews\\slant-solid-a.png",
+        "size_kb": 11,
+        "vertices": 60
+    },
+    {
+        "name": "slant-solid-b",
+        "glb": "models\\slant-solid-b.glb",
+        "preview": "Previews\\slant-solid-b.png",
+        "size_kb": 11,
+        "vertices": 60
+    },
+    {
+        "name": "slant-solid-c",
+        "glb": "models\\slant-solid-c.glb",
+        "preview": "Previews\\slant-solid-c.png",
+        "size_kb": 11,
+        "vertices": 60
+    },
+    {
+        "name": "slant-solid-d",
+        "glb": "models\\slant-solid-d.glb",
+        "preview": "Previews\\slant-solid-d.png",
+        "size_kb": 11,
+        "vertices": 60
+    },
+    {
+        "name": "slant-solid-long-a",
+        "glb": "models\\slant-solid-long-a.glb",
+        "preview": "Previews\\slant-solid-long-a.png",
+        "size_kb": 11,
+        "vertices": 60
+    },
+    {
+        "name": "slant-solid-long-b",
+        "glb": "models\\slant-solid-long-b.glb",
+        "preview": "Previews\\slant-solid-long-b.png",
+        "size_kb": 11,
+        "vertices": 60
+    },
+    {
+        "name": "slant-solid-long-c",
+        "glb": "models\\slant-solid-long-c.glb",
+        "preview": "Previews\\slant-solid-long-c.png",
+        "size_kb": 11,
+        "vertices": 60
+    },
+    {
+        "name": "slant-solid-long-d",
+        "glb": "models\\slant-solid-long-d.glb",
+        "preview": "Previews\\slant-solid-long-d.png",
+        "size_kb": 11,
+        "vertices": 60
+    },
+    {
+        "name": "split-double-sides-solid",
+        "glb": "models\\split-double-sides-solid.glb",
+        "preview": "Previews\\split-double-sides-solid.png",
+        "size_kb": 34,
+        "vertices": 709
+    },
+    {
+        "name": "split-double-sides",
+        "glb": "models\\split-double-sides.glb",
+        "preview": "Previews\\split-double-sides.png",
+        "size_kb": 37,
+        "vertices": 793
+    },
+    {
+        "name": "split-double-solid",
+        "glb": "models\\split-double-solid.glb",
+        "preview": "Previews\\split-double-solid.png",
+        "size_kb": 32,
+        "vertices": 668
+    },
+    {
+        "name": "split-double",
+        "glb": "models\\split-double.glb",
+        "preview": "Previews\\split-double.png",
+        "size_kb": 35,
+        "vertices": 746
+    },
+    {
+        "name": "split-large-left",
+        "glb": "models\\split-large-left.glb",
+        "preview": "Previews\\split-large-left.png",
+        "size_kb": 24,
+        "vertices": 416
+    },
+    {
+        "name": "split-large-right",
+        "glb": "models\\split-large-right.glb",
+        "preview": "Previews\\split-large-right.png",
+        "size_kb": 24,
+        "vertices": 416
+    },
+    {
+        "name": "split-large-solid-left",
+        "glb": "models\\split-large-solid-left.glb",
+        "preview": "Previews\\split-large-solid-left.png",
+        "size_kb": 19,
+        "vertices": 290
+    },
+    {
+        "name": "split-large-solid-right",
+        "glb": "models\\split-large-solid-right.glb",
+        "preview": "Previews\\split-large-solid-right.png",
+        "size_kb": 19,
+        "vertices": 290
+    },
+    {
+        "name": "split-left",
+        "glb": "models\\split-left.glb",
+        "preview": "Previews\\split-left.png",
+        "size_kb": 18,
+        "vertices": 252
+    },
+    {
+        "name": "split-right",
+        "glb": "models\\split-right.glb",
+        "preview": "Previews\\split-right.png",
+        "size_kb": 18,
+        "vertices": 252
+    },
+    {
+        "name": "split-solid-left",
+        "glb": "models\\split-solid-left.glb",
+        "preview": "Previews\\split-solid-left.png",
+        "size_kb": 16,
+        "vertices": 186
+    },
+    {
+        "name": "split-solid-right",
+        "glb": "models\\split-solid-right.glb",
+        "preview": "Previews\\split-solid-right.png",
+        "size_kb": 16,
+        "vertices": 186
+    },
+    {
+        "name": "split",
+        "glb": "models\\split.glb",
+        "preview": "Previews\\split.png",
+        "size_kb": 12,
+        "vertices": 98
+    },
+    {
+        "name": "straight-hole",
+        "glb": "models\\straight-hole.glb",
+        "preview": "Previews\\straight-hole.png",
+        "size_kb": 15,
+        "vertices": 168
+    },
+    {
+        "name": "straight-wide-hole",
+        "glb": "models\\straight-wide-hole.glb",
+        "preview": "Previews\\straight-wide-hole.png",
+        "size_kb": 15,
+        "vertices": 168
+    },
+    {
+        "name": "straight-wide",
+        "glb": "models\\straight-wide.glb",
+        "preview": "Previews\\straight-wide.png",
+        "size_kb": 11,
+        "vertices": 60
+    },
+    {
+        "name": "straight",
+        "glb": "models\\straight.glb",
+        "preview": "Previews\\straight.png",
+        "size_kb": 11,
+        "vertices": 60
+    },
+    {
+        "name": "support-color-four-bottom",
+        "glb": "models\\support-color-four-bottom.glb",
+        "preview": "Previews\\support-color-four-bottom.png",
+        "size_kb": 25,
+        "vertices": 448
+    },
+    {
+        "name": "support-color-four-middle",
+        "glb": "models\\support-color-four-middle.glb",
+        "preview": "Previews\\support-color-four-middle.png",
+        "size_kb": 16,
+        "vertices": 192
+    },
+    {
+        "name": "support-color-four-top-double",
+        "glb": "models\\support-color-four-top-double.glb",
+        "preview": "Previews\\support-color-four-top-double.png",
+        "size_kb": 22,
+        "vertices": 368
+    },
+    {
+        "name": "support-color-four-top",
+        "glb": "models\\support-color-four-top.glb",
+        "preview": "Previews\\support-color-four-top.png",
+        "size_kb": 18,
+        "vertices": 264
+    },
+    {
+        "name": "support-color-single-bottom",
+        "glb": "models\\support-color-single-bottom.glb",
+        "preview": "Previews\\support-color-single-bottom.png",
+        "size_kb": 12,
+        "vertices": 80
+    },
+    {
+        "name": "support-color-single-middle",
+        "glb": "models\\support-color-single-middle.glb",
+        "preview": "Previews\\support-color-single-middle.png",
+        "size_kb": 11,
+        "vertices": 48
+    },
+    {
+        "name": "support-color-single-top-double",
+        "glb": "models\\support-color-single-top-double.glb",
+        "preview": "Previews\\support-color-single-top-double.png",
+        "size_kb": 16,
+        "vertices": 192
+    },
+    {
+        "name": "support-color-single-top",
+        "glb": "models\\support-color-single-top.glb",
+        "preview": "Previews\\support-color-single-top.png",
+        "size_kb": 13,
+        "vertices": 112
+    },
+    {
+        "name": "support-color-two-bottom",
+        "glb": "models\\support-color-two-bottom.glb",
+        "preview": "Previews\\support-color-two-bottom.png",
+        "size_kb": 17,
+        "vertices": 224
+    },
+    {
+        "name": "support-color-two-middle",
+        "glb": "models\\support-color-two-middle.glb",
+        "preview": "Previews\\support-color-two-middle.png",
+        "size_kb": 13,
+        "vertices": 96
+    },
+    {
+        "name": "support-color-two-top-double",
+        "glb": "models\\support-color-two-top-double.glb",
+        "preview": "Previews\\support-color-two-top-double.png",
+        "size_kb": 19,
+        "vertices": 272
+    },
+    {
+        "name": "support-color-two-top",
+        "glb": "models\\support-color-two-top.glb",
+        "preview": "Previews\\support-color-two-top.png",
+        "size_kb": 14,
+        "vertices": 152
+    },
+    {
+        "name": "support-four-bottom",
+        "glb": "models\\support-four-bottom.glb",
+        "preview": "Previews\\support-four-bottom.png",
+        "size_kb": 25,
+        "vertices": 448
+    },
+    {
+        "name": "support-four-middle",
+        "glb": "models\\support-four-middle.glb",
+        "preview": "Previews\\support-four-middle.png",
+        "size_kb": 16,
+        "vertices": 192
+    },
+    {
+        "name": "support-four-top-double",
+        "glb": "models\\support-four-top-double.glb",
+        "preview": "Previews\\support-four-top-double.png",
+        "size_kb": 22,
+        "vertices": 368
+    },
+    {
+        "name": "support-four-top",
+        "glb": "models\\support-four-top.glb",
+        "preview": "Previews\\support-four-top.png",
+        "size_kb": 18,
+        "vertices": 264
+    },
+    {
+        "name": "support-single-bottom",
+        "glb": "models\\support-single-bottom.glb",
+        "preview": "Previews\\support-single-bottom.png",
+        "size_kb": 12,
+        "vertices": 80
+    },
+    {
+        "name": "support-single-middle",
+        "glb": "models\\support-single-middle.glb",
+        "preview": "Previews\\support-single-middle.png",
+        "size_kb": 11,
+        "vertices": 48
+    },
+    {
+        "name": "support-single-top-double",
+        "glb": "models\\support-single-top-double.glb",
+        "preview": "Previews\\support-single-top-double.png",
+        "size_kb": 16,
+        "vertices": 192
+    },
+    {
+        "name": "support-single-top",
+        "glb": "models\\support-single-top.glb",
+        "preview": "Previews\\support-single-top.png",
+        "size_kb": 13,
+        "vertices": 112
+    },
+    {
+        "name": "support-two-bottom",
+        "glb": "models\\support-two-bottom.glb",
+        "preview": "Previews\\support-two-bottom.png",
+        "size_kb": 17,
+        "vertices": 224
+    },
+    {
+        "name": "support-two-middle",
+        "glb": "models\\support-two-middle.glb",
+        "preview": "Previews\\support-two-middle.png",
+        "size_kb": 12,
+        "vertices": 96
+    },
+    {
+        "name": "support-two-top-double",
+        "glb": "models\\support-two-top-double.glb",
+        "preview": "Previews\\support-two-top-double.png",
+        "size_kb": 19,
+        "vertices": 272
+    },
+    {
+        "name": "support-two-top",
+        "glb": "models\\support-two-top.glb",
+        "preview": "Previews\\support-two-top.png",
+        "size_kb": 14,
+        "vertices": 152
+    },
+    {
+        "name": "tree-large",
+        "glb": "models\\tree-large.glb",
+        "preview": "Previews\\tree-large.png",
+        "size_kb": 14,
+        "vertices": 152
+    },
+    {
+        "name": "tree-tall-large",
+        "glb": "models\\tree-tall-large.glb",
+        "preview": "Previews\\tree-tall-large.png",
+        "size_kb": 14,
+        "vertices": 152
+    },
+    {
+        "name": "tree-tall",
+        "glb": "models\\tree-tall.glb",
+        "preview": "Previews\\tree-tall.png",
+        "size_kb": 14,
+        "vertices": 152
+    },
+    {
+        "name": "tree",
+        "glb": "models\\tree.glb",
+        "preview": "Previews\\tree.png",
+        "size_kb": 14,
+        "vertices": 152
+    },
+    {
+        "name": "tunnel",
+        "glb": "models\\tunnel.glb",
+        "preview": "Previews\\tunnel.png",
+        "size_kb": 12,
+        "vertices": 96
+    },
+    {
+        "name": "wave-a",
+        "glb": "models\\wave-a.glb",
+        "preview": "Previews\\wave-a.png",
+        "size_kb": 35,
+        "vertices": 748
+    },
+    {
+        "name": "wave-b",
+        "glb": "models\\wave-b.glb",
+        "preview": "Previews\\wave-b.png",
+        "size_kb": 37,
+        "vertices": 827
+    },
+    {
+        "name": "wave-c",
+        "glb": "models\\wave-c.glb",
+        "preview": "Previews\\wave-c.png",
+        "size_kb": 37,
+        "vertices": 826
+    },
+    {
+        "name": "wave-solid-a",
+        "glb": "models\\wave-solid-a.glb",
+        "preview": "Previews\\wave-solid-a.png",
+        "size_kb": 31,
+        "vertices": 642
+    },
+    {
+        "name": "wave-solid-b",
+        "glb": "models\\wave-solid-b.glb",
+        "preview": "Previews\\wave-solid-b.png",
+        "size_kb": 33,
+        "vertices": 713
+    },
+    {
+        "name": "wave-solid-c",
+        "glb": "models\\wave-solid-c.glb",
+        "preview": "Previews\\wave-solid-c.png",
+        "size_kb": 33,
+        "vertices": 714
+    }
+]

@@ -1,0 +1,198 @@
+[
+    {
+        "name": "blasterA",
+        "glb": "models\\blasterA.glb",
+        "preview": "Previews\\blasterA.png",
+        "size_kb": 26,
+        "vertices": 2224
+    },
+    {
+        "name": "blasterB",
+        "glb": "models\\blasterB.glb",
+        "preview": "Previews\\blasterB.png",
+        "size_kb": 30,
+        "vertices": 2664
+    },
+    {
+        "name": "blasterC",
+        "glb": "models\\blasterC.glb",
+        "preview": "Previews\\blasterC.png",
+        "size_kb": 29,
+        "vertices": 2536
+    },
+    {
+        "name": "blasterD",
+        "glb": "models\\blasterD.glb",
+        "preview": "Previews\\blasterD.png",
+        "size_kb": 37,
+        "vertices": 4230
+    },
+    {
+        "name": "blasterE",
+        "glb": "models\\blasterE.glb",
+        "preview": "Previews\\blasterE.png",
+        "size_kb": 65,
+        "vertices": 7870
+    },
+    {
+        "name": "blasterF",
+        "glb": "models\\blasterF.glb",
+        "preview": "Previews\\blasterF.png",
+        "size_kb": 67,
+        "vertices": 8140
+    },
+    {
+        "name": "blasterG",
+        "glb": "models\\blasterG.glb",
+        "preview": "Previews\\blasterG.png",
+        "size_kb": 34,
+        "vertices": 3136
+    },
+    {
+        "name": "blasterH",
+        "glb": "models\\blasterH.glb",
+        "preview": "Previews\\blasterH.png",
+        "size_kb": 19,
+        "vertices": 1512
+    },
+    {
+        "name": "blasterI",
+        "glb": "models\\blasterI.glb",
+        "preview": "Previews\\blasterI.png",
+        "size_kb": 43,
+        "vertices": 5000
+    },
+    {
+        "name": "blasterJ",
+        "glb": "models\\blasterJ.glb",
+        "preview": "Previews\\blasterJ.png",
+        "size_kb": 44,
+        "vertices": 4112
+    },
+    {
+        "name": "blasterK",
+        "glb": "models\\blasterK.glb",
+        "preview": "Previews\\blasterK.png",
+        "size_kb": 22,
+        "vertices": 2290
+    },
+    {
+        "name": "blasterL",
+        "glb": "models\\blasterL.glb",
+        "preview": "Previews\\blasterL.png",
+        "size_kb": 26,
+        "vertices": 2760
+    },
+    {
+        "name": "blasterM",
+        "glb": "models\\blasterM.glb",
+        "preview": "Previews\\blasterM.png",
+        "size_kb": 33,
+        "vertices": 2283
+    },
+    {
+        "name": "blasterN",
+        "glb": "models\\blasterN.glb",
+        "preview": "Previews\\blasterN.png",
+        "size_kb": 39,
+        "vertices": 4450
+    },
+    {
+        "name": "blasterO",
+        "glb": "models\\blasterO.glb",
+        "preview": "Previews\\blasterO.png",
+        "size_kb": 65,
+        "vertices": 6280
+    },
+    {
+        "name": "blasterP",
+        "glb": "models\\blasterP.glb",
+        "preview": "Previews\\blasterP.png",
+        "size_kb": 74,
+        "vertices": 8910
+    },
+    {
+        "name": "blasterQ",
+        "glb": "models\\blasterQ.glb",
+        "preview": "Previews\\blasterQ.png",
+        "size_kb": 39,
+        "vertices": 4555
+    },
+    {
+        "name": "blasterR",
+        "glb": "models\\blasterR.glb",
+        "preview": "Previews\\blasterR.png",
+        "size_kb": 33,
+        "vertices": 3640
+    },
+    {
+        "name": "clipA",
+        "glb": "models\\clipA.glb",
+        "preview": "Previews\\clipA.png",
+        "size_kb": 10,
+        "vertices": 504
+    },
+    {
+        "name": "foamBulletA-low",
+        "glb": "models\\foamBulletA-low.glb",
+        "preview": "Previews\\foamBulletA-low.png",
+        "size_kb": 4,
+        "vertices": 48
+    },
+    {
+        "name": "foamBulletA",
+        "glb": "models\\foamBulletA.glb",
+        "preview": "Previews\\foamBulletA.png",
+        "size_kb": 7,
+        "vertices": 144
+    },
+    {
+        "name": "foamBulletB-low",
+        "glb": "models\\foamBulletB-low.glb",
+        "preview": "Previews\\foamBulletB-low.png",
+        "size_kb": 6,
+        "vertices": 160
+    },
+    {
+        "name": "foamBulletB",
+        "glb": "models\\foamBulletB.glb",
+        "preview": "Previews\\foamBulletB.png",
+        "size_kb": 12,
+        "vertices": 480
+    },
+    {
+        "name": "scopeA",
+        "glb": "models\\scopeA.glb",
+        "preview": "Previews\\scopeA.png",
+        "size_kb": 39,
+        "vertices": 2808
+    },
+    {
+        "name": "scopeB",
+        "glb": "models\\scopeB.glb",
+        "preview": "Previews\\scopeB.png",
+        "size_kb": 44,
+        "vertices": 3204
+    },
+    {
+        "name": "targetA",
+        "glb": "models\\targetA.glb",
+        "preview": "Previews\\targetA.png",
+        "size_kb": 19,
+        "vertices": 1272
+    },
+    {
+        "name": "targetB",
+        "glb": "models\\targetB.glb",
+        "preview": "Previews\\targetB.png",
+        "size_kb": 21,
+        "vertices": 1804
+    },
+    {
+        "name": "targetSmall",
+        "glb": "models\\targetSmall.glb",
+        "preview": "Previews\\targetSmall.png",
+        "size_kb": 7,
+        "vertices": 336
+    }
+]

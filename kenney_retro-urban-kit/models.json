@@ -1,0 +1,870 @@
+[
+    {
+        "name": "balcony-ladder-bottom",
+        "glb": "models\\balcony-ladder-bottom.glb",
+        "preview": "Previews\\balcony-ladder-bottom.png",
+        "size_kb": 5,
+        "vertices": 48
+    },
+    {
+        "name": "balcony-ladder-top",
+        "glb": "models\\balcony-ladder-top.glb",
+        "preview": "Previews\\balcony-ladder-top.png",
+        "size_kb": 4,
+        "vertices": 38
+    },
+    {
+        "name": "balcony-type-a",
+        "glb": "models\\balcony-type-a.glb",
+        "preview": "Previews\\balcony-type-a.png",
+        "size_kb": 4,
+        "vertices": 32
+    },
+    {
+        "name": "cliff-corner",
+        "glb": "models\\cliff-corner.glb",
+        "preview": "Previews\\cliff-corner.png",
+        "size_kb": 12,
+        "vertices": 24
+    },
+    {
+        "name": "cliff-side",
+        "glb": "models\\cliff-side.glb",
+        "preview": "Previews\\cliff-side.png",
+        "size_kb": 13,
+        "vertices": 36
+    },
+    {
+        "name": "detail-awning-small",
+        "glb": "models\\detail-awning-small.glb",
+        "preview": "Previews\\detail-awning-small.png",
+        "size_kb": 7,
+        "vertices": 44
+    },
+    {
+        "name": "detail-awning-wide",
+        "glb": "models\\detail-awning-wide.glb",
+        "preview": "Previews\\detail-awning-wide.png",
+        "size_kb": 7,
+        "vertices": 44
+    },
+    {
+        "name": "detail-barrier-strong-damaged",
+        "glb": "models\\detail-barrier-strong-damaged.glb",
+        "preview": "Previews\\detail-barrier-strong-damaged.png",
+        "size_kb": 8,
+        "vertices": 68
+    },
+    {
+        "name": "detail-barrier-strong-type-a",
+        "glb": "models\\detail-barrier-strong-type-a.glb",
+        "preview": "Previews\\detail-barrier-strong-type-a.png",
+        "size_kb": 7,
+        "vertices": 48
+    },
+    {
+        "name": "detail-barrier-strong-type-b",
+        "glb": "models\\detail-barrier-strong-type-b.glb",
+        "preview": "Previews\\detail-barrier-strong-type-b.png",
+        "size_kb": 10,
+        "vertices": 48
+    },
+    {
+        "name": "detail-barrier-type-a",
+        "glb": "models\\detail-barrier-type-a.glb",
+        "preview": "Previews\\detail-barrier-type-a.png",
+        "size_kb": 11,
+        "vertices": 72
+    },
+    {
+        "name": "detail-barrier-type-b",
+        "glb": "models\\detail-barrier-type-b.glb",
+        "preview": "Previews\\detail-barrier-type-b.png",
+        "size_kb": 11,
+        "vertices": 72
+    },
+    {
+        "name": "detail-beam",
+        "glb": "models\\detail-beam.glb",
+        "preview": "Previews\\detail-beam.png",
+        "size_kb": 14,
+        "vertices": 72
+    },
+    {
+        "name": "detail-bench",
+        "glb": "models\\detail-bench.glb",
+        "preview": "Previews\\detail-bench.png",
+        "size_kb": 17,
+        "vertices": 160
+    },
+    {
+        "name": "detail-block",
+        "glb": "models\\detail-block.glb",
+        "preview": "Previews\\detail-block.png",
+        "size_kb": 7,
+        "vertices": 24
+    },
+    {
+        "name": "detail-bricks-type-a",
+        "glb": "models\\detail-bricks-type-a.glb",
+        "preview": "Previews\\detail-bricks-type-a.png",
+        "size_kb": 11,
+        "vertices": 150
+    },
+    {
+        "name": "detail-bricks-type-b",
+        "glb": "models\\detail-bricks-type-b.glb",
+        "preview": "Previews\\detail-bricks-type-b.png",
+        "size_kb": 11,
+        "vertices": 162
+    },
+    {
+        "name": "detail-cables-type-a",
+        "glb": "models\\detail-cables-type-a.glb",
+        "preview": "Previews\\detail-cables-type-a.png",
+        "size_kb": 3,
+        "vertices": 8
+    },
+    {
+        "name": "detail-cables-type-b",
+        "glb": "models\\detail-cables-type-b.glb",
+        "preview": "Previews\\detail-cables-type-b.png",
+        "size_kb": 3,
+        "vertices": 8
+    },
+    {
+        "name": "detail-dumpster-closed",
+        "glb": "models\\detail-dumpster-closed.glb",
+        "preview": "Previews\\detail-dumpster-closed.png",
+        "size_kb": 18,
+        "vertices": 44
+    },
+    {
+        "name": "detail-dumpster-open",
+        "glb": "models\\detail-dumpster-open.glb",
+        "preview": "Previews\\detail-dumpster-open.png",
+        "size_kb": 24,
+        "vertices": 48
+    },
+    {
+        "name": "detail-light-double",
+        "glb": "models\\detail-light-double.glb",
+        "preview": "Previews\\detail-light-double.png",
+        "size_kb": 11,
+        "vertices": 150
+    },
+    {
+        "name": "detail-light-single",
+        "glb": "models\\detail-light-single.glb",
+        "preview": "Previews\\detail-light-single.png",
+        "size_kb": 9,
+        "vertices": 104
+    },
+    {
+        "name": "detail-light-traffic",
+        "glb": "models\\detail-light-traffic.glb",
+        "preview": "Previews\\detail-light-traffic.png",
+        "size_kb": 18,
+        "vertices": 182
+    },
+    {
+        "name": "door-type-a",
+        "glb": "models\\door-type-a.glb",
+        "preview": "Previews\\door-type-a.png",
+        "size_kb": 12,
+        "vertices": 44
+    },
+    {
+        "name": "door-type-b",
+        "glb": "models\\door-type-b.glb",
+        "preview": "Previews\\door-type-b.png",
+        "size_kb": 12,
+        "vertices": 44
+    },
+    {
+        "name": "grass-corner-inner",
+        "glb": "models\\grass-corner-inner.glb",
+        "preview": "Previews\\grass-corner-inner.png",
+        "size_kb": 6,
+        "vertices": 4
+    },
+    {
+        "name": "grass-corner",
+        "glb": "models\\grass-corner.glb",
+        "preview": "Previews\\grass-corner.png",
+        "size_kb": 6,
+        "vertices": 4
+    },
+    {
+        "name": "grass-hill",
+        "glb": "models\\grass-hill.glb",
+        "preview": "Previews\\grass-hill.png",
+        "size_kb": 6,
+        "vertices": 4
+    },
+    {
+        "name": "grass",
+        "glb": "models\\grass.glb",
+        "preview": "Previews\\grass.png",
+        "size_kb": 6,
+        "vertices": 4
+    },
+    {
+        "name": "pallet-small",
+        "glb": "models\\pallet-small.glb",
+        "preview": "Previews\\pallet-small.png",
+        "size_kb": 10,
+        "vertices": 120
+    },
+    {
+        "name": "pallet",
+        "glb": "models\\pallet.glb",
+        "preview": "Previews\\pallet.png",
+        "size_kb": 12,
+        "vertices": 168
+    },
+    {
+        "name": "planks",
+        "glb": "models\\planks.glb",
+        "preview": "Previews\\planks.png",
+        "size_kb": 8,
+        "vertices": 72
+    },
+    {
+        "name": "road-asphalt-center",
+        "glb": "models\\road-asphalt-center.glb",
+        "preview": "Previews\\road-asphalt-center.png",
+        "size_kb": 5,
+        "vertices": 4
+    },
+    {
+        "name": "road-asphalt-corner-inner",
+        "glb": "models\\road-asphalt-corner-inner.glb",
+        "preview": "Previews\\road-asphalt-corner-inner.png",
+        "size_kb": 12,
+        "vertices": 40
+    },
+    {
+        "name": "road-asphalt-corner-outer",
+        "glb": "models\\road-asphalt-corner-outer.glb",
+        "preview": "Previews\\road-asphalt-corner-outer.png",
+        "size_kb": 12,
+        "vertices": 38
+    },
+    {
+        "name": "road-asphalt-corner",
+        "glb": "models\\road-asphalt-corner.glb",
+        "preview": "Previews\\road-asphalt-corner.png",
+        "size_kb": 13,
+        "vertices": 72
+    },
+    {
+        "name": "road-asphalt-damaged",
+        "glb": "models\\road-asphalt-damaged.glb",
+        "preview": "Previews\\road-asphalt-damaged.png",
+        "size_kb": 12,
+        "vertices": 38
+    },
+    {
+        "name": "road-asphalt-pavement",
+        "glb": "models\\road-asphalt-pavement.glb",
+        "preview": "Previews\\road-asphalt-pavement.png",
+        "size_kb": 6,
+        "vertices": 4
+    },
+    {
+        "name": "road-asphalt-side",
+        "glb": "models\\road-asphalt-side.glb",
+        "preview": "Previews\\road-asphalt-side.png",
+        "size_kb": 11,
+        "vertices": 24
+    },
+    {
+        "name": "road-asphalt-straight",
+        "glb": "models\\road-asphalt-straight.glb",
+        "preview": "Previews\\road-asphalt-straight.png",
+        "size_kb": 12,
+        "vertices": 44
+    },
+    {
+        "name": "road-dirt-center",
+        "glb": "models\\road-dirt-center.glb",
+        "preview": "Previews\\road-dirt-center.png",
+        "size_kb": 6,
+        "vertices": 4
+    },
+    {
+        "name": "road-dirt-corner-inner",
+        "glb": "models\\road-dirt-corner-inner.glb",
+        "preview": "Previews\\road-dirt-corner-inner.png",
+        "size_kb": 13,
+        "vertices": 40
+    },
+    {
+        "name": "road-dirt-corner-outer",
+        "glb": "models\\road-dirt-corner-outer.glb",
+        "preview": "Previews\\road-dirt-corner-outer.png",
+        "size_kb": 13,
+        "vertices": 38
+    },
+    {
+        "name": "road-dirt-corner",
+        "glb": "models\\road-dirt-corner.glb",
+        "preview": "Previews\\road-dirt-corner.png",
+        "size_kb": 20,
+        "vertices": 72
+    },
+    {
+        "name": "road-dirt-damaged",
+        "glb": "models\\road-dirt-damaged.glb",
+        "preview": "Previews\\road-dirt-damaged.png",
+        "size_kb": 13,
+        "vertices": 38
+    },
+    {
+        "name": "road-dirt-pavement",
+        "glb": "models\\road-dirt-pavement.glb",
+        "preview": "Previews\\road-dirt-pavement.png",
+        "size_kb": 6,
+        "vertices": 4
+    },
+    {
+        "name": "road-dirt-side",
+        "glb": "models\\road-dirt-side.glb",
+        "preview": "Previews\\road-dirt-side.png",
+        "size_kb": 12,
+        "vertices": 24
+    },
+    {
+        "name": "road-dirt-straight",
+        "glb": "models\\road-dirt-straight.glb",
+        "preview": "Previews\\road-dirt-straight.png",
+        "size_kb": 13,
+        "vertices": 44
+    },
+    {
+        "name": "road-dirt-tile",
+        "glb": "models\\road-dirt-tile.glb",
+        "preview": "Previews\\road-dirt-tile.png",
+        "size_kb": 7,
+        "vertices": 24
+    },
+    {
+        "name": "roof-metal-poles",
+        "glb": "models\\roof-metal-poles.glb",
+        "preview": "Previews\\roof-metal-poles.png",
+        "size_kb": 15,
+        "vertices": 96
+    },
+    {
+        "name": "roof-metal-type-a",
+        "glb": "models\\roof-metal-type-a.glb",
+        "preview": "Previews\\roof-metal-type-a.png",
+        "size_kb": 14,
+        "vertices": 66
+    },
+    {
+        "name": "roof-metal-type-b",
+        "glb": "models\\roof-metal-type-b.glb",
+        "preview": "Previews\\roof-metal-type-b.png",
+        "size_kb": 19,
+        "vertices": 66
+    },
+    {
+        "name": "scaffolding-floor",
+        "glb": "models\\scaffolding-floor.glb",
+        "preview": "Previews\\scaffolding-floor.png",
+        "size_kb": 11,
+        "vertices": 60
+    },
+    {
+        "name": "scaffolding-poles",
+        "glb": "models\\scaffolding-poles.glb",
+        "preview": "Previews\\scaffolding-poles.png",
+        "size_kb": 9,
+        "vertices": 96
+    },
+    {
+        "name": "scaffolding-structure",
+        "glb": "models\\scaffolding-structure.glb",
+        "preview": "Previews\\scaffolding-structure.png",
+        "size_kb": 15,
+        "vertices": 180
+    },
+    {
+        "name": "tree-large",
+        "glb": "models\\tree-large.glb",
+        "preview": "Previews\\tree-large.png",
+        "size_kb": 5,
+        "vertices": 24
+    },
+    {
+        "name": "tree-park-large",
+        "glb": "models\\tree-park-large.glb",
+        "preview": "Previews\\tree-park-large.png",
+        "size_kb": 19,
+        "vertices": 102
+    },
+    {
+        "name": "tree-park-pine-large",
+        "glb": "models\\tree-park-pine-large.glb",
+        "preview": "Previews\\tree-park-pine-large.png",
+        "size_kb": 19,
+        "vertices": 102
+    },
+    {
+        "name": "tree-pine-large",
+        "glb": "models\\tree-pine-large.glb",
+        "preview": "Previews\\tree-pine-large.png",
+        "size_kb": 4,
+        "vertices": 24
+    },
+    {
+        "name": "tree-pine-small",
+        "glb": "models\\tree-pine-small.glb",
+        "preview": "Previews\\tree-pine-small.png",
+        "size_kb": 4,
+        "vertices": 24
+    },
+    {
+        "name": "tree-shrub",
+        "glb": "models\\tree-shrub.glb",
+        "preview": "Previews\\tree-shrub.png",
+        "size_kb": 6,
+        "vertices": 48
+    },
+    {
+        "name": "tree-small",
+        "glb": "models\\tree-small.glb",
+        "preview": "Previews\\tree-small.png",
+        "size_kb": 5,
+        "vertices": 24
+    },
+    {
+        "name": "truck-flat",
+        "glb": "models\\truck-flat.glb",
+        "preview": "Previews\\truck-flat.png",
+        "size_kb": 23,
+        "vertices": 104
+    },
+    {
+        "name": "truck-green-cargo",
+        "glb": "models\\truck-green-cargo.glb",
+        "preview": "Previews\\truck-green-cargo.png",
+        "size_kb": 13,
+        "vertices": 24
+    },
+    {
+        "name": "truck-green",
+        "glb": "models\\truck-green.glb",
+        "preview": "Previews\\truck-green.png",
+        "size_kb": 15,
+        "vertices": 74
+    },
+    {
+        "name": "truck-grey-cargo",
+        "glb": "models\\truck-grey-cargo.glb",
+        "preview": "Previews\\truck-grey-cargo.png",
+        "size_kb": 14,
+        "vertices": 24
+    },
+    {
+        "name": "truck-grey",
+        "glb": "models\\truck-grey.glb",
+        "preview": "Previews\\truck-grey.png",
+        "size_kb": 16,
+        "vertices": 74
+    },
+    {
+        "name": "wall-a-column-painted",
+        "glb": "models\\wall-a-column-painted.glb",
+        "preview": "Previews\\wall-a-column-painted.png",
+        "size_kb": 13,
+        "vertices": 52
+    },
+    {
+        "name": "wall-a-column",
+        "glb": "models\\wall-a-column.glb",
+        "preview": "Previews\\wall-a-column.png",
+        "size_kb": 13,
+        "vertices": 52
+    },
+    {
+        "name": "wall-a-corner-painted",
+        "glb": "models\\wall-a-corner-painted.glb",
+        "preview": "Previews\\wall-a-corner-painted.png",
+        "size_kb": 12,
+        "vertices": 36
+    },
+    {
+        "name": "wall-a-corner",
+        "glb": "models\\wall-a-corner.glb",
+        "preview": "Previews\\wall-a-corner.png",
+        "size_kb": 12,
+        "vertices": 36
+    },
+    {
+        "name": "wall-a-detail-painted",
+        "glb": "models\\wall-a-detail-painted.glb",
+        "preview": "Previews\\wall-a-detail-painted.png",
+        "size_kb": 13,
+        "vertices": 24
+    },
+    {
+        "name": "wall-a-detail",
+        "glb": "models\\wall-a-detail.glb",
+        "preview": "Previews\\wall-a-detail.png",
+        "size_kb": 13,
+        "vertices": 24
+    },
+    {
+        "name": "wall-a-diagonal",
+        "glb": "models\\wall-a-diagonal.glb",
+        "preview": "Previews\\wall-a-diagonal.png",
+        "size_kb": 12,
+        "vertices": 18
+    },
+    {
+        "name": "wall-a-door",
+        "glb": "models\\wall-a-door.glb",
+        "preview": "Previews\\wall-a-door.png",
+        "size_kb": 24,
+        "vertices": 58
+    },
+    {
+        "name": "wall-a-flat-garage",
+        "glb": "models\\wall-a-flat-garage.glb",
+        "preview": "Previews\\wall-a-flat-garage.png",
+        "size_kb": 17,
+        "vertices": 24
+    },
+    {
+        "name": "wall-a-flat-painted",
+        "glb": "models\\wall-a-flat-painted.glb",
+        "preview": "Previews\\wall-a-flat-painted.png",
+        "size_kb": 5,
+        "vertices": 4
+    },
+    {
+        "name": "wall-a-flat-window",
+        "glb": "models\\wall-a-flat-window.glb",
+        "preview": "Previews\\wall-a-flat-window.png",
+        "size_kb": 18,
+        "vertices": 36
+    },
+    {
+        "name": "wall-a-flat",
+        "glb": "models\\wall-a-flat.glb",
+        "preview": "Previews\\wall-a-flat.png",
+        "size_kb": 6,
+        "vertices": 4
+    },
+    {
+        "name": "wall-a-garage",
+        "glb": "models\\wall-a-garage.glb",
+        "preview": "Previews\\wall-a-garage.png",
+        "size_kb": 18,
+        "vertices": 48
+    },
+    {
+        "name": "wall-a-low-painted",
+        "glb": "models\\wall-a-low-painted.glb",
+        "preview": "Previews\\wall-a-low-painted.png",
+        "size_kb": 12,
+        "vertices": 40
+    },
+    {
+        "name": "wall-a-low",
+        "glb": "models\\wall-a-low.glb",
+        "preview": "Previews\\wall-a-low.png",
+        "size_kb": 12,
+        "vertices": 24
+    },
+    {
+        "name": "wall-a-open",
+        "glb": "models\\wall-a-open.glb",
+        "preview": "Previews\\wall-a-open.png",
+        "size_kb": 15,
+        "vertices": 96
+    },
+    {
+        "name": "wall-a-painted-diagonal",
+        "glb": "models\\wall-a-painted-diagonal.glb",
+        "preview": "Previews\\wall-a-painted-diagonal.png",
+        "size_kb": 12,
+        "vertices": 18
+    },
+    {
+        "name": "wall-a-painted",
+        "glb": "models\\wall-a-painted.glb",
+        "preview": "Previews\\wall-a-painted.png",
+        "size_kb": 12,
+        "vertices": 24
+    },
+    {
+        "name": "wall-a-roof-detailed",
+        "glb": "models\\wall-a-roof-detailed.glb",
+        "preview": "Previews\\wall-a-roof-detailed.png",
+        "size_kb": 19,
+        "vertices": 64
+    },
+    {
+        "name": "wall-a-roof-slant-detailed",
+        "glb": "models\\wall-a-roof-slant-detailed.glb",
+        "preview": "Previews\\wall-a-roof-slant-detailed.png",
+        "size_kb": 18,
+        "vertices": 32
+    },
+    {
+        "name": "wall-a-roof-slant",
+        "glb": "models\\wall-a-roof-slant.glb",
+        "preview": "Previews\\wall-a-roof-slant.png",
+        "size_kb": 17,
+        "vertices": 18
+    },
+    {
+        "name": "wall-a-roof",
+        "glb": "models\\wall-a-roof.glb",
+        "preview": "Previews\\wall-a-roof.png",
+        "size_kb": 18,
+        "vertices": 38
+    },
+    {
+        "name": "wall-a-window",
+        "glb": "models\\wall-a-window.glb",
+        "preview": "Previews\\wall-a-window.png",
+        "size_kb": 24,
+        "vertices": 56
+    },
+    {
+        "name": "wall-a",
+        "glb": "models\\wall-a.glb",
+        "preview": "Previews\\wall-a.png",
+        "size_kb": 12,
+        "vertices": 24
+    },
+    {
+        "name": "wall-b-column",
+        "glb": "models\\wall-b-column.glb",
+        "preview": "Previews\\wall-b-column.png",
+        "size_kb": 13,
+        "vertices": 52
+    },
+    {
+        "name": "wall-b-corner",
+        "glb": "models\\wall-b-corner.glb",
+        "preview": "Previews\\wall-b-corner.png",
+        "size_kb": 13,
+        "vertices": 36
+    },
+    {
+        "name": "wall-b-detail-painted",
+        "glb": "models\\wall-b-detail-painted.glb",
+        "preview": "Previews\\wall-b-detail-painted.png",
+        "size_kb": 18,
+        "vertices": 24
+    },
+    {
+        "name": "wall-b-diagonal",
+        "glb": "models\\wall-b-diagonal.glb",
+        "preview": "Previews\\wall-b-diagonal.png",
+        "size_kb": 12,
+        "vertices": 18
+    },
+    {
+        "name": "wall-b-door",
+        "glb": "models\\wall-b-door.glb",
+        "preview": "Previews\\wall-b-door.png",
+        "size_kb": 24,
+        "vertices": 60
+    },
+    {
+        "name": "wall-b-flat-garage",
+        "glb": "models\\wall-b-flat-garage.glb",
+        "preview": "Previews\\wall-b-flat-garage.png",
+        "size_kb": 12,
+        "vertices": 24
+    },
+    {
+        "name": "wall-b-flat-window",
+        "glb": "models\\wall-b-flat-window.glb",
+        "preview": "Previews\\wall-b-flat-window.png",
+        "size_kb": 18,
+        "vertices": 36
+    },
+    {
+        "name": "wall-b-flat",
+        "glb": "models\\wall-b-flat.glb",
+        "preview": "Previews\\wall-b-flat.png",
+        "size_kb": 6,
+        "vertices": 4
+    },
+    {
+        "name": "wall-b-garage",
+        "glb": "models\\wall-b-garage.glb",
+        "preview": "Previews\\wall-b-garage.png",
+        "size_kb": 18,
+        "vertices": 48
+    },
+    {
+        "name": "wall-b-low",
+        "glb": "models\\wall-b-low.glb",
+        "preview": "Previews\\wall-b-low.png",
+        "size_kb": 12,
+        "vertices": 24
+    },
+    {
+        "name": "wall-b-open",
+        "glb": "models\\wall-b-open.glb",
+        "preview": "Previews\\wall-b-open.png",
+        "size_kb": 15,
+        "vertices": 96
+    },
+    {
+        "name": "wall-b-roof-detailed",
+        "glb": "models\\wall-b-roof-detailed.glb",
+        "preview": "Previews\\wall-b-roof-detailed.png",
+        "size_kb": 19,
+        "vertices": 64
+    },
+    {
+        "name": "wall-b-roof-slant-detailed",
+        "glb": "models\\wall-b-roof-slant-detailed.glb",
+        "preview": "Previews\\wall-b-roof-slant-detailed.png",
+        "size_kb": 18,
+        "vertices": 32
+    },
+    {
+        "name": "wall-b-roof-slant",
+        "glb": "models\\wall-b-roof-slant.glb",
+        "preview": "Previews\\wall-b-roof-slant.png",
+        "size_kb": 17,
+        "vertices": 18
+    },
+    {
+        "name": "wall-b-roof",
+        "glb": "models\\wall-b-roof.glb",
+        "preview": "Previews\\wall-b-roof.png",
+        "size_kb": 18,
+        "vertices": 38
+    },
+    {
+        "name": "wall-b-window",
+        "glb": "models\\wall-b-window.glb",
+        "preview": "Previews\\wall-b-window.png",
+        "size_kb": 24,
+        "vertices": 56
+    },
+    {
+        "name": "wall-b",
+        "glb": "models\\wall-b.glb",
+        "preview": "Previews\\wall-b.png",
+        "size_kb": 12,
+        "vertices": 24
+    },
+    {
+        "name": "wall-broken-type-a",
+        "glb": "models\\wall-broken-type-a.glb",
+        "preview": "Previews\\wall-broken-type-a.png",
+        "size_kb": 14,
+        "vertices": 64
+    },
+    {
+        "name": "wall-broken-type-b",
+        "glb": "models\\wall-broken-type-b.glb",
+        "preview": "Previews\\wall-broken-type-b.png",
+        "size_kb": 14,
+        "vertices": 82
+    },
+    {
+        "name": "wall-c-flat-low",
+        "glb": "models\\wall-c-flat-low.glb",
+        "preview": "Previews\\wall-c-flat-low.png",
+        "size_kb": 3,
+        "vertices": 8
+    },
+    {
+        "name": "wall-c-flat",
+        "glb": "models\\wall-c-flat.glb",
+        "preview": "Previews\\wall-c-flat.png",
+        "size_kb": 3,
+        "vertices": 8
+    },
+    {
+        "name": "wall-fence",
+        "glb": "models\\wall-fence.glb",
+        "preview": "Previews\\wall-fence.png",
+        "size_kb": 17,
+        "vertices": 60
+    },
+    {
+        "name": "wall-steps-type-a",
+        "glb": "models\\wall-steps-type-a.glb",
+        "preview": "Previews\\wall-steps-type-a.png",
+        "size_kb": 14,
+        "vertices": 72
+    },
+    {
+        "name": "wall-steps-type-b",
+        "glb": "models\\wall-steps-type-b.glb",
+        "preview": "Previews\\wall-steps-type-b.png",
+        "size_kb": 14,
+        "vertices": 84
+    },
+    {
+        "name": "wall-type-a",
+        "glb": "models\\wall-type-a.glb",
+        "preview": "Previews\\wall-type-a.png",
+        "size_kb": 12,
+        "vertices": 24
+    },
+    {
+        "name": "wall-type-b",
+        "glb": "models\\wall-type-b.glb",
+        "preview": "Previews\\wall-type-b.png",
+        "size_kb": 13,
+        "vertices": 48
+    },
+    {
+        "name": "window-small-type-a",
+        "glb": "models\\window-small-type-a.glb",
+        "preview": "Previews\\window-small-type-a.png",
+        "size_kb": 13,
+        "vertices": 44
+    },
+    {
+        "name": "window-small-type-b",
+        "glb": "models\\window-small-type-b.glb",
+        "preview": "Previews\\window-small-type-b.png",
+        "size_kb": 13,
+        "vertices": 44
+    },
+    {
+        "name": "window-wide-type-a",
+        "glb": "models\\window-wide-type-a.glb",
+        "preview": "Previews\\window-wide-type-a.png",
+        "size_kb": 13,
+        "vertices": 52
+    },
+    {
+        "name": "window-wide-type-b",
+        "glb": "models\\window-wide-type-b.glb",
+        "preview": "Previews\\window-wide-type-b.png",
+        "size_kb": 13,
+        "vertices": 52
+    },
+    {
+        "name": "window-wide-type-c",
+        "glb": "models\\window-wide-type-c.glb",
+        "preview": "Previews\\window-wide-type-c.png",
+        "size_kb": 13,
+        "vertices": 44
+    },
+    {
+        "name": "window-wide-type-d",
+        "glb": "models\\window-wide-type-d.glb",
+        "preview": "Previews\\window-wide-type-d.png",
+        "size_kb": 13,
+        "vertices": 44
+    }
+]
