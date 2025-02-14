@@ -11,57 +11,84 @@ document.addEventListener("DOMContentLoaded", function () {
         if (hasFetchedModels) return;
         hasFetchedModels = true;
 
-        console.log("Fetching available asset packs...");
+        console.log("🔍 Fetching available asset packs...");
 
-        const possiblePacks = ["kenney_3d-road-tiles", "kenney_blaster-kit", "kenney_brick-kit", "kenney_building-kit", "kenney_car-kit", "kenney_castle-kit", "kenney_city-kit-commercial", "kenney_city-kit-roads", "kenney_city-kit-suburban", "kenney_coaster-kit", "kenney_conveyor-kit", "kenney_fantasy-town-kit", "kenney_food-kit", "kenney_furniture-kit", "kenney_graveyard-kit", "kenney_hexagon-kit", "kenney_holiday-kit", "kenney_marble-kit", "kenney_mini-arcade", "kenney_mini-arena", "kenney_mini-characters", "kenney_mini-dungeon", "kenney_mini-market", "kenney_mini-skate", "kenney_minigolf-kit", "kenney_modular-buildings", "kenney_nature-kit", "kenney_pirate-kit", "kenney_platformer-kit", "kenney_prototype-kit", "kenney_racing-kit", "kenney_retro-medieval-kit", "kenney_retro-urban-kit", "kenney_space-kit", "kenney_space-station-kit", "kenney_survival-kit", "kenney_tower-defense-kit", "kenney_toy-car-kit", "kenney_train-kit", "kenney_watercraft-pack"];
+        const possiblePacks = [
+            "kenney_3d-road-tiles", "kenney_blaster-kit", "kenney_brick-kit", 
+            "kenney_building-kit", "kenney_car-kit", "kenney_castle-kit", 
+            "kenney_city-kit-commercial", "kenney_city-kit-roads", "kenney_city-kit-suburban",
+            "kenney_coaster-kit", "kenney_conveyor-kit", "kenney_fantasy-town-kit",
+            "kenney_food-kit", "kenney_furniture-kit", "kenney_graveyard-kit",
+            "kenney_hexagon-kit", "kenney_holiday-kit", "kenney_marble-kit",
+            "kenney_mini-arcade", "kenney_mini-arena", "kenney_mini-characters",
+            "kenney_mini-dungeon", "kenney_mini-market", "kenney_mini-skate",
+            "kenney_minigolf-kit", "kenney_modular-buildings", "kenney_nature-kit",
+            "kenney_pirate-kit", "kenney_platformer-kit", "kenney_prototype-kit",
+            "kenney_racing-kit", "kenney_retro-medieval-kit", "kenney_retro-urban-kit",
+            "kenney_space-kit", "kenney_space-station-kit", "kenney_survival-kit",
+            "kenney_tower-defense-kit", "kenney_toy-car-kit", "kenney_train-kit", 
+            "kenney_watercraft-pack"
+        ];
+
         const validPacks = [];
 
+        // Check which packs have a valid manifest.json
         for (const pack of possiblePacks) {
+            const manifestPath = `${window.location.origin}/${pack}/manifest.json`;
+
             try {
-                const modelsPath = `${pack}/models/data/`;
-                const response = await fetch(modelsPath);
+                const response = await fetch(manifestPath);
                 if (response.ok) {
                     validPacks.push(pack);
-                    console.log(`Found valid asset pack: ${pack}`);
+                    console.log(`✅ Found valid manifest: ${pack}`);
                 }
             } catch (error) {
-                console.warn(`Skipping ${pack} (no models/data found)`);
+                console.warn(`⚠️ No manifest found for ${pack}, skipping.`);
             }
         }
 
         if (validPacks.length === 0) {
-            console.error("No valid asset packs found!");
+            console.error("❌ No valid asset packs found!");
             return;
         }
 
-        console.log("Valid asset packs:", validPacks);
+        console.log("🗂️ Valid asset packs:", validPacks);
 
+        // Fetch model data from valid packs
         const fetchPromises = validPacks.map(async (pack) => {
+            const manifestPath = `${window.location.origin}/${pack}/manifest.json`;
+
             try {
-                const response = await fetch(`${pack}/models/data/`);
-                const text = await response.text();
-                const parser = new DOMParser();
-                const doc = parser.parseFromString(text, "text/html");
+                const response = await fetch(manifestPath);
+                const manifest = await response.json();
 
-                const jsonFiles = Array.from(doc.querySelectorAll("a"))
-                    .map(link => link.getAttribute("href"))
-                    .filter(filename => filename.endsWith(".json"));
+                if (!manifest[pack]) return [];
 
-                const modelFetches = jsonFiles.map(async (file) => {
-                    const modelResponse = await fetch(`${pack}/models/data/${file}`);
-                    const modelData = await modelResponse.json();
-                    return { ...modelData, packName: pack };
+                const modelFetches = manifest[pack].map(async (file) => {
+                    const modelUrl = `${window.location.origin}/${pack}/models/data/${file}`;
+
+                    try {
+                        const modelResponse = await fetch(modelUrl);
+                        if (!modelResponse.ok) return null;
+                        const modelData = await modelResponse.json();
+                        return { ...modelData, packName: pack };
+                    } catch (error) {
+                        console.error(`⚠️ Failed to fetch model: ${modelUrl}`, error);
+                        return null;
+                    }
                 });
 
                 return await Promise.all(modelFetches);
             } catch (error) {
-                console.error(`Failed to fetch models from ${pack}:`, error);
+                console.error(`❌ Failed to fetch manifest: ${manifestPath}`, error);
                 return [];
             }
         });
 
-        allModels = (await Promise.all(fetchPromises)).flat();
-        console.log(`Total models loaded: ${allModels.length}`);
+        allModels = (await Promise.all(fetchPromises)).flat().filter(Boolean);
+        console.log(`✅ Total models loaded: ${allModels.length}`);
+
+        displayModels("");
     }
 
     function displayModels(searchQuery) {
