@@ -14,8 +14,8 @@ document.addEventListener("DOMContentLoaded", function () {
         console.log("🔍 Fetching available asset packs...");
 
         const possiblePacks = [
-            "kenney_3d-road-tiles", "kenney_blaster-kit", "kenney_brick-kit", 
-            "kenney_building-kit", "kenney_car-kit", "kenney_castle-kit", 
+            "kenney_3d-road-tiles", "kenney_blaster-kit", "kenney_brick-kit",
+            "kenney_building-kit", "kenney_car-kit", "kenney_castle-kit",
             "kenney_city-kit-commercial", "kenney_city-kit-roads", "kenney_city-kit-suburban",
             "kenney_coaster-kit", "kenney_conveyor-kit", "kenney_fantasy-town-kit",
             "kenney_food-kit", "kenney_furniture-kit", "kenney_graveyard-kit",
@@ -26,13 +26,12 @@ document.addEventListener("DOMContentLoaded", function () {
             "kenney_pirate-kit", "kenney_platformer-kit", "kenney_prototype-kit",
             "kenney_racing-kit", "kenney_retro-medieval-kit", "kenney_retro-urban-kit",
             "kenney_space-kit", "kenney_space-station-kit", "kenney_survival-kit",
-            "kenney_tower-defense-kit", "kenney_toy-car-kit", "kenney_train-kit", 
+            "kenney_tower-defense-kit", "kenney_toy-car-kit", "kenney_train-kit",
             "kenney_watercraft-pack"
         ];
 
         const validPacks = [];
 
-        // Check which packs have a valid manifest.json
         for (const pack of possiblePacks) {
             const manifestPath = `${window.location.origin}/${pack}/manifest.json`;
 
@@ -54,7 +53,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
         console.log("🗂️ Valid asset packs:", validPacks);
 
-        // Fetch model data from valid packs
         const fetchPromises = validPacks.map(async (pack) => {
             const manifestPath = `${window.location.origin}/${pack}/manifest.json`;
 
@@ -62,18 +60,32 @@ document.addEventListener("DOMContentLoaded", function () {
                 const response = await fetch(manifestPath);
                 const manifest = await response.json();
 
-                if (!manifest[pack]) return [];
+                if (!manifest.hasOwnProperty(pack)) {
+                    console.error(`❌ Manifest format incorrect for ${pack}`);
+                    return [];
+                }
 
-                const modelFetches = manifest[pack].map(async (file) => {
+                const modelFiles = manifest[pack];  // Get the list of model files
+
+                // Ensure modelFiles is an array before continuing
+                if (!Array.isArray(modelFiles)) {
+                    console.error(`❌ Invalid model list in ${pack}/manifest.json`);
+                    return [];
+                }
+
+                const modelFetches = modelFiles.map(async (file) => {
                     const modelUrl = `${window.location.origin}/${pack}/models/data/${file}`;
 
                     try {
                         const modelResponse = await fetch(modelUrl);
-                        if (!modelResponse.ok) return null;
+                        if (!modelResponse.ok) {
+                            console.warn(`⚠️ Model JSON not found: ${modelUrl}`);
+                            return null;
+                        }
                         const modelData = await modelResponse.json();
                         return { ...modelData, packName: pack };
                     } catch (error) {
-                        console.error(`⚠️ Failed to fetch model: ${modelUrl}`, error);
+                        console.error(`❌ Error loading model: ${modelUrl}`, error);
                         return null;
                     }
                 });
@@ -82,14 +94,14 @@ document.addEventListener("DOMContentLoaded", function () {
             } catch (error) {
                 console.error(`❌ Failed to fetch manifest: ${manifestPath}`, error);
                 return [];
-            }
-        });
+        }
+    });
 
-        allModels = (await Promise.all(fetchPromises)).flat().filter(Boolean);
-        console.log(`✅ Total models loaded: ${allModels.length}`);
+    allModels = (await Promise.all(fetchPromises)).flat().filter(Boolean);
+    console.log(`✅ Total models loaded: ${allModels.length}`);
 
-        displayModels("");
-    }
+    displayModels("");
+}
 
     function displayModels(searchQuery) {
         container.innerHTML = "";
