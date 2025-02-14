@@ -1,0 +1,10 @@
+{
+    "name": "structure",
+    "glb": "models/glb/structure.glb",
+    "preview": "models/poster/structure.png",
+    "size_kb": 28,
+    "vertices": 512,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "name": "tower-base-door",
+    "glb": "models/glb/tower-base-door.glb",
+    "preview": "models/poster/tower-base-door.png",
+    "size_kb": 18,
+    "vertices": 218,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "name": "police",
+    "glb": "models/glb/police.glb",
+    "preview": "models/poster/police.png",
+    "size_kb": 137,
+    "vertices": 3624,
+    "categories": [
+        "kenney_car-kit"
+    ]
+}

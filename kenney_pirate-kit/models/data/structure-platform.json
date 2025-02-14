@@ -1,0 +1,10 @@
+{
+    "name": "structure-platform",
+    "glb": "models/glb/structure-platform.glb",
+    "preview": "models/poster/structure-platform.png",
+    "size_kb": 26,
+    "vertices": 440,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "name": "structure-platform-dock",
+    "glb": "models/glb/structure-platform-dock.glb",
+    "preview": "models/poster/structure-platform-dock.png",
+    "size_kb": 32,
+    "vertices": 616,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

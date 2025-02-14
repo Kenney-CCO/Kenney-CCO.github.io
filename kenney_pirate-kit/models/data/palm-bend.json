@@ -1,0 +1,10 @@
+{
+    "name": "palm-bend",
+    "glb": "models/glb/palm-bend.glb",
+    "preview": "models/poster/palm-bend.png",
+    "size_kb": 34,
+    "vertices": 680,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "name": "taxi",
+    "glb": "models/glb/taxi.glb",
+    "preview": "models/poster/taxi.png",
+    "size_kb": 124,
+    "vertices": 3271,
+    "categories": [
+        "kenney_car-kit"
+    ]
+}

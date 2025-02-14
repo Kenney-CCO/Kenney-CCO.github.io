@@ -1,0 +1,10 @@
+{
+    "name": "wheel-tractor-front",
+    "glb": "models/glb/wheel-tractor-front.glb",
+    "preview": "models/poster/wheel-tractor-front.png",
+    "size_kb": 31,
+    "vertices": 528,
+    "categories": [
+        "kenney_car-kit"
+    ]
+}

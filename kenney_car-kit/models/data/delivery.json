@@ -1,0 +1,10 @@
+{
+    "name": "delivery",
+    "glb": "models/glb/delivery.glb",
+    "preview": "models/poster/delivery.png",
+    "size_kb": 144,
+    "vertices": 3880,
+    "categories": [
+        "kenney_car-kit"
+    ]
+}

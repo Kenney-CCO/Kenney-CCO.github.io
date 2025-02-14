@@ -1,0 +1,10 @@
+{
+    "name": "debris-plate-small-a",
+    "glb": "models/glb/debris-plate-small-a.glb",
+    "preview": "models/poster/debris-plate-small-a.png",
+    "size_kb": 14,
+    "vertices": 48,
+    "categories": [
+        "kenney_car-kit"
+    ]
+}

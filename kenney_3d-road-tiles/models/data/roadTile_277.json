@@ -1,0 +1,10 @@
+{
+    "name": "roadTile_277",
+    "glb": "models/glb/roadTile_277.glb",
+    "preview": "models/poster/roadTile_277.png",
+    "size_kb": 4,
+    "vertices": 60,
+    "categories": [
+        "kenney_3d-road-tiles"
+    ]
+}

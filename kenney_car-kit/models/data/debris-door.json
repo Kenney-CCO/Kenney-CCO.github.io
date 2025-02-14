@@ -1,0 +1,10 @@
+{
+    "name": "debris-door",
+    "glb": "models/glb/debris-door.glb",
+    "preview": "models/poster/debris-door.png",
+    "size_kb": 16,
+    "vertices": 106,
+    "categories": [
+        "kenney_car-kit"
+    ]
+}

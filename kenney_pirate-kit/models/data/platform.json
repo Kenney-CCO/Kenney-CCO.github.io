@@ -1,0 +1,10 @@
+{
+    "name": "platform",
+    "glb": "models/glb/platform.glb",
+    "preview": "models/poster/platform.png",
+    "size_kb": 15,
+    "vertices": 120,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

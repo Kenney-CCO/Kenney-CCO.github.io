@@ -1,0 +1,10 @@
+{
+    "name": "scopeB",
+    "glb": "models/glb/scopeB.glb",
+    "preview": "models/poster/scopeB.png",
+    "size_kb": 40,
+    "vertices": 1071,
+    "categories": [
+        "kenney_blaster-kit"
+    ]
+}

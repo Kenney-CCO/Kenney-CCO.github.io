@@ -1,0 +1,10 @@
+{
+    "name": "ship-large",
+    "glb": "models/glb/ship-large.glb",
+    "preview": "models/poster/ship-large.png",
+    "size_kb": 114,
+    "vertices": 2882,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "name": "palm-detailed-straight",
+    "glb": "models/glb/palm-detailed-straight.glb",
+    "preview": "models/poster/palm-detailed-straight.png",
+    "size_kb": 44,
+    "vertices": 986,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

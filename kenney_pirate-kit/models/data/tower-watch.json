@@ -1,0 +1,10 @@
+{
+    "name": "tower-watch",
+    "glb": "models/glb/tower-watch.glb",
+    "preview": "models/poster/tower-watch.png",
+    "size_kb": 24,
+    "vertices": 385,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

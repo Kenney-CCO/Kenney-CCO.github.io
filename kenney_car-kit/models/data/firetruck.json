@@ -1,0 +1,10 @@
+{
+    "name": "firetruck",
+    "glb": "models/glb/firetruck.glb",
+    "preview": "models/poster/firetruck.png",
+    "size_kb": 161,
+    "vertices": 4372,
+    "categories": [
+        "kenney_car-kit"
+    ]
+}

@@ -1,496 +1,254 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Index</title>
-    <meta name="description" content="Image index overview">
-    <meta name="author" content="Auto-generated">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script defer src="loadModels.js"></script>
     <style>
+        /* Global Styles */
         body {
-            font-family: system-ui;
-            font-size: 2em;
-            font-weight: 600;
-            color: #d7d9da;
-            background-color: #171B21;
-            margin: 2em auto;
-            max-width: 1120px;
-            text-align: center;
-        }
-        .logo {
-            width: 300px;
-            margin-bottom: 20px;
-        }
-        .search-container {
-            margin-bottom: 1.5em;
-        }
-        .search-input {
-            padding: 10px;
-            width: 50%;
-            font-size: 1em;
-            border-radius: 5px;
-            border: 1px solid #555;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 30px;
-            justify-content: center;
-        }
-        .package-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .package {
-            width: 250px;
-            text-align: center;
-            background: #2f333a;
+            font-family: Arial, sans-serif;
+            background: #181818;
+            color: white;
+            margin: 0;
             padding: 0;
-            border-radius: 5px;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            transition: transform 0.3s ease-in-out;
+            height: 100vh;
+            overflow-y: auto;
         }
-        .package:hover {
-            transform: scale(1.05);
-        }
-        .package img {
-            width: 250px;
-            height: 90px;
-            object-fit: cover;
-            border-radius: 5px;
-            display: block;
-            object-position: center;
-        }
-        .package a {
-            text-decoration: none;
-            color: #FFF;
-            display: block;
-        }
-        .package-name {
-            font-size: 0.8em;
-            background: none;
-            padding: 10px 0;
+
+        /* Fixed Search Header */
+        .search-header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: #222;
+            padding: 15px 0;
             text-align: center;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
+
+        .search-input, .category-filter {
+            width: 30%;
+            padding: 10px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+            background: #333;
+            color: white;
+            text-align: center;
+            margin: 5px;
+        }
+
+        /* Main Content (Grid Layout) */
+        .content {
+            width: 100%;
+            max-width: 1200px;
+            margin-top: 100px;
+            display: none;
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            width: 100%;
+        }
+
+        /* Model Card */
+        .model-card {
+            background: #222;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.2s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 350px;
+        }
+
+        .model-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Model Display Box */
+        .model-display {
+            width: 100%;
+            height: 180px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #333;
+            border-radius: 8px;
+        }
+
+        /* Model Preview */
+        .model-preview {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Model Name */
+        .model-name {
+            margin: 10px 0;
+            font-size: 16px;
+            font-weight: bold;
+            color: #f0f0f0;
+        }
+
+        /* Model Info */
+        .model-info {
+            font-size: 14px;
+            color: #bbb;
+            margin-bottom: 10px;
+        }
+
+        /* Category Tags */
+        .category-container {
+            margin-top: 5px;
+        }
+
+        .category-tag {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin: 3px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.2s ease-in-out;
+        }
+
+        .category-tag:hover {
+            background: #0056b3;
+        }
+
+        .category-tag.active {
+            background: #ff9800;
+        }
+
+        .button-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 10px;
+            gap: 5px;
+            width: 100%;
+        }
+
+        .button-row button {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #333;
+            border: none;
+            padding: 8px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 33%;
+            max-width: 80px;
+            height: 40px;
+        }
+
+        .button-row button:hover {
+            background: #555;
+        }
+
+        .view-button, .drag-container, .download-button {
+            flex: 1;
+            max-width: 80px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .view-button {
+            background-color: #00bfff;
+        }
+
+        /* Background drag button (visual only, NO interactions) */
+        .drag-button {
+            position: relative;
+            background-color: #ffa500;
+            width: 100%;
+            max-width: 80px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: none;
+            border-radius: 5px;
+            cursor: default; /* Prevent clicks */
+            pointer-events: none; /* Ensures this button does NOTHING */
+        }
+
+        /* Hover effect (for visual purposes) */
+        .drag-button img {
+            pointer-events: none; /* Prevent dragging the SVG */
+        }
+
+        .drag-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            cursor: grab;
+            z-index: 100; /* Ensures it is above the drag button */
+        }
+
+        .download-button {
+            background-color: #007bff;
+        }
+
+        .view-button:hover {
+            background-color: #008ecf;
+        }
+
+        .drag-button:hover {
+            background-color: #ff8c00;
+        }
+
+        .download-button:hover {
+            background-color: #0056b3;
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            display: block;
+            margin: auto;
+            filter: invert(1); /* Turns black SVGs into white */
+        }
+
     </style>
 </head>
 <body>
-    <img src="logo.png" alt="Logo" class="logo">
-    <div class="search-container">
-        <input type="text" id="search" class="search-input" placeholder="Search Kenneys Kits...">
+
+    <!-- Fixed Search Header -->
+    <div class="search-header">
+        <input type="text" id="searchInput" class="search-input" placeholder="Search models...">
     </div>
-    <div class="gallery">
-        
-        <div class="package-container" data-name="kenney_3d-road-tiles">
-            <div class="package">
-                <a href="kenney_3d-road-tiles/kenney_3d-road-tiles.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_3d-road-tiles/3d Road Tiles.png" alt="kenney_3d-road-tiles">
-                </a>
-            </div>
-            <div class="package-name">3D Road Tiles</div>
-        </div>
-    
 
-        <div class="package-container" data-name="kenney_blaster-kit">
-            <div class="package">
-                <a href="kenney_blaster-kit/kenney_blaster-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_blaster-kit/Blaster Kit.png" alt="kenney_blaster-kit">
-                </a>
-            </div>
-            <div class="package-name">Blaster Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_brick-kit">
-            <div class="package">
-                <a href="kenney_brick-kit/kenney_brick-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_brick-kit/Brick Kit.png" alt="kenney_brick-kit">
-                </a>
-            </div>
-            <div class="package-name">Brick Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_building-kit">
-            <div class="package">
-                <a href="kenney_building-kit/kenney_building-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_building-kit/Building Kit.png" alt="kenney_building-kit">
-                </a>
-            </div>
-            <div class="package-name">Building Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_car-kit">
-            <div class="package">
-                <a href="kenney_car-kit/kenney_car-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_car-kit/Car Kit.png" alt="kenney_car-kit">
-                </a>
-            </div>
-            <div class="package-name">Car Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_castle-kit">
-            <div class="package">
-                <a href="kenney_castle-kit/kenney_castle-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_castle-kit/Castle Kit.png" alt="kenney_castle-kit">
-                </a>
-            </div>
-            <div class="package-name">Castle Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_city-kit-commercial">
-            <div class="package">
-                <a href="kenney_city-kit-commercial/kenney_city-kit-commercial.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_city-kit-commercial/City Kit Commercial.png" alt="kenney_city-kit-commercial">
-                </a>
-            </div>
-            <div class="package-name">City Kit Commercial</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_city-kit-roads">
-            <div class="package">
-                <a href="kenney_city-kit-roads/kenney_city-kit-roads.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_city-kit-roads/City Kit Roads.png" alt="kenney_city-kit-roads">
-                </a>
-            </div>
-            <div class="package-name">City Kit Roads</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_city-kit-suburban">
-            <div class="package">
-                <a href="kenney_city-kit-suburban/kenney_city-kit-suburban.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_city-kit-suburban/City Kit Suburban.png" alt="kenney_city-kit-suburban">
-                </a>
-            </div>
-            <div class="package-name">City Kit Suburban</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_coaster-kit">
-            <div class="package">
-                <a href="kenney_coaster-kit/kenney_coaster-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_coaster-kit/Coaster Kit.png" alt="kenney_coaster-kit">
-                </a>
-            </div>
-            <div class="package-name">Coaster Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_conveyor-kit">
-            <div class="package">
-                <a href="kenney_conveyor-kit/kenney_conveyor-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_conveyor-kit/Conveyor Kit.png" alt="kenney_conveyor-kit">
-                </a>
-            </div>
-            <div class="package-name">Conveyor Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_fantasy-town-kit">
-            <div class="package">
-                <a href="kenney_fantasy-town-kit/kenney_fantasy-town-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_fantasy-town-kit/Fantasy Town Kit.png" alt="kenney_fantasy-town-kit">
-                </a>
-            </div>
-            <div class="package-name">Fantasy Town Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_food-kit">
-            <div class="package">
-                <a href="kenney_food-kit/kenney_food-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_food-kit/Food Kit.png" alt="kenney_food-kit">
-                </a>
-            </div>
-            <div class="package-name">Food Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_furniture-kit">
-            <div class="package">
-                <a href="kenney_furniture-kit/kenney_furniture-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_furniture-kit/Furniture Kit.png" alt="kenney_furniture-kit">
-                </a>
-            </div>
-            <div class="package-name">Furniture Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_graveyard-kit">
-            <div class="package">
-                <a href="kenney_graveyard-kit/kenney_graveyard-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_graveyard-kit/Graveyard Kit.png" alt="kenney_graveyard-kit">
-                </a>
-            </div>
-            <div class="package-name">Graveyard Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_hexagon-kit">
-            <div class="package">
-                <a href="kenney_hexagon-kit/kenney_hexagon-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_hexagon-kit/Hexagon Kit.png" alt="kenney_hexagon-kit">
-                </a>
-            </div>
-            <div class="package-name">Hexagon Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_holiday-kit">
-            <div class="package">
-                <a href="kenney_holiday-kit/kenney_holiday-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_holiday-kit/Holiday Kit.png" alt="kenney_holiday-kit">
-                </a>
-            </div>
-            <div class="package-name">Holiday Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_marble-kit">
-            <div class="package">
-                <a href="kenney_marble-kit/kenney_marble-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_marble-kit/Marble Kit.png" alt="kenney_marble-kit">
-                </a>
-            </div>
-            <div class="package-name">Marble Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_mini-arcade">
-            <div class="package">
-                <a href="kenney_mini-arcade/kenney_mini-arcade.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_mini-arcade/Mini Arcade.png" alt="kenney_mini-arcade">
-                </a>
-            </div>
-            <div class="package-name">Mini Arcade</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_mini-arena">
-            <div class="package">
-                <a href="kenney_mini-arena/kenney_mini-arena.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_mini-arena/Mini Arena.png" alt="kenney_mini-arena">
-                </a>
-            </div>
-            <div class="package-name">Mini Arena</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_mini-characters">
-            <div class="package">
-                <a href="kenney_mini-characters/kenney_mini-characters.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_mini-characters/Mini Characters.png" alt="kenney_mini-characters">
-                </a>
-            </div>
-            <div class="package-name">Mini Characters</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_mini-dungeon">
-            <div class="package">
-                <a href="kenney_mini-dungeon/kenney_mini-dungeon.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_mini-dungeon/Mini Dungeon.png" alt="kenney_mini-dungeon">
-                </a>
-            </div>
-            <div class="package-name">Mini Dungeon</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_mini-market">
-            <div class="package">
-                <a href="kenney_mini-market/kenney_mini-market.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_mini-market/Mini Market.png" alt="kenney_mini-market">
-                </a>
-            </div>
-            <div class="package-name">Mini Market</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_mini-skate">
-            <div class="package">
-                <a href="kenney_mini-skate/kenney_mini-skate.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_mini-skate/Mini Skate.png" alt="kenney_mini-skate">
-                </a>
-            </div>
-            <div class="package-name">Mini Skate</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_minigolf-kit">
-            <div class="package">
-                <a href="kenney_minigolf-kit/kenney_minigolf-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_minigolf-kit/Minigolf Kit.png" alt="kenney_minigolf-kit">
-                </a>
-            </div>
-            <div class="package-name">Minigolf Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_modular-buildings">
-            <div class="package">
-                <a href="kenney_modular-buildings/kenney_modular-buildings.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_modular-buildings/Modular Buildings.png" alt="kenney_modular-buildings">
-                </a>
-            </div>
-            <div class="package-name">Modular Buildings</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_nature-kit">
-            <div class="package">
-                <a href="kenney_nature-kit/kenney_nature-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_nature-kit/Nature Kit.png" alt="kenney_nature-kit">
-                </a>
-            </div>
-            <div class="package-name">Nature Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_pirate-kit">
-            <div class="package">
-                <a href="kenney_pirate-kit/kenney_pirate-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_pirate-kit/Pirate Kit.png" alt="kenney_pirate-kit">
-                </a>
-            </div>
-            <div class="package-name">Pirate Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_platformer-kit">
-            <div class="package">
-                <a href="kenney_platformer-kit/kenney_platformer-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_platformer-kit/Platformer Kit.png" alt="kenney_platformer-kit">
-                </a>
-            </div>
-            <div class="package-name">Platformer Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_prototype-kit">
-            <div class="package">
-                <a href="kenney_prototype-kit/kenney_prototype-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_prototype-kit/Prototype Kit.png" alt="kenney_prototype-kit">
-                </a>
-            </div>
-            <div class="package-name">Prototype Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_racing-kit">
-            <div class="package">
-                <a href="kenney_racing-kit/kenney_racing-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_racing-kit/Racing Kit.png" alt="kenney_racing-kit">
-                </a>
-            </div>
-            <div class="package-name">Racing Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_retro-medieval-kit">
-            <div class="package">
-                <a href="kenney_retro-medieval-kit/kenney_retro-medieval-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_retro-medieval-kit/Retro Medieval Kit.png" alt="kenney_retro-medieval-kit">
-                </a>
-            </div>
-            <div class="package-name">Retro Medieval Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_retro-urban-kit">
-            <div class="package">
-                <a href="kenney_retro-urban-kit/kenney_retro-urban-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_retro-urban-kit/Retro Urban Kit.png" alt="kenney_retro-urban-kit">
-                </a>
-            </div>
-            <div class="package-name">Retro Urban Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_space-kit">
-            <div class="package">
-                <a href="kenney_space-kit/kenney_space-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_space-kit/Space Kit.png" alt="kenney_space-kit">
-                </a>
-            </div>
-            <div class="package-name">Space Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_space-station-kit">
-            <div class="package">
-                <a href="kenney_space-station-kit/kenney_space-station-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_space-station-kit/Space Station Kit.png" alt="kenney_space-station-kit">
-                </a>
-            </div>
-            <div class="package-name">Space Station Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_survival-kit">
-            <div class="package">
-                <a href="kenney_survival-kit/kenney_survival-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_survival-kit/Survival Kit.png" alt="kenney_survival-kit">
-                </a>
-            </div>
-            <div class="package-name">Survival Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_tower-defense-kit">
-            <div class="package">
-                <a href="kenney_tower-defense-kit/kenney_tower-defense-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_tower-defense-kit/Tower Defense Kit.png" alt="kenney_tower-defense-kit">
-                </a>
-            </div>
-            <div class="package-name">Tower Defense Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_toy-car-kit">
-            <div class="package">
-                <a href="kenney_toy-car-kit/kenney_toy-car-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_toy-car-kit/Toy Car Kit.png" alt="kenney_toy-car-kit">
-                </a>
-            </div>
-            <div class="package-name">Toy Car Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_train-kit">
-            <div class="package">
-                <a href="kenney_train-kit/kenney_train-kit.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_train-kit/Train Kit.png" alt="kenney_train-kit">
-                </a>
-            </div>
-            <div class="package-name">Train Kit</div>
-        </div>
-    
-
-        <div class="package-container" data-name="kenney_watercraft-pack">
-            <div class="package">
-                <a href="kenney_watercraft-pack/kenney_watercraft-pack.html"> <!-- Now linking to the correct .html file -->
-                    <img src="kenney_watercraft-pack/Watercraft Pack.png" alt="kenney_watercraft-pack">
-                </a>
-            </div>
-            <div class="package-name">Watercraft Pack</div>
-        </div>
-    
+    <!-- Main Content (Initially Hidden) -->
+    <div class="content" id="content">
+        <div class="grid-container" id="modelsContainer"></div>
     </div>
-    <script>
-        document.getElementById("search").addEventListener("input", function() {
-            let filter = this.value.toLowerCase();
-            document.querySelectorAll(".package-container").forEach(item => {
-                item.style.display = item.getAttribute("data-name").includes(filter) ? "block" : "none";
-            });
-        });
-    </script>
+
 </body>
 </html>

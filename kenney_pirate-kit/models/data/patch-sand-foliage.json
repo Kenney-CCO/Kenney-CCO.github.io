@@ -1,0 +1,10 @@
+{
+    "name": "patch-sand-foliage",
+    "glb": "models/glb/patch-sand-foliage.glb",
+    "preview": "models/poster/patch-sand-foliage.png",
+    "size_kb": 52,
+    "vertices": 1194,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

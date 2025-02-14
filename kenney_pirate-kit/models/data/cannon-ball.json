@@ -1,0 +1,10 @@
+{
+    "name": "cannon-ball",
+    "glb": "models/glb/cannon-ball.glb",
+    "preview": "models/poster/cannon-ball.png",
+    "size_kb": 14,
+    "vertices": 108,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

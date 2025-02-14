@@ -1,0 +1,10 @@
+{
+    "name": "tool-paddle",
+    "glb": "models/glb/tool-paddle.glb",
+    "preview": "models/poster/tool-paddle.png",
+    "size_kb": 14,
+    "vertices": 102,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

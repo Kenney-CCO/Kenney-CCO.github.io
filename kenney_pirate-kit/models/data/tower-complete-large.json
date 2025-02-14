@@ -1,0 +1,10 @@
+{
+    "name": "tower-complete-large",
+    "glb": "models/glb/tower-complete-large.glb",
+    "preview": "models/poster/tower-complete-large.png",
+    "size_kb": 50,
+    "vertices": 1122,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

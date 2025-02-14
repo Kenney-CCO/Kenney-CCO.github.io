@@ -1,0 +1,10 @@
+{
+    "name": "patch-grass",
+    "glb": "models/glb/patch-grass.glb",
+    "preview": "models/poster/patch-grass.png",
+    "size_kb": 15,
+    "vertices": 132,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "name": "truck",
+    "glb": "models/glb/truck.glb",
+    "preview": "models/poster/truck.png",
+    "size_kb": 126,
+    "vertices": 3282,
+    "categories": [
+        "kenney_car-kit"
+    ]
+}

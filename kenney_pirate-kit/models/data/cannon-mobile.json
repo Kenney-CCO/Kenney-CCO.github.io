@@ -1,0 +1,10 @@
+{
+    "name": "cannon-mobile",
+    "glb": "models/glb/cannon-mobile.glb",
+    "preview": "models/poster/cannon-mobile.png",
+    "size_kb": 39,
+    "vertices": 766,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

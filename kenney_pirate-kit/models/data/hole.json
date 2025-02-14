@@ -1,0 +1,10 @@
+{
+    "name": "hole",
+    "glb": "models/glb/hole.glb",
+    "preview": "models/poster/hole.png",
+    "size_kb": 28,
+    "vertices": 512,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

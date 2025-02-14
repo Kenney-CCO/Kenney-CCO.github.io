@@ -1,0 +1,10 @@
+{
+    "name": "flag",
+    "glb": "models/glb/flag.glb",
+    "preview": "models/poster/flag.png",
+    "size_kb": 19,
+    "vertices": 260,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

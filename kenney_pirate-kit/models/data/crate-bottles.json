@@ -1,0 +1,10 @@
+{
+    "name": "crate-bottles",
+    "glb": "models/glb/crate-bottles.glb",
+    "preview": "models/poster/crate-bottles.png",
+    "size_kb": 49,
+    "vertices": 1112,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

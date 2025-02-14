@@ -1,0 +1,10 @@
+{
+    "name": "cone",
+    "glb": "models/glb/cone.glb",
+    "preview": "models/poster/cone.png",
+    "size_kb": 22,
+    "vertices": 288,
+    "categories": [
+        "kenney_car-kit"
+    ]
+}

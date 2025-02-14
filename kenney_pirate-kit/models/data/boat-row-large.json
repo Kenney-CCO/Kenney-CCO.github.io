@@ -1,0 +1,10 @@
+{
+    "name": "boat-row-large",
+    "glb": "models/glb/boat-row-large.glb",
+    "preview": "models/poster/boat-row-large.png",
+    "size_kb": 20,
+    "vertices": 258,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

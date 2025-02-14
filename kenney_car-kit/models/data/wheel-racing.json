@@ -1,0 +1,10 @@
+{
+    "name": "wheel-racing",
+    "glb": "models/glb/wheel-racing.glb",
+    "preview": "models/poster/wheel-racing.png",
+    "size_kb": 31,
+    "vertices": 528,
+    "categories": [
+        "kenney_car-kit"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "name": "structure-fence",
+    "glb": "models/glb/structure-fence.glb",
+    "preview": "models/poster/structure-fence.png",
+    "size_kb": 33,
+    "vertices": 664,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

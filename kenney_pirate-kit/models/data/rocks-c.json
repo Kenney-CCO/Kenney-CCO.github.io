@@ -1,0 +1,10 @@
+{
+    "name": "rocks-c",
+    "glb": "models/glb/rocks-c.glb",
+    "preview": "models/poster/rocks-c.png",
+    "size_kb": 26,
+    "vertices": 444,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

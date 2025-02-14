@@ -1,0 +1,10 @@
+{
+    "name": "blasterM",
+    "glb": "models/glb/blasterM.glb",
+    "preview": "models/poster/blasterM.png",
+    "size_kb": 30,
+    "vertices": 778,
+    "categories": [
+        "kenney_blaster-kit"
+    ]
+}

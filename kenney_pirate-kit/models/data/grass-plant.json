@@ -1,0 +1,10 @@
+{
+    "name": "grass-plant",
+    "glb": "models/glb/grass-plant.glb",
+    "preview": "models/poster/grass-plant.png",
+    "size_kb": 19,
+    "vertices": 252,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

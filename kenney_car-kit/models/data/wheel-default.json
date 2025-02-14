@@ -1,0 +1,10 @@
+{
+    "name": "wheel-default",
+    "glb": "models/glb/wheel-default.glb",
+    "preview": "models/poster/wheel-default.png",
+    "size_kb": 29,
+    "vertices": 480,
+    "categories": [
+        "kenney_car-kit"
+    ]
+}

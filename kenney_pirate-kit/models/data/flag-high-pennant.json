@@ -1,0 +1,10 @@
+{
+    "name": "flag-high-pennant",
+    "glb": "models/glb/flag-high-pennant.glb",
+    "preview": "models/poster/flag-high-pennant.png",
+    "size_kb": 19,
+    "vertices": 238,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

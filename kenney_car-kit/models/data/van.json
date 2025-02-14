@@ -1,0 +1,10 @@
+{
+    "name": "van",
+    "glb": "models/glb/van.glb",
+    "preview": "models/poster/van.png",
+    "size_kb": 126,
+    "vertices": 3266,
+    "categories": [
+        "kenney_car-kit"
+    ]
+}

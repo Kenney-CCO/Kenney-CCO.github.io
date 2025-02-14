@@ -1,0 +1,10 @@
+{
+    "name": "tool-shovel",
+    "glb": "models/glb/tool-shovel.glb",
+    "preview": "models/poster/tool-shovel.png",
+    "size_kb": 20,
+    "vertices": 278,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "name": "garbage-truck",
+    "glb": "models/glb/garbage-truck.glb",
+    "preview": "models/poster/garbage-truck.png",
+    "size_kb": 182,
+    "vertices": 4938,
+    "categories": [
+        "kenney_car-kit"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "name": "chest",
+    "glb": "models/glb/chest.glb",
+    "preview": "models/poster/chest.png",
+    "size_kb": 27,
+    "vertices": 378,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "name": "debris-drivetrain-axle",
+    "glb": "models/glb/debris-drivetrain-axle.glb",
+    "preview": "models/poster/debris-drivetrain-axle.png",
+    "size_kb": 24,
+    "vertices": 328,
+    "categories": [
+        "kenney_car-kit"
+    ]
+}

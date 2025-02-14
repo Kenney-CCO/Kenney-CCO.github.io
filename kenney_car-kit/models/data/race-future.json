@@ -1,0 +1,10 @@
+{
+    "name": "race-future",
+    "glb": "models/glb/race-future.glb",
+    "preview": "models/poster/race-future.png",
+    "size_kb": 122,
+    "vertices": 3207,
+    "categories": [
+        "kenney_car-kit"
+    ]
+}

@@ -1,0 +1,10 @@
+{
+    "name": "patch-sand",
+    "glb": "models/glb/patch-sand.glb",
+    "preview": "models/poster/patch-sand.png",
+    "size_kb": 16,
+    "vertices": 168,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

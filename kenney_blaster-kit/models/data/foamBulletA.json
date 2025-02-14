@@ -1,0 +1,10 @@
+{
+    "name": "foamBulletA",
+    "glb": "models/glb/foamBulletA.glb",
+    "preview": "models/poster/foamBulletA.png",
+    "size_kb": 6,
+    "vertices": 144,
+    "categories": [
+        "kenney_blaster-kit"
+    ]
+}

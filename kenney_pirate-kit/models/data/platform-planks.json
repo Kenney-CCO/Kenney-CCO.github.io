@@ -1,0 +1,10 @@
+{
+    "name": "platform-planks",
+    "glb": "models/glb/platform-planks.glb",
+    "preview": "models/poster/platform-planks.png",
+    "size_kb": 14,
+    "vertices": 96,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

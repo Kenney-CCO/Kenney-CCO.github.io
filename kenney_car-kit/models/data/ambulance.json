@@ -1,0 +1,10 @@
+{
+    "name": "ambulance",
+    "glb": "models/glb/ambulance.glb",
+    "preview": "models/poster/ambulance.png",
+    "size_kb": 162,
+    "vertices": 4354,
+    "categories": [
+        "kenney_car-kit"
+    ]
+}

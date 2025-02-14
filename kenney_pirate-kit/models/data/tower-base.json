@@ -1,0 +1,10 @@
+{
+    "name": "tower-base",
+    "glb": "models/glb/tower-base.glb",
+    "preview": "models/poster/tower-base.png",
+    "size_kb": 13,
+    "vertices": 80,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}

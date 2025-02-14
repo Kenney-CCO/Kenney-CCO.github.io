@@ -1,0 +1,10 @@
+{
+    "name": "targetB",
+    "glb": "models/glb/targetB.glb",
+    "preview": "models/poster/targetB.png",
+    "size_kb": 19,
+    "vertices": 471,
+    "categories": [
+        "kenney_blaster-kit"
+    ]
+}

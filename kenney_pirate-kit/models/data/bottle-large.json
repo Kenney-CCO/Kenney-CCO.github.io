@@ -1,0 +1,10 @@
+{
+    "name": "bottle-large",
+    "glb": "models/glb/bottle-large.glb",
+    "preview": "models/poster/bottle-large.png",
+    "size_kb": 18,
+    "vertices": 208,
+    "categories": [
+        "kenney_pirate-kit"
+    ]
+}
