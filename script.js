@@ -195,7 +195,6 @@ async function showPopup(event) {
         </div>
     `;
 
-    // Popup-left: Show thumbnail with "Load 3D Model" button
     popupLeft.innerHTML = `
         <div class="thumbnail-container">
             <img src="${box.dataset.pngUrl}" alt="${box.dataset.name}" class="popup-thumbnail">
@@ -210,12 +209,10 @@ async function showPopup(event) {
     const txtText = box.dataset.txtUrl ? await (await fetch(box.dataset.txtUrl)).text() : 'No description available.';
     popupText.textContent = `${txtText}\n\nFile Size: Fetching...`;
 
-    // Fetch file size initially
     const glbResponse = await fetch(box.dataset.glbUrl, { method: 'HEAD' });
     const fileSize = glbResponse.headers.get('Content-Length');
     popupText.textContent = `${txtText}\n\nFile Size: ${(fileSize / (1024 * 1024)).toFixed(2)} MB`;
 
-    // Load model on button click
     loadModelBtn.onclick = async () => {
         popupLeft.innerHTML = '<model-viewer loading="lazy" style="width: 100%; height: 100%;"></model-viewer>';
         const viewer = popupLeft.querySelector('model-viewer');
@@ -225,11 +222,24 @@ async function showPopup(event) {
         viewer.setAttribute('camera-controls', '');
     };
 
-    downloadBtn.onclick = () => downloadZip(box.dataset.glbUrl, txtText, box.dataset.name);
+    downloadBtn.onclick = async () => {
+        const response = await fetch(box.dataset.glbUrl);
+        const blob = await response.blob();
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = `${box.dataset.name}.glb`; // Direct .glb download
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        URL.revokeObjectURL(url);
+        showNotification('Model downloaded!');
+    };
+
     copyBtn.onclick = () => copyZip(box);
     closeBtn.onclick = () => {
         popup.style.display = 'none';
-        popupLeft.innerHTML = ''; // Clear model viewer
+        popupLeft.innerHTML = '';
     };
 
     const token = auth.getToken();
@@ -277,7 +287,7 @@ async function showPopup(event) {
     }
 }
 
-async function downloadZip(glbUrl, txtText, modelName) {
+async function downloadZip(glbUrl, txtText, modelName) { // Kept for future use
     const zip = new JSZip();
     const glbResponse = await fetch(glbUrl);
     const glbBlob = await glbResponse.blob();
@@ -295,7 +305,7 @@ async function downloadZip(glbUrl, txtText, modelName) {
     showNotification('Model downloaded!');
 }
 
-async function copyZip(box) {
+async function copyZip(box) { // Kept for future use
     const urls = [box.dataset.glbUrl];
     if (box.dataset.txtUrl) urls.push(box.dataset.txtUrl);
     const urlText = urls.join('\n');
