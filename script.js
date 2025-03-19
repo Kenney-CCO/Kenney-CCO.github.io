@@ -1,6 +1,6 @@
 const grid = document.querySelector('.grid');
 const popup = document.querySelector('.popup');
-const modelViewer = document.querySelector('model-viewer');
+const popupLeft = document.querySelector('.popup-left');
 const modelName = document.querySelector('.model-name');
 const author = document.querySelector('.author');
 const stars = document.querySelector('.stars');
@@ -195,23 +195,41 @@ async function showPopup(event) {
         </div>
     `;
 
+    // Popup-left: Show thumbnail with "Load 3D Model" button
+    popupLeft.innerHTML = `
+        <div class="thumbnail-container">
+            <img src="${box.dataset.pngUrl}" alt="${box.dataset.name}" class="popup-thumbnail">
+            <button class="load-model-btn">Load 3D Model</button>
+        </div>
+    `;
+
     const downloadBtn = gridReplica.querySelector('.download-btn');
     const copyBtn = gridReplica.querySelector('.copy-btn');
     const starBtn = gridReplica.querySelector('.star-btn');
+    const loadModelBtn = popupLeft.querySelector('.load-model-btn');
     const txtText = box.dataset.txtUrl ? await (await fetch(box.dataset.txtUrl)).text() : 'No description available.';
+    popupText.textContent = `${txtText}\n\nFile Size: Fetching...`;
 
-    // Lazy-load the .glb in the model viewer
-    const viewer = document.querySelector('model-viewer');
-    viewer.setAttribute('src', box.dataset.glbUrl);
-    viewer.setAttribute('alt', box.dataset.name);
-    viewer.setAttribute('auto-rotate', '');
-    viewer.setAttribute('camera-controls', '');
+    // Fetch file size initially
+    const glbResponse = await fetch(box.dataset.glbUrl, { method: 'HEAD' });
+    const fileSize = glbResponse.headers.get('Content-Length');
+    popupText.textContent = `${txtText}\n\nFile Size: ${(fileSize / (1024 * 1024)).toFixed(2)} MB`;
+
+    // Load model on button click
+    loadModelBtn.onclick = async () => {
+        popupLeft.innerHTML = '<model-viewer loading="lazy" style="width: 100%; height: 100%;"></model-viewer>';
+        const viewer = popupLeft.querySelector('model-viewer');
+        viewer.setAttribute('src', box.dataset.glbUrl);
+        viewer.setAttribute('alt', box.dataset.name);
+        viewer.setAttribute('auto-rotate', '');
+        viewer.setAttribute('camera-controls', '');
+    };
 
     downloadBtn.onclick = () => downloadZip(box.dataset.glbUrl, txtText, box.dataset.name);
     copyBtn.onclick = () => copyZip(box);
     closeBtn.onclick = () => {
         popup.style.display = 'none';
-        viewer.removeAttribute('src'); // Clear model to free memory
+        popupLeft.innerHTML = ''; // Clear model viewer
     };
 
     const token = auth.getToken();
@@ -257,8 +275,6 @@ async function showPopup(event) {
     } else {
         starBtn.disabled = true;
     }
-
-    popupText.textContent = txtText;
 }
 
 async function downloadZip(glbUrl, txtText, modelName) {

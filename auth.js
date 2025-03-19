@@ -2,8 +2,8 @@
 console.log('auth.js loaded');
 
 const supabase = window.supabase.createClient(
-    'https://ejuqhyqdnihljdzwrkrj.supabase.co', // Replace with your Project URL
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVqdXFoeXFkbmlobGpkendya3JqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI0MTcxNTYsImV4cCI6MjA1Nzk5MzE1Nn0._qsE30twViyp9ctFmks9GjK2Oq-IWujR1HFLkKYTwfk' // Replace with your new Anon Key
+    'https://ejuqhyqdnihljdzwrkrj.supabase.co',
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVqdXFoeXFkbmlobGpkendya3JqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI0MTcxNTYsImV4cCI6MjA1Nzk5MzE1Nn0._qsE30twViyp9ctFmks9GjK2Oq-IWujR1HFLkKYTwfk'
 );
 
 let token = null;
