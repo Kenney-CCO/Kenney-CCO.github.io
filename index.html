@@ -1,254 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <title>GLB.Tools</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bungee Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <!-- Model Viewer for 3D rendering -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <script defer src="loadModels.js"></script>
-    <style>
-        /* Global Styles */
-        body {
-            font-family: Arial, sans-serif;
-            background: #181818;
-            color: white;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100vh;
-            overflow-y: auto;
-        }
-
-        /* Fixed Search Header */
-        .search-header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: #222;
-            padding: 15px 0;
-            text-align: center;
-            z-index: 1000;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
-        }
-
-        .search-input, .category-filter {
-            width: 30%;
-            padding: 10px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            outline: none;
-            background: #333;
-            color: white;
-            text-align: center;
-            margin: 5px;
-        }
-
-        /* Main Content (Grid Layout) */
-        .content {
-            width: 100%;
-            max-width: 1200px;
-            margin-top: 100px;
-            display: none;
-            opacity: 0;
-            transition: opacity 0.3s ease-in-out;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 20px;
-            width: 100%;
-        }
-
-        /* Model Card */
-        .model-card {
-            background: #222;
-            border-radius: 10px;
-            padding: 15px;
-            text-align: center;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-            transition: transform 0.2s ease-in-out;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            height: 350px;
-        }
-
-        .model-card:hover {
-            transform: translateY(-5px);
-        }
-
-        /* Model Display Box */
-        .model-display {
-            width: 100%;
-            height: 180px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #333;
-            border-radius: 8px;
-        }
-
-        /* Model Preview */
-        .model-preview {
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: cover;
-            border-radius: 8px;
-        }
-
-        /* Model Name */
-        .model-name {
-            margin: 10px 0;
-            font-size: 16px;
-            font-weight: bold;
-            color: #f0f0f0;
-        }
-
-        /* Model Info */
-        .model-info {
-            font-size: 14px;
-            color: #bbb;
-            margin-bottom: 10px;
-        }
-
-        /* Category Tags */
-        .category-container {
-            margin-top: 5px;
-        }
-
-        .category-tag {
-            display: inline-block;
-            background: #007bff;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            margin: 3px;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 14px;
-            transition: background 0.2s ease-in-out;
-        }
-
-        .category-tag:hover {
-            background: #0056b3;
-        }
-
-        .category-tag.active {
-            background: #ff9800;
-        }
-
-        .button-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: 10px;
-            gap: 5px;
-            width: 100%;
-        }
-
-        .button-row button {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #333;
-            border: none;
-            padding: 8px;
-            border-radius: 5px;
-            cursor: pointer;
-            width: 33%;
-            max-width: 80px;
-            height: 40px;
-        }
-
-        .button-row button:hover {
-            background: #555;
-        }
-
-        .view-button, .drag-container, .download-button {
-            flex: 1;
-            max-width: 80px;
-            height: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .view-button {
-            background-color: #00bfff;
-        }
-
-        /* Background drag button (visual only, NO interactions) */
-        .drag-button {
-            position: relative;
-            background-color: #ffa500;
-            width: 100%;
-            max-width: 80px;
-            height: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: none;
-            border-radius: 5px;
-            cursor: default; /* Prevent clicks */
-            pointer-events: none; /* Ensures this button does NOTHING */
-        }
-
-        /* Hover effect (for visual purposes) */
-        .drag-button img {
-            pointer-events: none; /* Prevent dragging the SVG */
-        }
-
-        .drag-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: transparent;
-            border: none;
-            cursor: grab;
-            z-index: 100; /* Ensures it is above the drag button */
-        }
-
-        .download-button {
-            background-color: #007bff;
-        }
-
-        .view-button:hover {
-            background-color: #008ecf;
-        }
-
-        .drag-button:hover {
-            background-color: #ff8c00;
-        }
-
-        .download-button:hover {
-            background-color: #0056b3;
-        }
-
-        .icon {
-            width: 24px;
-            height: 24px;
-            display: block;
-            margin: auto;
-            filter: invert(1); /* Turns black SVGs into white */
-        }
-
-    </style>
+    <!-- JSZip for zipping files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <!-- Supabase CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+    <!-- Shared auth script -->
+    <script src="auth.js"></script>
 </head>
 <body>
-
-    <!-- Fixed Search Header -->
-    <div class="search-header">
-        <input type="text" id="searchInput" class="search-input" placeholder="Search models...">
+    <header>
+        <div class="logo">GLB.TOOLS</div>
+        <input type="text" placeholder="Search models..." class="search-bar" id="search-input">
+        <div class="nav">
+            <div class="profile-container">
+                <button id="login-btn">Login with GitHub</button>
+                <div class="dropdown" id="profile-dropdown" style="display: none;">
+                    <a href="portal.html" class="dropdown-item">My Portal</a>
+                    <button class="dropdown-item" id="logout-btn">Log Out</button>
+                </div>
+            </div>
+            <a href="https://docs.glb.tools">Docs</a>
+        </div>
+    </header>
+    <main>
+        <div class="grid">
+            <!-- JS will fill this with 12 boxes -->
+        </div>
+        <button class="load-more">Load More</button>
+    </main>
+    <div class="popup" style="display: none;">
+        <div class="popup-left">
+            <model-viewer loading="lazy" style="width: 100%; height: 100%;"></model-viewer>
+        </div>
+        <div class="popup-right">
+            <div class="popup-header">
+                <h2 class="model-name"></h2>
+                <p class="author"></p>
+                <span class="stars">⭐ 0</span>
+                <button class="close-btn">X</button>
+            </div>
+            <div class="popup-text popup-scrollbox"></div>
+        </div>
     </div>
-
-    <!-- Main Content (Initially Hidden) -->
-    <div class="content" id="content">
-        <div class="grid-container" id="modelsContainer"></div>
-    </div>
-
+    <script src="script.js"></script>
 </body>
 </html>
