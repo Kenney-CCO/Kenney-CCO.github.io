@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GLB.Tools</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+    <script src="auth.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">GLB.TOOLS</a>
+        <input type="text" placeholder="Search models..." class="search-bar" id="search-input" disabled>
+        <div class="nav">
+            <div class="profile-container">
+                <button id="login-btn">Login with GitHub</button>
+                <div id="profile-dropdown" class="dropdown" style="display: none;">
+                    <a href="portal.html" id="my-portal-btn" class="dropdown-item">My Portal</a>
+                    <button id="logout-btn" class="dropdown-item">Logout</button>
+                </div>
+            </div>
+            <a href="index.html">Back to Models</a>
+        </div>
+    </header>
+    <main>
+        <div class="storage-bar">
+            <span class="storage-text">Storage Used: <span id="usage">0 GB</span> / 5 GB</span>
+            <div class="progress">
+                <div id="progress-bar" class="progress-fill" style="width: 0%;"></div>
+            </div>
+        </div>
+        <div class="portal-container">
+            <h1>Creator Portal</h1>
+            <button id="refresh-repos">Refresh Repos</button>
+            <div id="login-message">Please log in with GitHub to upload and manage models.</div>
+
+            <div class="sections-wrapper">
+                <div id="upload-section" class="section-box" style="display: none;">
+                    <h2>Upload Model</h2>
+                    <p class="instructions">Select a repo and drag your 3D Model (.glb), ReadMe (.txt), and Thumbnail (.png) below.</p>
+                    <form id="upload-form">
+                        <div class="form-row">
+                            <label for="repo-select">Select Repository:</label>
+                            <select id="repo-select"></select>
+                        </div>
+                        <div id="single-upload">
+                            <div class="form-row">
+                                <label class="naming-rule" style="display: none;">Your .glb, .txt, and .png must have the same name.</label>
+                                <label for="glb-file">3D Model (.glb):</label>
+                                <div id="glb-drop-zone" class="dropzone"></div>
+                                <input type="file" id="glb-file" accept=".glb" required>
+                            </div>
+                            <div class="form-row">
+                                <label for="txt-file">ReadMe (.txt):</label>
+                                <div id="txt-drop-zone" class="dropzone"></div>
+                                <input type="file" id="txt-file" accept=".txt">
+                            </div>
+                            <div class="form-row">
+                                <label for="png-file">Thumbnail (.png):</label>
+                                <div id="png-drop-zone" class="dropzone"></div>
+                                <input type="file" id="png-file" accept=".png" required>
+                                <p class="guidelines">Recommended: 800x450px, max 100KB, transparent background</p>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <label><input type="checkbox" id="bulk-toggle"> Bulk Upload</label>
+                        </div>
+                        <div id="bulk-upload" style="display: none;">
+                            <div class="form-row">
+                                <label for="glb-files">3D Models (.glb):</label>
+                                <div id="glb-bulk-drop-zone" class="dropzone"></div>
+                                <input type="file" id="glb-files" accept=".glb" multiple required>
+                            </div>
+                            <div class="form-row">
+                                <label for="txt-files">ReadMes (.txt):</label>
+                                <div id="txt-bulk-drop-zone" class="dropzone"></div>
+                                <input type="file" id="txt-files" accept=".txt" multiple>
+                            </div>
+                            <div class="form-row">
+                                <label for="png-files">Thumbnails (.png):</label>
+                                <div id="png-bulk-drop-zone" class="dropzone"></div>
+                                <input type="file" id="png-files" accept=".png" multiple required>
+                            </div>
+                        </div>
+                        <div class="button-group">
+                            <button type="submit">Upload Model(s)</button>
+                            <a href="https://github.com/GLBTools/GLB.Tools-Models" target="_blank"><button type="button" class="example-btn">View Examples</button></a>
+                        </div>
+                    </form>
+                    <div id="upload-status"></div>
+                </div>
+
+                <div id="repo-section" class="section-box" style="display: none;">
+                    <h2>Manage Repositories</h2>
+                    <div class="create-repo">
+                        <label for="new-repo-name">Create New Repository:</label>
+                        <input type="text" id="new-repo-name" placeholder="e.g., MyGLBToolsRepo">
+                        <button id="create-repo-btn">Create</button>
+                    </div>
+                    <h3>My Repos</h3>
+                    <div class="scrollbox">
+                        <ul id="repo-list"></ul>
+                    </div>
+                    <div id="repo-status"></div>
+                </div>
+
+                <div id="model-section" class="section-box" style="display: none;">
+                    <h2>Manage Models</h2>
+                    <div class="form-row">
+                        <label for="model-repo-select">Select Repository:</label>
+                        <select id="model-repo-select"></select>
+                    </div>
+                    <div class="scrollbox">
+                        <ul id="model-list"></ul>
+                    </div>
+                    <div id="model-status"></div>
+                </div>
+
+                <div id="profile-section" class="section-box" style="display: none;">
+                    <h2>Manage Profile</h2>
+                    <button id="enable-creator-links" style="display: none;">Enable Creator Links</button>
+                    <p id="creator-links-disclaimer" style="display: none;">This will create a "glbtools" Repo</p>
+                    <div id="links-form" style="display: none;">
+                        <div class="link-row">
+                            <label for="website-link">Website:</label>
+                            <input type="text" id="website-link" placeholder="https://yourwebsite.com">
+                        </div>
+                        <div class="link-row">
+                            <label for="x-link">X:</label>
+                            <input type="text" id="x-link" placeholder="https://x.com/username">
+                        </div>
+                        <div class="link-row">
+                            <label for="donation-link">Donation:</label>
+                            <input type="text" id="donation-link" placeholder="https://paypal.me/username">
+                        </div>
+                        <div class="button-container">
+                            <button id="save-links">Save Links</button>
+                        </div>
+                    </div>
+                    <div id="profile-status"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="portal.js"></script>
+</body>
+</html>
