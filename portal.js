@@ -37,10 +37,12 @@ const configForm = document.getElementById('config-form');
 const glbRepoUsernameInput = document.getElementById('glb-repo-username');
 const glbRepoNameInput = document.getElementById('glb-repo-name');
 const siteTitleInput = document.getElementById('site-title');
+const thumbnailFileInput = document.getElementById('thumbnail-file');
+const thumbnailDropZone = document.getElementById('thumbnail-drop-zone');
 const saveConfigBtn = document.getElementById('save-config');
 const profileStatus = document.getElementById('profile-status');
 const profileDropdown = document.getElementById('profile-dropdown');
-const myPortalLink = document.getElementById('my-portal-link'); // Added declaration
+const myPortalLink = document.getElementById('my-portal-link');
 const logoutBtn = document.getElementById('logout-btn');
 const bulkToggle = document.getElementById('bulk-toggle');
 let username;
@@ -80,7 +82,7 @@ async function checkSession() {
                     modelSection.style.display = 'block';
                     profileSection.style.display = 'block';
                     loginMessage.style.display = 'none';
-                    if (myPortalLink) myPortalLink.style.display = 'block'; // Null check
+                    if (myPortalLink) myPortalLink.style.display = 'block';
                     fetchRepoDetails();
                     fetchModels();
                     await setupCreatorLinks();
@@ -99,7 +101,7 @@ async function checkSession() {
                     enableCreatorLinksBtn.style.display = 'none';
                     creatorLinksDisclaimer.style.display = 'none';
                     profileDropdown.style.display = 'none';
-                    if (myPortalLink) myPortalLink.style.display = 'none'; // Null check
+                    if (myPortalLink) myPortalLink.style.display = 'none';
                     loginMessage.style.display = 'block';
                     loginMessage.textContent = `This portal is for the site owner (${window.config.glbRepoUsername}) only. Visit the main page to explore models.`;
                 }
@@ -120,7 +122,7 @@ async function checkSession() {
             enableCreatorLinksBtn.style.display = 'none';
             creatorLinksDisclaimer.style.display = 'none';
             profileDropdown.style.display = 'none';
-            if (myPortalLink) myPortalLink.style.display = 'none'; // Null check
+            if (myPortalLink) myPortalLink.style.display = 'none';
             loginMessage.style.display = 'block';
             loginMessage.textContent = 'Please log in with GitHub to access the portal.';
         }
@@ -163,7 +165,6 @@ async function checkSession() {
     });
 }
 
-// Rest of the script (updateStorageUsage, setupCreatorLinks, etc.) remains unchanged
 async function updateStorageUsage() {
     if (!auth.getToken()) {
         document.getElementById('usage').textContent = '0 GB';
@@ -228,6 +229,9 @@ async function setupConfigForm() {
         glbRepoUsernameInput.value = window.config.glbRepoUsername || '';
         glbRepoNameInput.value = window.config.glbRepoName || '';
         siteTitleInput.value = window.config.siteTitle || '';
+        thumbnailFileInput.value = ''; // Clear file input
+        thumbnailDropZone.textContent = window.config.thumbnailPath ? 'thumbnail.jpg' : '';
+        thumbnailDropZone.style.backgroundImage = window.config.thumbnailPath ? 'none' : "url('dragdrop.svg')";
     } catch (error) {
         showNotification(`Error loading config: ${error.message}`, true);
         console.error('Error loading config:', error);
@@ -281,8 +285,23 @@ saveConfigBtn.addEventListener('click', async () => {
         glbRepoName: glbRepoNameInput.value.trim(),
         supabaseUrl: window.config.supabaseUrl,
         supabaseAnonKey: window.config.supabaseAnonKey,
-        siteTitle: siteTitleInput.value.trim()
+        siteTitle: siteTitleInput.value.trim(),
+        thumbnailPath: window.config.thumbnailPath || 'thumbnail.jpg' // Default or existing path
     };
+    const thumbnailFile = thumbnailFileInput.files[0];
+    if (thumbnailFile) {
+        if (thumbnailFile.size > 100 * 1024) {
+            showNotification('Thumbnail must be less than 100KB', true);
+            return;
+        }
+        try {
+            await uploadFile(username, `${username}/clone.tools`, 'thumbnail.jpg', thumbnailFile); // Use website repo
+            updatedConfig.thumbnailPath = 'thumbnail.jpg';
+        } catch (error) {
+            showNotification(`Error uploading thumbnail: ${error.message}`, true);
+            return;
+        }
+    }
     const content = btoa(JSON.stringify(updatedConfig, null, 2));
     try {
         const configResponse = await fetch(`https://api.github.com/repos/${username}/clone.tools/contents/config.json`, {
@@ -305,6 +324,7 @@ saveConfigBtn.addEventListener('click', async () => {
         window.config = updatedConfig;
         document.querySelector('.logo').textContent = window.config.siteTitle || 'CLONE.TOOLS';
         showNotification('Config saved successfully! Refresh to see changes.');
+        await setupConfigForm(); // Refresh form to show updated thumbnail
     } catch (error) {
         showNotification(`Error saving config: ${error.message}`, true);
     }
@@ -503,8 +523,8 @@ async function createRepo(repoName) {
             body: JSON.stringify({ name: repoName, private: false })
         });
         if (!response.ok) throw new Error('Failed to create repo');
-        await updateRepoTopics(username, repoName);
-        if (repoName === 'glbtools') {
+        if (repoName === 'glbtools') { // Only tag glbtools repo
+            await updateRepoTopics(username, repoName);
             showNotification('glbtools repo created successfully!');
         } else {
             showNotification(`Repository ${repoName} created!`);
@@ -655,6 +675,7 @@ function resetDropZones() {
     resetDropZone(document.getElementById('glb-bulk-drop-zone'));
     resetDropZone(document.getElementById('txt-bulk-drop-zone'));
     resetDropZone(document.getElementById('png-bulk-drop-zone'));
+    resetDropZone(thumbnailDropZone);
 }
 
 function resetDropZone(zone) {
@@ -668,5 +689,6 @@ setupDragAndDrop(pngFileInput, pngDropZone);
 setupDragAndDrop(document.getElementById('glb-files'), document.getElementById('glb-bulk-drop-zone'));
 setupDragAndDrop(document.getElementById('txt-files'), document.getElementById('txt-bulk-drop-zone'));
 setupDragAndDrop(document.getElementById('png-files'), document.getElementById('png-bulk-drop-zone'));
+setupDragAndDrop(thumbnailFileInput, thumbnailDropZone);
 
 checkSession();
