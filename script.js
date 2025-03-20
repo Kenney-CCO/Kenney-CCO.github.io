@@ -1,4 +1,4 @@
-async function loadConfig() { // Keep this for standalone testing, but auth.js should load it first
+async function loadConfig() { 
     if (!window.config) {
         const response = await fetch('config.json');
         window.config = await response.json();
@@ -20,7 +20,7 @@ async function loadModels() {
     loading = true;
     try {
         if (!window.config) await loadConfig();
-        const response = await fetch(`https://api.github.com/repos/${window.config.repoOwner}/${window.config.repoName}/contents`, {
+        const response = await fetch(`https://api.github.com/repos/${window.config.glbRepoUsername}/${window.config.glbRepoName}/contents`, {
             headers: auth.getToken() ? { 'Authorization': `token ${auth.getToken()}` } : {}
         });
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
@@ -37,9 +37,9 @@ async function loadModels() {
                     txtUrl: txtFile ? txtFile.download_url : '',
                     pngUrl: pngFile.download_url,
                     author: window.config.creatorName,
-                    authorUrl: `https://github.com/${window.config.repoOwner}`,
+                    authorUrl: `https://github.com/${window.config.glbRepoUsername}`,
                     authorAvatar: window.config.creatorAvatar,
-                    repoName: window.config.repoName,
+                    repoName: window.config.glbRepoName,
                     stars: 0
                 });
             }
@@ -122,7 +122,7 @@ async function showPopup(event) {
 
     let creatorLinks = {};
     try {
-        const linksResponse = await fetch(`https://api.github.com/repos/${window.config.repoOwner}/glbtools/contents/links.json`, {
+        const linksResponse = await fetch(`https://api.github.com/repos/${window.config.glbRepoUsername}/glbtools/contents/links.json`, {
             headers: auth.getToken() ? { 'Authorization': `token ${auth.getToken()}` } : {}
         });
         if (linksResponse.ok) {
@@ -232,7 +232,7 @@ async function showPopup(event) {
     if (token) {
         let isStarred = false;
         try {
-            const starCheck = await fetch(`https://api.github.com/user/starred/${window.config.repoOwner}/${box.dataset.repoName}`, {
+            const starCheck = await fetch(`https://api.github.com/user/starred/${window.config.glbRepoUsername}/${box.dataset.repoName}`, {
                 headers: { 'Authorization': `token ${token}` }
             });
             if (starCheck.status === 401) throw new Error('Token invalid or expired');
@@ -246,7 +246,7 @@ async function showPopup(event) {
         starBtn.onclick = async () => {
             try {
                 if (isStarred) {
-                    await fetch(`https://api.github.com/user/starred/${window.config.repoOwner}/${box.dataset.repoName}`, {
+                    await fetch(`https://api.github.com/user/starred/${window.config.glbRepoUsername}/${box.dataset.repoName}`, {
                         method: 'DELETE',
                         headers: { 'Authorization': `token ${token}` }
                     });
@@ -254,7 +254,7 @@ async function showPopup(event) {
                     starBtn.classList.remove('starred');
                     box.dataset.stars = parseInt(box.dataset.stars) - 1;
                 } else {
-                    await fetch(`https://api.github.com/user/starred/${window.config.repoOwner}/${box.dataset.repoName}`, {
+                    await fetch(`https://api.github.com/user/starred/${window.config.glbRepoUsername}/${box.dataset.repoName}`, {
                         method: 'PUT',
                         headers: { 'Authorization': `token ${token}` }
                     });
@@ -300,7 +300,7 @@ async function copyZip(box) {
 }
 
 document.addEventListener('DOMContentLoaded', async () => {
-    await loadConfig(); // Load config first
+    await loadConfig();
     const logoutBtn = document.getElementById('logout-btn');
     const profileDropdown = document.getElementById('profile-dropdown');
     let dropdownVisible = false;
