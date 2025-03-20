@@ -99,7 +99,7 @@ function renderGrid() {
         const box = document.createElement('div');
         box.className = 'grid-box';
         box.innerHTML = `
-            <img src="${model.pngUrl}" alt="${model.name}">
+            <img src="${model.pngUrl}" alt="${model.name}" draggable="true" class="draggable-png">
             <div class="text-row">
                 <div class="name">${model.name}</div>
                 <div class="stars"><span class="star-icon"></span> ${model.stars}</div>
@@ -115,6 +115,15 @@ function renderGrid() {
         box.dataset.repoName = model.repoName;
         box.dataset.stars = model.stars;
         box.addEventListener('click', showPopup);
+
+        // Add drag functionality to the .png
+        const img = box.querySelector('.draggable-png');
+        img.addEventListener('dragstart', (e) => {
+            e.dataTransfer.setData('text/uri-list', model.glbUrl);
+            e.dataTransfer.setData('text/plain', model.glbUrl); // Fallback for some apps
+            e.dataTransfer.effectAllowed = 'copy';
+        });
+
         grid.appendChild(box);
     });
 }
@@ -228,7 +237,7 @@ async function showPopup(event) {
         const url = URL.createObjectURL(blob);
         const link = document.createElement('a');
         link.href = url;
-        link.download = `${box.dataset.name}.glb`; // Direct .glb download
+        link.download = `${box.dataset.name}.glb`;
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
@@ -287,7 +296,7 @@ async function showPopup(event) {
     }
 }
 
-async function downloadZip(glbUrl, txtText, modelName) { // Kept for future use
+async function downloadZip(glbUrl, txtText, modelName) {
     const zip = new JSZip();
     const glbResponse = await fetch(glbUrl);
     const glbBlob = await glbResponse.blob();
@@ -305,7 +314,7 @@ async function downloadZip(glbUrl, txtText, modelName) { // Kept for future use
     showNotification('Model downloaded!');
 }
 
-async function copyZip(box) { // Kept for future use
+async function copyZip(box) {
     const urls = [box.dataset.glbUrl];
     if (box.dataset.txtUrl) urls.push(box.dataset.txtUrl);
     const urlText = urls.join('\n');
