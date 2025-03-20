@@ -33,6 +33,11 @@ const websiteLinkInput = document.getElementById('website-link');
 const xLinkInput = document.getElementById('x-link');
 const donationLinkInput = document.getElementById('donation-link');
 const saveLinksBtn = document.getElementById('save-links');
+const configForm = document.getElementById('config-form');
+const glbRepoUsernameInput = document.getElementById('glb-repo-username');
+const glbRepoNameInput = document.getElementById('glb-repo-name');
+const siteTitleInput = document.getElementById('site-title');
+const saveConfigBtn = document.getElementById('save-config');
 const profileStatus = document.getElementById('profile-status');
 const profileDropdown = document.getElementById('profile-dropdown');
 const logoutBtn = document.getElementById('logout-btn');
@@ -75,6 +80,7 @@ async function checkSession() {
                 fetchRepoDetails();
                 fetchModels();
                 await setupCreatorLinks();
+                await setupConfigForm();
                 updateStorageUsage();
             } catch (error) {
                 showNotification(`Error: ${error.message}`, true);
@@ -89,6 +95,7 @@ async function checkSession() {
             modelSection.style.display = 'none';
             profileSection.style.display = 'none';
             linksForm.style.display = 'none';
+            configForm.style.display = 'none';
             enableCreatorLinksBtn.style.display = 'none';
             creatorLinksDisclaimer.style.display = 'none';
             profileDropdown.style.display = 'none';
@@ -118,6 +125,7 @@ async function checkSession() {
         modelSection.style.display = 'none';
         profileSection.style.display = 'none';
         linksForm.style.display = 'none';
+        configForm.style.display = 'none';
         enableCreatorLinksBtn.style.display = 'none';
         creatorLinksDisclaimer.style.display = 'none';
         loginMessage.style.display = 'block';
@@ -174,16 +182,30 @@ async function setupCreatorLinks() {
                 donationLinkInput.value = links.donation || '';
             }
             linksForm.style.display = 'block';
+            configForm.style.display = 'block';
             enableCreatorLinksBtn.style.display = 'none';
             creatorLinksDisclaimer.style.display = 'none';
         } else if (repoResponse.status === 404) {
             enableCreatorLinksBtn.style.display = 'block';
             creatorLinksDisclaimer.style.display = 'block';
             linksForm.style.display = 'none';
+            configForm.style.display = 'none';
         }
     } catch (error) {
         showNotification(`Error setting up creator links: ${error.message}`, true);
         console.error('Error setting up creator links:', error);
+    }
+}
+
+async function setupConfigForm() {
+    try {
+        if (!window.config) await loadConfig();
+        glbRepoUsernameInput.value = window.config.glbRepoUsername || '';
+        glbRepoNameInput.value = window.config.glbRepoName || '';
+        siteTitleInput.value = window.config.siteTitle || '';
+    } catch (error) {
+        showNotification(`Error loading config: ${error.message}`, true);
+        console.error('Error loading config:', error);
     }
 }
 
@@ -198,9 +220,11 @@ enableCreatorLinksBtn.addEventListener('click', async () => {
             showNotification('glbtools repo created successfully!');
         }
         linksForm.style.display = 'block';
+        configForm.style.display = 'block';
         enableCreatorLinksBtn.style.display = 'none';
         creatorLinksDisclaimer.style.display = 'none';
         await setupCreatorLinks();
+        await setupConfigForm();
     } catch (error) {
         showNotification(`Error setting up glbtools repo: ${error.message}`, true);
     }
@@ -223,6 +247,41 @@ saveLinksBtn.addEventListener('click', async () => {
         showNotification('Creator links saved successfully!');
     } catch (error) {
         showNotification(`Error saving links: ${error.message}`, true);
+    }
+});
+
+saveConfigBtn.addEventListener('click', async () => {
+    const updatedConfig = {
+        glbRepoUsername: glbRepoUsernameInput.value.trim(),
+        glbRepoName: glbRepoNameInput.value.trim(),
+        supabaseUrl: window.config.supabaseUrl, // Preserve existing values
+        supabaseAnonKey: window.config.supabaseAnonKey,
+        siteTitle: siteTitleInput.value.trim()
+    };
+    const content = btoa(JSON.stringify(updatedConfig, null, 2));
+    try {
+        const configResponse = await fetch(`https://api.github.com/repos/${username}/clone.tools/contents/config.json`, {
+            headers: { 'Authorization': `token ${auth.getToken()}` }
+        });
+        if (!configResponse.ok) throw new Error('Failed to fetch config.json');
+        const configData = await configResponse.json();
+        const sha = configData.sha;
+
+        const response = await fetch(`https://api.github.com/repos/${username}/clone.tools/contents/config.json`, {
+            method: 'PUT',
+            headers: { 'Authorization': `token ${auth.getToken()}`, 'Content-Type': 'application/json' },
+            body: JSON.stringify({ 
+                message: 'Update config.json', 
+                content: content, 
+                sha: sha 
+            })
+        });
+        if (!response.ok) throw new Error('Failed to save config');
+        window.config = updatedConfig;
+        document.querySelector('.logo').textContent = window.config.siteTitle || 'CLONE.TOOLS';
+        showNotification('Config saved successfully! Refresh to see changes.');
+    } catch (error) {
+        showNotification(`Error saving config: ${error.message}`, true);
     }
 });
 

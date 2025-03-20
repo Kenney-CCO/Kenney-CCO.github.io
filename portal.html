@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <a href="index.html" class="logo"></a> <!-- Set by portal.js from config -->
+        <a href="index.html" class="logo"></a>
         <input type="text" placeholder="Search models..." class="search-bar" id="search-input" disabled>
         <div class="nav">
             <div class="profile-container">
@@ -122,6 +122,24 @@
                         </div>
                         <div class="button-container">
                             <button id="save-links">Save Links</button>
+                        </div>
+                    </div>
+                    <div id="config-form" style="display: none;">
+                        <h3>Site Configuration</h3>
+                        <div class="form-row">
+                            <label for="glb-repo-username">GLB Repo Username:</label>
+                            <input type="text" id="glb-repo-username" placeholder="GitHub username for .glb repo">
+                        </div>
+                        <div class="form-row">
+                            <label for="glb-repo-name">GLB Repo Name:</label>
+                            <input type="text" id="glb-repo-name" placeholder="Repo name for .glb files">
+                        </div>
+                        <div class="form-row">
+                            <label for="site-title">Site Title:</label>
+                            <input type="text" id="site-title" placeholder="Your site title">
+                        </div>
+                        <div class="button-container">
+                            <button id="save-config">Save Config</button>
                         </div>
                     </div>
                     <div id="profile-status"></div>

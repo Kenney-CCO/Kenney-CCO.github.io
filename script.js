@@ -14,6 +14,7 @@ const searchInput = document.getElementById('search-input');
 const loginBtn = document.getElementById('login-btn');
 let allModels = [];
 let loading = false;
+let currentUser = null;
 
 async function loadModels() {
     if (loading) return;
@@ -36,9 +37,9 @@ async function loadModels() {
                     glbUrl: glbFile.download_url,
                     txtUrl: txtFile ? txtFile.download_url : '',
                     pngUrl: pngFile.download_url,
-                    author: window.config.creatorName,
-                    authorUrl: `https://github.com/${window.config.glbRepoUsername}`,
-                    authorAvatar: window.config.creatorAvatar,
+                    author: currentUser ? currentUser.user_metadata.preferred_username : 'Unknown',
+                    authorUrl: currentUser ? `https://github.com/${currentUser.user_metadata.preferred_username}` : '#',
+                    authorAvatar: currentUser ? currentUser.user_metadata.avatar_url : 'https://github.com/identicons/default.png',
                     repoName: window.config.glbRepoName,
                     stars: 0
                 });
@@ -336,6 +337,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     auth.checkSession(async (user) => {
         if (user && auth.getToken()) {
+            currentUser = user;
             try {
                 const response = await fetch('https://api.github.com/user', {
                     headers: { 'Authorization': `token ${auth.getToken()}` }
@@ -343,6 +345,7 @@ document.addEventListener('DOMContentLoaded', async () => {
                 if (!response.ok) throw new Error('Token invalid or expired');
                 auth.updateLoginDisplay(user, loginBtn);
                 profileDropdown.style.display = 'none';
+                loadModels();
             } catch (error) {
                 console.error('Token validation failed:', error);
                 loginBtn.innerHTML = 'Login with GitHub';
@@ -353,8 +356,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             loginBtn.innerHTML = 'Login with GitHub';
             loginBtn.className = loginBtn.className.replace('profile', '');
             loginBtn.disabled = false;
+            loadModels();
         }
     });
-
-    loadModels();
 });
