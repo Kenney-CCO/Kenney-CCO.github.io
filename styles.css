@@ -1034,3 +1034,8 @@ main::-webkit-scrollbar-track {
     opacity: 1;
     transform: translateY(0);
 }
+
+.notification.error {
+    background: #FF9999;
+    color: #17141F;
+}

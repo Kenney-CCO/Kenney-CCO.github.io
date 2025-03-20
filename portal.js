@@ -9,7 +9,6 @@ const pngFileInput = document.getElementById('png-file');
 const glbDropZone = document.getElementById('glb-drop-zone');
 const txtDropZone = document.getElementById('txt-drop-zone');
 const pngDropZone = document.getElementById('png-drop-zone');
-const uploadStatus = document.getElementById('upload-status');
 const loginMessage = document.getElementById('login-message');
 const uploadSection = document.getElementById('upload-section');
 const repoSection = document.getElementById('repo-section');
@@ -37,6 +36,20 @@ const logoutBtn = document.getElementById('logout-btn');
 const bulkToggle = document.getElementById('bulk-toggle');
 let username;
 
+function showNotification(message, isError = false) {
+    const notification = document.createElement('div');
+    notification.className = 'notification';
+    notification.textContent = message;
+    if (isError) notification.classList.add('error');
+    document.body.appendChild(notification);
+
+    setTimeout(() => notification.classList.add('show'), 10);
+    setTimeout(() => {
+        notification.classList.remove('show');
+        setTimeout(() => document.body.removeChild(notification), 300);
+    }, 5000);
+}
+
 async function checkSession() {
     let dropdownVisible = false;
 
@@ -58,10 +71,9 @@ async function checkSession() {
                 fetchRepos();
                 fetchModelRepos();
                 await setupCreatorLinks();
-                updateStorageUsage(repoSelect.value); // Initial storage update
+                updateStorageUsage(repoSelect.value);
             } catch (error) {
-                uploadStatus.textContent = `Error: ${error.message}`;
-                uploadStatus.classList.add('error');
+                showNotification(`Error: ${error.message}`, true);
                 console.error('User fetch error:', error);
             }
         } else {
@@ -86,10 +98,7 @@ async function checkSession() {
             profileDropdown.style.display = dropdownVisible ? 'block' : 'none';
         } else {
             const error = await auth.loginWithGitHub();
-            if (error) {
-                uploadStatus.textContent = `Login failed: ${error}`;
-                uploadStatus.classList.add('error');
-            }
+            if (error) showNotification(`Login failed: ${error}`, true);
         }
     });
 
@@ -132,10 +141,10 @@ async function updateStorageUsage(repoName) {
         const contents = await response.json();
         let totalSize = 0;
         for (const file of contents) {
-            if (file.size) totalSize += file.size; // Size in bytes
+            if (file.size) totalSize += file.size;
         }
-        const sizeGB = (totalSize / (1024 * 1024 * 1024)).toFixed(2); // Convert to GB
-        const percentage = (sizeGB / 5) * 100; // 5GB recommended cap
+        const sizeGB = (totalSize / (1024 * 1024 * 1024)).toFixed(2);
+        const percentage = (sizeGB / 5) * 100;
         document.getElementById('usage').textContent = `${sizeGB} GB`;
         document.getElementById('progress-bar').style.width = `${Math.min(percentage, 100)}%`;
     } catch (error) {
@@ -169,8 +178,7 @@ async function setupCreatorLinks() {
             linksForm.style.display = 'none';
         }
     } catch (error) {
-        profileStatus.textContent = `Error setting up creator links: ${error.message}`;
-        profileStatus.classList.add('error');
+        showNotification(`Error setting up creator links: ${error.message}`, true);
         console.error('Error setting up creator links:', error);
     }
 }
@@ -183,16 +191,14 @@ enableCreatorLinksBtn.addEventListener('click', async () => {
         if (!repoCheck.ok && repoCheck.status !== 404) throw new Error('Failed to check glbtools repo');
         if (repoCheck.status === 404) {
             await createRepo('glbtools');
-            profileStatus.textContent = 'glbtools repo created successfully!';
-            profileStatus.classList.remove('error');
+            showNotification('glbtools repo created successfully!');
         }
         linksForm.style.display = 'block';
         enableCreatorLinksBtn.style.display = 'none';
         creatorLinksDisclaimer.style.display = 'none';
         await setupCreatorLinks();
     } catch (error) {
-        profileStatus.textContent = `Error setting up glbtools repo: ${error.message}`;
-        profileStatus.classList.add('error');
+        showNotification(`Error setting up glbtools repo: ${error.message}`, true);
     }
 });
 
@@ -210,11 +216,9 @@ saveLinksBtn.addEventListener('click', async () => {
             body: JSON.stringify({ message: 'Update creator links', content: content })
         });
         if (!response.ok) throw new Error('Failed to save links');
-        profileStatus.textContent = 'Creator links saved successfully!';
-        profileStatus.classList.remove('error');
+        showNotification('Creator links saved successfully!');
     } catch (error) {
-        profileStatus.textContent = `Error saving links: ${error.message}`;
-        profileStatus.classList.add('error');
+        showNotification(`Error saving links: ${error.message}`, true);
     }
 });
 
@@ -256,8 +260,7 @@ function validateFilenames() {
 
 async function fetchRepos() {
     if (!auth.getToken()) {
-        repoStatus.textContent = 'Error: No GitHub token available.';
-        repoStatus.classList.add('error');
+        showNotification('Error: No GitHub token available.', true);
         return;
     }
     try {
@@ -297,15 +300,13 @@ async function fetchRepos() {
             }
         });
     } catch (error) {
-        repoStatus.textContent = `Error: ${error.message}`;
-        repoStatus.classList.add('error');
+        showNotification(`Error fetching repos: ${error.message}`, true);
     }
 }
 
 async function fetchModelRepos() {
     if (!auth.getToken()) {
-        modelStatus.textContent = 'Error: No GitHub token available.';
-        modelStatus.classList.add('error');
+        showNotification('Error: No GitHub token available.', true);
         return;
     }
     try {
@@ -324,8 +325,7 @@ async function fetchModelRepos() {
             }
         });
     } catch (error) {
-        modelStatus.textContent = `Error: ${error.message}`;
-        modelStatus.classList.add('error');
+        showNotification(`Error fetching model repos: ${error.message}`, true);
     }
 }
 
@@ -365,21 +365,18 @@ async function fetchModels(repoName) {
             modelList.appendChild(li);
         });
     } catch (error) {
-        modelStatus.textContent = `Error: ${error.message}`;
-        modelStatus.classList.add('error');
+        showNotification(`Error fetching models: ${error.message}`, true);
     }
 }
 
 uploadForm.addEventListener('submit', async (e) => {
     e.preventDefault();
-    uploadStatus.textContent = 'Uploading...';
-    uploadStatus.classList.remove('error');
+    showNotification('Uploading...');
     const repoName = repoSelect.value;
     const isBulk = bulkToggle.checked;
 
     if (!repoName) {
-        uploadStatus.textContent = 'Please select a repository.';
-        uploadStatus.classList.add('error');
+        showNotification('Please select a repository.', true);
         return;
     }
 
@@ -389,8 +386,7 @@ uploadForm.addEventListener('submit', async (e) => {
         const pngFiles = document.getElementById('png-files').files;
 
         if (!glbFiles.length || !pngFiles.length) {
-            uploadStatus.textContent = 'Please provide at least one .glb and .png file.';
-            uploadStatus.classList.add('error');
+            showNotification('Please provide at least one .glb and .png file.', true);
             return;
         }
 
@@ -404,17 +400,15 @@ uploadForm.addEventListener('submit', async (e) => {
         })).filter(set => set.png);
 
         if (!fileSets.length) {
-            uploadStatus.textContent = 'No valid sets found (.glb and .png required).';
-            uploadStatus.classList.add('error');
+            showNotification('No valid sets found (.glb and .png required).', true);
             return;
         }
 
         for (let i = 0; i < fileSets.length; i++) {
             const set = fileSets[i];
-            uploadStatus.textContent = `Uploading ${i + 1}/${fileSets.length}: ${set.baseName}...`;
+            showNotification(`Uploading ${i + 1}/${fileSets.length}: ${set.baseName}...`);
             if (set.png.size > 100 * 1024) {
-                uploadStatus.textContent = `Error: ${set.baseName}.png exceeds 100KB`;
-                uploadStatus.classList.add('error');
+                showNotification(`Error: ${set.baseName}.png exceeds 100KB`, true);
                 return;
             }
             try {
@@ -422,12 +416,11 @@ uploadForm.addEventListener('submit', async (e) => {
                 if (set.txt) await uploadFile(username, repoName, `${set.baseName}.txt`, set.txt);
                 await uploadFile(username, repoName, `${set.baseName}.png`, set.png);
             } catch (error) {
-                uploadStatus.textContent = `Error uploading ${set.baseName}: ${error.message}`;
-                uploadStatus.classList.add('error');
+                showNotification(`Error uploading ${set.baseName}: ${error.message}`, true);
                 return;
             }
         }
-        uploadStatus.textContent = 'Bulk upload successful!';
+        showNotification('Bulk upload successful!');
         updateStorageUsage(repoName);
     } else {
         const glbFile = glbFileInput.files[0];
@@ -436,18 +429,15 @@ uploadForm.addEventListener('submit', async (e) => {
         const baseName = glbFile ? glbFile.name.replace('.glb', '') : null;
 
         if (!glbFile || !pngFile) {
-            uploadStatus.textContent = 'Please provide a .glb and .png file.';
-            uploadStatus.classList.add('error');
+            showNotification('Please provide a .glb and .png file.', true);
             return;
         }
         if ((txtFile && txtFile.name !== `${baseName}.txt`) || pngFile.name !== `${baseName}.png`) {
-            uploadStatus.textContent = 'Your .glb, .txt, and .png must have the same name';
-            uploadStatus.classList.add('error');
+            showNotification('Your .glb, .txt, and .png must have the same name', true);
             return;
         }
         if (pngFile.size > 100 * 1024) {
-            uploadStatus.textContent = 'Thumbnail must be less than 100KB';
-            uploadStatus.classList.add('error');
+            showNotification('Thumbnail must be less than 100KB', true);
             return;
         }
 
@@ -455,11 +445,10 @@ uploadForm.addEventListener('submit', async (e) => {
             await uploadFile(username, repoName, `${baseName}.glb`, glbFile);
             if (txtFile) await uploadFile(username, repoName, `${baseName}.txt`, txtFile);
             await uploadFile(username, repoName, `${baseName}.png`, pngFile);
-            uploadStatus.textContent = 'Upload successful!';
+            showNotification('Upload successful!');
             updateStorageUsage(repoName);
         } catch (error) {
-            uploadStatus.textContent = `Error: ${error.message}`;
-            uploadStatus.classList.add('error');
+            showNotification(`Error: ${error.message}`, true);
         }
     }
     uploadForm.reset();
@@ -476,17 +465,13 @@ async function createRepo(repoName) {
         if (!response.ok) throw new Error('Failed to create repo');
         await updateRepoTopics(username, repoName);
         if (repoName === 'glbtools') {
-            profileStatus.textContent = 'glbtools repo created successfully!';
-            profileStatus.classList.remove('error');
+            showNotification('glbtools repo created successfully!');
         } else {
-            repoStatus.textContent = `Repository ${repoName} created! Refresh to select it.`;
-            repoStatus.classList.remove('error');
+            showNotification(`Repository ${repoName} created! Refresh to select it.`);
             newRepoNameInput.value = '';
         }
     } catch (error) {
-        const status = repoName === 'glbtools' ? profileStatus : repoStatus;
-        status.textContent = `Error: ${error.message}`;
-        status.classList.add('error');
+        showNotification(`Error creating repo: ${error.message}`, true);
     }
 }
 
@@ -527,12 +512,11 @@ async function renameRepo(oldName) {
             body: JSON.stringify({ name: newName })
         });
         if (!response.ok) throw new Error('Failed to rename repo');
-        repoStatus.textContent = `Repository renamed to ${newName}.`;
+        showNotification(`Repository renamed to ${newName}.`);
         fetchRepos();
         fetchModelRepos();
     } catch (error) {
-        repoStatus.textContent = `Error: ${error.message}`;
-        repoStatus.classList.add('error');
+        showNotification(`Error renaming repo: ${error.message}`, true);
     }
 }
 
@@ -558,12 +542,11 @@ async function deleteModelFolder(repoName, baseName) {
                 body: JSON.stringify({ message: `Delete ${item.name}`, sha: item.sha })
             });
         }
-        modelStatus.textContent = `Model ${baseName} deleted.`;
+        showNotification(`Model ${baseName} deleted.`);
         fetchModels(repoName);
         updateStorageUsage(repoName);
     } catch (error) {
-        modelStatus.textContent = `Error: ${error.message}`;
-        modelStatus.classList.add('error');
+        showNotification(`Error deleting model: ${error.message}`, true);
     }
 }
 
@@ -606,12 +589,11 @@ async function renameModelFolder(repoName, oldBaseName) {
                 body: JSON.stringify({ message: `Delete ${oldPath}`, sha: item.sha })
             });
         }
-        modelStatus.textContent = `Model renamed to ${newBaseName}.`;
+        showNotification(`Model renamed to ${newBaseName}.`);
         fetchModels(repoName);
         updateStorageUsage(repoName);
     } catch (error) {
-        modelStatus.textContent = `Error: ${error.message}`;
-        modelStatus.classList.add('error');
+        showNotification(`Error renaming model: ${error.message}`, true);
     }
 }
 
@@ -624,8 +606,7 @@ refreshReposBtn.addEventListener('click', () => {
 createRepoBtn.addEventListener('click', () => {
     const repoName = newRepoNameInput.value.trim();
     if (!repoName) {
-        repoStatus.textContent = 'Please enter a repository name.';
-        repoStatus.classList.add('error');
+        showNotification('Please enter a repository name.', true);
         return;
     }
     createRepo(repoName);

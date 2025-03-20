@@ -50,7 +50,7 @@
                                 <label class="naming-rule" style="display: none;">Your .glb, .txt, and .png must have the same name.</label>
                                 <label for="glb-file">3D Model (.glb):</label>
                                 <div id="glb-drop-zone" class="dropzone"></div>
-                                <input type="file" id="glb-file" accept=".glb" required>
+                                <input type="file" id="glb-file" accept=".glb">
                             </div>
                             <div class="form-row">
                                 <label for="txt-file">ReadMe (.txt):</label>
@@ -60,7 +60,7 @@
                             <div class="form-row">
                                 <label for="png-file">Thumbnail (.png):</label>
                                 <div id="png-drop-zone" class="dropzone"></div>
-                                <input type="file" id="png-file" accept=".png" required>
+                                <input type="file" id="png-file" accept=".png">
                                 <p class="guidelines">Recommended: 800x450px, max 100KB, transparent background</p>
                             </div>
                         </div>
@@ -71,7 +71,7 @@
                             <div class="form-row">
                                 <label for="glb-files">3D Models (.glb):</label>
                                 <div id="glb-bulk-drop-zone" class="dropzone"></div>
-                                <input type="file" id="glb-files" accept=".glb" multiple required>
+                                <input type="file" id="glb-files" accept=".glb" multiple>
                             </div>
                             <div class="form-row">
                                 <label for="txt-files">ReadMes (.txt):</label>
@@ -81,7 +81,7 @@
                             <div class="form-row">
                                 <label for="png-files">Thumbnails (.png):</label>
                                 <div id="png-bulk-drop-zone" class="dropzone"></div>
-                                <input type="file" id="png-files" accept=".png" multiple required>
+                                <input type="file" id="png-files" accept=".png" multiple>
                             </div>
                         </div>
                         <div class="button-group">
@@ -89,7 +89,6 @@
                             <a href="https://github.com/GLBTools/GLB.Tools-Models" target="_blank"><button type="button" class="example-btn">View Examples</button></a>
                         </div>
                     </form>
-                    <div id="upload-status"></div>
                 </div>
 
                 <div id="repo-section" class="section-box" style="display: none;">
