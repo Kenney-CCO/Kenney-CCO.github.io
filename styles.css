@@ -1083,3 +1083,13 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+.section-divider {
+    border: 0;
+    height: 1px;
+    background: #A5C5CC; /* Matches your button theme */
+    margin: 20px 0; /* Adds spacing above and below */
+    width: 80%; /* Slightly shorter than full width for aesthetics */
+    margin-left: auto;
+    margin-right: auto;
+}
