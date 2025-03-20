@@ -1,11 +1,12 @@
 console.log('portal.js loaded');
 
-let config;
-
+// Use window.config from auth.js, load if not present
 async function loadConfig() {
-    const response = await fetch('config.json');
-    config = await response.json();
-    document.querySelector('.logo').textContent = config.siteTitle || 'CLONE.TOOLS';
+    if (!window.config) {
+        const response = await fetch('config.json');
+        window.config = await response.json();
+    }
+    document.querySelector('.logo').textContent = window.config.siteTitle || 'CLONE.TOOLS';
 }
 
 const loginBtn = document.getElementById('login-btn');
@@ -54,7 +55,7 @@ function showNotification(message, isError = false) {
 }
 
 async function checkSession() {
-    await loadConfig();
+    await loadConfig(); // Load config if not already loaded by auth.js
     let dropdownVisible = false;
 
     auth.checkSession(async (user) => {
@@ -138,7 +139,7 @@ async function updateStorageUsage() {
         return;
     }
     try {
-        const response = await fetch(`https://api.github.com/repos/${config.repoOwner}/${config.repoName}/contents`, {
+        const response = await fetch(`https://api.github.com/repos/${window.config.repoOwner}/${window.config.repoName}/contents`, {
             headers: { 'Authorization': `token ${auth.getToken()}` }
         });
         if (!response.ok) throw new Error('Failed to fetch repo contents');
@@ -159,11 +160,11 @@ async function updateStorageUsage() {
 
 async function setupCreatorLinks() {
     try {
-        const repoResponse = await fetch(`https://api.github.com/repos/${config.repoOwner}/glbtools`, {
+        const repoResponse = await fetch(`https://api.github.com/repos/${window.config.repoOwner}/glbtools`, {
             headers: { 'Authorization': `token ${auth.getToken()}` }
         });
         if (repoResponse.ok) {
-            const linksResponse = await fetch(`https://api.github.com/repos/${config.repoOwner}/glbtools/contents/links.json`, {
+            const linksResponse = await fetch(`https://api.github.com/repos/${window.config.repoOwner}/glbtools/contents/links.json`, {
                 headers: { 'Authorization': `token ${auth.getToken()}` }
             });
             if (linksResponse.ok) {
@@ -189,7 +190,7 @@ async function setupCreatorLinks() {
 
 enableCreatorLinksBtn.addEventListener('click', async () => {
     try {
-        const repoCheck = await fetch(`https://api.github.com/repos/${config.repoOwner}/glbtools`, {
+        const repoCheck = await fetch(`https://api.github.com/repos/${window.config.repoOwner}/glbtools`, {
             headers: { 'Authorization': `token ${auth.getToken()}` }
         });
         if (!repoCheck.ok && repoCheck.status !== 404) throw new Error('Failed to check glbtools repo');
@@ -214,7 +215,7 @@ saveLinksBtn.addEventListener('click', async () => {
     };
     const content = btoa(JSON.stringify(links, null, 2));
     try {
-        const response = await fetch(`https://api.github.com/repos/${config.repoOwner}/glbtools/contents/links.json`, {
+        const response = await fetch(`https://api.github.com/repos/${window.config.repoOwner}/glbtools/contents/links.json`, {
             method: 'PUT',
             headers: { 'Authorization': `token ${auth.getToken()}`, 'Content-Type': 'application/json' },
             body: JSON.stringify({ message: 'Update creator links', content: content })
@@ -259,7 +260,7 @@ function validateFilenames() {
     let mismatch = false;
     if (txtFile && txtFile.name !== `${baseName}.txt`) mismatch = true;
     if (pngFile && pngFile.name !== `${baseName}.png`) mismatch = true;
-    namingRule.style.display = mismatch ? 'block' : 'none';
+    document.querySelector('.naming-rule').style.display = mismatch ? 'block' : 'none';
 }
 
 async function fetchRepoDetails() {
@@ -270,14 +271,14 @@ async function fetchRepoDetails() {
     try {
         repoList.innerHTML = '';
         const li = document.createElement('li');
-        li.textContent = config.repoName;
+        li.textContent = window.config.repoName;
         const buttonContainer = document.createElement('div');
         buttonContainer.className = 'button-container';
 
         const renameBtn = document.createElement('button');
         renameBtn.textContent = 'Rename';
         renameBtn.className = 'rename-btn';
-        renameBtn.onclick = () => renameRepo(config.repoName);
+        renameBtn.onclick = () => renameRepo(window.config.repoName);
         buttonContainer.appendChild(renameBtn);
 
         const deleteBtn = document.createElement('button');
@@ -295,7 +296,7 @@ async function fetchRepoDetails() {
 
 async function fetchModels() {
     try {
-        const response = await fetch(`https://api.github.com/repos/${config.repoOwner}/${config.repoName}/contents`, {
+        const response = await fetch(`https://api.github.com/repos/${window.config.repoOwner}/${window.config.repoName}/contents`, {
             headers: { 'Authorization': `token ${auth.getToken()}` }
         });
         if (!response.ok) throw new Error('Failed to fetch repo contents');
@@ -312,13 +313,13 @@ async function fetchModels() {
             const renameBtn = document.createElement('button');
             renameBtn.textContent = 'Rename';
             renameBtn.className = 'rename-btn';
-            renameBtn.onclick = () => renameModelFolder(config.repoName, baseName);
+            renameBtn.onclick = () => renameModelFolder(window.config.repoName, baseName);
             buttonContainer.appendChild(renameBtn);
 
             const deleteBtn = document.createElement('button');
             deleteBtn.textContent = 'Delete';
             deleteBtn.className = 'delete-btn';
-            deleteBtn.onclick = () => deleteModelFolder(config.repoName, baseName);
+            deleteBtn.onclick = () => deleteModelFolder(window.config.repoName, baseName);
             buttonContainer.appendChild(deleteBtn);
 
             li.appendChild(buttonContainer);
@@ -332,7 +333,7 @@ async function fetchModels() {
 uploadForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     showNotification('Uploading...');
-    const repoName = config.repoName;
+    const repoName = window.config.repoName;
 
     const isBulk = bulkToggle.checked;
 
@@ -468,9 +469,9 @@ async function renameRepo(oldName) {
         });
         if (!response.ok) throw new Error('Failed to rename repo');
         showNotification(`Repository renamed to ${newName}.`);
+        window.config.repoName = newName; // Update config dynamically
         fetchRepoDetails();
         fetchModels();
-        config.repoName = newName; // Update config dynamically
     } catch (error) {
         showNotification(`Error renaming repo: ${error.message}`, true);
     }
