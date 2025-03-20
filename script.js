@@ -1,9 +1,9 @@
-let config; // Single declaration at the top
-
-async function loadConfig() {
-    const response = await fetch('config.json');
-    config = await response.json(); // Assign to existing global variable
-    document.querySelector('.logo').textContent = config.siteTitle || 'CLONE.TOOLS';
+async function loadConfig() { // Keep this for standalone testing, but auth.js should load it first
+    if (!window.config) {
+        const response = await fetch('config.json');
+        window.config = await response.json();
+    }
+    document.querySelector('.logo').textContent = window.config.siteTitle || 'CLONE.TOOLS';
 }
 
 const grid = document.querySelector('.grid');
@@ -19,8 +19,8 @@ async function loadModels() {
     if (loading) return;
     loading = true;
     try {
-        if (!config) await loadConfig();
-        const response = await fetch(`https://api.github.com/repos/${config.repoOwner}/${config.repoName}/contents`, {
+        if (!window.config) await loadConfig();
+        const response = await fetch(`https://api.github.com/repos/${window.config.repoOwner}/${window.config.repoName}/contents`, {
             headers: auth.getToken() ? { 'Authorization': `token ${auth.getToken()}` } : {}
         });
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
@@ -36,10 +36,10 @@ async function loadModels() {
                     glbUrl: glbFile.download_url,
                     txtUrl: txtFile ? txtFile.download_url : '',
                     pngUrl: pngFile.download_url,
-                    author: config.creatorName,
-                    authorUrl: `https://github.com/${config.repoOwner}`,
-                    authorAvatar: config.creatorAvatar,
-                    repoName: config.repoName,
+                    author: window.config.creatorName,
+                    authorUrl: `https://github.com/${window.config.repoOwner}`,
+                    authorAvatar: window.config.creatorAvatar,
+                    repoName: window.config.repoName,
                     stars: 0
                 });
             }
@@ -122,7 +122,7 @@ async function showPopup(event) {
 
     let creatorLinks = {};
     try {
-        const linksResponse = await fetch(`https://api.github.com/repos/${config.repoOwner}/glbtools/contents/links.json`, {
+        const linksResponse = await fetch(`https://api.github.com/repos/${window.config.repoOwner}/glbtools/contents/links.json`, {
             headers: auth.getToken() ? { 'Authorization': `token ${auth.getToken()}` } : {}
         });
         if (linksResponse.ok) {
@@ -232,7 +232,7 @@ async function showPopup(event) {
     if (token) {
         let isStarred = false;
         try {
-            const starCheck = await fetch(`https://api.github.com/user/starred/${config.repoOwner}/${box.dataset.repoName}`, {
+            const starCheck = await fetch(`https://api.github.com/user/starred/${window.config.repoOwner}/${box.dataset.repoName}`, {
                 headers: { 'Authorization': `token ${token}` }
             });
             if (starCheck.status === 401) throw new Error('Token invalid or expired');
@@ -246,7 +246,7 @@ async function showPopup(event) {
         starBtn.onclick = async () => {
             try {
                 if (isStarred) {
-                    await fetch(`https://api.github.com/user/starred/${config.repoOwner}/${box.dataset.repoName}`, {
+                    await fetch(`https://api.github.com/user/starred/${window.config.repoOwner}/${box.dataset.repoName}`, {
                         method: 'DELETE',
                         headers: { 'Authorization': `token ${token}` }
                     });
@@ -254,7 +254,7 @@ async function showPopup(event) {
                     starBtn.classList.remove('starred');
                     box.dataset.stars = parseInt(box.dataset.stars) - 1;
                 } else {
-                    await fetch(`https://api.github.com/user/starred/${config.repoOwner}/${box.dataset.repoName}`, {
+                    await fetch(`https://api.github.com/user/starred/${window.config.repoOwner}/${box.dataset.repoName}`, {
                         method: 'PUT',
                         headers: { 'Authorization': `token ${token}` }
                     });
