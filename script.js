@@ -4,6 +4,7 @@ async function loadConfig() {
         window.config = await response.json();
     }
     document.querySelector('.logo').textContent = window.config.siteTitle || 'CLONE.TOOLS';
+    document.getElementById('footer-title').textContent = window.config.siteTitle || 'CLONE.TOOLS';
 }
 
 const grid = document.querySelector('.grid');
@@ -13,7 +14,7 @@ const popupText = document.querySelector('.popup-text');
 const searchInput = document.getElementById('search-input');
 const loginBtn = document.getElementById('login-btn');
 const profileDropdown = document.getElementById('profile-dropdown');
-const myPortalLink = document.getElementById('my-portal-link'); // New reference
+const myPortalLink = document.getElementById('my-portal-link');
 let allModels = [];
 let loading = false;
 let currentUser = null;
@@ -346,11 +347,9 @@ document.addEventListener('DOMContentLoaded', async () => {
                 const username = user.user_metadata.preferred_username;
                 auth.updateLoginDisplay(user, loginBtn);
                 profileDropdown.style.display = 'none';
-                // Hide "My Portal" for non-owners
-                if (username === window.config.glbRepoUsername) {
-                    myPortalLink.style.display = 'block';
-                } else {
-                    myPortalLink.style.display = 'none';
+                // Hide "My Portal" for non-owners with null check
+                if (myPortalLink) {
+                    myPortalLink.style.display = (username === window.config.glbRepoUsername) ? 'block' : 'none';
                 }
                 loadModels();
             } catch (error) {
