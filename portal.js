@@ -1,8 +1,15 @@
 console.log('portal.js loaded');
 
+async function loadConfig() {
+    if (!window.config) {
+        const response = await fetch('config.json');
+        window.config = await response.json();
+    }
+    document.querySelector('.logo').textContent = window.config.siteTitle || 'CLONE.TOOLS';
+}
+
 const loginBtn = document.getElementById('login-btn');
 const uploadForm = document.getElementById('upload-form');
-const repoSelect = document.getElementById('repo-select');
 const glbFileInput = document.getElementById('glb-file');
 const txtFileInput = document.getElementById('txt-file');
 const pngFileInput = document.getElementById('png-file');
@@ -17,10 +24,6 @@ const profileSection = document.getElementById('profile-section');
 const repoList = document.getElementById('repo-list');
 const repoStatus = document.getElementById('repo-status');
 const refreshReposBtn = document.getElementById('refresh-repos');
-const newRepoNameInput = document.getElementById('new-repo-name');
-const createRepoBtn = document.getElementById('create-repo-btn');
-const namingRule = document.querySelector('.naming-rule');
-const modelRepoSelect = document.getElementById('model-repo-select');
 const modelList = document.getElementById('model-list');
 const modelStatus = document.getElementById('model-status');
 const enableCreatorLinksBtn = document.getElementById('enable-creator-links');
@@ -30,8 +33,14 @@ const websiteLinkInput = document.getElementById('website-link');
 const xLinkInput = document.getElementById('x-link');
 const donationLinkInput = document.getElementById('donation-link');
 const saveLinksBtn = document.getElementById('save-links');
+const configForm = document.getElementById('config-form');
+const glbRepoUsernameInput = document.getElementById('glb-repo-username');
+const glbRepoNameInput = document.getElementById('glb-repo-name');
+const siteTitleInput = document.getElementById('site-title');
+const saveConfigBtn = document.getElementById('save-config');
 const profileStatus = document.getElementById('profile-status');
 const profileDropdown = document.getElementById('profile-dropdown');
+const myPortalLink = document.getElementById('my-portal-link'); // Added declaration
 const logoutBtn = document.getElementById('logout-btn');
 const bulkToggle = document.getElementById('bulk-toggle');
 let username;
@@ -51,16 +60,11 @@ function showNotification(message, isError = false) {
 }
 
 async function checkSession() {
+    await loadConfig();
     let dropdownVisible = false;
 
     auth.checkSession(async (user) => {
         if (user && auth.getToken()) {
-            auth.updateLoginDisplay(user, loginBtn);
-            uploadSection.style.display = 'block';
-            repoSection.style.display = 'block';
-            modelSection.style.display = 'block';
-            profileSection.style.display = 'block';
-            loginMessage.style.display = 'none';
             try {
                 const response = await fetch('https://api.github.com/user', {
                     headers: { 'Authorization': `token ${auth.getToken()}` }
@@ -68,16 +72,43 @@ async function checkSession() {
                 if (!response.ok) throw new Error('Failed to fetch user');
                 const userData = await response.json();
                 username = userData.login;
-                fetchRepos();
-                fetchModelRepos();
-                await setupCreatorLinks();
-                updateStorageUsage(repoSelect.value);
+
+                if (username === window.config.glbRepoUsername) {
+                    auth.updateLoginDisplay(user, loginBtn);
+                    uploadSection.style.display = 'block';
+                    repoSection.style.display = 'block';
+                    modelSection.style.display = 'block';
+                    profileSection.style.display = 'block';
+                    loginMessage.style.display = 'none';
+                    if (myPortalLink) myPortalLink.style.display = 'block'; // Null check
+                    fetchRepoDetails();
+                    fetchModels();
+                    await setupCreatorLinks();
+                    await setupConfigForm();
+                    updateStorageUsage();
+                } else {
+                    loginBtn.innerHTML = 'Login with GitHub';
+                    loginBtn.classList.remove('profile');
+                    loginBtn.disabled = false;
+                    uploadSection.style.display = 'none';
+                    repoSection.style.display = 'none';
+                    modelSection.style.display = 'none';
+                    profileSection.style.display = 'none';
+                    linksForm.style.display = 'none';
+                    configForm.style.display = 'none';
+                    enableCreatorLinksBtn.style.display = 'none';
+                    creatorLinksDisclaimer.style.display = 'none';
+                    profileDropdown.style.display = 'none';
+                    if (myPortalLink) myPortalLink.style.display = 'none'; // Null check
+                    loginMessage.style.display = 'block';
+                    loginMessage.textContent = `This portal is for the site owner (${window.config.glbRepoUsername}) only. Visit the main page to explore models.`;
+                }
             } catch (error) {
                 showNotification(`Error: ${error.message}`, true);
                 console.error('User fetch error:', error);
             }
         } else {
-            loginBtn.textContent = 'Login to GitHub';
+            loginBtn.innerHTML = 'Login with GitHub';
             loginBtn.classList.remove('profile');
             loginBtn.disabled = false;
             uploadSection.style.display = 'none';
@@ -85,10 +116,13 @@ async function checkSession() {
             modelSection.style.display = 'none';
             profileSection.style.display = 'none';
             linksForm.style.display = 'none';
+            configForm.style.display = 'none';
             enableCreatorLinksBtn.style.display = 'none';
             creatorLinksDisclaimer.style.display = 'none';
             profileDropdown.style.display = 'none';
+            if (myPortalLink) myPortalLink.style.display = 'none'; // Null check
             loginMessage.style.display = 'block';
+            loginMessage.textContent = 'Please log in with GitHub to access the portal.';
         }
     });
 
@@ -114,9 +148,11 @@ async function checkSession() {
         modelSection.style.display = 'none';
         profileSection.style.display = 'none';
         linksForm.style.display = 'none';
+        configForm.style.display = 'none';
         enableCreatorLinksBtn.style.display = 'none';
         creatorLinksDisclaimer.style.display = 'none';
         loginMessage.style.display = 'block';
+        loginMessage.textContent = 'Please log in with GitHub to access the portal.';
     });
 
     document.addEventListener('click', (e) => {
@@ -127,14 +163,15 @@ async function checkSession() {
     });
 }
 
-async function updateStorageUsage(repoName) {
-    if (!repoName || !auth.getToken()) {
+// Rest of the script (updateStorageUsage, setupCreatorLinks, etc.) remains unchanged
+async function updateStorageUsage() {
+    if (!auth.getToken()) {
         document.getElementById('usage').textContent = '0 GB';
         document.getElementById('progress-bar').style.width = '0%';
         return;
     }
     try {
-        const response = await fetch(`https://api.github.com/repos/${username}/${repoName}/contents`, {
+        const response = await fetch(`https://api.github.com/repos/${window.config.glbRepoUsername}/${window.config.glbRepoName}/contents`, {
             headers: { 'Authorization': `token ${auth.getToken()}` }
         });
         if (!response.ok) throw new Error('Failed to fetch repo contents');
@@ -155,11 +192,11 @@ async function updateStorageUsage(repoName) {
 
 async function setupCreatorLinks() {
     try {
-        const repoResponse = await fetch(`https://api.github.com/repos/${username}/glbtools`, {
+        const repoResponse = await fetch(`https://api.github.com/repos/${window.config.glbRepoUsername}/glbtools`, {
             headers: { 'Authorization': `token ${auth.getToken()}` }
         });
         if (repoResponse.ok) {
-            const linksResponse = await fetch(`https://api.github.com/repos/${username}/glbtools/contents/links.json`, {
+            const linksResponse = await fetch(`https://api.github.com/repos/${window.config.glbRepoUsername}/glbtools/contents/links.json`, {
                 headers: { 'Authorization': `token ${auth.getToken()}` }
             });
             if (linksResponse.ok) {
@@ -170,12 +207,14 @@ async function setupCreatorLinks() {
                 donationLinkInput.value = links.donation || '';
             }
             linksForm.style.display = 'block';
+            configForm.style.display = 'block';
             enableCreatorLinksBtn.style.display = 'none';
             creatorLinksDisclaimer.style.display = 'none';
         } else if (repoResponse.status === 404) {
             enableCreatorLinksBtn.style.display = 'block';
             creatorLinksDisclaimer.style.display = 'block';
             linksForm.style.display = 'none';
+            configForm.style.display = 'none';
         }
     } catch (error) {
         showNotification(`Error setting up creator links: ${error.message}`, true);
@@ -183,9 +222,21 @@ async function setupCreatorLinks() {
     }
 }
 
+async function setupConfigForm() {
+    try {
+        if (!window.config) await loadConfig();
+        glbRepoUsernameInput.value = window.config.glbRepoUsername || '';
+        glbRepoNameInput.value = window.config.glbRepoName || '';
+        siteTitleInput.value = window.config.siteTitle || '';
+    } catch (error) {
+        showNotification(`Error loading config: ${error.message}`, true);
+        console.error('Error loading config:', error);
+    }
+}
+
 enableCreatorLinksBtn.addEventListener('click', async () => {
     try {
-        const repoCheck = await fetch(`https://api.github.com/repos/${username}/glbtools`, {
+        const repoCheck = await fetch(`https://api.github.com/repos/${window.config.glbRepoUsername}/glbtools`, {
             headers: { 'Authorization': `token ${auth.getToken()}` }
         });
         if (!repoCheck.ok && repoCheck.status !== 404) throw new Error('Failed to check glbtools repo');
@@ -194,9 +245,11 @@ enableCreatorLinksBtn.addEventListener('click', async () => {
             showNotification('glbtools repo created successfully!');
         }
         linksForm.style.display = 'block';
+        configForm.style.display = 'block';
         enableCreatorLinksBtn.style.display = 'none';
         creatorLinksDisclaimer.style.display = 'none';
         await setupCreatorLinks();
+        await setupConfigForm();
     } catch (error) {
         showNotification(`Error setting up glbtools repo: ${error.message}`, true);
     }
@@ -210,7 +263,7 @@ saveLinksBtn.addEventListener('click', async () => {
     };
     const content = btoa(JSON.stringify(links, null, 2));
     try {
-        const response = await fetch(`https://api.github.com/repos/${username}/glbtools/contents/links.json`, {
+        const response = await fetch(`https://api.github.com/repos/${window.config.glbRepoUsername}/glbtools/contents/links.json`, {
             method: 'PUT',
             headers: { 'Authorization': `token ${auth.getToken()}`, 'Content-Type': 'application/json' },
             body: JSON.stringify({ message: 'Update creator links', content: content })
@@ -219,6 +272,41 @@ saveLinksBtn.addEventListener('click', async () => {
         showNotification('Creator links saved successfully!');
     } catch (error) {
         showNotification(`Error saving links: ${error.message}`, true);
+    }
+});
+
+saveConfigBtn.addEventListener('click', async () => {
+    const updatedConfig = {
+        glbRepoUsername: glbRepoUsernameInput.value.trim(),
+        glbRepoName: glbRepoNameInput.value.trim(),
+        supabaseUrl: window.config.supabaseUrl,
+        supabaseAnonKey: window.config.supabaseAnonKey,
+        siteTitle: siteTitleInput.value.trim()
+    };
+    const content = btoa(JSON.stringify(updatedConfig, null, 2));
+    try {
+        const configResponse = await fetch(`https://api.github.com/repos/${username}/clone.tools/contents/config.json`, {
+            headers: { 'Authorization': `token ${auth.getToken()}` }
+        });
+        if (!configResponse.ok) throw new Error('Failed to fetch config.json');
+        const configData = await configResponse.json();
+        const sha = configData.sha;
+
+        const response = await fetch(`https://api.github.com/repos/${username}/clone.tools/contents/config.json`, {
+            method: 'PUT',
+            headers: { 'Authorization': `token ${auth.getToken()}`, 'Content-Type': 'application/json' },
+            body: JSON.stringify({ 
+                message: 'Update config.json', 
+                content: content, 
+                sha: sha 
+            })
+        });
+        if (!response.ok) throw new Error('Failed to save config');
+        window.config = updatedConfig;
+        document.querySelector('.logo').textContent = window.config.siteTitle || 'CLONE.TOOLS';
+        showNotification('Config saved successfully! Refresh to see changes.');
+    } catch (error) {
+        showNotification(`Error saving config: ${error.message}`, true);
     }
 });
 
@@ -255,87 +343,43 @@ function validateFilenames() {
     let mismatch = false;
     if (txtFile && txtFile.name !== `${baseName}.txt`) mismatch = true;
     if (pngFile && pngFile.name !== `${baseName}.png`) mismatch = true;
-    namingRule.style.display = mismatch ? 'block' : 'none';
+    document.querySelector('.naming-rule').style.display = mismatch ? 'block' : 'none';
 }
 
-async function fetchRepos() {
+async function fetchRepoDetails() {
     if (!auth.getToken()) {
         showNotification('Error: No GitHub token available.', true);
         return;
     }
     try {
-        const response = await fetch('https://api.github.com/user/repos', {
-            headers: { 'Authorization': `token ${auth.getToken()}` }
-        });
-        if (!response.ok) throw new Error('Failed to fetch repos');
-        const repos = await response.json();
-        repoSelect.innerHTML = '<option value="">-- Select a repository --</option>';
         repoList.innerHTML = '';
-        repos.forEach(repo => {
-            if (repo.topics && repo.topics.includes('glbtools')) {
-                const option = document.createElement('option');
-                option.value = repo.name;
-                option.textContent = repo.name;
-                repoSelect.appendChild(option);
+        const li = document.createElement('li');
+        li.textContent = window.config.glbRepoName;
+        const buttonContainer = document.createElement('div');
+        buttonContainer.className = 'button-container';
 
-                const li = document.createElement('li');
-                li.textContent = repo.name;
-                const buttonContainer = document.createElement('div');
-                buttonContainer.className = 'button-container';
+        const renameBtn = document.createElement('button');
+        renameBtn.textContent = 'Rename';
+        renameBtn.className = 'rename-btn';
+        renameBtn.onclick = () => renameRepo(window.config.glbRepoName);
+        buttonContainer.appendChild(renameBtn);
 
-                const renameBtn = document.createElement('button');
-                renameBtn.textContent = 'Rename';
-                renameBtn.className = 'rename-btn';
-                renameBtn.onclick = () => renameRepo(repo.name);
-                buttonContainer.appendChild(renameBtn);
+        const deleteBtn = document.createElement('button');
+        deleteBtn.textContent = 'Delete';
+        deleteBtn.className = 'delete-btn';
+        deleteBtn.onclick = () => window.open('https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository', '_blank');
+        buttonContainer.appendChild(deleteBtn);
 
-                const deleteBtn = document.createElement('button');
-                deleteBtn.textContent = 'Delete';
-                deleteBtn.className = 'delete-btn';
-                deleteBtn.onclick = () => window.open('https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository', '_blank');
-                buttonContainer.appendChild(deleteBtn);
-
-                li.appendChild(buttonContainer);
-                repoList.appendChild(li);
-            }
-        });
+        li.appendChild(buttonContainer);
+        repoList.appendChild(li);
     } catch (error) {
-        showNotification(`Error fetching repos: ${error.message}`, true);
+        showNotification(`Error fetching repo details: ${error.message}`, true);
     }
 }
 
-async function fetchModelRepos() {
-    if (!auth.getToken()) {
-        showNotification('Error: No GitHub token available.', true);
-        return;
-    }
+async function fetchModels() {
     try {
-        const response = await fetch('https://api.github.com/user/repos', {
-            headers: { 'Authorization': `token ${auth.getToken()}` }
-        });
-        if (!response.ok) throw new Error('Failed to fetch repos');
-        const repos = await response.json();
-        modelRepoSelect.innerHTML = '<option value="">-- Select a repository --</option>';
-        repos.forEach(repo => {
-            if (repo.topics && repo.topics.includes('glbtools')) {
-                const option = document.createElement('option');
-                option.value = repo.name;
-                option.textContent = repo.name;
-                modelRepoSelect.appendChild(option);
-            }
-        });
-    } catch (error) {
-        showNotification(`Error fetching model repos: ${error.message}`, true);
-    }
-}
-
-async function fetchModels(repoName) {
-    if (!repoName) {
-        modelList.innerHTML = '';
-        return;
-    }
-    try {
-        const response = await fetch(`https://api.github.com/repos/${username}/${repoName}/contents`, {
+        const response = await fetch(`https://api.github.com/repos/${window.config.glbRepoUsername}/${window.config.glbRepoName}/contents`, {
             headers: { 'Authorization': `token ${auth.getToken()}` }
         });
         if (!response.ok) throw new Error('Failed to fetch repo contents');
@@ -352,13 +396,13 @@ async function fetchModels(repoName) {
             const renameBtn = document.createElement('button');
             renameBtn.textContent = 'Rename';
             renameBtn.className = 'rename-btn';
-            renameBtn.onclick = () => renameModelFolder(repoName, baseName);
+            renameBtn.onclick = () => renameModelFolder(window.config.glbRepoName, baseName);
             buttonContainer.appendChild(renameBtn);
 
             const deleteBtn = document.createElement('button');
             deleteBtn.textContent = 'Delete';
             deleteBtn.className = 'delete-btn';
-            deleteBtn.onclick = () => deleteModelFolder(repoName, baseName);
+            deleteBtn.onclick = () => deleteModelFolder(window.config.glbRepoName, baseName);
             buttonContainer.appendChild(deleteBtn);
 
             li.appendChild(buttonContainer);
@@ -372,13 +416,9 @@ async function fetchModels(repoName) {
 uploadForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     showNotification('Uploading...');
-    const repoName = repoSelect.value;
-    const isBulk = bulkToggle.checked;
+    const repoName = window.config.glbRepoName;
 
-    if (!repoName) {
-        showNotification('Please select a repository.', true);
-        return;
-    }
+    const isBulk = bulkToggle.checked;
 
     if (isBulk) {
         const glbFiles = document.getElementById('glb-files').files;
@@ -421,7 +461,7 @@ uploadForm.addEventListener('submit', async (e) => {
             }
         }
         showNotification('Bulk upload successful!');
-        updateStorageUsage(repoName);
+        updateStorageUsage();
     } else {
         const glbFile = glbFileInput.files[0];
         const txtFile = txtFileInput.files[0];
@@ -446,7 +486,7 @@ uploadForm.addEventListener('submit', async (e) => {
             if (txtFile) await uploadFile(username, repoName, `${baseName}.txt`, txtFile);
             await uploadFile(username, repoName, `${baseName}.png`, pngFile);
             showNotification('Upload successful!');
-            updateStorageUsage(repoName);
+            updateStorageUsage();
         } catch (error) {
             showNotification(`Error: ${error.message}`, true);
         }
@@ -467,8 +507,7 @@ async function createRepo(repoName) {
         if (repoName === 'glbtools') {
             showNotification('glbtools repo created successfully!');
         } else {
-            showNotification(`Repository ${repoName} created! Refresh to select it.`);
-            newRepoNameInput.value = '';
+            showNotification(`Repository ${repoName} created!`);
         }
     } catch (error) {
         showNotification(`Error creating repo: ${error.message}`, true);
@@ -513,8 +552,9 @@ async function renameRepo(oldName) {
         });
         if (!response.ok) throw new Error('Failed to rename repo');
         showNotification(`Repository renamed to ${newName}.`);
-        fetchRepos();
-        fetchModelRepos();
+        window.config.glbRepoName = newName;
+        fetchRepoDetails();
+        fetchModels();
     } catch (error) {
         showNotification(`Error renaming repo: ${error.message}`, true);
     }
@@ -543,8 +583,8 @@ async function deleteModelFolder(repoName, baseName) {
             });
         }
         showNotification(`Model ${baseName} deleted.`);
-        fetchModels(repoName);
-        updateStorageUsage(repoName);
+        fetchModels();
+        updateStorageUsage();
     } catch (error) {
         showNotification(`Error deleting model: ${error.message}`, true);
     }
@@ -590,34 +630,17 @@ async function renameModelFolder(repoName, oldBaseName) {
             });
         }
         showNotification(`Model renamed to ${newBaseName}.`);
-        fetchModels(repoName);
-        updateStorageUsage(repoName);
+        fetchModels();
+        updateStorageUsage();
     } catch (error) {
         showNotification(`Error renaming model: ${error.message}`, true);
     }
 }
 
 refreshReposBtn.addEventListener('click', () => {
-    fetchRepos();
-    fetchModelRepos();
-    updateStorageUsage(repoSelect.value);
-});
-
-createRepoBtn.addEventListener('click', () => {
-    const repoName = newRepoNameInput.value.trim();
-    if (!repoName) {
-        showNotification('Please enter a repository name.', true);
-        return;
-    }
-    createRepo(repoName);
-});
-
-repoSelect.addEventListener('change', () => {
-    updateStorageUsage(repoSelect.value);
-});
-
-modelRepoSelect.addEventListener('change', () => {
-    fetchModels(modelRepoSelect.value);
+    fetchRepoDetails();
+    fetchModels();
+    updateStorageUsage();
 });
 
 bulkToggle.addEventListener('change', () => {
