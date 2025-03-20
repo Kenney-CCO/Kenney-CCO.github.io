@@ -23,12 +23,22 @@ async function loadModels() {
     loading = true;
     try {
         if (!window.config) await loadConfig();
-        const response = await fetch(`https://api.github.com/repos/${window.config.glbRepoUsername}/${window.config.glbRepoName}/contents`, {
+        // Fetch repo contents
+        const contentsResponse = await fetch(`https://api.github.com/repos/${window.config.glbRepoUsername}/${window.config.glbRepoName}/contents`, {
             headers: auth.getToken() ? { 'Authorization': `token ${auth.getToken()}` } : {}
         });
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-        const files = await response.json();
+        if (!contentsResponse.ok) throw new Error(`HTTP error! status: ${contentsResponse.status}`);
+        const files = await contentsResponse.json();
         const glbFiles = files.filter(f => f.name.endsWith('.glb'));
+
+        // Fetch star count
+        const repoResponse = await fetch(`https://api.github.com/repos/${window.config.glbRepoUsername}/${window.config.glbRepoName}`, {
+            headers: auth.getToken() ? { 'Authorization': `token ${auth.getToken()}` } : {}
+        });
+        if (!repoResponse.ok) throw new Error(`HTTP error! status: ${repoResponse.status}`);
+        const repoData = await repoResponse.json();
+        const starCount = repoData.stargazers_count;
+
         for (const glbFile of glbFiles) {
             const baseName = glbFile.name.replace('.glb', '');
             const txtFile = files.find(f => f.name === `${baseName}.txt`);
@@ -39,11 +49,11 @@ async function loadModels() {
                     glbUrl: glbFile.download_url,
                     txtUrl: txtFile ? txtFile.download_url : '',
                     pngUrl: pngFile.download_url,
-                    author: currentUser ? currentUser.user_metadata.preferred_username : 'Unknown',
-                    authorUrl: currentUser ? `https://github.com/${currentUser.user_metadata.preferred_username}` : '#',
-                    authorAvatar: currentUser ? currentUser.user_metadata.avatar_url : 'https://github.com/identicons/default.png',
+                    author: window.config.glbRepoUsername,
+                    authorUrl: `https://github.com/${window.config.glbRepoUsername}`,
+                    authorAvatar: `https://github.com/${window.config.glbRepoUsername}.png`,
                     repoName: window.config.glbRepoName,
-                    stars: 0
+                    stars: starCount // Use actual star count
                 });
             }
         }
@@ -346,7 +356,6 @@ document.addEventListener('DOMContentLoaded', async () => {
                 const username = user.user_metadata.preferred_username;
                 auth.updateLoginDisplay(user, loginBtn);
                 profileDropdown.style.display = 'none';
-                // Hide "My Portal" for non-owners with null check
                 if (myPortalLink) {
                     myPortalLink.style.display = (username === window.config.glbRepoUsername) ? 'block' : 'none';
                 }
