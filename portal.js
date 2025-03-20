@@ -64,12 +64,6 @@ async function checkSession() {
 
     auth.checkSession(async (user) => {
         if (user && auth.getToken()) {
-            auth.updateLoginDisplay(user, loginBtn);
-            uploadSection.style.display = 'block';
-            repoSection.style.display = 'block';
-            modelSection.style.display = 'block';
-            profileSection.style.display = 'block';
-            loginMessage.style.display = 'none';
             try {
                 const response = await fetch('https://api.github.com/user', {
                     headers: { 'Authorization': `token ${auth.getToken()}` }
@@ -77,17 +71,43 @@ async function checkSession() {
                 if (!response.ok) throw new Error('Failed to fetch user');
                 const userData = await response.json();
                 username = userData.login;
-                fetchRepoDetails();
-                fetchModels();
-                await setupCreatorLinks();
-                await setupConfigForm();
-                updateStorageUsage();
+
+                if (username === window.config.glbRepoUsername) {
+                    // Owner: Show full portal
+                    auth.updateLoginDisplay(user, loginBtn);
+                    uploadSection.style.display = 'block';
+                    repoSection.style.display = 'block';
+                    modelSection.style.display = 'block';
+                    profileSection.style.display = 'block';
+                    loginMessage.style.display = 'none';
+                    fetchRepoDetails();
+                    fetchModels();
+                    await setupCreatorLinks();
+                    await setupConfigForm();
+                    updateStorageUsage();
+                } else {
+                    // Non-Owner: Show restricted message
+                    loginBtn.innerHTML = 'Login with GitHub';
+                    loginBtn.classList.remove('profile');
+                    loginBtn.disabled = false;
+                    uploadSection.style.display = 'none';
+                    repoSection.style.display = 'none';
+                    modelSection.style.display = 'none';
+                    profileSection.style.display = 'none';
+                    linksForm.style.display = 'none';
+                    configForm.style.display = 'none';
+                    enableCreatorLinksBtn.style.display = 'none';
+                    creatorLinksDisclaimer.style.display = 'none';
+                    profileDropdown.style.display = 'none';
+                    loginMessage.style.display = 'block';
+                    loginMessage.textContent = `This portal is for the site owner (${window.config.glbRepoUsername}) only. Visit the main page to explore models.`;
+                }
             } catch (error) {
                 showNotification(`Error: ${error.message}`, true);
                 console.error('User fetch error:', error);
             }
         } else {
-            loginBtn.textContent = 'Login to GitHub';
+            loginBtn.innerHTML = 'Login with GitHub';
             loginBtn.classList.remove('profile');
             loginBtn.disabled = false;
             uploadSection.style.display = 'none';
@@ -100,6 +120,7 @@ async function checkSession() {
             creatorLinksDisclaimer.style.display = 'none';
             profileDropdown.style.display = 'none';
             loginMessage.style.display = 'block';
+            loginMessage.textContent = 'Please log in with GitHub to access the portal.';
         }
     });
 
@@ -129,6 +150,7 @@ async function checkSession() {
         enableCreatorLinksBtn.style.display = 'none';
         creatorLinksDisclaimer.style.display = 'none';
         loginMessage.style.display = 'block';
+        loginMessage.textContent = 'Please log in with GitHub to access the portal.';
     });
 
     document.addEventListener('click', (e) => {
@@ -254,7 +276,7 @@ saveConfigBtn.addEventListener('click', async () => {
     const updatedConfig = {
         glbRepoUsername: glbRepoUsernameInput.value.trim(),
         glbRepoName: glbRepoNameInput.value.trim(),
-        supabaseUrl: window.config.supabaseUrl, // Preserve existing values
+        supabaseUrl: window.config.supabaseUrl,
         supabaseAnonKey: window.config.supabaseAnonKey,
         siteTitle: siteTitleInput.value.trim()
     };

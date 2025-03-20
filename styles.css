@@ -1048,16 +1048,18 @@ main::-webkit-scrollbar-track {
 }
 
 .save-btn {
-    background-color: #A5C5CC; /* Example color from your theme */
-    color: #fff;
-    padding: 10px 20px;
+    background: #424250;
     border: none;
-    border-radius: 5px;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    border-radius: 4px;
     cursor: pointer;
-    font-family: 'Bungee', sans-serif;
-    transition: background-color 0.3s;
+    transition: background 0.3s ease;
+    font-family: 'Bungee', cursive;
+    font-size: 14px;
+    align-self: center;
 }
 
 .save-btn:hover {
-    background-color: #8AA8AF; /* Darker shade for hover */
+    background: #A5C5CC;
 }
