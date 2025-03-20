@@ -1,8 +1,15 @@
 console.log('portal.js loaded');
 
+let config;
+
+async function loadConfig() {
+    const response = await fetch('config.json');
+    config = await response.json();
+    document.querySelector('.logo').textContent = config.siteTitle || 'CLONE.TOOLS';
+}
+
 const loginBtn = document.getElementById('login-btn');
 const uploadForm = document.getElementById('upload-form');
-const repoSelect = document.getElementById('repo-select');
 const glbFileInput = document.getElementById('glb-file');
 const txtFileInput = document.getElementById('txt-file');
 const pngFileInput = document.getElementById('png-file');
@@ -17,10 +24,6 @@ const profileSection = document.getElementById('profile-section');
 const repoList = document.getElementById('repo-list');
 const repoStatus = document.getElementById('repo-status');
 const refreshReposBtn = document.getElementById('refresh-repos');
-const newRepoNameInput = document.getElementById('new-repo-name');
-const createRepoBtn = document.getElementById('create-repo-btn');
-const namingRule = document.querySelector('.naming-rule');
-const modelRepoSelect = document.getElementById('model-repo-select');
 const modelList = document.getElementById('model-list');
 const modelStatus = document.getElementById('model-status');
 const enableCreatorLinksBtn = document.getElementById('enable-creator-links');
@@ -51,6 +54,7 @@ function showNotification(message, isError = false) {
 }
 
 async function checkSession() {
+    await loadConfig();
     let dropdownVisible = false;
 
     auth.checkSession(async (user) => {
@@ -68,10 +72,10 @@ async function checkSession() {
                 if (!response.ok) throw new Error('Failed to fetch user');
                 const userData = await response.json();
                 username = userData.login;
-                fetchRepos();
-                fetchModelRepos();
+                fetchRepoDetails();
+                fetchModels();
                 await setupCreatorLinks();
-                updateStorageUsage(repoSelect.value);
+                updateStorageUsage();
             } catch (error) {
                 showNotification(`Error: ${error.message}`, true);
                 console.error('User fetch error:', error);
@@ -127,14 +131,14 @@ async function checkSession() {
     });
 }
 
-async function updateStorageUsage(repoName) {
-    if (!repoName || !auth.getToken()) {
+async function updateStorageUsage() {
+    if (!auth.getToken()) {
         document.getElementById('usage').textContent = '0 GB';
         document.getElementById('progress-bar').style.width = '0%';
         return;
     }
     try {
-        const response = await fetch(`https://api.github.com/repos/${username}/${repoName}/contents`, {
+        const response = await fetch(`https://api.github.com/repos/${config.repoOwner}/${config.repoName}/contents`, {
             headers: { 'Authorization': `token ${auth.getToken()}` }
         });
         if (!response.ok) throw new Error('Failed to fetch repo contents');
@@ -155,11 +159,11 @@ async function updateStorageUsage(repoName) {
 
 async function setupCreatorLinks() {
     try {
-        const repoResponse = await fetch(`https://api.github.com/repos/${username}/glbtools`, {
+        const repoResponse = await fetch(`https://api.github.com/repos/${config.repoOwner}/glbtools`, {
             headers: { 'Authorization': `token ${auth.getToken()}` }
         });
         if (repoResponse.ok) {
-            const linksResponse = await fetch(`https://api.github.com/repos/${username}/glbtools/contents/links.json`, {
+            const linksResponse = await fetch(`https://api.github.com/repos/${config.repoOwner}/glbtools/contents/links.json`, {
                 headers: { 'Authorization': `token ${auth.getToken()}` }
             });
             if (linksResponse.ok) {
@@ -185,7 +189,7 @@ async function setupCreatorLinks() {
 
 enableCreatorLinksBtn.addEventListener('click', async () => {
     try {
-        const repoCheck = await fetch(`https://api.github.com/repos/${username}/glbtools`, {
+        const repoCheck = await fetch(`https://api.github.com/repos/${config.repoOwner}/glbtools`, {
             headers: { 'Authorization': `token ${auth.getToken()}` }
         });
         if (!repoCheck.ok && repoCheck.status !== 404) throw new Error('Failed to check glbtools repo');
@@ -210,7 +214,7 @@ saveLinksBtn.addEventListener('click', async () => {
     };
     const content = btoa(JSON.stringify(links, null, 2));
     try {
-        const response = await fetch(`https://api.github.com/repos/${username}/glbtools/contents/links.json`, {
+        const response = await fetch(`https://api.github.com/repos/${config.repoOwner}/glbtools/contents/links.json`, {
             method: 'PUT',
             headers: { 'Authorization': `token ${auth.getToken()}`, 'Content-Type': 'application/json' },
             body: JSON.stringify({ message: 'Update creator links', content: content })
@@ -258,84 +262,40 @@ function validateFilenames() {
     namingRule.style.display = mismatch ? 'block' : 'none';
 }
 
-async function fetchRepos() {
+async function fetchRepoDetails() {
     if (!auth.getToken()) {
         showNotification('Error: No GitHub token available.', true);
         return;
     }
     try {
-        const response = await fetch('https://api.github.com/user/repos', {
-            headers: { 'Authorization': `token ${auth.getToken()}` }
-        });
-        if (!response.ok) throw new Error('Failed to fetch repos');
-        const repos = await response.json();
-        repoSelect.innerHTML = '<option value="">-- Select a repository --</option>';
         repoList.innerHTML = '';
-        repos.forEach(repo => {
-            if (repo.topics && repo.topics.includes('glbtools')) {
-                const option = document.createElement('option');
-                option.value = repo.name;
-                option.textContent = repo.name;
-                repoSelect.appendChild(option);
+        const li = document.createElement('li');
+        li.textContent = config.repoName;
+        const buttonContainer = document.createElement('div');
+        buttonContainer.className = 'button-container';
 
-                const li = document.createElement('li');
-                li.textContent = repo.name;
-                const buttonContainer = document.createElement('div');
-                buttonContainer.className = 'button-container';
+        const renameBtn = document.createElement('button');
+        renameBtn.textContent = 'Rename';
+        renameBtn.className = 'rename-btn';
+        renameBtn.onclick = () => renameRepo(config.repoName);
+        buttonContainer.appendChild(renameBtn);
 
-                const renameBtn = document.createElement('button');
-                renameBtn.textContent = 'Rename';
-                renameBtn.className = 'rename-btn';
-                renameBtn.onclick = () => renameRepo(repo.name);
-                buttonContainer.appendChild(renameBtn);
+        const deleteBtn = document.createElement('button');
+        deleteBtn.textContent = 'Delete';
+        deleteBtn.className = 'delete-btn';
+        deleteBtn.onclick = () => window.open('https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository', '_blank');
+        buttonContainer.appendChild(deleteBtn);
 
-                const deleteBtn = document.createElement('button');
-                deleteBtn.textContent = 'Delete';
-                deleteBtn.className = 'delete-btn';
-                deleteBtn.onclick = () => window.open('https://docs.github.com/en/repositories/creating-and-managing-repositories/deleting-a-repository', '_blank');
-                buttonContainer.appendChild(deleteBtn);
-
-                li.appendChild(buttonContainer);
-                repoList.appendChild(li);
-            }
-        });
+        li.appendChild(buttonContainer);
+        repoList.appendChild(li);
     } catch (error) {
-        showNotification(`Error fetching repos: ${error.message}`, true);
+        showNotification(`Error fetching repo details: ${error.message}`, true);
     }
 }
 
-async function fetchModelRepos() {
-    if (!auth.getToken()) {
-        showNotification('Error: No GitHub token available.', true);
-        return;
-    }
+async function fetchModels() {
     try {
-        const response = await fetch('https://api.github.com/user/repos', {
-            headers: { 'Authorization': `token ${auth.getToken()}` }
-        });
-        if (!response.ok) throw new Error('Failed to fetch repos');
-        const repos = await response.json();
-        modelRepoSelect.innerHTML = '<option value="">-- Select a repository --</option>';
-        repos.forEach(repo => {
-            if (repo.topics && repo.topics.includes('glbtools')) {
-                const option = document.createElement('option');
-                option.value = repo.name;
-                option.textContent = repo.name;
-                modelRepoSelect.appendChild(option);
-            }
-        });
-    } catch (error) {
-        showNotification(`Error fetching model repos: ${error.message}`, true);
-    }
-}
-
-async function fetchModels(repoName) {
-    if (!repoName) {
-        modelList.innerHTML = '';
-        return;
-    }
-    try {
-        const response = await fetch(`https://api.github.com/repos/${username}/${repoName}/contents`, {
+        const response = await fetch(`https://api.github.com/repos/${config.repoOwner}/${config.repoName}/contents`, {
             headers: { 'Authorization': `token ${auth.getToken()}` }
         });
         if (!response.ok) throw new Error('Failed to fetch repo contents');
@@ -352,13 +312,13 @@ async function fetchModels(repoName) {
             const renameBtn = document.createElement('button');
             renameBtn.textContent = 'Rename';
             renameBtn.className = 'rename-btn';
-            renameBtn.onclick = () => renameModelFolder(repoName, baseName);
+            renameBtn.onclick = () => renameModelFolder(config.repoName, baseName);
             buttonContainer.appendChild(renameBtn);
 
             const deleteBtn = document.createElement('button');
             deleteBtn.textContent = 'Delete';
             deleteBtn.className = 'delete-btn';
-            deleteBtn.onclick = () => deleteModelFolder(repoName, baseName);
+            deleteBtn.onclick = () => deleteModelFolder(config.repoName, baseName);
             buttonContainer.appendChild(deleteBtn);
 
             li.appendChild(buttonContainer);
@@ -372,13 +332,9 @@ async function fetchModels(repoName) {
 uploadForm.addEventListener('submit', async (e) => {
     e.preventDefault();
     showNotification('Uploading...');
-    const repoName = repoSelect.value;
-    const isBulk = bulkToggle.checked;
+    const repoName = config.repoName;
 
-    if (!repoName) {
-        showNotification('Please select a repository.', true);
-        return;
-    }
+    const isBulk = bulkToggle.checked;
 
     if (isBulk) {
         const glbFiles = document.getElementById('glb-files').files;
@@ -421,7 +377,7 @@ uploadForm.addEventListener('submit', async (e) => {
             }
         }
         showNotification('Bulk upload successful!');
-        updateStorageUsage(repoName);
+        updateStorageUsage();
     } else {
         const glbFile = glbFileInput.files[0];
         const txtFile = txtFileInput.files[0];
@@ -446,7 +402,7 @@ uploadForm.addEventListener('submit', async (e) => {
             if (txtFile) await uploadFile(username, repoName, `${baseName}.txt`, txtFile);
             await uploadFile(username, repoName, `${baseName}.png`, pngFile);
             showNotification('Upload successful!');
-            updateStorageUsage(repoName);
+            updateStorageUsage();
         } catch (error) {
             showNotification(`Error: ${error.message}`, true);
         }
@@ -467,8 +423,7 @@ async function createRepo(repoName) {
         if (repoName === 'glbtools') {
             showNotification('glbtools repo created successfully!');
         } else {
-            showNotification(`Repository ${repoName} created! Refresh to select it.`);
-            newRepoNameInput.value = '';
+            showNotification(`Repository ${repoName} created!`);
         }
     } catch (error) {
         showNotification(`Error creating repo: ${error.message}`, true);
@@ -513,8 +468,9 @@ async function renameRepo(oldName) {
         });
         if (!response.ok) throw new Error('Failed to rename repo');
         showNotification(`Repository renamed to ${newName}.`);
-        fetchRepos();
-        fetchModelRepos();
+        fetchRepoDetails();
+        fetchModels();
+        config.repoName = newName; // Update config dynamically
     } catch (error) {
         showNotification(`Error renaming repo: ${error.message}`, true);
     }
@@ -543,8 +499,8 @@ async function deleteModelFolder(repoName, baseName) {
             });
         }
         showNotification(`Model ${baseName} deleted.`);
-        fetchModels(repoName);
-        updateStorageUsage(repoName);
+        fetchModels();
+        updateStorageUsage();
     } catch (error) {
         showNotification(`Error deleting model: ${error.message}`, true);
     }
@@ -590,34 +546,17 @@ async function renameModelFolder(repoName, oldBaseName) {
             });
         }
         showNotification(`Model renamed to ${newBaseName}.`);
-        fetchModels(repoName);
-        updateStorageUsage(repoName);
+        fetchModels();
+        updateStorageUsage();
     } catch (error) {
         showNotification(`Error renaming model: ${error.message}`, true);
     }
 }
 
 refreshReposBtn.addEventListener('click', () => {
-    fetchRepos();
-    fetchModelRepos();
-    updateStorageUsage(repoSelect.value);
-});
-
-createRepoBtn.addEventListener('click', () => {
-    const repoName = newRepoNameInput.value.trim();
-    if (!repoName) {
-        showNotification('Please enter a repository name.', true);
-        return;
-    }
-    createRepo(repoName);
-});
-
-repoSelect.addEventListener('change', () => {
-    updateStorageUsage(repoSelect.value);
-});
-
-modelRepoSelect.addEventListener('change', () => {
-    fetchModels(modelRepoSelect.value);
+    fetchRepoDetails();
+    fetchModels();
+    updateStorageUsage();
 });
 
 bulkToggle.addEventListener('change', () => {

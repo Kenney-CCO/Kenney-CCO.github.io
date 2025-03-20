@@ -1,87 +1,63 @@
+let config;
+
+async function loadConfig() {
+    const response = await fetch('config.json');
+    config = await response.json();
+    document.querySelector('.logo').textContent = config.siteTitle || 'CLONE.TOOLS';
+}
+
 const grid = document.querySelector('.grid');
 const popup = document.querySelector('.popup');
 const popupLeft = document.querySelector('.popup-left');
-const modelName = document.querySelector('.model-name');
-const author = document.querySelector('.author');
-const stars = document.querySelector('.stars');
 const popupText = document.querySelector('.popup-text');
 const searchInput = document.getElementById('search-input');
 const loginBtn = document.getElementById('login-btn');
 let allModels = [];
-let page = 1;
 let loading = false;
 
 async function loadModels() {
     if (loading) return;
     loading = true;
-    console.log(`Loading page ${page}...`);
     try {
-        const response = await fetch(`https://api.github.com/search/repositories?q=topic:glbtools&per_page=12&page=${page}`, {
+        if (!config) await loadConfig();
+        const response = await fetch(`https://api.github.com/repos/${config.repoOwner}/${config.repoName}/contents`, {
             headers: auth.getToken() ? { 'Authorization': `token ${auth.getToken()}` } : {}
         });
         if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-        const data = await response.json();
-        console.log(`Found ${data.items.length} repos on page ${page}`);
-        const repos = data.items;
-
-        if (repos.length === 0) {
-            console.log('No more models to load.');
-            document.querySelector('.load-more').style.display = 'none';
-            return;
-        }
-
-        for (const repo of repos) {
-            try {
-                const contents = await fetch(`https://api.github.com/repos/${repo.full_name}/contents`, {
-                    headers: auth.getToken() ? { 'Authorization': `token ${auth.getToken()}` } : {}
+        const files = await response.json();
+        const glbFiles = files.filter(f => f.name.endsWith('.glb'));
+        for (const glbFile of glbFiles) {
+            const baseName = glbFile.name.replace('.glb', '');
+            const txtFile = files.find(f => f.name === `${baseName}.txt`);
+            const pngFile = files.find(f => f.name === `${baseName}.png`);
+            if (glbFile && pngFile) {
+                allModels.push({
+                    name: baseName,
+                    glbUrl: glbFile.download_url,
+                    txtUrl: txtFile ? txtFile.download_url : '',
+                    pngUrl: pngFile.download_url,
+                    author: config.creatorName,
+                    authorUrl: `https://github.com/${config.repoOwner}`,
+                    authorAvatar: config.creatorAvatar,
+                    repoName: config.repoName,
+                    stars: 0
                 });
-                if (!contents.ok) {
-                    console.warn(`Skipping ${repo.full_name}: Contents not found (status ${contents.status})`);
-                    continue;
-                }
-                const files = await contents.json();
-                if (!Array.isArray(files)) {
-                    console.warn(`Skipping ${repo.full_name}: Invalid contents format`);
-                    continue;
-                }
-                const glbFiles = files.filter(f => f.name.endsWith('.glb'));
-                for (const glbFile of glbFiles) {
-                    const baseName = glbFile.name.replace('.glb', '');
-                    const txtFile = files.find(f => f.name === `${baseName}.txt`);
-                    const pngFile = files.find(f => f.name === `${baseName}.png`);
-                    if (glbFile && pngFile) {
-                        const modelData = {
-                            name: baseName,
-                            author: repo.owner.login,
-                            authorUrl: repo.owner.html_url,
-                            authorAvatar: repo.owner.avatar_url,
-                            repoName: repo.name,
-                            stars: repo.stargazers_count,
-                            glbUrl: glbFile.download_url,
-                            txtUrl: txtFile ? txtFile.download_url : '',
-                            pngUrl: pngFile.download_url
-                        };
-                        allModels.push(modelData);
-                    }
-                }
-            } catch (error) {
-                console.warn(`Error processing ${repo.full_name}: ${error.message}`);
-                continue;
             }
         }
-        page++;
         renderGrid();
     } catch (error) {
         console.error('Error loading models:', error);
+        showNotification(`Error: ${error.message}`, true);
     } finally {
         loading = false;
     }
 }
 
-function showNotification(message) {
+function showNotification(message, isError = false) {
     const notification = document.createElement('div');
     notification.className = 'notification';
     notification.textContent = message;
+    if (isError) notification.classList.add('error');
     document.body.appendChild(notification);
 
     setTimeout(() => notification.classList.add('show'), 10);
@@ -146,7 +122,7 @@ async function showPopup(event) {
 
     let creatorLinks = {};
     try {
-        const linksResponse = await fetch(`https://api.github.com/repos/${box.dataset.author}/glbtools/contents/links.json`, {
+        const linksResponse = await fetch(`https://api.github.com/repos/${config.repoOwner}/glbtools/contents/links.json`, {
             headers: auth.getToken() ? { 'Authorization': `token ${auth.getToken()}` } : {}
         });
         if (linksResponse.ok) {
@@ -217,7 +193,7 @@ async function showPopup(event) {
     const loadModelBtn = popupLeft.querySelector('.load-model-btn');
     const fileSizeSpan = gridReplica.querySelector('.file-size');
     const txtText = box.dataset.txtUrl ? await (await fetch(box.dataset.txtUrl)).text() : 'No description available.';
-    popupText.textContent = txtText; // Only .txt content here now
+    popupText.textContent = txtText;
 
     const glbResponse = await fetch(box.dataset.glbUrl, { method: 'HEAD' });
     const fileSize = glbResponse.headers.get('Content-Length');
@@ -256,7 +232,7 @@ async function showPopup(event) {
     if (token) {
         let isStarred = false;
         try {
-            const starCheck = await fetch(`https://api.github.com/user/starred/${box.dataset.author}/${box.dataset.repoName}`, {
+            const starCheck = await fetch(`https://api.github.com/user/starred/${config.repoOwner}/${box.dataset.repoName}`, {
                 headers: { 'Authorization': `token ${token}` }
             });
             if (starCheck.status === 401) throw new Error('Token invalid or expired');
@@ -270,7 +246,7 @@ async function showPopup(event) {
         starBtn.onclick = async () => {
             try {
                 if (isStarred) {
-                    await fetch(`https://api.github.com/user/starred/${box.dataset.author}/${box.dataset.repoName}`, {
+                    await fetch(`https://api.github.com/user/starred/${config.repoOwner}/${box.dataset.repoName}`, {
                         method: 'DELETE',
                         headers: { 'Authorization': `token ${token}` }
                     });
@@ -278,7 +254,7 @@ async function showPopup(event) {
                     starBtn.classList.remove('starred');
                     box.dataset.stars = parseInt(box.dataset.stars) - 1;
                 } else {
-                    await fetch(`https://api.github.com/user/starred/${box.dataset.author}/${box.dataset.repoName}`, {
+                    await fetch(`https://api.github.com/user/starred/${config.repoOwner}/${box.dataset.repoName}`, {
                         method: 'PUT',
                         headers: { 'Authorization': `token ${token}` }
                     });
@@ -323,7 +299,8 @@ async function copyZip(box) {
     showNotification('Copied to Clipboard! Paste into your 3D app.');
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
+    await loadConfig(); // Load config first
     const logoutBtn = document.getElementById('logout-btn');
     const profileDropdown = document.getElementById('profile-dropdown');
     let dropdownVisible = false;

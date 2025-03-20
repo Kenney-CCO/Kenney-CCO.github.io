@@ -1,14 +1,18 @@
-// auth.js
 console.log('auth.js loaded');
 
-const supabase = window.supabase.createClient(
-    'https://ejuqhyqdnihljdzwrkrj.supabase.co',
-    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImVqdXFoeXFkbmlobGpkendya3JqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI0MTcxNTYsImV4cCI6MjA1Nzk5MzE1Nn0._qsE30twViyp9ctFmks9GjK2Oq-IWujR1HFLkKYTwfk'
-);
+let config;
+let supabase;
+
+async function loadConfig() {
+    const response = await fetch('config.json');
+    config = await response.json();
+    supabase = window.supabase.createClient(config.supabaseUrl, config.supabaseAnonKey);
+}
 
 let token = null;
 
 async function checkSession(callback) {
+    await loadConfig(); // Ensure config is loaded
     const { data: { session }, error } = await supabase.auth.getSession();
     if (error) {
         console.error('Session check error:', error);
@@ -68,6 +72,7 @@ async function checkSession(callback) {
 }
 
 async function loginWithGitHub() {
+    await loadConfig();
     try {
         const { error } = await supabase.auth.signInWithOAuth({
             provider: 'github',
@@ -87,6 +92,7 @@ function updateLoginDisplay(user, loginBtn) {
 }
 
 async function signOut() {
+    await loadConfig();
     try {
         const { error } = await supabase.auth.signOut();
         if (error) throw error;

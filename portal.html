@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>GLB.Tools</title>
+    <title>Clone.Tools</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <a href="index.html" class="logo">GLB.TOOLS</a>
+        <a href="index.html" class="logo"></a> <!-- Set by portal.js from config -->
         <input type="text" placeholder="Search models..." class="search-bar" id="search-input" disabled>
         <div class="nav">
             <div class="profile-container">
@@ -33,18 +33,14 @@
         </div>
         <div class="portal-container">
             <h1>Creator Portal</h1>
-            <button id="refresh-repos">Refresh Repos</button>
+            <button id="refresh-repos">Refresh</button>
             <div id="login-message">Please log in with GitHub to upload and manage models.</div>
 
             <div class="sections-wrapper">
                 <div id="upload-section" class="section-box" style="display: none;">
                     <h2>Upload Model</h2>
-                    <p class="instructions">Select a repo and drag your 3D Model (.glb), ReadMe (.txt), and Thumbnail (.png) below.</p>
+                    <p class="instructions">Drag your 3D Model (.glb), ReadMe (.txt), and Thumbnail (.png) below.</p>
                     <form id="upload-form">
-                        <div class="form-row">
-                            <label for="repo-select">Select Repository:</label>
-                            <select id="repo-select"></select>
-                        </div>
                         <div id="single-upload">
                             <div class="form-row">
                                 <label class="naming-rule" style="display: none;">Your .glb, .txt, and .png must have the same name.</label>
@@ -92,13 +88,7 @@
                 </div>
 
                 <div id="repo-section" class="section-box" style="display: none;">
-                    <h2>Manage Repositories</h2>
-                    <div class="create-repo">
-                        <label for="new-repo-name">Create New Repository:</label>
-                        <input type="text" id="new-repo-name" placeholder="e.g., MyGLBToolsRepo">
-                        <button id="create-repo-btn">Create</button>
-                    </div>
-                    <h3>My Repos</h3>
+                    <h2>Manage Repository</h2>
                     <div class="scrollbox">
                         <ul id="repo-list"></ul>
                     </div>
@@ -107,10 +97,6 @@
 
                 <div id="model-section" class="section-box" style="display: none;">
                     <h2>Manage Models</h2>
-                    <div class="form-row">
-                        <label for="model-repo-select">Select Repository:</label>
-                        <select id="model-repo-select"></select>
-                    </div>
                     <div class="scrollbox">
                         <ul id="model-list"></ul>
                     </div>
@@ -122,15 +108,15 @@
                     <button id="enable-creator-links" style="display: none;">Enable Creator Links</button>
                     <p id="creator-links-disclaimer" style="display: none;">This will create a "glbtools" Repo</p>
                     <div id="links-form" style="display: none;">
-                        <div class="link-row">
+                        <div class="form-row">
                             <label for="website-link">Website:</label>
                             <input type="text" id="website-link" placeholder="https://yourwebsite.com">
                         </div>
-                        <div class="link-row">
+                        <div class="form-row">
                             <label for="x-link">X:</label>
                             <input type="text" id="x-link" placeholder="https://x.com/username">
                         </div>
-                        <div class="link-row">
+                        <div class="form-row">
                             <label for="donation-link">Donation:</label>
                             <input type="text" id="donation-link" placeholder="https://paypal.me/username">
                         </div>
