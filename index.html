@@ -2,22 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Clone.Tools</title> <!-- Initial title, overridden by config -->
+    <title>Clone.Tools</title>
     <link rel="stylesheet" href="styles.css">
-    <!-- Bungee Font -->
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-    <!-- Model Viewer for 3D rendering -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <!-- JSZip for zipping files -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-    <!-- Supabase CDN -->
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
-    <!-- Shared auth script -->
     <script src="auth.js"></script>
 </head>
 <body>
     <header>
-        <div class="logo"></div> <!-- Set by script.js from config -->
+        <div class="logo"></div>
         <input type="text" placeholder="Search models..." class="search-bar" id="search-input">
         <div class="nav">
             <div class="profile-container">
@@ -34,7 +29,6 @@
         <div class="grid">
             <!-- JS will fill this with model boxes -->
         </div>
-        <button class="load-more">Load More</button>
     </main>
     <div class="popup" style="display: none;">
         <div class="popup-left">

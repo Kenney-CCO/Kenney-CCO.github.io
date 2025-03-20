@@ -306,7 +306,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     const profileDropdown = document.getElementById('profile-dropdown');
     let dropdownVisible = false;
 
-    document.querySelector('.load-more').addEventListener('click', loadModels);
     searchInput.addEventListener('input', renderGrid);
 
     loginBtn.addEventListener('click', async (e) => {
