@@ -31,7 +31,6 @@ async function loadModels() {
         const files = await contentsResponse.json();
         const glbFiles = files.filter(f => f.name.endsWith('.glb'));
 
-        // Fetch star count
         const repoResponse = await fetch(`https://api.github.com/repos/${window.config.glbRepoUsername}/${window.config.glbRepoName}`, {
             headers: auth.getToken() ? { 'Authorization': `token ${auth.getToken()}` } : {}
         });
