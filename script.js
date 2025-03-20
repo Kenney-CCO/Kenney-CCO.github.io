@@ -1,8 +1,8 @@
-let config;
+let config; // Single declaration at the top
 
 async function loadConfig() {
     const response = await fetch('config.json');
-    config = await response.json();
+    config = await response.json(); // Assign to existing global variable
     document.querySelector('.logo').textContent = config.siteTitle || 'CLONE.TOOLS';
 }
 
