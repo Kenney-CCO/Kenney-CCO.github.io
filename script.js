@@ -116,11 +116,10 @@ function renderGrid() {
         box.dataset.stars = model.stars;
         box.addEventListener('click', showPopup);
 
-        // Add drag functionality to the .png
         const img = box.querySelector('.draggable-png');
         img.addEventListener('dragstart', (e) => {
             e.dataTransfer.setData('text/uri-list', model.glbUrl);
-            e.dataTransfer.setData('text/plain', model.glbUrl); // Fallback for some apps
+            e.dataTransfer.setData('text/plain', model.glbUrl);
             e.dataTransfer.effectAllowed = 'copy';
         });
 
@@ -196,6 +195,7 @@ async function showPopup(event) {
         <img src="${box.dataset.pngUrl}" alt="${box.dataset.name}">
         <div class="text-row">
             <div class="name">${box.dataset.name}</div>
+            <span class="file-size">File Size: Fetching...</span>
             <div class="action-buttons">
                 <button class="download-btn"></button>
                 <button class="copy-btn"></button>
@@ -215,12 +215,13 @@ async function showPopup(event) {
     const copyBtn = gridReplica.querySelector('.copy-btn');
     const starBtn = gridReplica.querySelector('.star-btn');
     const loadModelBtn = popupLeft.querySelector('.load-model-btn');
+    const fileSizeSpan = gridReplica.querySelector('.file-size');
     const txtText = box.dataset.txtUrl ? await (await fetch(box.dataset.txtUrl)).text() : 'No description available.';
-    popupText.textContent = `${txtText}\n\nFile Size: Fetching...`;
+    popupText.textContent = txtText; // Only .txt content here now
 
     const glbResponse = await fetch(box.dataset.glbUrl, { method: 'HEAD' });
     const fileSize = glbResponse.headers.get('Content-Length');
-    popupText.textContent = `${txtText}\n\nFile Size: ${(fileSize / (1024 * 1024)).toFixed(2)} MB`;
+    fileSizeSpan.textContent = `File Size: ${(fileSize / (1024 * 1024)).toFixed(2)} MB`;
 
     loadModelBtn.onclick = async () => {
         popupLeft.innerHTML = '<model-viewer loading="lazy" style="width: 100%; height: 100%;"></model-viewer>';

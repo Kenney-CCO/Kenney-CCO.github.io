@@ -1039,3 +1039,10 @@ main::-webkit-scrollbar-track {
     background: #FF9999;
     color: #17141F;
 }
+
+.popup-grid-replica .file-size {
+    font-size: 12px;
+    color: #A5C5CC;
+    margin-right: 10px;
+    white-space: nowrap;
+}
