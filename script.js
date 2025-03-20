@@ -12,6 +12,8 @@ const popupLeft = document.querySelector('.popup-left');
 const popupText = document.querySelector('.popup-text');
 const searchInput = document.getElementById('search-input');
 const loginBtn = document.getElementById('login-btn');
+const profileDropdown = document.getElementById('profile-dropdown');
+const myPortalLink = document.getElementById('my-portal-link'); // New reference
 let allModels = [];
 let loading = false;
 let currentUser = null;
@@ -303,7 +305,6 @@ async function copyZip(box) {
 document.addEventListener('DOMContentLoaded', async () => {
     await loadConfig();
     const logoutBtn = document.getElementById('logout-btn');
-    const profileDropdown = document.getElementById('profile-dropdown');
     let dropdownVisible = false;
 
     searchInput.addEventListener('input', renderGrid);
@@ -342,8 +343,15 @@ document.addEventListener('DOMContentLoaded', async () => {
                     headers: { 'Authorization': `token ${auth.getToken()}` }
                 });
                 if (!response.ok) throw new Error('Token invalid or expired');
+                const username = user.user_metadata.preferred_username;
                 auth.updateLoginDisplay(user, loginBtn);
                 profileDropdown.style.display = 'none';
+                // Hide "My Portal" for non-owners
+                if (username === window.config.glbRepoUsername) {
+                    myPortalLink.style.display = 'block';
+                } else {
+                    myPortalLink.style.display = 'none';
+                }
                 loadModels();
             } catch (error) {
                 console.error('Token validation failed:', error);

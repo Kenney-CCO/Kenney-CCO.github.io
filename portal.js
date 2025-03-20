@@ -73,20 +73,19 @@ async function checkSession() {
                 username = userData.login;
 
                 if (username === window.config.glbRepoUsername) {
-                    // Owner: Show full portal
                     auth.updateLoginDisplay(user, loginBtn);
                     uploadSection.style.display = 'block';
                     repoSection.style.display = 'block';
                     modelSection.style.display = 'block';
                     profileSection.style.display = 'block';
                     loginMessage.style.display = 'none';
+                    myPortalLink.style.display = 'block'; // Show for owner
                     fetchRepoDetails();
                     fetchModels();
                     await setupCreatorLinks();
                     await setupConfigForm();
                     updateStorageUsage();
                 } else {
-                    // Non-Owner: Show restricted message
                     loginBtn.innerHTML = 'Login with GitHub';
                     loginBtn.classList.remove('profile');
                     loginBtn.disabled = false;
@@ -99,6 +98,7 @@ async function checkSession() {
                     enableCreatorLinksBtn.style.display = 'none';
                     creatorLinksDisclaimer.style.display = 'none';
                     profileDropdown.style.display = 'none';
+                    myPortalLink.style.display = 'none'; // Hide for non-owner
                     loginMessage.style.display = 'block';
                     loginMessage.textContent = `This portal is for the site owner (${window.config.glbRepoUsername}) only. Visit the main page to explore models.`;
                 }
@@ -119,6 +119,7 @@ async function checkSession() {
             enableCreatorLinksBtn.style.display = 'none';
             creatorLinksDisclaimer.style.display = 'none';
             profileDropdown.style.display = 'none';
+            myPortalLink.style.display = 'none'; // Hide when not logged in
             loginMessage.style.display = 'block';
             loginMessage.textContent = 'Please log in with GitHub to access the portal.';
         }
