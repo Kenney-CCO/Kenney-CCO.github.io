@@ -80,6 +80,7 @@ main {
     overflow-y: auto;
     scrollbar-width: thin;
     scrollbar-color: #424250 #252831;
+    padding-bottom: 40px; /* Adjust as needed */
 }
 main::-webkit-scrollbar {
     width: 8px;

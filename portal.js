@@ -40,6 +40,7 @@ const siteTitleInput = document.getElementById('site-title');
 const saveConfigBtn = document.getElementById('save-config');
 const profileStatus = document.getElementById('profile-status');
 const profileDropdown = document.getElementById('profile-dropdown');
+const myPortalLink = document.getElementById('my-portal-link'); // Added declaration
 const logoutBtn = document.getElementById('logout-btn');
 const bulkToggle = document.getElementById('bulk-toggle');
 let username;
@@ -79,7 +80,7 @@ async function checkSession() {
                     modelSection.style.display = 'block';
                     profileSection.style.display = 'block';
                     loginMessage.style.display = 'none';
-                    myPortalLink.style.display = 'block'; // Show for owner
+                    if (myPortalLink) myPortalLink.style.display = 'block'; // Null check
                     fetchRepoDetails();
                     fetchModels();
                     await setupCreatorLinks();
@@ -98,7 +99,7 @@ async function checkSession() {
                     enableCreatorLinksBtn.style.display = 'none';
                     creatorLinksDisclaimer.style.display = 'none';
                     profileDropdown.style.display = 'none';
-                    myPortalLink.style.display = 'none'; // Hide for non-owner
+                    if (myPortalLink) myPortalLink.style.display = 'none'; // Null check
                     loginMessage.style.display = 'block';
                     loginMessage.textContent = `This portal is for the site owner (${window.config.glbRepoUsername}) only. Visit the main page to explore models.`;
                 }
@@ -119,7 +120,7 @@ async function checkSession() {
             enableCreatorLinksBtn.style.display = 'none';
             creatorLinksDisclaimer.style.display = 'none';
             profileDropdown.style.display = 'none';
-            myPortalLink.style.display = 'none'; // Hide when not logged in
+            if (myPortalLink) myPortalLink.style.display = 'none'; // Null check
             loginMessage.style.display = 'block';
             loginMessage.textContent = 'Please log in with GitHub to access the portal.';
         }
@@ -162,6 +163,7 @@ async function checkSession() {
     });
 }
 
+// Rest of the script (updateStorageUsage, setupCreatorLinks, etc.) remains unchanged
 async function updateStorageUsage() {
     if (!auth.getToken()) {
         document.getElementById('usage').textContent = '0 GB';

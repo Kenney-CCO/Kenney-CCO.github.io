@@ -4,7 +4,6 @@ async function loadConfig() {
         window.config = await response.json();
     }
     document.querySelector('.logo').textContent = window.config.siteTitle || 'CLONE.TOOLS';
-    document.getElementById('footer-title').textContent = window.config.siteTitle || 'CLONE.TOOLS';
 }
 
 const grid = document.querySelector('.grid');
