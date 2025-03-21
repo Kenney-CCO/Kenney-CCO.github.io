@@ -37,7 +37,6 @@
             <div id="login-message">Please log in with GitHub to upload and manage models.</div>
 
             <div class="sections-wrapper">
-                <!-- Panel 1: Site Configuration & Selected GLB Repo -->
                 <div id="profile-section" class="section-box" style="display: none;">
                     <h2>Site Configuration</h2>
                     <div id="config-form" style="display: none;">
@@ -77,9 +76,16 @@
                         <ul id="repo-list"></ul>
                     </div>
                     <div id="repo-status"></div>
+                    <hr class="section-divider">
+                    <h2>Publish</h2>
+                    <div id="publish-status">
+                        <span id="publish-label">Checking...</span>
+                    </div>
+                    <div class="button-container">
+                        <button id="publish-toggle-btn">Toggle Visibility</button>
+                    </div>
                 </div>
 
-                <!-- Panel 2: Upload Model -->
                 <div id="upload-section" class="section-box" style="display: none;">
                     <h2>Upload Model</h2>
                     <p class="instructions">Drag your 3D Model (.glb), ReadMe (.txt), and Thumbnail (.png) below.</p>
@@ -125,12 +131,11 @@
                         </div>
                         <div class="button-group">
                             <button type="submit">Upload Model(s)</button>
-                            <a href="https://github.com/beb-cc0/glb-example-repo" target="_blank"><button type="button" class="example-btn">View Examples</button></a>
+                            <a href="https://github.com/GLBTools/GLB.Tools-Models" target="_blank"><button type="button" class="example-btn">View Examples</button></a>
                         </div>
                     </form>
                 </div>
 
-                <!-- Panel 3: Manage Profile -->
                 <div id="profile-links-section" class="section-box" style="display: none;">
                     <h2>Manage Profile</h2>
                     <button id="enable-creator-links" style="display: none;">Enable Creator Links</button>
@@ -155,7 +160,6 @@
                     <div id="profile-status"></div>
                 </div>
 
-                <!-- Panel 4: Manage Models -->
                 <div id="model-section" class="section-box" style="display: none;">
                     <h2>Manage Models</h2>
                     <div class="scrollbox">
