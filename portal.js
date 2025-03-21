@@ -254,9 +254,9 @@ async function setupConfigForm() {
 async function updatePublishStatus() {
     try {
         const response = await fetch(`https://api.github.com/repos/${username}/${window.config.websiteRepoName}/topics`, {
-            headers: { 
-                'Authorization': `token ${auth.getToken()}', 
-                'Accept': 'application/vnd.github.mercy-preview+json' 
+            headers: {
+                'Authorization': `token ${auth.getToken()}`,
+                'Accept': 'application/vnd.github.mercy-preview+json'
             }
         });
         if (!response.ok) throw new Error('Failed to fetch topics');
@@ -302,7 +302,7 @@ saveLinksBtn.addEventListener('click', async () => {
     try {
         const response = await fetch(`https://api.github.com/repos/${window.config.glbRepoUsername}/glbtools/contents/links.json`, {
             method: 'PUT',
-            headers: { 'Authorization': `token ${auth.getToken()}', 'Content-Type': 'application/json' },
+            headers: { 'Authorization': `token ${auth.getToken()}`, 'Content-Type': 'application/json' },
             body: JSON.stringify({ message: 'Update creator links', content: content })
         });
         if (!response.ok) throw new Error('Failed to save links');
@@ -348,7 +348,7 @@ saveConfigBtn.addEventListener('click', async () => {
 
         const response = await fetch(`https://api.github.com/repos/${updatedConfig.siteRepoOwner}/${updatedConfig.websiteRepoName}/contents/config.json`, {
             method: 'PUT',
-            headers: { 'Authorization': `token ${auth.getToken()}', 'Content-Type': 'application/json' },
+            headers: { 'Authorization': `token ${auth.getToken()}`, 'Content-Type': 'application/json' },
             body: JSON.stringify({ 
                 message: 'Update config.json', 
                 content: content, 
@@ -370,7 +370,7 @@ publishToggleBtn.addEventListener('click', async () => {
     try {
         const response = await fetch(`https://api.github.com/repos/${username}/${window.config.websiteRepoName}/topics`, {
             headers: { 
-                'Authorization': `token ${auth.getToken()}', 
+                'Authorization': `token ${auth.getToken()}`, 
                 'Accept': 'application/vnd.github.mercy-preview+json' 
             }
         });
@@ -384,7 +384,7 @@ publishToggleBtn.addEventListener('click', async () => {
             await fetch(`https://api.github.com/repos/${username}/${window.config.websiteRepoName}/topics`, {
                 method: 'PUT',
                 headers: { 
-                    'Authorization': `token ${auth.getToken()}', 
+                    'Authorization': `token ${auth.getToken()}`, 
                     'Content-Type': 'application/json', 
                     'Accept': 'application/vnd.github.mercy-preview+json' 
                 },
@@ -396,7 +396,7 @@ publishToggleBtn.addEventListener('click', async () => {
             await fetch(`https://api.github.com/repos/${username}/${window.config.websiteRepoName}/topics`, {
                 method: 'PUT',
                 headers: { 
-                    'Authorization': `token ${auth.getToken()}', 
+                    'Authorization': `token ${auth.getToken()}`, 
                     'Content-Type': 'application/json', 
                     'Accept': 'application/vnd.github.mercy-preview+json' 
                 },
@@ -599,7 +599,7 @@ async function createRepo(repoName) {
     try {
         const response = await fetch('https://api.github.com/user/repos', {
             method: 'POST',
-            headers: { 'Authorization': `token ${auth.getToken()}', 'Content-Type': 'application/json' },
+            headers: { 'Authorization': `token ${auth.getToken()}`, 'Content-Type': 'application/json' },
             body: JSON.stringify({ name: repoName, private: false })
         });
         if (!response.ok) throw new Error('Failed to create repo');
@@ -641,7 +641,7 @@ async function uploadFile(username, repoName, path, file) {
 
     const response = await fetch(`https://api.github.com/repos/${username}/${repoName}/contents/${path}`, {
         method: 'PUT',
-        headers: { 'Authorization': `token ${auth.getToken()}', 'Content-Type': 'application/json' },
+        headers: { 'Authorization': `token ${auth.getToken()}`, 'Content-Type': 'application/json' },
         body: JSON.stringify(body)
     });
     if (!response.ok) throw new Error(`Failed to upload ${path}`);
@@ -653,7 +653,7 @@ async function renameRepo(oldName) {
     try {
         const response = await fetch(`https://api.github.com/repos/${username}/${oldName}`, {
             method: 'PATCH',
-            headers: { 'Authorization': `token ${auth.getToken()}', 'Content-Type': 'application/json' },
+            headers: { 'Authorization': `token ${auth.getToken()}`, 'Content-Type': 'application/json' },
             body: JSON.stringify({ name: newName })
         });
         if (!response.ok) throw new Error('Failed to rename repo');
@@ -684,7 +684,7 @@ async function deleteModelFolder(repoName, baseName) {
         for (const item of filesToDelete) {
             await fetch(`https://api.github.com/repos/${username}/${repoName}/contents/${item.name}`, {
                 method: 'DELETE',
-                headers: { 'Authorization': `token ${auth.getToken()}', 'Content-Type': 'application/json' },
+                headers: { 'Authorization': `token ${auth.getToken()}`, 'Content-Type': 'application/json' },
                 body: JSON.stringify({ message: `Delete ${item.name}`, sha: item.sha })
             });
         }
@@ -725,13 +725,13 @@ async function renameModelFolder(repoName, oldBaseName) {
 
             await fetch(`https://api.github.com/repos/${username}/${repoName}/contents/${newPath}`, {
                 method: 'PUT',
-                headers: { 'Authorization': `token ${auth.getToken()}', 'Content-Type': 'application/json' },
+                headers: { 'Authorization': `token ${auth.getToken()}`, 'Content-Type': 'application/json' },
                 body: JSON.stringify({ message: `Rename ${oldPath} to ${newPath}`, content: base64Content })
             });
 
             await fetch(`https://api.github.com/repos/${username}/${repoName}/contents/${oldPath}`, {
                 method: 'DELETE',
-                headers: { 'Authorization': `token ${auth.getToken()}', 'Content-Type': 'application/json' },
+                headers: { 'Authorization': `token ${auth.getToken()}`, 'Content-Type': 'application/json' },
                 body: JSON.stringify({ message: `Delete ${oldPath}`, sha: item.sha })
             });
         }
