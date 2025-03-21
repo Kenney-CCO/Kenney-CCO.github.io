@@ -265,6 +265,7 @@ async function updatePublishStatus() {
         publishLabel.textContent = isPublic ? 'Site is Public' : 'Site is Private';
         publishLabel.className = isPublic ? 'public' : 'private';
         publishToggleBtn.textContent = isPublic ? 'Go Private' : 'Go Public';
+        publishToggleBtn.className = isPublic ? 'private' : 'public'; // Add class for styling
     } catch (error) {
         showNotification(`Error checking publish status: ${error.message}`, true);
         publishLabel.textContent = 'Error checking status';
@@ -369,9 +370,9 @@ saveConfigBtn.addEventListener('click', async () => {
 publishToggleBtn.addEventListener('click', async () => {
     try {
         const response = await fetch(`https://api.github.com/repos/${username}/${window.config.websiteRepoName}/topics`, {
-            headers: { 
-                'Authorization': `token ${auth.getToken()}`, 
-                'Accept': 'application/vnd.github.mercy-preview+json' 
+            headers: {
+                'Authorization': `token ${auth.getToken()}`,
+                'Accept': 'application/vnd.github.mercy-preview+json'
             }
         });
         if (!response.ok) throw new Error('Failed to fetch topics');
@@ -383,10 +384,10 @@ publishToggleBtn.addEventListener('click', async () => {
             const newTopics = currentTopics.filter(topic => topic !== 'glbtools');
             await fetch(`https://api.github.com/repos/${username}/${window.config.websiteRepoName}/topics`, {
                 method: 'PUT',
-                headers: { 
-                    'Authorization': `token ${auth.getToken()}`, 
-                    'Content-Type': 'application/json', 
-                    'Accept': 'application/vnd.github.mercy-preview+json' 
+                headers: {
+                    'Authorization': `token ${auth.getToken()}`,
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/vnd.github.mercy-preview+json'
                 },
                 body: JSON.stringify({ names: newTopics })
             });
@@ -395,10 +396,10 @@ publishToggleBtn.addEventListener('click', async () => {
             currentTopics.push('glbtools');
             await fetch(`https://api.github.com/repos/${username}/${window.config.websiteRepoName}/topics`, {
                 method: 'PUT',
-                headers: { 
-                    'Authorization': `token ${auth.getToken()}`, 
-                    'Content-Type': 'application/json', 
-                    'Accept': 'application/vnd.github.mercy-preview+json' 
+                headers: {
+                    'Authorization': `token ${auth.getToken()}`,
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/vnd.github.mercy-preview+json'
                 },
                 body: JSON.stringify({ names: currentTopics })
             });

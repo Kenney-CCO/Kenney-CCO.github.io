@@ -1108,7 +1108,7 @@ footer a:hover {
 }
 
 #publish-toggle-btn {
-    background: #ff6f61;
+    background: #ff6f61; /* Default, overridden by state */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -1116,8 +1116,25 @@ footer a:hover {
     cursor: pointer;
     display: block;
     margin: 0 auto;
+    font-family: 'Bungee', cursive; /* Add Bungee font */
 }
 
 #publish-toggle-btn:hover {
-    background: #e65a50;
+    background: #e65a50; /* Default hover, overridden by state */
+}
+
+#publish-toggle-btn.public {
+    background: #44ff44; /* Green for Go Public */
+}
+
+#publish-toggle-btn.public:hover {
+    background: #33cc33; /* Darker green on hover */
+}
+
+#publish-toggle-btn.private {
+    background: #ff4444; /* Red for Go Private */
+}
+
+#publish-toggle-btn.private:hover {
+    background: #cc3333; /* Darker red on hover */
 }
