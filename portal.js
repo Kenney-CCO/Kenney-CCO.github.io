@@ -18,9 +18,9 @@ const txtDropZone = document.getElementById('txt-drop-zone');
 const pngDropZone = document.getElementById('png-drop-zone');
 const loginMessage = document.getElementById('login-message');
 const uploadSection = document.getElementById('upload-section');
-const repoSection = document.getElementById('repo-section');
+const profileSection = document.getElementById('profile-section'); // Now contains config and repo
 const modelSection = document.getElementById('model-section');
-const profileSection = document.getElementById('profile-section');
+const profileLinksSection = document.getElementById('profile-links-section'); // New for creator links
 const repoList = document.getElementById('repo-list');
 const repoStatus = document.getElementById('repo-status');
 const refreshReposBtn = document.getElementById('refresh-repos');
@@ -80,9 +80,9 @@ async function checkSession() {
                 if (username === window.config.glbRepoUsername) {
                     auth.updateLoginDisplay(user, loginBtn);
                     uploadSection.style.display = 'block';
-                    repoSection.style.display = 'block';
-                    modelSection.style.display = 'block';
                     profileSection.style.display = 'block';
+                    modelSection.style.display = 'block';
+                    profileLinksSection.style.display = 'block';
                     loginMessage.style.display = 'none';
                     if (myPortalLink) myPortalLink.style.display = 'block';
                     fetchRepoDetails();
@@ -95,9 +95,9 @@ async function checkSession() {
                     loginBtn.classList.remove('profile');
                     loginBtn.disabled = false;
                     uploadSection.style.display = 'none';
-                    repoSection.style.display = 'none';
-                    modelSection.style.display = 'none';
                     profileSection.style.display = 'none';
+                    modelSection.style.display = 'none';
+                    profileLinksSection.style.display = 'none';
                     linksForm.style.display = 'none';
                     configForm.style.display = 'none';
                     enableCreatorLinksBtn.style.display = 'none';
@@ -116,9 +116,9 @@ async function checkSession() {
             loginBtn.classList.remove('profile');
             loginBtn.disabled = false;
             uploadSection.style.display = 'none';
-            repoSection.style.display = 'none';
-            modelSection.style.display = 'none';
             profileSection.style.display = 'none';
+            modelSection.style.display = 'none';
+            profileLinksSection.style.display = 'none';
             linksForm.style.display = 'none';
             configForm.style.display = 'none';
             enableCreatorLinksBtn.style.display = 'none';
@@ -148,9 +148,9 @@ async function checkSession() {
         profileDropdown.style.display = 'none';
         dropdownVisible = false;
         uploadSection.style.display = 'none';
-        repoSection.style.display = 'none';
-        modelSection.style.display = 'none';
         profileSection.style.display = 'none';
+        modelSection.style.display = 'none';
+        profileLinksSection.style.display = 'none';
         linksForm.style.display = 'none';
         configForm.style.display = 'none';
         enableCreatorLinksBtn.style.display = 'none';
@@ -644,7 +644,7 @@ async function deleteModelFolder(repoName, baseName) {
 
 async function renameModelFolder(repoName, oldBaseName) {
     const newBaseName = prompt(`Enter new name for ${oldBaseName}:`, oldBaseName);
-    if (!newBaseName || newBaseName === oldBaseName) return;
+    if (!newBaseName || newBaseName === oldName) return;
     try {
         const response = await fetch(`https://api.github.com/repos/${username}/${repoName}/contents`, {
             headers: { 'Authorization': `token ${auth.getToken()}` }
