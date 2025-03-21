@@ -87,22 +87,6 @@
                     </form>
                 </div>
 
-                <div id="repo-section" class="section-box" style="display: none;">
-                    <h2>Manage Repository</h2>
-                    <div class="scrollbox">
-                        <ul id="repo-list"></ul>
-                    </div>
-                    <div id="repo-status"></div>
-                </div>
-
-                <div id="model-section" class="section-box" style="display: none;">
-                    <h2>Manage Models</h2>
-                    <div class="scrollbox">
-                        <ul id="model-list"></ul>
-                    </div>
-                    <div id="model-status"></div>
-                </div>
-
                 <div id="profile-section" class="section-box" style="display: none;">
                     <h2>Manage Profile</h2>
                     <button id="enable-creator-links" style="display: none;">Enable Creator Links</button>
@@ -128,16 +112,16 @@
                     <div id="config-form" style="display: none;">
                         <h2>Site Configuration</h2>
                         <div class="form-row">
-                            <label for="glb-repo-username">GLB Repo Username:</label>
-                            <input type="text" id="glb-repo-username" placeholder="GitHub username for .glb repo">
-                        </div>
-                        <div class="form-row">
-                            <label for="glb-repo-name">GLB Repo Name:</label>
-                            <input type="text" id="glb-repo-name" placeholder="Repo name for .glb files">
-                        </div>
-                        <div class="form-row">
                             <label for="site-title">Site Title:</label>
                             <input type="text" id="site-title" placeholder="Your site title">
+                        </div>
+                        <div class="form-row">
+                            <label for="site-repo-owner">Site Repo Owner:</label>
+                            <input type="text" id="site-repo-owner" placeholder="GitHub username or org">
+                        </div>
+                        <div class="form-row">
+                            <label for="website-repo-name">Site Repo Name:</label>
+                            <input type="text" id="website-repo-name" placeholder="e.g., clone.tools or rock.tools">
                         </div>
                         <div class="form-row">
                             <label for="thumbnail-file">Site Thumbnail (.jpg):</label>
@@ -145,11 +129,35 @@
                             <input type="file" id="thumbnail-file" accept=".jpg">
                             <p class="guidelines">Recommended: 800x450px, max 100KB</p>
                         </div>
+                        <div class="form-row">
+                            <label for="glb-repo-owner">GLB Repo Owner:</label>
+                            <input type="text" id="glb-repo-owner" placeholder="GitHub username for .glb repo">
+                        </div>
+                        <div class="form-row">
+                            <label for="glb-repo-name">GLB Repo Name:</label>
+                            <input type="text" id="glb-repo-name" placeholder="Repo name for .glb files">
+                        </div>
                         <div class="button-container">
                             <button id="save-config" class="save-btn">Save Config</button>
                         </div>
                     </div>
                     <div id="profile-status"></div>
+                </div>
+
+                <div id="repo-section" class="section-box" style="display: none;">
+                    <h2>Selected GLB Repo</h2>
+                    <div class="scrollbox">
+                        <ul id="repo-list"></ul>
+                    </div>
+                    <div id="repo-status"></div>
+                </div>
+
+                <div id="model-section" class="section-box" style="display: none;">
+                    <h2>Manage Models</h2>
+                    <div class="scrollbox">
+                        <ul id="model-list"></ul>
+                    </div>
+                    <div id="model-status"></div>
                 </div>
             </div>
         </div>

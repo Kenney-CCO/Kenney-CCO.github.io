@@ -34,9 +34,11 @@ const xLinkInput = document.getElementById('x-link');
 const donationLinkInput = document.getElementById('donation-link');
 const saveLinksBtn = document.getElementById('save-links');
 const configForm = document.getElementById('config-form');
-const glbRepoUsernameInput = document.getElementById('glb-repo-username');
+const glbRepoOwnerInput = document.getElementById('glb-repo-owner'); // Renamed from glbRepoUsernameInput
 const glbRepoNameInput = document.getElementById('glb-repo-name');
 const siteTitleInput = document.getElementById('site-title');
+const siteRepoOwnerInput = document.getElementById('site-repo-owner'); // New
+const websiteRepoNameInput = document.getElementById('website-repo-name'); // New
 const thumbnailFileInput = document.getElementById('thumbnail-file');
 const thumbnailDropZone = document.getElementById('thumbnail-drop-zone');
 const saveConfigBtn = document.getElementById('save-config');
@@ -226,12 +228,14 @@ async function setupCreatorLinks() {
 async function setupConfigForm() {
     try {
         if (!window.config) await loadConfig();
-        glbRepoUsernameInput.value = window.config.glbRepoUsername || '';
-        glbRepoNameInput.value = window.config.glbRepoName || '';
         siteTitleInput.value = window.config.siteTitle || '';
+        siteRepoOwnerInput.value = window.config.siteRepoOwner || '';
+        websiteRepoNameInput.value = window.config.websiteRepoName || '';
         thumbnailFileInput.value = ''; // Clear file input
         thumbnailDropZone.textContent = window.config.thumbnailPath ? 'thumbnail.jpg' : '';
         thumbnailDropZone.style.backgroundImage = window.config.thumbnailPath ? 'none' : "url('dragdrop.svg')";
+        glbRepoOwnerInput.value = window.config.glbRepoUsername || '';
+        glbRepoNameInput.value = window.config.glbRepoName || '';
     } catch (error) {
         showNotification(`Error loading config: ${error.message}`, true);
         console.error('Error loading config:', error);
@@ -281,12 +285,14 @@ saveLinksBtn.addEventListener('click', async () => {
 
 saveConfigBtn.addEventListener('click', async () => {
     const updatedConfig = {
-        glbRepoUsername: glbRepoUsernameInput.value.trim(),
+        glbRepoUsername: glbRepoOwnerInput.value.trim(),
         glbRepoName: glbRepoNameInput.value.trim(),
         supabaseUrl: window.config.supabaseUrl,
         supabaseAnonKey: window.config.supabaseAnonKey,
         siteTitle: siteTitleInput.value.trim(),
-        thumbnailPath: window.config.thumbnailPath || 'thumbnail.jpg' // Default or existing path
+        thumbnailPath: window.config.thumbnailPath || 'thumbnail.jpg',
+        siteRepoOwner: siteRepoOwnerInput.value.trim(),
+        websiteRepoName: websiteRepoNameInput.value.trim()
     };
     const thumbnailFile = thumbnailFileInput.files[0];
     if (thumbnailFile) {
@@ -295,7 +301,7 @@ saveConfigBtn.addEventListener('click', async () => {
             return;
         }
         try {
-            await uploadFile(username, `${username}/clone.tools`, 'thumbnail.jpg', thumbnailFile); // Use website repo
+            await uploadFile(updatedConfig.siteRepoOwner, updatedConfig.websiteRepoName, 'thumbnail.jpg', thumbnailFile);
             updatedConfig.thumbnailPath = 'thumbnail.jpg';
         } catch (error) {
             showNotification(`Error uploading thumbnail: ${error.message}`, true);
@@ -304,14 +310,14 @@ saveConfigBtn.addEventListener('click', async () => {
     }
     const content = btoa(JSON.stringify(updatedConfig, null, 2));
     try {
-        const configResponse = await fetch(`https://api.github.com/repos/${username}/clone.tools/contents/config.json`, {
+        const configResponse = await fetch(`https://api.github.com/repos/${updatedConfig.siteRepoOwner}/${updatedConfig.websiteRepoName}/contents/config.json`, {
             headers: { 'Authorization': `token ${auth.getToken()}` }
         });
         if (!configResponse.ok) throw new Error('Failed to fetch config.json');
         const configData = await configResponse.json();
         const sha = configData.sha;
 
-        const response = await fetch(`https://api.github.com/repos/${username}/clone.tools/contents/config.json`, {
+        const response = await fetch(`https://api.github.com/repos/${updatedConfig.siteRepoOwner}/${updatedConfig.websiteRepoName}/contents/config.json`, {
             method: 'PUT',
             headers: { 'Authorization': `token ${auth.getToken()}`, 'Content-Type': 'application/json' },
             body: JSON.stringify({ 
@@ -324,7 +330,7 @@ saveConfigBtn.addEventListener('click', async () => {
         window.config = updatedConfig;
         document.querySelector('.logo').textContent = window.config.siteTitle || 'CLONE.TOOLS';
         showNotification('Config saved successfully! Refresh to see changes.');
-        await setupConfigForm(); // Refresh form to show updated thumbnail
+        await setupConfigForm();
     } catch (error) {
         showNotification(`Error saving config: ${error.message}`, true);
     }
