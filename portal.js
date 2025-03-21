@@ -2,8 +2,14 @@ console.log('portal.js loaded');
 
 async function loadConfig() {
     if (!window.config) {
-        const response = await fetch('config.json');
-        window.config = await response.json();
+        try {
+            const response = await fetch('config.json');
+            if (!response.ok) throw new Error('Failed to fetch config.json');
+            window.config = await response.json();
+        } catch (error) {
+            console.error('Config load error:', error);
+            window.config = { siteTitle: 'CLONE.TOOLS' }; // Fallback
+        }
     }
     document.querySelector('.logo').textContent = window.config.siteTitle || 'CLONE.TOOLS';
 }
@@ -111,7 +117,7 @@ async function checkSession() {
                     loginMessage.textContent = `This portal is for the site owner (${window.config.glbRepoUsername}) only. Visit the main page to explore models.`;
                 }
             } catch (error) {
-                showNotification(`Error: ${error.message}`, true);
+                showNotification(`Error fetching user: ${error.message}`, true);
                 console.error('User fetch error:', error);
             }
         } else {
