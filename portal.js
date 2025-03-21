@@ -34,11 +34,11 @@ const xLinkInput = document.getElementById('x-link');
 const donationLinkInput = document.getElementById('donation-link');
 const saveLinksBtn = document.getElementById('save-links');
 const configForm = document.getElementById('config-form');
-const glbRepoOwnerInput = document.getElementById('glb-repo-owner'); // Renamed from glbRepoUsernameInput
+const glbRepoOwnerInput = document.getElementById('glb-repo-owner');
 const glbRepoNameInput = document.getElementById('glb-repo-name');
 const siteTitleInput = document.getElementById('site-title');
-const siteRepoOwnerInput = document.getElementById('site-repo-owner'); // New
-const websiteRepoNameInput = document.getElementById('website-repo-name'); // New
+const siteRepoOwnerInput = document.getElementById('site-repo-owner');
+const websiteRepoNameInput = document.getElementById('website-repo-name');
 const thumbnailFileInput = document.getElementById('thumbnail-file');
 const thumbnailDropZone = document.getElementById('thumbnail-drop-zone');
 const saveConfigBtn = document.getElementById('save-config');
@@ -546,10 +546,36 @@ async function uploadFile(username, repoName, path, file) {
         reader.onload = () => resolve(reader.result.split(',')[1]);
         reader.readAsDataURL(file);
     });
+
+    // Check if the file already exists
+    let sha = null;
+    try {
+        const checkResponse = await fetch(`https://api.github.com/repos/${username}/${repoName}/contents/${path}`, {
+            headers: { 'Authorization': `token ${auth.getToken()}` }
+        });
+        if (checkResponse.ok) {
+            const fileData = await checkResponse.json();
+            sha = fileData.sha; // Get the SHA if the file exists
+        }
+    } catch (error) {
+        // If 404, file doesn’t exist; proceed without SHA
+        if (error.message !== 'Failed to fetch file info') {
+            console.error('Error checking file existence:', error);
+        }
+    }
+
+    const body = {
+        message: sha ? `Update ${path}` : `Add ${path}`,
+        content: content
+    };
+    if (sha) {
+        body.sha = sha; // Include SHA for updates
+    }
+
     const response = await fetch(`https://api.github.com/repos/${username}/${repoName}/contents/${path}`, {
         method: 'PUT',
         headers: { 'Authorization': `token ${auth.getToken()}`, 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: `Add ${path}`, content: content })
+        body: JSON.stringify(body)
     });
     if (!response.ok) throw new Error(`Failed to upload ${path}`);
 }
