@@ -249,7 +249,7 @@ async function updatePublishStatus() {
     try {
         const response = await fetch(`https://api.github.com/repos/${username}/${window.config.websiteRepoName}/topics`, {
             headers: { 
-                'Authorization': `token ${auth.getToken()}`, 
+                'Authorization': `token ${auth.getToken()}', 
                 'Accept': 'application/vnd.github.mercy-preview+json' 
             }
         });
@@ -374,7 +374,6 @@ publishToggleBtn.addEventListener('click', async () => {
         const isPublic = currentTopics.includes('glbtools');
 
         if (isPublic) {
-            // Remove glbtools tag
             const newTopics = currentTopics.filter(topic => topic !== 'glbtools');
             await fetch(`https://api.github.com/repos/${username}/${window.config.websiteRepoName}/topics`, {
                 method: 'PUT',
@@ -387,7 +386,6 @@ publishToggleBtn.addEventListener('click', async () => {
             });
             showNotification('Site set to Private');
         } else {
-            // Add glbtools tag
             currentTopics.push('glbtools');
             await fetch(`https://api.github.com/repos/${username}/${window.config.websiteRepoName}/topics`, {
                 method: 'PUT',
@@ -599,7 +597,6 @@ async function createRepo(repoName) {
             body: JSON.stringify({ name: repoName, private: false })
         });
         if (!response.ok) throw new Error('Failed to create repo');
-        // No default glbtools tag here
         showNotification(`Repository ${repoName} created!`);
     } catch (error) {
         showNotification(`Error creating repo: ${error.message}`, true);
