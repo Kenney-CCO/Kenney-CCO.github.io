@@ -4,14 +4,17 @@ async function loadConfig() {
     if (!window.config) {
         try {
             const response = await fetch('config.json');
-            if (!response.ok) throw new Error('Failed to fetch config.json');
+            if (!response.ok) throw new Error(`Failed to fetch config.json: ${response.status} ${response.statusText}`);
             window.config = await response.json();
+            console.log('Config loaded successfully:', window.config);
         } catch (error) {
             console.error('Config load error:', error);
-            window.config = { siteTitle: 'CLONE.TOOLS' }; // Fallback
+            showNotification(`Error loading config: ${error.message}. Using fallback.`, true);
+            window.config = { siteTitle: 'CLONE.TOOLS' };
         }
     }
     document.querySelector('.logo').textContent = window.config.siteTitle || 'CLONE.TOOLS';
+    document.getElementById('dynamic-title').textContent = window.config.siteTitle || 'CLONE.TOOLS'; // Dynamic title
 }
 
 const loginBtn = document.getElementById('login-btn');
@@ -183,6 +186,14 @@ async function updateStorageUsage() {
         return;
     }
     try {
+        const repoCheck = await fetch(`https://api.github.com/repos/${window.config.glbRepoUsername}/${window.config.glbRepoName}`, {
+            headers: { 'Authorization': `token ${auth.getToken()}` }
+        });
+        if (!repoCheck.ok) {
+            document.getElementById('usage').textContent = 'No models';
+            showNotification('Error: Please create and upload models to your model repository first', true);
+            return;
+        }
         const response = await fetch(`https://api.github.com/repos/${window.config.glbRepoUsername}/${window.config.glbRepoName}/contents`, {
             headers: { 'Authorization': `token ${auth.getToken()}` }
         });
@@ -204,25 +215,21 @@ async function updateStorageUsage() {
 
 async function setupCreatorLinks() {
     try {
-        const repoResponse = await fetch(`https://api.github.com/repos/${window.config.glbRepoUsername}/glbtools`, {
+        const repoName = window.config.siteRepoName || `${username}.github.io`;
+        const linksResponse = await fetch(`https://api.github.com/repos/${username}/${repoName}/contents/links.json`, {
             headers: { 'Authorization': `token ${auth.getToken()}` }
         });
-        if (repoResponse.ok) {
-            const linksResponse = await fetch(`https://api.github.com/repos/${window.config.glbRepoUsername}/glbtools/contents/links.json`, {
-                headers: { 'Authorization': `token ${auth.getToken()}` }
-            });
-            if (linksResponse.ok) {
-                const data = await linksResponse.json();
-                const links = JSON.parse(atob(data.content));
-                websiteLinkInput.value = links.website || '';
-                xLinkInput.value = links.x || '';
-                donationLinkInput.value = links.donation || '';
-            }
+        if (linksResponse.ok) {
+            const data = await linksResponse.json();
+            const links = JSON.parse(atob(data.content));
+            websiteLinkInput.value = links.website || '';
+            xLinkInput.value = links.x || '';
+            donationLinkInput.value = links.donation || '';
             linksForm.style.display = 'block';
             configForm.style.display = 'block';
             enableCreatorLinksBtn.style.display = 'none';
             creatorLinksDisclaimer.style.display = 'none';
-        } else if (repoResponse.status === 404) {
+        } else if (linksResponse.status === 404) {
             enableCreatorLinksBtn.style.display = 'block';
             creatorLinksDisclaimer.style.display = 'block';
             linksForm.style.display = 'none';
@@ -239,7 +246,7 @@ async function setupConfigForm() {
         if (!window.config) await loadConfig();
         siteTitleInput.value = window.config.siteTitle || '';
         siteRepoOwnerInput.value = window.config.siteRepoOwner || '';
-        websiteRepoNameInput.value = window.config.websiteRepoName || '';
+        websiteRepoNameInput.value = window.config.siteRepoName || '';
         thumbnailFileInput.value = '';
         thumbnailDropZone.textContent = window.config.thumbnailPath ? 'thumbnail.jpg' : '';
         thumbnailDropZone.style.backgroundImage = window.config.thumbnailPath ? 'none' : "url('dragdrop.svg')";
@@ -253,43 +260,46 @@ async function setupConfigForm() {
 
 async function updatePublishStatus() {
     try {
-        const response = await fetch(`https://api.github.com/repos/${username}/${window.config.websiteRepoName}/topics`, {
+        if (!window.config || !window.config.siteRepoName) {
+            await loadConfig();
+            if (!window.config.siteRepoName) {
+                throw new Error('Website repository name not found in config');
+            }
+        }
+        const repoName = window.config.siteRepoName;
+        const response = await fetch(`https://api.github.com/repos/${username}/${repoName}/topics`, {
             headers: {
                 'Authorization': `token ${auth.getToken()}`,
                 'Accept': 'application/vnd.github.mercy-preview+json'
             }
         });
-        if (!response.ok) throw new Error('Failed to fetch topics');
+        if (!response.ok) {
+            if (response.status === 404) {
+                throw new Error(`Website repo (${repoName}) not found`);
+            }
+            throw new Error('Failed to fetch topics');
+        }
         const data = await response.json();
         const isPublic = data.names.includes('glbtools');
         publishLabel.textContent = isPublic ? 'Site is Public' : 'Site is Private';
         publishLabel.className = isPublic ? 'public' : 'private';
         publishToggleBtn.textContent = isPublic ? 'Go Private' : 'Go Public';
-        publishToggleBtn.className = isPublic ? 'private' : 'public'; // Add class for styling
+        publishToggleBtn.className = isPublic ? 'private' : 'public';
     } catch (error) {
         showNotification(`Error checking publish status: ${error.message}`, true);
-        publishLabel.textContent = 'Error checking status';
+        publishLabel.textContent = `Error: ${error.message}`;
     }
 }
 
 enableCreatorLinksBtn.addEventListener('click', async () => {
     try {
-        const repoCheck = await fetch(`https://api.github.com/repos/${window.config.glbRepoUsername}/glbtools`, {
-            headers: { 'Authorization': `token ${auth.getToken()}` }
-        });
-        if (!repoCheck.ok && repoCheck.status !== 404) throw new Error('Failed to check glbtools repo');
-        if (repoCheck.status === 404) {
-            await createRepo('glbtools');
-            showNotification('glbtools repo created successfully!');
-        }
         linksForm.style.display = 'block';
         configForm.style.display = 'block';
         enableCreatorLinksBtn.style.display = 'none';
         creatorLinksDisclaimer.style.display = 'none';
-        await setupCreatorLinks();
-        await setupConfigForm();
+        showNotification('Creator links enabled! Add your links and save.');
     } catch (error) {
-        showNotification(`Error setting up glbtools repo: ${error.message}`, true);
+        showNotification(`Error enabling creator links: ${error.message}`, true);
     }
 });
 
@@ -301,10 +311,23 @@ saveLinksBtn.addEventListener('click', async () => {
     };
     const content = btoa(JSON.stringify(links, null, 2));
     try {
-        const response = await fetch(`https://api.github.com/repos/${window.config.glbRepoUsername}/glbtools/contents/links.json`, {
+        const repoName = window.config.siteRepoName || `${username}.github.io`;
+        let sha = null;
+        const existingFile = await fetch(`https://api.github.com/repos/${username}/${repoName}/contents/links.json`, {
+            headers: { 'Authorization': `token ${auth.getToken()}` }
+        });
+        if (existingFile.ok) {
+            const fileData = await existingFile.json();
+            sha = fileData.sha;
+        }
+        const response = await fetch(`https://api.github.com/repos/${username}/${repoName}/contents/links.json`, {
             method: 'PUT',
             headers: { 'Authorization': `token ${auth.getToken()}`, 'Content-Type': 'application/json' },
-            body: JSON.stringify({ message: 'Update creator links', content: content })
+            body: JSON.stringify({ 
+                message: 'Update creator links', 
+                content: content,
+                sha: sha
+            })
         });
         if (!response.ok) throw new Error('Failed to save links');
         showNotification('Creator links saved successfully!');
@@ -322,7 +345,7 @@ saveConfigBtn.addEventListener('click', async () => {
         siteTitle: siteTitleInput.value.trim(),
         thumbnailPath: window.config.thumbnailPath || 'thumbnail.jpg',
         siteRepoOwner: siteRepoOwnerInput.value.trim(),
-        websiteRepoName: websiteRepoNameInput.value.trim()
+        siteRepoName: websiteRepoNameInput.value.trim()
     };
     const thumbnailFile = thumbnailFileInput.files[0];
     if (thumbnailFile) {
@@ -331,7 +354,7 @@ saveConfigBtn.addEventListener('click', async () => {
             return;
         }
         try {
-            await uploadFile(updatedConfig.siteRepoOwner, updatedConfig.websiteRepoName, 'thumbnail.jpg', thumbnailFile);
+            await uploadFile(updatedConfig.siteRepoOwner, updatedConfig.siteRepoName, 'thumbnail.jpg', thumbnailFile);
             updatedConfig.thumbnailPath = 'thumbnail.jpg';
         } catch (error) {
             showNotification(`Error uploading thumbnail: ${error.message}`, true);
@@ -340,14 +363,14 @@ saveConfigBtn.addEventListener('click', async () => {
     }
     const content = btoa(JSON.stringify(updatedConfig, null, 2));
     try {
-        const configResponse = await fetch(`https://api.github.com/repos/${updatedConfig.siteRepoOwner}/${updatedConfig.websiteRepoName}/contents/config.json`, {
+        const configResponse = await fetch(`https://api.github.com/repos/${updatedConfig.siteRepoOwner}/${updatedConfig.siteRepoName}/contents/config.json`, {
             headers: { 'Authorization': `token ${auth.getToken()}` }
         });
         if (!configResponse.ok) throw new Error('Failed to fetch config.json');
         const configData = await configResponse.json();
         const sha = configData.sha;
 
-        const response = await fetch(`https://api.github.com/repos/${updatedConfig.siteRepoOwner}/${updatedConfig.websiteRepoName}/contents/config.json`, {
+        const response = await fetch(`https://api.github.com/repos/${updatedConfig.siteRepoOwner}/${updatedConfig.siteRepoName}/contents/config.json`, {
             method: 'PUT',
             headers: { 'Authorization': `token ${auth.getToken()}`, 'Content-Type': 'application/json' },
             body: JSON.stringify({ 
@@ -359,6 +382,7 @@ saveConfigBtn.addEventListener('click', async () => {
         if (!response.ok) throw new Error('Failed to save config');
         window.config = updatedConfig;
         document.querySelector('.logo').textContent = window.config.siteTitle || 'CLONE.TOOLS';
+        document.getElementById('dynamic-title').textContent = window.config.siteTitle || 'CLONE.TOOLS';
         showNotification('Config saved successfully! Refresh to see changes.');
         await setupConfigForm();
         await updatePublishStatus();
@@ -369,7 +393,8 @@ saveConfigBtn.addEventListener('click', async () => {
 
 publishToggleBtn.addEventListener('click', async () => {
     try {
-        const response = await fetch(`https://api.github.com/repos/${username}/${window.config.websiteRepoName}/topics`, {
+        const repoName = window.config.siteRepoName || `${username}.github.io`;
+        const response = await fetch(`https://api.github.com/repos/${username}/${repoName}/topics`, {
             headers: {
                 'Authorization': `token ${auth.getToken()}`,
                 'Accept': 'application/vnd.github.mercy-preview+json'
@@ -382,7 +407,7 @@ publishToggleBtn.addEventListener('click', async () => {
 
         if (isPublic) {
             const newTopics = currentTopics.filter(topic => topic !== 'glbtools');
-            await fetch(`https://api.github.com/repos/${username}/${window.config.websiteRepoName}/topics`, {
+            await fetch(`https://api.github.com/repos/${username}/${repoName}/topics`, {
                 method: 'PUT',
                 headers: {
                     'Authorization': `token ${auth.getToken()}`,
@@ -394,7 +419,7 @@ publishToggleBtn.addEventListener('click', async () => {
             showNotification('Site set to Private');
         } else {
             currentTopics.push('glbtools');
-            await fetch(`https://api.github.com/repos/${username}/${window.config.websiteRepoName}/topics`, {
+            await fetch(`https://api.github.com/repos/${username}/${repoName}/topics`, {
                 method: 'PUT',
                 headers: {
                     'Authorization': `token ${auth.getToken()}`,
@@ -480,6 +505,14 @@ async function fetchRepoDetails() {
 
 async function fetchModels() {
     try {
+        const repoCheck = await fetch(`https://api.github.com/repos/${window.config.glbRepoUsername}/${window.config.glbRepoName}`, {
+            headers: { 'Authorization': `token ${auth.getToken()}` }
+        });
+        if (!repoCheck.ok) {
+            modelList.innerHTML = '<li>No models found</li>';
+            showNotification('Error: Please create and upload models to your model repository first', true);
+            return;
+        }
         const response = await fetch(`https://api.github.com/repos/${window.config.glbRepoUsername}/${window.config.glbRepoName}/contents`, {
             headers: { 'Authorization': `token ${auth.getToken()}` }
         });
@@ -699,7 +732,7 @@ async function deleteModelFolder(repoName, baseName) {
 
 async function renameModelFolder(repoName, oldBaseName) {
     const newBaseName = prompt(`Enter new name for ${oldBaseName}:`, oldBaseName);
-    if (!newBaseName || newBaseName === oldName) return;
+    if (!newBaseName || newBaseName === oldBaseName) return;
     try {
         const response = await fetch(`https://api.github.com/repos/${username}/${repoName}/contents`, {
             headers: { 'Authorization': `token ${auth.getToken()}` }

@@ -1,9 +1,18 @@
 async function loadConfig() { 
     if (!window.config) {
-        const response = await fetch('config.json');
-        window.config = await response.json();
+        try {
+            const response = await fetch('config.json');
+            if (!response.ok) throw new Error(`Failed to fetch config.json: ${response.status} ${response.statusText}`);
+            window.config = await response.json();
+            console.log('Config loaded successfully:', window.config);
+        } catch (error) {
+            console.error('Config load error:', error);
+            showNotification(`Error loading config: ${error.message}. Using fallback.`, true);
+            window.config = { siteTitle: 'CLONE.TOOLS' };
+        }
     }
     document.querySelector('.logo').textContent = window.config.siteTitle || 'CLONE.TOOLS';
+    document.getElementById('dynamic-title').textContent = window.config.siteTitle || 'CLONE.TOOLS'; // Dynamic title
 }
 
 const grid = document.querySelector('.grid');
@@ -23,7 +32,6 @@ async function loadModels() {
     loading = true;
     try {
         if (!window.config) await loadConfig();
-        // Fetch repo contents
         const contentsResponse = await fetch(`https://api.github.com/repos/${window.config.glbRepoUsername}/${window.config.glbRepoName}/contents`, {
             headers: auth.getToken() ? { 'Authorization': `token ${auth.getToken()}` } : {}
         });
@@ -31,7 +39,6 @@ async function loadModels() {
         const files = await contentsResponse.json();
         const glbFiles = files.filter(f => f.name.endsWith('.glb'));
 
-        // Fetch star count
         const repoResponse = await fetch(`https://api.github.com/repos/${window.config.glbRepoUsername}/${window.config.glbRepoName}`, {
             headers: auth.getToken() ? { 'Authorization': `token ${auth.getToken()}` } : {}
         });
@@ -53,7 +60,7 @@ async function loadModels() {
                     authorUrl: `https://github.com/${window.config.glbRepoUsername}`,
                     authorAvatar: `https://github.com/${window.config.glbRepoUsername}.png`,
                     repoName: window.config.glbRepoName,
-                    stars: starCount // Use actual star count
+                    stars: starCount
                 });
             }
         }
@@ -135,7 +142,8 @@ async function showPopup(event) {
 
     let creatorLinks = {};
     try {
-        const linksResponse = await fetch(`https://api.github.com/repos/${window.config.glbRepoUsername}/glbtools/contents/links.json`, {
+        const repoName = window.config.siteRepoName || `${window.config.glbRepoUsername}.github.io`;
+        const linksResponse = await fetch(`https://api.github.com/repos/${window.config.glbRepoUsername}/${repoName}/contents/links.json`, {
             headers: auth.getToken() ? { 'Authorization': `token ${auth.getToken()}` } : {}
         });
         if (linksResponse.ok) {
