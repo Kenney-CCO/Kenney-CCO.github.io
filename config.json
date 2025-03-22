@@ -1,8 +1,8 @@
 {
   "glbRepoUsername": "Kenney-CCO",
   "glbRepoName": "Kenney-CCO.glb",
-  "supabaseUrl": "YOUR_SUPABASE_URL_HERE",
-  "supabaseAnonKey": "YOUR_SUPABASE_ANON_KEY_HERE",
+  "supabaseUrl": "https://wgmbbbynehkvtoqkgwrh.supabase.co",
+  "supabaseAnonKey": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndnbWJiYnluZWhrdnRvcWtnd3JoIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDI2Nzg0ODgsImV4cCI6MjA1ODI1NDQ4OH0.W9hUCYMO1uksrOWThDcRAXJ7Az_RIOYkFMAl3nFuSwI",
   "siteTitle": "Kenney-CCO",
   "thumbnailPath": "thumbnail.jpg",
   "siteRepoOwner": "Kenney-CCO",
